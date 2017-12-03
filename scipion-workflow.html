@@ -12,13 +12,13 @@
     <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.3/fetch.min.js"></script>-->
     <!-- dagre layout -->
     <script src="https://cdn.rawgit.com/cpettitt/dagre/v0.7.4/dist/dagre.min.js"></script>
-    <script src="js/cytoscape-dagre.js"></script>
+    <script src="/static/site/js/cytoscape-dagre.js"></script>
     <!-- qtip -->
     <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/qtip2/2.2.0/jquery.qtip.css">
     <script src="http://cdnjs.cloudflare.com/ajax/libs/qtip2/2.2.0/jquery.qtip.js"></script>
-    <script src="js/cytoscape-qtip.js"></script>
+    <script src="/static/site/js/cytoscape-qtip.js"></script>
     <!-- web components -->
-    <script src="js/webcomponents/webcomponents-loader.js"></script>
+    <script src="/static/site/js/webcomponents/webcomponents-loader.js"></script>
 
     <title>Scipion workflow</title>
 
@@ -30,11 +30,11 @@
 
     <style>
         #cy {
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            left: 0;
-            top: 0;
+            /*width: 100%;*/
+            /*height: 100%;*/
+            /*position: absolute;*/
+            /*left: 0;*/
+            /*top: 0;*/
             z-index: 999;
         }
 
@@ -185,27 +185,44 @@
         })};
 
         class ScipionWorkflow extends HTMLElement {
-          static get is() { return "scipion-workflow"; }
+            static get is() { return "scipion-workflow"; }
 
-          constructor() {
-            super();
-            var jsonUrl = this.getAttribute('src');
-            // Create a shadow root
-            var shadow = this.attachShadow({mode: 'open'});
-            // Create a div that will contain the workflow graph
-            var workflowDiv = document.createElement('div');
-            workflowDiv.style.left = 0;
-            workflowDiv.style.top = 0;
-            workflowDiv.style.width = "100%";
-            workflowDiv.style.height = "100%";
-            workflowDiv.style.position = "absolute";
-            workflowDiv.id = 'workflowDiv';
-            generateWorkflow(jsonUrl, workflowDiv);
-            shadow.appendChild(workflowDiv);
+            // Define attributes to observe
+            static get observedAttributes() {return ['src']; }
+
+            // React to attributes changes
+            attributeChangedCallback(attr, oldValue, newValue) {
+                if (attr == 'src') {
+                    this.refresh();
+                }
+            }
+
+            constructor() {
+                super();
+                // Create a shadow root
+                var shadow = this.attachShadow({mode: 'open'});
+                // Create a div that will contain the workflow graph
+                var workflowDiv = document.createElement('div');
+                workflowDiv.style.position = "absolute";
+                workflowDiv.id = 'workflowDiv';
+                this.workflowDiv = workflowDiv;
+                shadow.appendChild(workflowDiv);
+                this.refresh()
 
 
+            }
+            refresh() {
 
-          }
+                var jsonUrl = this.getAttribute('src');
+                if (jsonUrl == undefined) {
+                    return;
+                }
+                var height = this.getAttribute('height');
+                var width = this.getAttribute('width');
+                this.workflowDiv.style.width = width;
+                this.workflowDiv.style.height = height;
+                generateWorkflow(jsonUrl, this.workflowDiv);
+            }
         }
         customElements.define(ScipionWorkflow.is, ScipionWorkflow);
     </script>
