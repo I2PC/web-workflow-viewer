@@ -38,7 +38,7 @@
             z-index: 999;
         }
 
-        .qtip{
+        .maxwidth{
             max-width: none;
             font-family: helvetica;
         }
@@ -64,6 +64,9 @@
 
             var cy = cytoscape({
               container: workflowDiv,
+              autounselectify: true,
+              maxZoom: 1.75,
+              minZoom: 0.25,
 
               layout: {
                 name: 'dagre',
@@ -121,17 +124,28 @@
                 },
                 position: {
                     my: 'bottom center',
-                    at: 'top center',
+                    at: 'top center'
                 },
                 style: {
-                    classes: 'qtip-bootstrap'
+                    classes: 'qtip-bootstrap maxwidth'
                 }
             });
 
         }
 
-        function generateWorkflow(jsonUrl, workflowDiv){
-            $.getJSON(jsonUrl, function(data, status){
+        function getWorkflow(jsonUrl, workflowDiv){
+
+            if (jsonUrl.startsWith("[")){
+                generateWorkflow(JSON.parse(jsonUrl),workflowDiv);
+
+            }else{
+                $.getJSON(jsonUrl, function (data , status){
+                    generateWorkflow(data, workflowDiv);
+                });
+            }
+        }
+
+        function generateWorkflow(data, workflowDiv){
                 var nodeList = [{ data: {
                                             id: 'root',
                                             name: 'Project'
@@ -139,7 +153,7 @@
                                 }
                     ];
                 var edgeList = [];
-                var regex = /^(\d+)\./;
+                var regex = /^(\d+)\.\S+$/;
 
                 $.each(data, function(index, protocol){
                     nodeList.push({ data: {
@@ -153,7 +167,7 @@
                         var protID = protocol['object.id'];
                         if (Array.isArray(value)){
                             $.each(value, function(index, arrayValue){
-                                if (typeof(arrayValue) === 'string' && /^(\d+)/.test(arrayValue)){
+                                if (typeof(arrayValue) === 'string' && regex.test(arrayValue)){
                                     edgeList.push({ data: {
                                                         source: arrayValue.split('.')[0],
                                                         target: protID
@@ -182,7 +196,7 @@
 
                 });
                 paintGraph(workflowDiv, nodeList, edgeList)
-        })};
+        };
 
         class ScipionWorkflow extends HTMLElement {
             static get is() { return "scipion-workflow"; }
@@ -203,13 +217,12 @@
                 var shadow = this.attachShadow({mode: 'open'});
                 // Create a div that will contain the workflow graph
                 var workflowDiv = document.createElement('div');
-                workflowDiv.style.position = "absolute";
+                // workflowDiv.style.position = "absolute";
+                workflowDiv.style.position = "relative";
                 workflowDiv.id = 'workflowDiv';
                 this.workflowDiv = workflowDiv;
                 shadow.appendChild(workflowDiv);
                 this.refresh()
-
-
             }
             refresh() {
 
@@ -221,10 +234,17 @@
                 var width = this.getAttribute('width');
                 this.workflowDiv.style.width = width;
                 this.workflowDiv.style.height = height;
-                generateWorkflow(jsonUrl, this.workflowDiv);
+                getWorkflow(jsonUrl, this.workflowDiv);
             }
         }
         customElements.define(ScipionWorkflow.is, ScipionWorkflow);
+
+        var importDoc = document.currentScript.ownerDocument;
+        var styleLink = importDoc.querySelector('link[rel=stylesheet]');
+        document.head.appendChild(styleLink);
+        var style = importDoc.querySelector('style');
+        document.head.appendChild(style);
+
     </script>
 </dom-module>
 
