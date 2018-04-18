@@ -21,9 +21,9 @@ To use the web component we need to:
 To view the demo, get inside this repo's dir and serve index.html via http:
 ```
 $ cd web-workflow-viewer
-$ python -m SimpleHTTPServer 8000
+$ python -m SimpleHTTPServer 8009
 ```
-Open file on http://localhost:8000 on your browser, you should see something like this:
+Open file on http://localhost:8009 on your browser, you should see something like this:
 ![viewer-demo](viewer_demo.png)
 
 Learn more about web components [here](https://www.polymer-project.org/2.0/start/quick-tour) and [here](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Custom_Elements).
