@@ -12,8 +12,8 @@
     <script src="https://cdn.rawgit.com/cpettitt/dagre/v0.7.4/dist/dagre.min.js"></script>
     <script src="js/cytoscape-dagre.js"></script>
     <!-- qtip -->
-    <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/qtip2/2.2.0/jquery.qtip.css">
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/qtip2/2.2.0/jquery.qtip.js"></script>
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/qtip2/2.2.0/jquery.qtip.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/qtip2/2.2.0/jquery.qtip.js"></script>
     <script src="js/cytoscape-qtip.js"></script>
     <title>Scipion workflow</title>
 
@@ -221,15 +221,22 @@
 
             refresh() {
                 // Performs all the steps to paint the graph
+                var height, width, fullWindow;
 
                 // 1. Get attrs from the html tag
                 var jsonSrc = this.getAttribute('src');
                 if (jsonSrc == undefined) {
                     return;
                 }
-                var height = this.getAttribute('height');
-                var width = this.getAttribute('width');
+                fullWindow = this.getAttribute('fullWindow');
                 // 2. Apply attrs to worfklow div
+                if (fullWindow == undefined) {
+                    height = this.getAttribute('height');
+                    width = this.getAttribute('width');
+                } else {
+                    height = $(window).height()+'px';
+                    width = $(window).width()+'px';
+                }
                 this.workflowDiv.style.width = width;
                 this.workflowDiv.style.height = height;
                 //3. Parse json data and paint graph
