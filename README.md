@@ -1,6 +1,7 @@
 
 # web-workflow-viewer
 
+
 HTML Workflow viewer for workflow json files exported from Scipion. Developed as a web component - see demo in [index.html](https://github.com/I2PC/web-workflow-viewer/blob/master/index.html). 
 
 To use the web component we need to:
