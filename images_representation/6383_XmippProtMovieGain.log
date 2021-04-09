@@ -1,0 +1,211 @@
+[32mRUNNING PROTOCOL -----------------[0m
+Hostname: ip-172-31-13-159.eu-west-1.compute.internal
+PID: 4983
+pyworkflow: 3.0.6
+plugin: xmipp3
+currentDir: /home/scipion/ScipionUserData/projects/Example_10248_Scipion3
+workingDir: Runs/006383_XmippProtMovieGain
+runMode: Continue
+          MPI: 1
+      threads: 4
+ Starting at step: 1
+ Running steps 
+[35mSTARTED[0m: _convertInputStep, step 1, time 2020-11-12 16:47:42.979489
+[35mFINISHED[0m: _convertInputStep, step 1, time 2020-11-12 16:47:42.983732
+[35mSTARTED[0m: estimateOrientationStep, step 2, time 2020-11-12 16:47:42.991347
+[32mxmipp_movie_estimate_gain -i Runs/006299_ProtImportMovies/extra/190117_02_00001_UnderDefocus0.7um_frameImage.tiff --oroot Runs/006383_XmippProtMovieGain/extra/movie_000001 --iter 1 --singleRef --frameStep 5  --sigma 0[0m
+Iteration 0
+   Frame 000001@Runs/006299_ProtImportMovies/extra/190117_02_00001_UnderDefocus0.7um_frameImage.tiff
+      sigmaCol: 0
+      sigmaRow: 0
+   Frame 000006@Runs/006299_ProtImportMovies/extra/190117_02_00001_UnderDefocus0.7um_frameImage.tiff
+      sigmaCol: 0
+      sigmaRow: 0
+   Frame 000011@Runs/006299_ProtImportMovies/extra/190117_02_00001_UnderDefocus0.7um_frameImage.tiff
+      sigmaCol: 0
+      sigmaRow: 0
+   Frame 000016@Runs/006299_ProtImportMovies/extra/190117_02_00001_UnderDefocus0.7um_frameImage.tiff
+      sigmaCol: 0
+      sigmaRow: 0
+   Frame 000021@Runs/006299_ProtImportMovies/extra/190117_02_00001_UnderDefocus0.7um_frameImage.tiff
+      sigmaCol: 0
+      sigmaRow: 0
+   Frame 000026@Runs/006299_ProtImportMovies/extra/190117_02_00001_UnderDefocus0.7um_frameImage.tiff
+      sigmaCol: 0
+      sigmaRow: 0
+   Frame 000031@Runs/006299_ProtImportMovies/extra/190117_02_00001_UnderDefocus0.7um_frameImage.tiff
+      sigmaCol: 0
+      sigmaRow: 0
+   Frame 000036@Runs/006299_ProtImportMovies/extra/190117_02_00001_UnderDefocus0.7um_frameImage.tiff
+      sigmaCol: 0
+      sigmaRow: 0
+   Frame 000041@Runs/006299_ProtImportMovies/extra/190117_02_00001_UnderDefocus0.7um_frameImage.tiff
+      sigmaCol: 0
+      sigmaRow: 0
+   Frame 000046@Runs/006299_ProtImportMovies/extra/190117_02_00001_UnderDefocus0.7um_frameImage.tiff
+      sigmaCol: 0
+      sigmaRow: 0
+Estimating best orientation
+Best correlation:  -0.07047074983717043
+Rotation angle: 270
+Vertical mirror: True
+[35mFINISHED[0m: estimateOrientationStep, step 2, time 2020-11-12 16:49:36.502497
+[35mSTARTED[0m: normalizeGainStep, step 3, time 2020-11-12 16:49:36.512779
+[35mFINISHED[0m: normalizeGainStep, step 3, time 2020-11-12 16:49:36.806358
+[35mSTARTED[0m: processMovieStep, step 4, time 2020-11-12 16:49:37.081891
+[35mSTARTED[0m: processMovieStep, step 5, time 2020-11-12 16:49:37.087194
+Processing movie: Runs/006383_XmippProtMovieGain/tmp/movie_000001/190117_02_00001_UnderDefocus0.7um_frameImage.tiff
+[32mxmipp_movie_estimate_gain -i Runs/006383_XmippProtMovieGain/tmp/movie_000001/190117_02_00001_UnderDefocus0.7um_frameImage.tiff --oroot Runs/006383_XmippProtMovieGain/extra/movie_000001 --iter 1 --singleRef --frameStep 5  --gainImage Runs/006383_XmippProtMovieGain/extra/bestGain.mrc[0m
+[35mSTARTED[0m: processMovieStep, step 6, time 2020-11-12 16:49:37.098052
+Processing movie: Runs/006383_XmippProtMovieGain/tmp/movie_000002/190117_02_00002_UnderDefocus0.7um_frameImage.tiff
+Erasing.....movieFolder: Runs/006383_XmippProtMovieGain/tmp/movie_000002
+Processing movie: Runs/006383_XmippProtMovieGain/tmp/movie_000003/190117_02_00003_UnderDefocus0.7um_frameImage.tiff
+Erasing.....movieFolder: Runs/006383_XmippProtMovieGain/tmp/movie_000003
+[35mFINISHED[0m: processMovieStep, step 5, time 2020-11-12 16:49:37.113688
+[35mFINISHED[0m: processMovieStep, step 6, time 2020-11-12 16:49:37.113862
+[35mSTARTED[0m: processMovieStep, step 7, time 2020-11-12 16:49:37.733894
+[35mSTARTED[0m: processMovieStep, step 8, time 2020-11-12 16:49:37.738292
+Processing movie: Runs/006383_XmippProtMovieGain/tmp/movie_000004/190117_02_00004_UnderDefocus0.7um_frameImage.tiff
+Erasing.....movieFolder: Runs/006383_XmippProtMovieGain/tmp/movie_000004
+Processing movie: Runs/006383_XmippProtMovieGain/tmp/movie_000005/190117_02_00005_UnderDefocus0.7um_frameImage.tiff
+Erasing.....movieFolder: Runs/006383_XmippProtMovieGain/tmp/movie_000005
+[35mFINISHED[0m: processMovieStep, step 7, time 2020-11-12 16:49:37.751917
+[35mFINISHED[0m: processMovieStep, step 8, time 2020-11-12 16:49:37.757274
+[35mSTARTED[0m: processMovieStep, step 9, time 2020-11-12 16:49:38.263914
+[35mSTARTED[0m: processMovieStep, step 10, time 2020-11-12 16:49:38.268360
+Processing movie: Runs/006383_XmippProtMovieGain/tmp/movie_000006/190117_02_00006_UnderDefocus0.7um_frameImage.tiff
+Erasing.....movieFolder: Runs/006383_XmippProtMovieGain/tmp/movie_000006
+Processing movie: Runs/006383_XmippProtMovieGain/tmp/movie_000007/190117_02_00007_UnderDefocus0.7um_frameImage.tiff
+Erasing.....movieFolder: Runs/006383_XmippProtMovieGain/tmp/movie_000007
+[35mFINISHED[0m: processMovieStep, step 9, time 2020-11-12 16:49:38.281039
+[35mFINISHED[0m: processMovieStep, step 10, time 2020-11-12 16:49:38.286235
+[35mSTARTED[0m: processMovieStep, step 11, time 2020-11-12 16:49:38.795517
+[35mSTARTED[0m: processMovieStep, step 12, time 2020-11-12 16:49:38.799931
+Processing movie: Runs/006383_XmippProtMovieGain/tmp/movie_000008/190117_02_00008_UnderDefocus0.7um_frameImage.tiff
+Erasing.....movieFolder: Runs/006383_XmippProtMovieGain/tmp/movie_000008
+Processing movie: Runs/006383_XmippProtMovieGain/tmp/movie_000009/190117_02_00009_UnderDefocus0.7um_frameImage.tiff
+Erasing.....movieFolder: Runs/006383_XmippProtMovieGain/tmp/movie_000009
+[35mFINISHED[0m: processMovieStep, step 11, time 2020-11-12 16:49:38.812267
+[35mFINISHED[0m: processMovieStep, step 12, time 2020-11-12 16:49:38.817159
+[35mSTARTED[0m: processMovieStep, step 13, time 2020-11-12 16:49:39.326083
+[35mSTARTED[0m: processMovieStep, step 14, time 2020-11-12 16:49:39.331790
+Processing movie: Runs/006383_XmippProtMovieGain/tmp/movie_000010/190117_02_00010_UnderDefocus0.7um_frameImage.tiff
+Erasing.....movieFolder: Runs/006383_XmippProtMovieGain/tmp/movie_000010
+Processing movie: Runs/006383_XmippProtMovieGain/tmp/movie_000011/190117_02_00011_UnderDefocus0.7um_frameImage.tiff
+Erasing.....movieFolder: Runs/006383_XmippProtMovieGain/tmp/movie_000011
+[35mFINISHED[0m: processMovieStep, step 13, time 2020-11-12 16:49:39.446059
+[35mFINISHED[0m: processMovieStep, step 14, time 2020-11-12 16:49:39.455681
+[35mSTARTED[0m: processMovieStep, step 15, time 2020-11-12 16:49:39.497908
+[35mSTARTED[0m: processMovieStep, step 16, time 2020-11-12 16:49:39.502170
+Processing movie: Runs/006383_XmippProtMovieGain/tmp/movie_000012/190117_02_00012_UnderDefocus0.7um_frameImage.tiff
+Erasing.....movieFolder: Runs/006383_XmippProtMovieGain/tmp/movie_000012
+Processing movie: Runs/006383_XmippProtMovieGain/tmp/movie_000013/190117_02_00013_UnderDefocus0.7um_frameImage.tiff
+Erasing.....movieFolder: Runs/006383_XmippProtMovieGain/tmp/movie_000013
+[35mFINISHED[0m: processMovieStep, step 15, time 2020-11-12 16:49:39.515563
+[35mFINISHED[0m: processMovieStep, step 16, time 2020-11-12 16:49:39.521178
+[35mSTARTED[0m: processMovieStep, step 17, time 2020-11-12 16:49:40.031581
+[35mSTARTED[0m: processMovieStep, step 18, time 2020-11-12 16:49:40.037019
+Processing movie: Runs/006383_XmippProtMovieGain/tmp/movie_000014/190117_02_00014_UnderDefocus0.7um_frameImage.tiff
+Erasing.....movieFolder: Runs/006383_XmippProtMovieGain/tmp/movie_000014
+Processing movie: Runs/006383_XmippProtMovieGain/tmp/movie_000015/190117_02_00015_UnderDefocus0.7um_frameImage.tiff
+Erasing.....movieFolder: Runs/006383_XmippProtMovieGain/tmp/movie_000015
+[35mFINISHED[0m: processMovieStep, step 17, time 2020-11-12 16:49:40.132093
+[35mFINISHED[0m: processMovieStep, step 18, time 2020-11-12 16:49:40.141483
+[35mSTARTED[0m: processMovieStep, step 19, time 2020-11-12 16:49:40.655828
+[35mSTARTED[0m: processMovieStep, step 20, time 2020-11-12 16:49:40.662575
+Processing movie: Runs/006383_XmippProtMovieGain/tmp/movie_000016/190117_02_00016_UnderDefocus0.7um_frameImage.tiff
+Erasing.....movieFolder: Runs/006383_XmippProtMovieGain/tmp/movie_000016
+Processing movie: Runs/006383_XmippProtMovieGain/tmp/movie_000017/190117_02_00017_UnderDefocus0.7um_frameImage.tiff
+Erasing.....movieFolder: Runs/006383_XmippProtMovieGain/tmp/movie_000017
+[35mFINISHED[0m: processMovieStep, step 19, time 2020-11-12 16:49:40.678756
+[35mFINISHED[0m: processMovieStep, step 20, time 2020-11-12 16:49:40.685083
+[35mSTARTED[0m: processMovieStep, step 21, time 2020-11-12 16:49:41.191977
+[35mSTARTED[0m: processMovieStep, step 22, time 2020-11-12 16:49:41.196710
+Processing movie: Runs/006383_XmippProtMovieGain/tmp/movie_000018/190117_02_00018_UnderDefocus0.7um_frameImage.tiff
+Erasing.....movieFolder: Runs/006383_XmippProtMovieGain/tmp/movie_000018
+Processing movie: Runs/006383_XmippProtMovieGain/tmp/movie_000019/190117_02_00019_UnderDefocus0.7um_frameImage.tiff
+Erasing.....movieFolder: Runs/006383_XmippProtMovieGain/tmp/movie_000019
+[35mFINISHED[0m: processMovieStep, step 21, time 2020-11-12 16:49:41.211039
+[35mFINISHED[0m: processMovieStep, step 22, time 2020-11-12 16:49:41.216865
+[35mSTARTED[0m: processMovieStep, step 23, time 2020-11-12 16:49:41.724352
+[35mSTARTED[0m: processMovieStep, step 24, time 2020-11-12 16:49:41.728555
+Processing movie: Runs/006383_XmippProtMovieGain/tmp/movie_000020/190117_02_00020_UnderDefocus0.7um_frameImage.tiff
+Erasing.....movieFolder: Runs/006383_XmippProtMovieGain/tmp/movie_000020
+Processing movie: Runs/006383_XmippProtMovieGain/tmp/movie_000021/190117_02_00021_UnderDefocus0.7um_frameImage.tiff
+Erasing.....movieFolder: Runs/006383_XmippProtMovieGain/tmp/movie_000021
+[35mFINISHED[0m: processMovieStep, step 23, time 2020-11-12 16:49:41.741785
+[35mFINISHED[0m: processMovieStep, step 24, time 2020-11-12 16:49:41.747711
+[35mSTARTED[0m: processMovieStep, step 25, time 2020-11-12 16:49:42.254837
+[35mSTARTED[0m: processMovieStep, step 26, time 2020-11-12 16:49:42.259124
+Processing movie: Runs/006383_XmippProtMovieGain/tmp/movie_000022/190117_02_00022_UnderDefocus0.7um_frameImage.tiff
+Erasing.....movieFolder: Runs/006383_XmippProtMovieGain/tmp/movie_000022
+Processing movie: Runs/006383_XmippProtMovieGain/tmp/movie_000023/190117_02_00023_UnderDefocus0.7um_frameImage.tiff
+Erasing.....movieFolder: Runs/006383_XmippProtMovieGain/tmp/movie_000023
+Iteration 0
+   Frame 000001@Runs/006383_XmippProtMovieGain/tmp/movie_000001/190117_02_00001_UnderDefocus0.7um_frameImage.tiff
+[35mFINISHED[0m: processMovieStep, step 25, time 2020-11-12 16:49:42.272543
+[35mFINISHED[0m: processMovieStep, step 26, time 2020-11-12 16:49:42.278049
+[35mSTARTED[0m: processMovieStep, step 27, time 2020-11-12 16:49:42.801831
+[35mSTARTED[0m: processMovieStep, step 28, time 2020-11-12 16:49:42.806600
+Processing movie: Runs/006383_XmippProtMovieGain/tmp/movie_000024/190117_02_00024_UnderDefocus0.9um_frameImage.tiff
+Erasing.....movieFolder: Runs/006383_XmippProtMovieGain/tmp/movie_000024
+Processing movie: Runs/006383_XmippProtMovieGain/tmp/movie_000025/190117_02_00025_UnderDefocus0.9um_frameImage.tiff
+Erasing.....movieFolder: Runs/006383_XmippProtMovieGain/tmp/movie_000025
+[35mFINISHED[0m: processMovieStep, step 27, time 2020-11-12 16:49:42.819266
+[35mFINISHED[0m: processMovieStep, step 28, time 2020-11-12 16:49:42.824579
+[35mSTARTED[0m: processMovieStep, step 29, time 2020-11-12 16:49:43.333788
+[35mSTARTED[0m: processMovieStep, step 30, time 2020-11-12 16:49:43.338588
+Processing movie: Runs/006383_XmippProtMovieGain/tmp/movie_000026/190117_02_00026_UnderDefocus0.9um_frameImage.tiff
+Erasing.....movieFolder: Runs/006383_XmippProtMovieGain/tmp/movie_000026
+Processing movie: Runs/006383_XmippProtMovieGain/tmp/movie_000027/190117_02_00027_UnderDefocus0.9um_frameImage.tiff
+Erasing.....movieFolder: Runs/006383_XmippProtMovieGain/tmp/movie_000027
+[35mFINISHED[0m: processMovieStep, step 29, time 2020-11-12 16:49:43.350876
+[35mFINISHED[0m: processMovieStep, step 30, time 2020-11-12 16:49:43.355581
+[35mSTARTED[0m: processMovieStep, step 31, time 2020-11-12 16:49:43.865539
+[35mSTARTED[0m: processMovieStep, step 32, time 2020-11-12 16:49:43.869695
+Processing movie: Runs/006383_XmippProtMovieGain/tmp/movie_000028/190117_02_00028_UnderDefocus0.9um_frameImage.tiff
+Erasing.....movieFolder: Runs/006383_XmippProtMovieGain/tmp/movie_000028
+Processing movie: Runs/006383_XmippProtMovieGain/tmp/movie_000029/190117_02_00029_UnderDefocus0.9um_frameImage.tiff
+Erasing.....movieFolder: Runs/006383_XmippProtMovieGain/tmp/movie_000029
+[35mFINISHED[0m: processMovieStep, step 31, time 2020-11-12 16:49:43.882632
+[35mFINISHED[0m: processMovieStep, step 32, time 2020-11-12 16:49:43.887473
+[35mSTARTED[0m: processMovieStep, step 33, time 2020-11-12 16:49:44.395434
+Processing movie: Runs/006383_XmippProtMovieGain/tmp/movie_000030/190117_02_00030_UnderDefocus0.9um_frameImage.tiff
+Erasing.....movieFolder: Runs/006383_XmippProtMovieGain/tmp/movie_000030
+[35mFINISHED[0m: processMovieStep, step 33, time 2020-11-12 16:49:44.407716
+      sigmaCol: 0
+      sigmaRow: 0
+   Frame 000006@Runs/006383_XmippProtMovieGain/tmp/movie_000001/190117_02_00001_UnderDefocus0.7um_frameImage.tiff
+      sigmaCol: 0
+      sigmaRow: 0
+   Frame 000011@Runs/006383_XmippProtMovieGain/tmp/movie_000001/190117_02_00001_UnderDefocus0.7um_frameImage.tiff
+      sigmaCol: 0
+      sigmaRow: 0
+   Frame 000016@Runs/006383_XmippProtMovieGain/tmp/movie_000001/190117_02_00001_UnderDefocus0.7um_frameImage.tiff
+      sigmaCol: 0
+      sigmaRow: 0
+   Frame 000021@Runs/006383_XmippProtMovieGain/tmp/movie_000001/190117_02_00001_UnderDefocus0.7um_frameImage.tiff
+      sigmaCol: 0
+      sigmaRow: 0
+   Frame 000026@Runs/006383_XmippProtMovieGain/tmp/movie_000001/190117_02_00001_UnderDefocus0.7um_frameImage.tiff
+      sigmaCol: 0
+      sigmaRow: 0
+   Frame 000031@Runs/006383_XmippProtMovieGain/tmp/movie_000001/190117_02_00001_UnderDefocus0.7um_frameImage.tiff
+      sigmaCol: 0
+      sigmaRow: 0
+   Frame 000036@Runs/006383_XmippProtMovieGain/tmp/movie_000001/190117_02_00001_UnderDefocus0.7um_frameImage.tiff
+      sigmaCol: 0
+      sigmaRow: 0
+   Frame 000041@Runs/006383_XmippProtMovieGain/tmp/movie_000001/190117_02_00001_UnderDefocus0.7um_frameImage.tiff
+      sigmaCol: 0
+      sigmaRow: 0
+   Frame 000046@Runs/006383_XmippProtMovieGain/tmp/movie_000001/190117_02_00001_UnderDefocus0.7um_frameImage.tiff
+      sigmaCol: 0
+      sigmaRow: 0
+Erasing.....movieFolder: Runs/006383_XmippProtMovieGain/tmp/movie_000001
+[35mFINISHED[0m: processMovieStep, step 4, time 2020-11-12 17:03:07.145010
+[35mSTARTED[0m: createOutputStep, step 34, time 2020-11-12 17:03:08.171027
+[35mFINISHED[0m: createOutputStep, step 34, time 2020-11-12 17:03:08.176716
+*** Last status is finished 
+Cleaning temp folder....
+[32m------------------- PROTOCOL FINISHED[0m

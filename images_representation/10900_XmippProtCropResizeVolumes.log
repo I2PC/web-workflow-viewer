@@ -1,0 +1,31 @@
+[32mRUNNING PROTOCOL -----------------[0m
+Hostname: ip-172-31-13-159.eu-west-1.compute.internal
+PID: 17053
+pyworkflow: 3.0.6
+plugin: xmipp3
+currentDir: /home/scipion/ScipionUserData/projects/Example_10248_Scipion3
+workingDir: Runs/010900_XmippProtCropResizeVolumes
+runMode: Continue
+          MPI: 1
+      threads: 2
+ Starting at step: 1
+ Running steps 
+[35mSTARTED[0m: convertInputStep, step 1, time 2020-11-16 12:50:19.924069
+[35mFINISHED[0m: convertInputStep, step 1, time 2020-11-16 12:50:19.927885
+[35mSTARTED[0m: resizeStep, step 2, time 2020-11-16 12:50:19.935498
+[32mxmipp_image_resize -i Runs/010857_XmippProtDeepRes/extra/deepRes_resolution.vol -o Runs/010900_XmippProtCropResizeVolumes/extra/output_volume.vol  --factor 1.351351[0m
+[1;35m=== XMIPP_WARNING ===
+Do not apply large scale factor using B-splines choose fourier option.[0m
+Input File: Runs/010857_XmippProtDeepRes/extra/deepRes_resolution.vol
+Output File: Runs/010900_XmippProtCropResizeVolumes/extra/output_volume.vol
+[35mFINISHED[0m: resizeStep, step 2, time 2020-11-16 12:50:29.251672
+[35mSTARTED[0m: windowStep, step 3, time 2020-11-16 12:50:29.262577
+[32mxmipp_transform_window -i Runs/010900_XmippProtCropResizeVolumes/extra/output_volume.vol --size 250 [0m
+Input File: Runs/010900_XmippProtCropResizeVolumes/extra/output_volume.vol
+New size: (XxYxZ)=250x250x250
+[35mFINISHED[0m: windowStep, step 3, time 2020-11-16 12:50:29.649295
+[35mSTARTED[0m: createOutputStep, step 4, time 2020-11-16 12:50:29.659186
+[35mFINISHED[0m: createOutputStep, step 4, time 2020-11-16 12:50:29.665045
+*** Last status is finished 
+Cleaning temp folder....
+[32m------------------- PROTOCOL FINISHED[0m

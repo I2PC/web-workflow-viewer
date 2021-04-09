@@ -1,0 +1,13 @@
+.containr {
+    position:absolute;
+    width:100%;
+    height:100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 15px;
+}
+
+.view_mode_selector {
+    position:relative;
+    text-align:right;
+}

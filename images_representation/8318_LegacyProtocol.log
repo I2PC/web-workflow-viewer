@@ -1,0 +1,59 @@
+[32mRUNNING PROTOCOL -----------------[0m
+Hostname: ip-172-31-13-159.eu-west-1.compute.internal
+PID: 3979
+pyworkflow: 3.0.6
+plugin: cryosparc2
+plugin v: 3.1.6
+currentDir: /home/scipion/ScipionUserData/projects/Example_10248_Scipion3
+workingDir: Runs/008318_ProtCryo2D
+runMode: Continue
+          MPI: 2
+      threads: 1
+ Starting at step: 1
+ Running steps 
+[35mSTARTED[0m: convertInputStep, step 1, time 2020-11-15 12:24:06.016703
+convertBinaryFiles: creating soft links.
+   Root: Runs/008318_ProtCryo2D/tmp/input -> Runs/007502_XmippProtExtractParticles/extra
+[33mImporting particles...[0m
+[32mRunning: /home/scipion/cryosparc2/cryosparc2_master/bin/cryosparcm cli 'make_job("import_particles","P2","W3", "scipion", "None", "None", {"particle_meta_path": "/home/scipion/ScipionUserData/projects/Example_10248_Scipion3/Runs/008318_ProtCryo2D/tmp/input_particles.star", "particle_blob_path": "/home/scipion/ScipionUserData/projects/Example_10248_Scipion3/Runs/008318_ProtCryo2D/tmp", "psize_A": "1.2375"}, {})'[0m
+[32mGot J5 for JobId[0m
+[32mRunning: /home/scipion/cryosparc2/cryosparc2_master/bin/cryosparcm cli 'enqueue_job("P2","J5","default", "ip-172-31-13-159.eu-west-1.compute.internal", False)'[0m
+[35mFINISHED[0m: convertInputStep, step 1, time 2020-11-15 12:24:19.793128
+[35mSTARTED[0m: processStep, step 2, time 2020-11-15 12:24:19.801666
+[33m2D Classifications Started...[0m
+[32mRunning: /home/scipion/cryosparc2/cryosparc2_master/bin/cryosparcm cli 'make_job("class_2D","P2","W3", "scipion", "None", "None", {"class2D_K": "50", "class2D_max_res": "6", "class2D_sigma_init_factor": "2.0", "class2D_window": "True", "class2D_recenter": "True", "class2D_recenter_thresh": "0.2", "class2D_recenter_binary": "False", "class2D_force_max": "True", "class2D_ctf_phase_flip_only": "False", "class2D_num_full_iter": "1", "class2D_num_full_iter_batch": "20", "class2D_num_full_iter_batchsize_per_class": "100", "class2D_init_scale": "1", "class2D_zp_factor": "2", "class2D_use_frc_reg": "True", "class2D_use_frc_reg_full": "True", "class2D_sigma_init_iter": "2", "class2D_sigma_num_anneal_iters": "15", "class2D_sigma_use_white": "False", "intermediate_plots": "False", "compute_use_ssd": "True", "compute_num_gpus": "1"}, {"particles": "J5.imported_particles"})'[0m
+[32mGot J6 for JobId[0m
+[32mRunning: /home/scipion/cryosparc2/cryosparc2_master/bin/cryosparcm cli 'enqueue_job("P2","J6","default", "ip-172-31-13-159.eu-west-1.compute.internal", [0])'[0m
+[35mFINISHED[0m: processStep, step 2, time 2020-11-15 12:26:36.401374
+[35mSTARTED[0m: createOutputStep, step 3, time 2020-11-15 12:26:36.410637
+[33mCreating the output...[0m
+Detected CryoSPARC 2+ .cs file
+Reading primary file
+Assigning parameters 2D classes or single 3D class
+Assigning skew angle from 2D classification
+Directly copied fields: rlnVoltage, rlnDetectorPixelSize, rlnAmplitudeContrast, rlnSphericalAberration, rlnDefocusU, rlnDefocusV, rlnDefocusAngle, rlnPhaseShift, rlnRandomSubset, rlnOriginX, rlnOriginY, rlnAnglePsi, rlnClassNumber, rlnImageName, rlnMagnification
+Converting DEFOCUSANGLE from degrees to radians
+Converting PHASESHIFT from degrees to radians
+Changing RANDOMSUBSET to 1-based index
+Changing CLASS to 1-based index
+Converting ANGLEPSI from degrees to radians
+Output fields: rlnVoltage, rlnDetectorPixelSize, rlnAmplitudeContrast, rlnSphericalAberration, rlnDefocusU, rlnDefocusV, rlnDefocusAngle, rlnPhaseShift, rlnRandomSubset, rlnOriginX, rlnOriginY, rlnAnglePsi, rlnClassNumber, rlnImageName, rlnMagnification
+Detected CryoSPARC 2+ .cs file
+Detected CryoSPARC 2+ .cs file
+Reading primary file
+Reading primary file
+Classification parameters not found
+Classification parameters not found
+Directly copied fields: rlnDetectorPixelSize, rlnImageName, rlnMagnification
+Directly copied fields: rlnDetectorPixelSize, rlnImageName, rlnMagnification
+Defocus values not found
+Defocus values not found
+Angular alignment parameters not found
+Angular alignment parameters not found
+Output fields: rlnDetectorPixelSize, rlnImageName, rlnMagnification
+Output fields: rlnDetectorPixelSize, rlnImageName, rlnMagnification
+Scaling CS averages file to match particle size (64 -> 120).
+[35mFINISHED[0m: createOutputStep, step 3, time 2020-11-15 12:26:43.325095
+*** Last status is finished 
+Cleaning temp folder....
+[32m------------------- PROTOCOL FINISHED[0m

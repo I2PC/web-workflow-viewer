@@ -24,26 +24,79 @@
 <dom-module id="scipion-workflow">
 
     <style>
+
         #cy {
             z-index: 999;
         }
 
-        .maxwidth{
-            max-width: 325px;
-            font-family: helvetica;
+        .qtip {
+            max-width: 500px;
+        }
+
+        .qtip-content{
+            overflow-x: scroll;
+            overflow-y: scroll;
+            white-space: nowrap;
         }
 
     </style>
+
     <script>
 
-        function getFormattedProtocolStr(dict){
+        function getFormattedProtocolStr(dict, viewMode){
             // Formats a protocol object to show its data in the qtip as a table
             // Returns the table as a html string.
-            var blackList = ['runName', 'runMode']; // Params given by scipions json that we dont wanna show
+            var blackList = ['runName', 'runMode', 'labelColor']; // Params given by scipion json that we dont want to show
+            var summaryWhiteList = ['object.className', 'summary', 'output']
             var formattedStr = '<table><th>Param name</th><th>Param value</th>';
+
             $.each(dict, function(key, value){
                 if (blackList.indexOf(key)===-1){
-                formattedStr += '<tr><td><b>'+key+':</b></td><td title="'+value+'">'+value+'</td></tr>'
+                    if(viewMode!=='summarized' || summaryWhiteList.indexOf(key)!==-1) {
+                        if (key === 'output') { // images
+                            formattedStr += '<tr><td><b>' + 'output' + ':</b></td><td></td></tr>'
+                            $.each(value, function(outputKey, outputValue){
+                                formattedStr += '<tr><td> -' + outputValue['outputName'] + ':</td><td>';
+                                var outputItems = outputValue['outputItems']
+                                $.each(outputItems, function(itemKey, itemValue) {
+                                    if ('item_representation' in itemValue) {
+                                        var path = itemValue['item_representation']
+                                        path = path.substring(path.lastIndexOf("/") + 1, path.length)
+
+                                        if (path.indexOf('jpg')!==-1){
+                                            formattedStr += '<img src=' + "images_representation/" + path + ' width="200" height="200" style="margin: 0px 0px 10px 5px">'
+                                        }
+                                        else { // is a folder containing images inside
+                                            var folder = 'images_representation/' + path + '/';
+
+                                            $.ajax({
+                                                url : folder,
+                                                async: false,
+                                                success: function (images) {
+                                                    $(images).find("a").attr("href", function (i, image) {
+                                                        if(image.match(/\.(jpe?g)$/) ) {
+                                                            formattedStr += '<img src="' + folder + image + '" width="200" height="200" style="margin: 0px 0px 10px 5px">'
+                                                        }
+                                                    })
+                                                }
+                                            });
+                                        }
+                                    }
+                                    if (outputValue['outputType'] === 'SetOfClasses3D' ) {
+                                        formattedStr += '<br>';
+                                    }
+                                });
+                                formattedStr += '</td></tr>'
+                                if (outputValue['outputType'] === 'SetOfClasses2D' || outputValue['outputType'] === 'SetOfClasses3D') {
+                                    formattedStr += '<tr><td></td><td>' + outputValue['outputSize'] + ' classes';
+                                    formattedStr +=  '</td></tr>';
+                                }
+                            });
+                        }
+                        else {
+                            formattedStr += '<tr><td><b>' + key + ':</b></td><td title="' + value + '">' + value + '</td></tr>'
+                        }
+                    }
                 }
             });
             formattedStr += '</table>';
@@ -70,12 +123,11 @@
                   .style({
                     'shape': 'rectangle',
                     'width': 'label',
-                    'padding':5,
+                    'padding': 5,
                     'content': 'data(name)',
                     'text-valign': 'center',
-                    'text-outline-width': 2,
-                    'text-outline-color': '#ACD8FC',
-                    'background-color': '#ACD8FC',
+                    'background-fill': 'linear-gradient',
+                    'background-gradient-stop-colors': 'data(color)',
                     'color': '#393939'
                   })
                 .selector(':selected')
@@ -118,7 +170,7 @@
                     at: 'top center'
                 },
                 style: {
-                    classes: 'qtip-bootstrap maxwidth'
+                    classes: 'qtip-bootstrap'
                 }
             });
 
@@ -128,21 +180,25 @@
             // Parses json from jsonSrc and paints workflow in workflowDiv
             // (workflowDiv must be an html element)
 
+            var viewModeSelector = document.getElementById('view-mode');
+            var viewModeValue = viewModeSelector.options[viewModeSelector.selectedIndex].value;
+
             if (jsonSrc.startsWith("[")){
-                getGraphNodes(JSON.parse(jsonSrc), workflowDiv);
+                getGraphNodes(JSON.parse(jsonSrc), workflowDiv, viewModeValue);
 
             }else{
                 $.getJSON(jsonSrc, function (data , status){
-                    getGraphNodes(data, workflowDiv);
+                    getGraphNodes(data, workflowDiv, viewModeValue);
                 });
             }
         }
 
-        function getGraphNodes(data, workflowDiv){
+        function getGraphNodes(data, workflowDiv, viewMode){
                 // Parses json data as given by getWorkflow function
                 var nodeList = [{ data: {
                                             id: 'root',
-                                            name: 'Project'
+                                            name: 'Project',
+                                            color: '#EEEEEE'
                                         }
                                 }
                     ];
@@ -150,10 +206,17 @@
                 var regex = /^(\d+)\.\S+$/;
 
                 $.each(data, function(index, protocol){
+                    var color = '#EEEEEE'
+
+                    if (protocol['labelColor'] != undefined) {
+                        color = protocol['labelColor'];
+                    }
+
                     nodeList.push({ data: {
                                             id: protocol['object.id'],
                                             name: protocol['object.label'],
-                                            content: getFormattedProtocolStr(protocol)
+                                            content: getFormattedProtocolStr(protocol, viewMode),
+                                            color: color
                     }
                     });
                     var hasInputs = false;
@@ -161,7 +224,7 @@
                         var protID = protocol['object.id'];
                         if (Array.isArray(value)){
                             $.each(value, function(index, arrayValue){
-                                if (typeof(arrayValue) === 'string' && regex.test(arrayValue)){
+                                if (typeof(arrayValue) === 'string' && regex.test(arrayValue) && key !== 'pluginVersion'){
                                     edgeList.push({ data: {
                                                         source: arrayValue.split('.')[0],
                                                         target: protID
@@ -171,7 +234,7 @@
                                 }
 
                             })
-                        }else if (typeof(value) === 'string' && regex.test(value)){
+                        }else if (typeof(value) === 'string' && regex.test(value) && key !== 'pluginVersion'){
                             edgeList.push({ data: {
                                                 source: value.split('.')[0],
                                                 target: protID
@@ -211,7 +274,6 @@
                 var shadow = this.attachShadow({mode: 'open'});
                 // Create a div that will contain the workflow graph
                 var workflowDiv = document.createElement('div');
-                workflowDiv.style.position = "relative";
                 workflowDiv.id = 'workflowDiv';
                 this.workflowDiv = workflowDiv;
                 shadow.appendChild(workflowDiv);
@@ -227,11 +289,10 @@
                 if (jsonSrc == undefined) {
                     return;
                 }
-                var height = this.getAttribute('height');
-                var width = this.getAttribute('width');
-                // 2. Apply attrs to worfklow div
-                this.workflowDiv.style.width = width;
-                this.workflowDiv.style.height = height;
+                // 2. Apply attrs to workflow div
+                this.workflowDiv.style.width = '100%';
+                this.workflowDiv.style.height = '100%';
+                this.workflowDiv.style.position = 'relative';
                 //3. Parse json data and paint graph
                 getWorkflow(jsonSrc, this.workflowDiv);
             }

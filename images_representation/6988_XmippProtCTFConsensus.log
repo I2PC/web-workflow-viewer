@@ -1,0 +1,77 @@
+[32mRUNNING PROTOCOL -----------------[0m
+Hostname: ip-172-31-13-159.eu-west-1.compute.internal
+PID: 10791
+pyworkflow: 3.0.6
+plugin: xmipp3
+currentDir: /home/scipion/ScipionUserData/projects/Example_10248_Scipion3
+workingDir: Runs/006988_XmippProtCTFConsensus
+runMode: Continue
+          MPI: 1
+      threads: 1
+ Starting at step: 1
+ Running steps 
+[35mSTARTED[0m: ctfDiscrepancyStep, step 1, time 2020-11-13 15:41:03.799974
+[35mFINISHED[0m: ctfDiscrepancyStep, step 1, time 2020-11-13 15:41:04.507739
+[35mSTARTED[0m: selectCtfStep, step 2, time 2020-11-13 15:41:04.522166
+[35mFINISHED[0m: selectCtfStep, step 2, time 2020-11-13 15:41:04.559966
+[35mSTARTED[0m: selectCtfStep, step 3, time 2020-11-13 15:41:04.571253
+[35mFINISHED[0m: selectCtfStep, step 3, time 2020-11-13 15:41:04.587679
+[35mSTARTED[0m: selectCtfStep, step 4, time 2020-11-13 15:41:04.601252
+[35mFINISHED[0m: selectCtfStep, step 4, time 2020-11-13 15:41:04.628789
+[35mSTARTED[0m: selectCtfStep, step 5, time 2020-11-13 15:41:04.674607
+[35mFINISHED[0m: selectCtfStep, step 5, time 2020-11-13 15:41:04.779594
+[35mSTARTED[0m: selectCtfStep, step 6, time 2020-11-13 15:41:04.791504
+[35mFINISHED[0m: selectCtfStep, step 6, time 2020-11-13 15:41:04.806111
+[35mSTARTED[0m: selectCtfStep, step 7, time 2020-11-13 15:41:04.818328
+[35mFINISHED[0m: selectCtfStep, step 7, time 2020-11-13 15:41:04.832422
+[35mSTARTED[0m: selectCtfStep, step 8, time 2020-11-13 15:41:04.843394
+[35mFINISHED[0m: selectCtfStep, step 8, time 2020-11-13 15:41:04.858017
+[35mSTARTED[0m: selectCtfStep, step 9, time 2020-11-13 15:41:04.869400
+[35mFINISHED[0m: selectCtfStep, step 9, time 2020-11-13 15:41:04.880477
+[35mSTARTED[0m: selectCtfStep, step 10, time 2020-11-13 15:41:04.889887
+[35mFINISHED[0m: selectCtfStep, step 10, time 2020-11-13 15:41:04.909657
+[35mSTARTED[0m: selectCtfStep, step 11, time 2020-11-13 15:41:04.926145
+[35mFINISHED[0m: selectCtfStep, step 11, time 2020-11-13 15:41:04.943579
+[35mSTARTED[0m: selectCtfStep, step 12, time 2020-11-13 15:41:04.953705
+[35mFINISHED[0m: selectCtfStep, step 12, time 2020-11-13 15:41:04.967538
+[35mSTARTED[0m: selectCtfStep, step 13, time 2020-11-13 15:41:04.975855
+[35mFINISHED[0m: selectCtfStep, step 13, time 2020-11-13 15:41:04.986006
+[35mSTARTED[0m: selectCtfStep, step 14, time 2020-11-13 15:41:04.993558
+[35mFINISHED[0m: selectCtfStep, step 14, time 2020-11-13 15:41:05.011098
+[35mSTARTED[0m: selectCtfStep, step 15, time 2020-11-13 15:41:05.021706
+[35mFINISHED[0m: selectCtfStep, step 15, time 2020-11-13 15:41:05.033902
+[35mSTARTED[0m: selectCtfStep, step 16, time 2020-11-13 15:41:05.058245
+[35mFINISHED[0m: selectCtfStep, step 16, time 2020-11-13 15:41:05.068906
+[35mSTARTED[0m: selectCtfStep, step 17, time 2020-11-13 15:41:05.077785
+[35mFINISHED[0m: selectCtfStep, step 17, time 2020-11-13 15:41:05.088075
+[35mSTARTED[0m: selectCtfStep, step 18, time 2020-11-13 15:41:05.096527
+[35mFINISHED[0m: selectCtfStep, step 18, time 2020-11-13 15:41:05.106718
+[35mSTARTED[0m: selectCtfStep, step 19, time 2020-11-13 15:41:05.118770
+[35mFINISHED[0m: selectCtfStep, step 19, time 2020-11-13 15:41:05.128964
+[35mSTARTED[0m: selectCtfStep, step 20, time 2020-11-13 15:41:05.140614
+[35mFINISHED[0m: selectCtfStep, step 20, time 2020-11-13 15:41:05.155676
+[35mSTARTED[0m: selectCtfStep, step 21, time 2020-11-13 15:41:05.165802
+[35mFINISHED[0m: selectCtfStep, step 21, time 2020-11-13 15:41:05.179067
+[35mSTARTED[0m: selectCtfStep, step 22, time 2020-11-13 15:41:05.188040
+[35mFINISHED[0m: selectCtfStep, step 22, time 2020-11-13 15:41:05.199723
+[35mSTARTED[0m: selectCtfStep, step 23, time 2020-11-13 15:41:05.210398
+[35mFINISHED[0m: selectCtfStep, step 23, time 2020-11-13 15:41:05.222403
+[35mSTARTED[0m: selectCtfStep, step 24, time 2020-11-13 15:41:05.231401
+[35mFINISHED[0m: selectCtfStep, step 24, time 2020-11-13 15:41:05.244814
+[35mSTARTED[0m: selectCtfStep, step 25, time 2020-11-13 15:41:05.262313
+[35mFINISHED[0m: selectCtfStep, step 25, time 2020-11-13 15:41:05.282816
+[35mSTARTED[0m: selectCtfStep, step 26, time 2020-11-13 15:41:05.298493
+[35mFINISHED[0m: selectCtfStep, step 26, time 2020-11-13 15:41:05.315758
+[35mSTARTED[0m: ctfDiscrepancyStep, step 28, time 2020-11-13 15:41:10.001160
+[35mFINISHED[0m: ctfDiscrepancyStep, step 28, time 2020-11-13 15:41:10.068641
+[35mSTARTED[0m: selectCtfStep, step 29, time 2020-11-13 15:41:10.077254
+[35mFINISHED[0m: selectCtfStep, step 29, time 2020-11-13 15:41:10.085909
+[35mSTARTED[0m: selectCtfStep, step 30, time 2020-11-13 15:41:10.093884
+[35mFINISHED[0m: selectCtfStep, step 30, time 2020-11-13 15:41:10.105199
+[35mSTARTED[0m: selectCtfStep, step 31, time 2020-11-13 15:41:10.113871
+[35mFINISHED[0m: selectCtfStep, step 31, time 2020-11-13 15:41:10.123465
+[35mSTARTED[0m: createOutputStep, step 27, time 2020-11-13 15:41:13.172115
+[35mFINISHED[0m: createOutputStep, step 27, time 2020-11-13 15:41:13.176365
+*** Last status is finished 
+Cleaning temp folder....
+[32m------------------- PROTOCOL FINISHED[0m

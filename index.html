@@ -9,55 +9,23 @@
     <!-- External references to include Scipion workflow viewer-->
     <script src="js/webcomponents/webcomponents-loader.js"></script> <!--Handles polyfills for browser support-->
     <link rel="import" href="scipion-workflow.html"><!-- links the web component code -->
-    <!---->
+    <script src="js/view-mode.js"></script> <!-- view mode selector -->
+    <link rel="stylesheet" href="css/style.css" >
 </head>
+
 <body>
-    <div class="container">
+    <div class="containr">
         <h1>Scipion workflow viewer</h1>
-        <div class="row">
-        <div class="col-sm-4">
-          <p>Vestibulum id tincidunt Scipion. In lobortis facilisis dignissim.
-              Vestibulum nec pulvinar urna. Fusce condimentum sed tortor a
-              consequat. Etiam id lacinia urna. Quisque id tempor metus, at
-              tristique est. Donec at mollis lectus, quis vestibulum turpis.
-              Integer vehicula sapien libero, lobortis rutrum diam suscipit eu.</p>
-            <p>Vestibulum id tincidunt Scipion. In lobortis facilisis dignissim.
-              Vestibulum nec pulvinar urna. Fusce condimentum sed tortor a
-              consequat. Etiam id lacinia urna. Quisque id tempor metus, at
-              tristique est. Donec at mollis lectus, quis vestibulum turpis.
-              Integer vehicula sapien libero, lobortis rutrum diam suscipit eu.</p>
-            <p>Vestibulum id tincidunt Scipion. In lobortis facilisis dignissim.
-              Vestibulum nec pulvinar urna. Fusce condimentum sed tortor a
-              consequat. Etiam id lacinia urna. Quisque id tempor metus, at
-              tristique est. Donec at mollis lectus, quis vestibulum turpis.
-              Integer vehicula sapien libero, lobortis rutrum diam suscipit eu.</p>
-            <p>Vestibulum id tincidunt Scipion. In lobortis facilisis dignissim.
-              Vestibulum nec pulvinar urna. Fusce condimentum sed tortor a
-              consequat. Etiam id lacinia urna. Quisque id tempor metus, at
-              tristique est. Donec at mollis lectus, quis vestibulum turpis.
-              Integer vehicula sapien libero, lobortis rutrum diam suscipit eu.</p>
-            <p>Vestibulum id tincidunt Scipion. In lobortis facilisis dignissim.
-              Vestibulum nec pulvinar urna. Fusce condimentum sed tortor a
-              consequat. Etiam id lacinia urna. Quisque id tempor metus, at
-              tristique est. Donec at mollis lectus, quis vestibulum turpis.
-              Integer vehicula sapien libero, lobortis rutrum diam suscipit eu.</p>
-            <p>Vestibulum id tincidunt Scipion. In lobortis facilisis dignissim.
-              Vestibulum nec pulvinar urna. Fusce condimentum sed tortor a
-              consequat. Etiam id lacinia urna. Quisque id tempor metus, at
-              tristique est. Donec at mollis lectus, quis vestibulum turpis.
-              Integer vehicula sapien libero, lobortis rutrum diam suscipit eu.</p>
-            <p>Vestibulum id tincidunt Scipion. In lobortis facilisis dignissim.
-              Vestibulum nec pulvinar urna. Fusce condimentum sed tortor a
-              consequat. Etiam id lacinia urna. Quisque id tempor metus, at
-              tristique est. Donec at mollis lectus, quis vestibulum turpis.
-              Integer vehicula sapien libero, lobortis rutrum diam suscipit eu.</p>
+        <div class="view_mode_selector">
+            <p>Select view mode:</p>
+            <select name="view-mode" id="view-mode" onchange="options[selectedIndex].value&&self.location.reload()">
+              <option value="detailed">Detailed</option>
+              <option value="summarized">Summarized</option>
+            </select>
         </div>
-        <div class="col-sm8">
-            <!-- Using Scipion workflow viewer: needs a link to a json file-->
-            <scipion-workflow src="workflow_long.json" height="600px" width="600px"></scipion-workflow>
-            <!---->
-        </div>
-      </div>
+        <!-- Using Scipion workflow viewer: needs a link to a json file-->
+        <scipion-workflow src="workflow.json"></scipion-workflow>
+        <!---->
     </div>
 </body>
 

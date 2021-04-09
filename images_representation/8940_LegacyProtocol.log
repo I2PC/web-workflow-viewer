@@ -1,0 +1,47 @@
+[32mRUNNING PROTOCOL -----------------[0m
+Hostname: ip-172-31-13-159.eu-west-1.compute.internal
+PID: 25331
+pyworkflow: 3.0.6
+plugin: cryosparc2
+plugin v: 3.1.6
+currentDir: /home/scipion/ScipionUserData/projects/Example_10248_Scipion3
+workingDir: Runs/008940_ProtCryoSparcRefine3D
+runMode: Continue
+          MPI: 1
+      threads: 1
+ Starting at step: 1
+ Running steps 
+[35mSTARTED[0m: convertInputStep, step 1, time 2020-11-15 14:52:24.377000
+convertBinaryFiles: creating soft links.
+   Root: Runs/008940_ProtCryoSparcRefine3D/tmp/input -> Runs/008046_XmippProtExtractParticles/extra
+[33mImporting particles...[0m
+[32mRunning: /home/scipion/cryosparc2/cryosparc2_master/bin/cryosparcm cli 'make_job("import_particles","P2","W5", "scipion", "None", "None", {"particle_meta_path": "/home/scipion/ScipionUserData/projects/Example_10248_Scipion3/Runs/008940_ProtCryoSparcRefine3D/tmp/input_particles.star", "particle_blob_path": "/home/scipion/ScipionUserData/projects/Example_10248_Scipion3/Runs/008940_ProtCryoSparcRefine3D/tmp", "psize_A": "0.7425"}, {})'[0m
+[32mGot J9 for JobId[0m
+[32mRunning: /home/scipion/cryosparc2/cryosparc2_master/bin/cryosparcm cli 'enqueue_job("P2","J9","default", "ip-172-31-13-159.eu-west-1.compute.internal", False)'[0m
+[33mImporting volume...[0m
+[32mRunning: /home/scipion/cryosparc2/cryosparc2_master/bin/cryosparcm cli 'make_job("import_volumes","P2","W5", "scipion", "None", "None", {"volume_blob_path": "/home/scipion/ScipionUserData/projects/Example_10248_Scipion3/Runs/008940_ProtCryoSparcRefine3D/tmp/output_volume.mrc", "volume_out_name": "map", "volume_psize": "0.7425"}, {})'[0m
+[32mGot J10 for JobId[0m
+[32mRunning: /home/scipion/cryosparc2/cryosparc2_master/bin/cryosparcm cli 'enqueue_job("P2","J10","default", "ip-172-31-13-159.eu-west-1.compute.internal", False)'[0m
+[35mFINISHED[0m: convertInputStep, step 1, time 2020-11-15 14:52:45.084761
+[35mSTARTED[0m: processStep, step 2, time 2020-11-15 14:52:45.092017
+[33mRefinement started...[0m
+[32mRunning: /home/scipion/cryosparc2/cryosparc2_master/bin/cryosparcm cli 'make_job("homo_refine","P2","W5", "scipion", "None", "None", {"refine_symmetry": "O", "refine_symmetry_do_align": "True", "refine_do_init_scale_est": "True", "refine_num_final_iterations": "0", "refine_res_init": "30", "refine_res_gsfsc_split": "20", "refine_clip": "False", "refine_window": "True", "refine_skip_premult": "True", "refine_ignore_dc": "True", "refine_batchsize_init": "0", "refine_batchsize_snrfactor": "40.0", "refine_batchsize_epsilon": "0.001", "refine_scale_min": "False", "refine_scale_align_use_prev": "False", "refine_scale_ctf_use_current": "False", "refine_scale_start_iter": "0", "refine_noise_model": "symmetric", "refine_noise_priorw": "50", "refine_noise_initw": "200", "refine_noise_init_sigmascale": "3", "refine_minisize": "2000", "refine_mask": "dynamic", "refine_dynamic_mask_thresh_factor": "0.2", "refine_dynamic_mask_near_ang": "6.0", "refine_dynamic_mask_far_ang": "14.0", "refine_dynamic_mask_start_res": "12", "refine_dynamic_mask_use_abs": "False", "compute_use_ssd": "False"}, {"particles": "J9.imported_particles", "volume": "J10.imported_volume.map"})'[0m
+[32mGot J11 for JobId[0m
+[32mRunning: /home/scipion/cryosparc2/cryosparc2_master/bin/cryosparcm cli 'enqueue_job("P2","J11","default", "ip-172-31-13-159.eu-west-1.compute.internal", [0])'[0m
+[35mFINISHED[0m: processStep, step 2, time 2020-11-15 15:11:41.234790
+[35mSTARTED[0m: createOutputStep, step 3, time 2020-11-15 15:11:41.243702
+Detected CryoSPARC 2+ .cs file
+Reading primary file
+Assigning parameters 2D classes or single 3D class
+Directly copied fields: rlnVoltage, rlnDetectorPixelSize, rlnAmplitudeContrast, rlnSphericalAberration, rlnDefocusU, rlnDefocusV, rlnDefocusAngle, rlnPhaseShift, rlnRandomSubset, rlnOriginX, rlnOriginY, rlnAngleRot, rlnAngleTilt, rlnAnglePsi, rlnClassNumber, rlnImageName, rlnMagnification
+Converting DEFOCUSANGLE from degrees to radians
+Converting PHASESHIFT from degrees to radians
+Changing RANDOMSUBSET to 1-based index
+Changing CLASS to 1-based index
+Converting Rodrigues coordinates to Euler angles
+Converted Rodrigues coordinates to Euler angles
+Output fields: rlnVoltage, rlnDetectorPixelSize, rlnAmplitudeContrast, rlnSphericalAberration, rlnDefocusU, rlnDefocusV, rlnDefocusAngle, rlnPhaseShift, rlnRandomSubset, rlnOriginX, rlnOriginY, rlnAngleRot, rlnAngleTilt, rlnAnglePsi, rlnClassNumber, rlnImageName, rlnMagnification
+[35mFINISHED[0m: createOutputStep, step 3, time 2020-11-15 15:11:55.421906
+*** Last status is finished 
+Cleaning temp folder....
+[32m------------------- PROTOCOL FINISHED[0m

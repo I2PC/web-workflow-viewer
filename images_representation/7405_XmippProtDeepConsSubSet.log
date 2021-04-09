@@ -1,0 +1,17 @@
+[32mRUNNING PROTOCOL -----------------[0m
+Hostname: ip-172-31-13-159.eu-west-1.compute.internal
+PID: 29049
+pyworkflow: 3.0.6
+plugin: xmipp3
+currentDir: /home/scipion/ScipionUserData/projects/Example_10248_Scipion3
+workingDir: Runs/007405_XmippProtDeepConsSubSet
+runMode: Continue
+          MPI: 1
+      threads: 1
+ Starting at step: 1
+ Running steps 
+[35mSTARTED[0m: createSetStep, step 1, time 2020-11-13 17:51:36.509551
+[35mFINISHED[0m: createSetStep, step 1, time 2020-11-13 17:51:37.160592
+*** Last status is finished 
+Cleaning temp folder....
+[32m------------------- PROTOCOL FINISHED[0m

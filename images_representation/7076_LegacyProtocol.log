@@ -1,0 +1,1473 @@
+[32mRUNNING PROTOCOL -----------------[0m
+Hostname: ip-172-31-13-159.eu-west-1.compute.internal
+PID: 11219
+pyworkflow: 3.0.6
+plugin: relion
+currentDir: /home/scipion/ScipionUserData/projects/Example_10248_Scipion3
+workingDir: Runs/007076_ProtRelionAutopickLoG
+runMode: Continue
+          MPI: 4
+      threads: 1
+ Starting at step: 1
+ Running steps 
+[35mSTARTED[0m: pickMicrographStep, step 1, time 2020-11-13 15:43:27.673113
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrc 
+[32mmpirun -np 4  `which relion_autopick_mpi`  --pickname autopick --odir "" --LoG --shrink 0 --lowpass 20.000  --i input_micrographs.star --LoG_diam_min 100.000 --LoG_diam_max 200.000 --LoG_adjust_threshold 0.000 --LoG_upper_threshold 999.000[0m
+--------------------------------------------------------------------------
+[[39151,1],1]: A high-performance Open MPI point-to-point messaging module
+was unable to find any relevant network interfaces:
+
+Module: OpenFabrics (openib)
+  Host: ip-172-31-13-159
+
+Another transport will be used instead, although this may result in
+lower performance.
+--------------------------------------------------------------------------
+RELION version: 3.1.0-commit-GITDIR 
+Precision: BASE=double, CUDA-ACC=single 
+
+ === RELION MPI setup ===
+ + Number of MPI processes             = 4
+ + Master  (0) runs on host            = ip-172-31-13-159
+ + Slave     1 runs on host            = ip-172-31-13-159
+ + Slave     2 runs on host            = ip-172-31-13-159
+ + Slave     3 runs on host            = ip-172-31-13-159
+ =================
+ + Run autopicking on the following micrographs: 
+    * mic_000001.mrc
+ + Will use following diameters for Laplacian-of-Gaussian filter: 
+   * 20 (too low)
+   * 25 (too low)
+   * 33 (too low)
+   * 50 (too low)
+   * 100 (ok)
+   * 150 (ok)
+   * 200 (ok)
+   * 400 (too high)
+   * 600 (too high)
+   * 800 (too high)
+   * 1000 (too high)
+ + Will use micrographs scaled to 190 pixels as requested. The largest prime factor in FFTs is 19
+ Autopicking ...
+000/??? sec ~~(,_,">                                                          [oo]   3/   3 sec ............................................................~~(,_,">
+ Generating logfile.pdf ... 
+000/??? sec ~~(,_,">                                                          [oo]   0/   0 sec ............................................................~~(,_,">
+ Total number of particles from 1 micrographs is 168
+ i.e. on average there were 168 particles per micrograph
+sh: 1: gs: not found
+ Done! Written: logfile.pdf 
+ ERROR in executing: gs -sDEVICE=pdfwrite -dNOPAUSE -dBATCH -dSAFER -dDEVICEWIDTHPOINTS=800 -dDEVICEHEIGHTPOINTS=800 -sOutputFile=logfile.pdf @logfile.pdf.lst > /dev/null
+ + Will make an empty PDF-file in logfile.pdf
+[ip-172-31-13-159:11286] 3 more processes have sent help message help-mpi-btl-base.txt / btl:no-nics
+[ip-172-31-13-159:11286] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+[35mFINISHED[0m: pickMicrographStep, step 1, time 2020-11-13 15:43:36.257417
+Reading coordinates from mics: 1
+[35mSTARTED[0m: pickMicrographStep, step 2, time 2020-11-13 15:43:36.317134
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00002_UnderDefocus0.7um_frameImage_aligned_mic.mrc 
+[32mmpirun -np 4  `which relion_autopick_mpi`  --pickname autopick --odir "" --LoG --shrink 0 --lowpass 20.000  --i input_micrographs.star --LoG_diam_min 100.000 --LoG_diam_max 200.000 --LoG_adjust_threshold 0.000 --LoG_upper_threshold 999.000[0m
+--------------------------------------------------------------------------
+[[38947,1],0]: A high-performance Open MPI point-to-point messaging module
+was unable to find any relevant network interfaces:
+
+Module: OpenFabrics (openib)
+  Host: ip-172-31-13-159
+
+Another transport will be used instead, although this may result in
+lower performance.
+--------------------------------------------------------------------------
+RELION version: 3.1.0-commit-GITDIR 
+Precision: BASE=double, CUDA-ACC=single 
+
+ === RELION MPI setup ===
+ + Number of MPI processes             = 4
+ + Master  (0) runs on host            = ip-172-31-13-159
+ + Slave     1 runs on host            = ip-172-31-13-159
+ + Slave     2 runs on host            = ip-172-31-13-159
+ + Slave     3 runs on host            = ip-172-31-13-159
+ =================
+ + Run autopicking on the following micrographs: 
+    * mic_000002.mrc
+ + Will use following diameters for Laplacian-of-Gaussian filter: 
+   * 20 (too low)
+   * 25 (too low)
+   * 33 (too low)
+   * 50 (too low)
+   * 100 (ok)
+   * 150 (ok)
+   * 200 (ok)
+   * 400 (too high)
+   * 600 (too high)
+   * 800 (too high)
+   * 1000 (too high)
+ + Will use micrographs scaled to 190 pixels as requested. The largest prime factor in FFTs is 19
+ Autopicking ...
+000/??? sec ~~(,_,">                                                          [oo]   3/   3 sec ............................................................~~(,_,">
+ Generating logfile.pdf ... 
+000/??? sec ~~(,_,">                                                          [oo]   0/   0 sec ............................................................~~(,_,">
+ Total number of particles from 1 micrographs is 172
+ i.e. on average there were 172 particles per micrograph
+sh: 1: gs: not found
+ ERROR in executing: gs -sDEVICE=pdfwrite -dNOPAUSE -dBATCH -dSAFER -dDEVICEWIDTHPOINTS=800 -dDEVICEHEIGHTPOINTS=800 -sOutputFile=logfile.pdf @logfile.pdf.lst > /dev/null
+ + Will make an empty PDF-file in logfile.pdf
+ Done! Written: logfile.pdf 
+[ip-172-31-13-159:11482] 3 more processes have sent help message help-mpi-btl-base.txt / btl:no-nics
+[ip-172-31-13-159:11482] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+[35mFINISHED[0m: pickMicrographStep, step 2, time 2020-11-13 15:43:40.750536
+Reading coordinates from mics: 2
+[35mSTARTED[0m: pickMicrographStep, step 3, time 2020-11-13 15:43:40.806509
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00003_UnderDefocus0.7um_frameImage_aligned_mic.mrc 
+[32mmpirun -np 4  `which relion_autopick_mpi`  --pickname autopick --odir "" --LoG --shrink 0 --lowpass 20.000  --i input_micrographs.star --LoG_diam_min 100.000 --LoG_diam_max 200.000 --LoG_adjust_threshold 0.000 --LoG_upper_threshold 999.000[0m
+--------------------------------------------------------------------------
+[[39423,1],1]: A high-performance Open MPI point-to-point messaging module
+was unable to find any relevant network interfaces:
+
+Module: OpenFabrics (openib)
+  Host: ip-172-31-13-159
+
+Another transport will be used instead, although this may result in
+lower performance.
+--------------------------------------------------------------------------
+RELION version: 3.1.0-commit-GITDIR 
+Precision: BASE=double, CUDA-ACC=single 
+
+ === RELION MPI setup ===
+ + Number of MPI processes             = 4
+ + Master  (0) runs on host            = ip-172-31-13-159
+ + Slave     1 runs on host            = ip-172-31-13-159
+ + Slave     2 runs on host            = ip-172-31-13-159
+ + Slave     3 runs on host            = ip-172-31-13-159
+ =================
+ + Run autopicking on the following micrographs: 
+    * mic_000003.mrc
+ + Will use following diameters for Laplacian-of-Gaussian filter: 
+   * 20 (too low)
+   * 25 (too low)
+   * 33 (too low)
+   * 50 (too low)
+   * 100 (ok)
+   * 150 (ok)
+   * 200 (ok)
+   * 400 (too high)
+   * 600 (too high)
+   * 800 (too high)
+   * 1000 (too high)
+ + Will use micrographs scaled to 190 pixels as requested. The largest prime factor in FFTs is 19
+ Autopicking ...
+000/??? sec ~~(,_,">                                                          [oo]   4/   4 sec ............................................................~~(,_,">
+ Generating logfile.pdf ... 
+000/??? sec ~~(,_,">                                                          [oo]   0/   0 sec ............................................................~~(,_,">
+ Total number of particles from 1 micrographs is 171
+ i.e. on average there were 171 particles per micrograph
+sh: 1: gs: not found
+ ERROR in executing: gs -sDEVICE=pdfwrite -dNOPAUSE -dBATCH -dSAFER -dDEVICEWIDTHPOINTS=800 -dDEVICEHEIGHTPOINTS=800 -sOutputFile=logfile.pdf @logfile.pdf.lst > /dev/null
+ + Will make an empty PDF-file in logfile.pdf
+ Done! Written: logfile.pdf 
+[ip-172-31-13-159:11526] 3 more processes have sent help message help-mpi-btl-base.txt / btl:no-nics
+[ip-172-31-13-159:11526] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+[35mFINISHED[0m: pickMicrographStep, step 3, time 2020-11-13 15:43:45.158921
+Reading coordinates from mics: 3
+[35mSTARTED[0m: pickMicrographStep, step 4, time 2020-11-13 15:43:45.196863
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00004_UnderDefocus0.7um_frameImage_aligned_mic.mrc 
+[32mmpirun -np 4  `which relion_autopick_mpi`  --pickname autopick --odir "" --LoG --shrink 0 --lowpass 20.000  --i input_micrographs.star --LoG_diam_min 100.000 --LoG_diam_max 200.000 --LoG_adjust_threshold 0.000 --LoG_upper_threshold 999.000[0m
+--------------------------------------------------------------------------
+[[39356,1],1]: A high-performance Open MPI point-to-point messaging module
+was unable to find any relevant network interfaces:
+
+Module: OpenFabrics (openib)
+  Host: ip-172-31-13-159
+
+Another transport will be used instead, although this may result in
+lower performance.
+--------------------------------------------------------------------------
+RELION version: 3.1.0-commit-GITDIR 
+Precision: BASE=double, CUDA-ACC=single 
+
+ === RELION MPI setup ===
+ + Number of MPI processes             = 4
+ + Master  (0) runs on host            = ip-172-31-13-159
+ + Slave     1 runs on host            = ip-172-31-13-159
+ + Slave     2 runs on host            = ip-172-31-13-159
+ + Slave     3 runs on host            = ip-172-31-13-159
+ =================
+ + Run autopicking on the following micrographs: 
+    * mic_000004.mrc
+ + Will use following diameters for Laplacian-of-Gaussian filter: 
+   * 20 (too low)
+   * 25 (too low)
+   * 33 (too low)
+   * 50 (too low)
+   * 100 (ok)
+   * 150 (ok)
+   * 200 (ok)
+   * 400 (too high)
+   * 600 (too high)
+   * 800 (too high)
+   * 1000 (too high)
+ + Will use micrographs scaled to 190 pixels as requested. The largest prime factor in FFTs is 19
+ Autopicking ...
+000/??? sec ~~(,_,">                                                          [oo]   3/   3 sec ............................................................~~(,_,">
+ Generating logfile.pdf ... 
+000/??? sec ~~(,_,">                                                          [oo]   0/   0 sec ............................................................~~(,_,">
+ Total number of particles from 1 micrographs is 174
+ i.e. on average there were 174 particles per micrograph
+sh: 1: gs: not found
+ ERROR in executing: gs -sDEVICE=pdfwrite -dNOPAUSE -dBATCH -dSAFER -dDEVICEWIDTHPOINTS=800 -dDEVICEHEIGHTPOINTS=800 -sOutputFile=logfile.pdf @logfile.pdf.lst > /dev/null
+ + Will make an empty PDF-file in logfile.pdf
+ Done! Written: logfile.pdf 
+[ip-172-31-13-159:11589] 3 more processes have sent help message help-mpi-btl-base.txt / btl:no-nics
+[ip-172-31-13-159:11589] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+[35mFINISHED[0m: pickMicrographStep, step 4, time 2020-11-13 15:43:49.681380
+Reading coordinates from mics: 4
+[35mSTARTED[0m: pickMicrographStep, step 5, time 2020-11-13 15:43:49.719192
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00005_UnderDefocus0.7um_frameImage_aligned_mic.mrc 
+[32mmpirun -np 4  `which relion_autopick_mpi`  --pickname autopick --odir "" --LoG --shrink 0 --lowpass 20.000  --i input_micrographs.star --LoG_diam_min 100.000 --LoG_diam_max 200.000 --LoG_adjust_threshold 0.000 --LoG_upper_threshold 999.000[0m
+--------------------------------------------------------------------------
+[[39335,1],1]: A high-performance Open MPI point-to-point messaging module
+was unable to find any relevant network interfaces:
+
+Module: OpenFabrics (openib)
+  Host: ip-172-31-13-159
+
+Another transport will be used instead, although this may result in
+lower performance.
+--------------------------------------------------------------------------
+RELION version: 3.1.0-commit-GITDIR 
+Precision: BASE=double, CUDA-ACC=single 
+
+ === RELION MPI setup ===
+ + Number of MPI processes             = 4
+ + Master  (0) runs on host            = ip-172-31-13-159
+ + Slave     1 runs on host            = ip-172-31-13-159
+ + Slave     2 runs on host            = ip-172-31-13-159
+ + Slave     3 runs on host            = ip-172-31-13-159
+ =================
+ + Run autopicking on the following micrographs: 
+    * mic_000005.mrc
+ + Will use following diameters for Laplacian-of-Gaussian filter: 
+   * 20 (too low)
+   * 25 (too low)
+   * 33 (too low)
+   * 50 (too low)
+   * 100 (ok)
+   * 150 (ok)
+   * 200 (ok)
+   * 400 (too high)
+   * 600 (too high)
+   * 800 (too high)
+   * 1000 (too high)
+ + Will use micrographs scaled to 190 pixels as requested. The largest prime factor in FFTs is 19
+ Autopicking ...
+000/??? sec ~~(,_,">                                                          [oo]   4/   4 sec ............................................................~~(,_,">
+ Generating logfile.pdf ... 
+000/??? sec ~~(,_,">                                                          [oo]   0/   0 sec ............................................................~~(,_,">
+ Total number of particles from 1 micrographs is 182
+ i.e. on average there were 182 particles per micrograph
+sh: 1: gs: not found
+ ERROR in executing: gs -sDEVICE=pdfwrite -dNOPAUSE -dBATCH -dSAFER -dDEVICEWIDTHPOINTS=800 -dDEVICEHEIGHTPOINTS=800 -sOutputFile=logfile.pdf @logfile.pdf.lst > /dev/null
+ + Will make an empty PDF-file in logfile.pdf
+ Done! Written: logfile.pdf 
+[ip-172-31-13-159:11614] 3 more processes have sent help message help-mpi-btl-base.txt / btl:no-nics
+[ip-172-31-13-159:11614] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+[35mFINISHED[0m: pickMicrographStep, step 5, time 2020-11-13 15:43:54.218999
+Reading coordinates from mics: 5
+[35mSTARTED[0m: pickMicrographStep, step 6, time 2020-11-13 15:43:54.261922
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00006_UnderDefocus0.7um_frameImage_aligned_mic.mrc 
+[32mmpirun -np 4  `which relion_autopick_mpi`  --pickname autopick --odir "" --LoG --shrink 0 --lowpass 20.000  --i input_micrographs.star --LoG_diam_min 100.000 --LoG_diam_max 200.000 --LoG_adjust_threshold 0.000 --LoG_upper_threshold 999.000[0m
+--------------------------------------------------------------------------
+[[39268,1],1]: A high-performance Open MPI point-to-point messaging module
+was unable to find any relevant network interfaces:
+
+Module: OpenFabrics (openib)
+  Host: ip-172-31-13-159
+
+Another transport will be used instead, although this may result in
+lower performance.
+--------------------------------------------------------------------------
+RELION version: 3.1.0-commit-GITDIR 
+Precision: BASE=double, CUDA-ACC=single 
+
+ === RELION MPI setup ===
+ + Number of MPI processes             = 4
+ + Master  (0) runs on host            = ip-172-31-13-159
+ + Slave     1 runs on host            = ip-172-31-13-159
+ + Slave     2 runs on host            = ip-172-31-13-159
+ + Slave     3 runs on host            = ip-172-31-13-159
+ =================
+ + Run autopicking on the following micrographs: 
+    * mic_000006.mrc
+ + Will use following diameters for Laplacian-of-Gaussian filter: 
+   * 20 (too low)
+   * 25 (too low)
+   * 33 (too low)
+   * 50 (too low)
+   * 100 (ok)
+   * 150 (ok)
+   * 200 (ok)
+   * 400 (too high)
+   * 600 (too high)
+   * 800 (too high)
+   * 1000 (too high)
+ + Will use micrographs scaled to 190 pixels as requested. The largest prime factor in FFTs is 19
+ Autopicking ...
+000/??? sec ~~(,_,">                                                          [oo]   3/   3 sec ............................................................~~(,_,">
+ Generating logfile.pdf ... 
+000/??? sec ~~(,_,">                                                          [oo]   0/   0 sec ............................................................~~(,_,">
+ Total number of particles from 1 micrographs is 172
+ i.e. on average there were 172 particles per micrograph
+sh: 1: gs: not found
+ Done! Written: logfile.pdf 
+ ERROR in executing: gs -sDEVICE=pdfwrite -dNOPAUSE -dBATCH -dSAFER -dDEVICEWIDTHPOINTS=800 -dDEVICEHEIGHTPOINTS=800 -sOutputFile=logfile.pdf @logfile.pdf.lst > /dev/null
+ + Will make an empty PDF-file in logfile.pdf
+[ip-172-31-13-159:11677] 3 more processes have sent help message help-mpi-btl-base.txt / btl:no-nics
+[ip-172-31-13-159:11677] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+[35mFINISHED[0m: pickMicrographStep, step 6, time 2020-11-13 15:43:58.610362
+Reading coordinates from mics: 6
+[35mSTARTED[0m: pickMicrographStep, step 7, time 2020-11-13 15:43:58.649406
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00007_UnderDefocus0.7um_frameImage_aligned_mic.mrc 
+[32mmpirun -np 4  `which relion_autopick_mpi`  --pickname autopick --odir "" --LoG --shrink 0 --lowpass 20.000  --i input_micrographs.star --LoG_diam_min 100.000 --LoG_diam_max 200.000 --LoG_adjust_threshold 0.000 --LoG_upper_threshold 999.000[0m
+--------------------------------------------------------------------------
+[[39216,1],0]: A high-performance Open MPI point-to-point messaging module
+was unable to find any relevant network interfaces:
+
+Module: OpenFabrics (openib)
+  Host: ip-172-31-13-159
+
+Another transport will be used instead, although this may result in
+lower performance.
+--------------------------------------------------------------------------
+RELION version: 3.1.0-commit-GITDIR 
+Precision: BASE=double, CUDA-ACC=single 
+
+ === RELION MPI setup ===
+ + Number of MPI processes             = 4
+ + Master  (0) runs on host            = ip-172-31-13-159
+ + Slave     1 runs on host            = ip-172-31-13-159
+ + Slave     2 runs on host            = ip-172-31-13-159
+ + Slave     3 runs on host            = ip-172-31-13-159
+ =================
+ + Run autopicking on the following micrographs: 
+    * mic_000007.mrc
+ + Will use following diameters for Laplacian-of-Gaussian filter: 
+   * 20 (too low)
+   * 25 (too low)
+   * 33 (too low)
+   * 50 (too low)
+   * 100 (ok)
+   * 150 (ok)
+   * 200 (ok)
+   * 400 (too high)
+   * 600 (too high)
+   * 800 (too high)
+   * 1000 (too high)
+ + Will use micrographs scaled to 190 pixels as requested. The largest prime factor in FFTs is 19
+ Autopicking ...
+000/??? sec ~~(,_,">                                                          [oo]   4/   4 sec ............................................................~~(,_,">
+ Generating logfile.pdf ... 
+000/??? sec ~~(,_,">                                                          [oo]   0/   0 sec ............................................................~~(,_,">
+ Total number of particles from 1 micrographs is 177
+ i.e. on average there were 177 particles per micrograph
+sh: 1: gs: not found
+ ERROR in executing: gs -sDEVICE=pdfwrite -dNOPAUSE -dBATCH -dSAFER -dDEVICEWIDTHPOINTS=800 -dDEVICEHEIGHTPOINTS=800 -sOutputFile=logfile.pdf @logfile.pdf.lst > /dev/null
+ + Will make an empty PDF-file in logfile.pdf
+ Done! Written: logfile.pdf 
+[ip-172-31-13-159:11721] 3 more processes have sent help message help-mpi-btl-base.txt / btl:no-nics
+[ip-172-31-13-159:11721] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+[35mFINISHED[0m: pickMicrographStep, step 7, time 2020-11-13 15:44:03.087589
+Reading coordinates from mics: 7
+[35mSTARTED[0m: pickMicrographStep, step 8, time 2020-11-13 15:44:03.128887
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00008_UnderDefocus0.7um_frameImage_aligned_mic.mrc 
+[32mmpirun -np 4  `which relion_autopick_mpi`  --pickname autopick --odir "" --LoG --shrink 0 --lowpass 20.000  --i input_micrographs.star --LoG_diam_min 100.000 --LoG_diam_max 200.000 --LoG_adjust_threshold 0.000 --LoG_upper_threshold 999.000[0m
+--------------------------------------------------------------------------
+[[39650,1],0]: A high-performance Open MPI point-to-point messaging module
+was unable to find any relevant network interfaces:
+
+Module: OpenFabrics (openib)
+  Host: ip-172-31-13-159
+
+Another transport will be used instead, although this may result in
+lower performance.
+--------------------------------------------------------------------------
+RELION version: 3.1.0-commit-GITDIR 
+Precision: BASE=double, CUDA-ACC=single 
+
+ === RELION MPI setup ===
+ + Number of MPI processes             = 4
+ + Master  (0) runs on host            = ip-172-31-13-159
+ + Slave     1 runs on host            = ip-172-31-13-159
+ + Slave     2 runs on host            = ip-172-31-13-159
+ + Slave     3 runs on host            = ip-172-31-13-159
+ =================
+ + Run autopicking on the following micrographs: 
+    * mic_000008.mrc
+ + Will use following diameters for Laplacian-of-Gaussian filter: 
+   * 20 (too low)
+   * 25 (too low)
+   * 33 (too low)
+   * 50 (too low)
+   * 100 (ok)
+   * 150 (ok)
+   * 200 (ok)
+   * 400 (too high)
+   * 600 (too high)
+   * 800 (too high)
+   * 1000 (too high)
+ + Will use micrographs scaled to 190 pixels as requested. The largest prime factor in FFTs is 19
+ Autopicking ...
+000/??? sec ~~(,_,">                                                          [oo]   3/   3 sec ............................................................~~(,_,">
+ Generating logfile.pdf ... 
+000/??? sec ~~(,_,">                                                          [oo]   0/   0 sec ............................................................~~(,_,">
+ Total number of particles from 1 micrographs is 174
+ i.e. on average there were 174 particles per micrograph
+sh: 1: gs: not found
+ Done! Written: logfile.pdf 
+ ERROR in executing: gs -sDEVICE=pdfwrite -dNOPAUSE -dBATCH -dSAFER -dDEVICEWIDTHPOINTS=800 -dDEVICEHEIGHTPOINTS=800 -sOutputFile=logfile.pdf @logfile.pdf.lst > /dev/null
+ + Will make an empty PDF-file in logfile.pdf
+[ip-172-31-13-159:11803] 3 more processes have sent help message help-mpi-btl-base.txt / btl:no-nics
+[ip-172-31-13-159:11803] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+[35mFINISHED[0m: pickMicrographStep, step 8, time 2020-11-13 15:44:07.463031
+Reading coordinates from mics: 8
+[35mSTARTED[0m: pickMicrographStep, step 9, time 2020-11-13 15:44:07.501874
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00009_UnderDefocus0.7um_frameImage_aligned_mic.mrc 
+[32mmpirun -np 4  `which relion_autopick_mpi`  --pickname autopick --odir "" --LoG --shrink 0 --lowpass 20.000  --i input_micrographs.star --LoG_diam_min 100.000 --LoG_diam_max 200.000 --LoG_adjust_threshold 0.000 --LoG_upper_threshold 999.000[0m
+--------------------------------------------------------------------------
+[[39587,1],1]: A high-performance Open MPI point-to-point messaging module
+was unable to find any relevant network interfaces:
+
+Module: OpenFabrics (openib)
+  Host: ip-172-31-13-159
+
+Another transport will be used instead, although this may result in
+lower performance.
+--------------------------------------------------------------------------
+RELION version: 3.1.0-commit-GITDIR 
+Precision: BASE=double, CUDA-ACC=single 
+
+ === RELION MPI setup ===
+ + Number of MPI processes             = 4
+ + Master  (0) runs on host            = ip-172-31-13-159
+ + Slave     1 runs on host            = ip-172-31-13-159
+ + Slave     2 runs on host            = ip-172-31-13-159
+ + Slave     3 runs on host            = ip-172-31-13-159
+ =================
+ + Run autopicking on the following micrographs: 
+    * mic_000009.mrc
+ + Will use following diameters for Laplacian-of-Gaussian filter: 
+   * 20 (too low)
+   * 25 (too low)
+   * 33 (too low)
+   * 50 (too low)
+   * 100 (ok)
+   * 150 (ok)
+   * 200 (ok)
+   * 400 (too high)
+   * 600 (too high)
+   * 800 (too high)
+   * 1000 (too high)
+ + Will use micrographs scaled to 190 pixels as requested. The largest prime factor in FFTs is 19
+ Autopicking ...
+000/??? sec ~~(,_,">                                                          [oo]   3/   3 sec ............................................................~~(,_,">
+ Generating logfile.pdf ... 
+000/??? sec ~~(,_,">                                                          [oo]   0/   0 sec ............................................................~~(,_,">
+ Total number of particles from 1 micrographs is 170
+ i.e. on average there were 170 particles per micrograph
+sh: 1: gs: not found
+ Done! Written: logfile.pdf 
+ ERROR in executing: gs -sDEVICE=pdfwrite -dNOPAUSE -dBATCH -dSAFER -dDEVICEWIDTHPOINTS=800 -dDEVICEHEIGHTPOINTS=800 -sOutputFile=logfile.pdf @logfile.pdf.lst > /dev/null
+ + Will make an empty PDF-file in logfile.pdf
+[ip-172-31-13-159:11866] 3 more processes have sent help message help-mpi-btl-base.txt / btl:no-nics
+[ip-172-31-13-159:11866] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+[35mFINISHED[0m: pickMicrographStep, step 9, time 2020-11-13 15:44:11.925331
+Reading coordinates from mics: 9
+[35mSTARTED[0m: pickMicrographStep, step 10, time 2020-11-13 15:44:11.980079
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00010_UnderDefocus0.7um_frameImage_aligned_mic.mrc 
+[32mmpirun -np 4  `which relion_autopick_mpi`  --pickname autopick --odir "" --LoG --shrink 0 --lowpass 20.000  --i input_micrographs.star --LoG_diam_min 100.000 --LoG_diam_max 200.000 --LoG_adjust_threshold 0.000 --LoG_upper_threshold 999.000[0m
+--------------------------------------------------------------------------
+[[39509,1],2]: A high-performance Open MPI point-to-point messaging module
+was unable to find any relevant network interfaces:
+
+Module: OpenFabrics (openib)
+  Host: ip-172-31-13-159
+
+Another transport will be used instead, although this may result in
+lower performance.
+--------------------------------------------------------------------------
+RELION version: 3.1.0-commit-GITDIR 
+Precision: BASE=double, CUDA-ACC=single 
+
+ === RELION MPI setup ===
+ + Number of MPI processes             = 4
+ + Master  (0) runs on host            = ip-172-31-13-159
+ + Slave     1 runs on host            = ip-172-31-13-159
+ + Slave     2 runs on host            = ip-172-31-13-159
+ + Slave     3 runs on host            = ip-172-31-13-159
+ =================
+ + Run autopicking on the following micrographs: 
+    * mic_000010.mrc
+ + Will use following diameters for Laplacian-of-Gaussian filter: 
+   * 20 (too low)
+   * 25 (too low)
+   * 33 (too low)
+   * 50 (too low)
+   * 100 (ok)
+   * 150 (ok)
+   * 200 (ok)
+   * 400 (too high)
+   * 600 (too high)
+   * 800 (too high)
+   * 1000 (too high)
+ + Will use micrographs scaled to 190 pixels as requested. The largest prime factor in FFTs is 19
+ Autopicking ...
+000/??? sec ~~(,_,">                                                          [oo]   3/   3 sec ............................................................~~(,_,">
+ Generating logfile.pdf ... 
+000/??? sec ~~(,_,">                                                          [oo]   0/   0 sec ............................................................~~(,_,">
+ Total number of particles from 1 micrographs is 177
+ i.e. on average there were 177 particles per micrograph
+sh: 1: gs: not found
+ ERROR in executing: gs -sDEVICE=pdfwrite -dNOPAUSE -dBATCH -dSAFER -dDEVICEWIDTHPOINTS=800 -dDEVICEHEIGHTPOINTS=800 -sOutputFile=logfile.pdf @logfile.pdf.lst > /dev/null
+ + Will make an empty PDF-file in logfile.pdf
+ Done! Written: logfile.pdf 
+[ip-172-31-13-159:11948] 3 more processes have sent help message help-mpi-btl-base.txt / btl:no-nics
+[ip-172-31-13-159:11948] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+[35mFINISHED[0m: pickMicrographStep, step 10, time 2020-11-13 15:44:16.347747
+Reading coordinates from mics: 10
+[35mSTARTED[0m: pickMicrographStep, step 11, time 2020-11-13 15:44:16.387557
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00011_UnderDefocus0.7um_frameImage_aligned_mic.mrc 
+[32mmpirun -np 4  `which relion_autopick_mpi`  --pickname autopick --odir "" --LoG --shrink 0 --lowpass 20.000  --i input_micrographs.star --LoG_diam_min 100.000 --LoG_diam_max 200.000 --LoG_adjust_threshold 0.000 --LoG_upper_threshold 999.000[0m
+--------------------------------------------------------------------------
+[[39457,1],1]: A high-performance Open MPI point-to-point messaging module
+was unable to find any relevant network interfaces:
+
+Module: OpenFabrics (openib)
+  Host: ip-172-31-13-159
+
+Another transport will be used instead, although this may result in
+lower performance.
+--------------------------------------------------------------------------
+RELION version: 3.1.0-commit-GITDIR 
+Precision: BASE=double, CUDA-ACC=single 
+
+ === RELION MPI setup ===
+ + Number of MPI processes             = 4
+ + Master  (0) runs on host            = ip-172-31-13-159
+ + Slave     1 runs on host            = ip-172-31-13-159
+ + Slave     2 runs on host            = ip-172-31-13-159
+ + Slave     3 runs on host            = ip-172-31-13-159
+ =================
+ + Run autopicking on the following micrographs: 
+    * mic_000011.mrc
+ + Will use following diameters for Laplacian-of-Gaussian filter: 
+   * 20 (too low)
+   * 25 (too low)
+   * 33 (too low)
+   * 50 (too low)
+   * 100 (ok)
+   * 150 (ok)
+   * 200 (ok)
+   * 400 (too high)
+   * 600 (too high)
+   * 800 (too high)
+   * 1000 (too high)
+ + Will use micrographs scaled to 190 pixels as requested. The largest prime factor in FFTs is 19
+ Autopicking ...
+000/??? sec ~~(,_,">                                                          [oo]   3/   3 sec ............................................................~~(,_,">
+ Generating logfile.pdf ... 
+000/??? sec ~~(,_,">                                                          [oo]   0/   0 sec ............................................................~~(,_,">
+ Total number of particles from 1 micrographs is 170
+ i.e. on average there were 170 particles per micrograph
+sh: 1: gs: not found
+ ERROR in executing: gs -sDEVICE=pdfwrite -dNOPAUSE -dBATCH -dSAFER -dDEVICEWIDTHPOINTS=800 -dDEVICEHEIGHTPOINTS=800 -sOutputFile=logfile.pdf @logfile.pdf.lst > /dev/null
+ + Will make an empty PDF-file in logfile.pdf
+ Done! Written: logfile.pdf 
+[ip-172-31-13-159:11992] 3 more processes have sent help message help-mpi-btl-base.txt / btl:no-nics
+[ip-172-31-13-159:11992] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+[35mFINISHED[0m: pickMicrographStep, step 11, time 2020-11-13 15:44:20.992635
+Reading coordinates from mics: 11
+[35mSTARTED[0m: pickMicrographStep, step 12, time 2020-11-13 15:44:21.035849
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00012_UnderDefocus0.7um_frameImage_aligned_mic.mrc 
+[32mmpirun -np 4  `which relion_autopick_mpi`  --pickname autopick --odir "" --LoG --shrink 0 --lowpass 20.000  --i input_micrographs.star --LoG_diam_min 100.000 --LoG_diam_max 200.000 --LoG_adjust_threshold 0.000 --LoG_upper_threshold 999.000[0m
+--------------------------------------------------------------------------
+[[39891,1],1]: A high-performance Open MPI point-to-point messaging module
+was unable to find any relevant network interfaces:
+
+Module: OpenFabrics (openib)
+  Host: ip-172-31-13-159
+
+Another transport will be used instead, although this may result in
+lower performance.
+--------------------------------------------------------------------------
+RELION version: 3.1.0-commit-GITDIR 
+Precision: BASE=double, CUDA-ACC=single 
+
+ === RELION MPI setup ===
+ + Number of MPI processes             = 4
+ + Master  (0) runs on host            = ip-172-31-13-159
+ + Slave     1 runs on host            = ip-172-31-13-159
+ + Slave     2 runs on host            = ip-172-31-13-159
+ + Slave     3 runs on host            = ip-172-31-13-159
+ =================
+ + Run autopicking on the following micrographs: 
+    * mic_000012.mrc
+ + Will use following diameters for Laplacian-of-Gaussian filter: 
+   * 20 (too low)
+   * 25 (too low)
+   * 33 (too low)
+   * 50 (too low)
+   * 100 (ok)
+   * 150 (ok)
+   * 200 (ok)
+   * 400 (too high)
+   * 600 (too high)
+   * 800 (too high)
+   * 1000 (too high)
+ + Will use micrographs scaled to 190 pixels as requested. The largest prime factor in FFTs is 19
+ Autopicking ...
+000/??? sec ~~(,_,">                                                          [oo]   3/   3 sec ............................................................~~(,_,">
+ Generating logfile.pdf ... 
+000/??? sec ~~(,_,">                                                          [oo]   0/   0 sec ............................................................~~(,_,">
+ Total number of particles from 1 micrographs is 174
+ i.e. on average there were 174 particles per micrograph
+sh: 1: gs: not found
+ ERROR in executing: gs -sDEVICE=pdfwrite -dNOPAUSE -dBATCH -dSAFER -dDEVICEWIDTHPOINTS=800 -dDEVICEHEIGHTPOINTS=800 -sOutputFile=logfile.pdf @logfile.pdf.lst > /dev/null
+ + Will make an empty PDF-file in logfile.pdf
+ Done! Written: logfile.pdf 
+[ip-172-31-13-159:12074] 3 more processes have sent help message help-mpi-btl-base.txt / btl:no-nics
+[ip-172-31-13-159:12074] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+[35mFINISHED[0m: pickMicrographStep, step 12, time 2020-11-13 15:44:25.340013
+Reading coordinates from mics: 12
+[35mSTARTED[0m: pickMicrographStep, step 13, time 2020-11-13 15:44:25.379053
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00013_UnderDefocus0.7um_frameImage_aligned_mic.mrc 
+[32mmpirun -np 4  `which relion_autopick_mpi`  --pickname autopick --odir "" --LoG --shrink 0 --lowpass 20.000  --i input_micrographs.star --LoG_diam_min 100.000 --LoG_diam_max 200.000 --LoG_adjust_threshold 0.000 --LoG_upper_threshold 999.000[0m
+--------------------------------------------------------------------------
+[[39866,1],1]: A high-performance Open MPI point-to-point messaging module
+was unable to find any relevant network interfaces:
+
+Module: OpenFabrics (openib)
+  Host: ip-172-31-13-159
+
+Another transport will be used instead, although this may result in
+lower performance.
+--------------------------------------------------------------------------
+RELION version: 3.1.0-commit-GITDIR 
+Precision: BASE=double, CUDA-ACC=single 
+
+ === RELION MPI setup ===
+ + Number of MPI processes             = 4
+ + Master  (0) runs on host            = ip-172-31-13-159
+ + Slave     1 runs on host            = ip-172-31-13-159
+ + Slave     2 runs on host            = ip-172-31-13-159
+ + Slave     3 runs on host            = ip-172-31-13-159
+ =================
+ + Run autopicking on the following micrographs: 
+    * mic_000013.mrc
+ + Will use following diameters for Laplacian-of-Gaussian filter: 
+   * 20 (too low)
+   * 25 (too low)
+   * 33 (too low)
+   * 50 (too low)
+   * 100 (ok)
+   * 150 (ok)
+   * 200 (ok)
+   * 400 (too high)
+   * 600 (too high)
+   * 800 (too high)
+   * 1000 (too high)
+ + Will use micrographs scaled to 190 pixels as requested. The largest prime factor in FFTs is 19
+ Autopicking ...
+000/??? sec ~~(,_,">                                                          [oo]   3/   3 sec ............................................................~~(,_,">
+ Generating logfile.pdf ... 
+000/??? sec ~~(,_,">                                                          [oo]   0/   0 sec ............................................................~~(,_,">
+ Total number of particles from 1 micrographs is 176
+ i.e. on average there were 176 particles per micrograph
+sh: 1: gs: not found
+ ERROR in executing: gs -sDEVICE=pdfwrite -dNOPAUSE -dBATCH -dSAFER -dDEVICEWIDTHPOINTS=800 -dDEVICEHEIGHTPOINTS=800 -sOutputFile=logfile.pdf @logfile.pdf.lst > /dev/null
+ + Will make an empty PDF-file in logfile.pdf
+ Done! Written: logfile.pdf 
+[ip-172-31-13-159:12099] 3 more processes have sent help message help-mpi-btl-base.txt / btl:no-nics
+[ip-172-31-13-159:12099] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+[35mFINISHED[0m: pickMicrographStep, step 13, time 2020-11-13 15:44:29.955910
+Reading coordinates from mics: 13
+[35mSTARTED[0m: pickMicrographStep, step 14, time 2020-11-13 15:44:30.017445
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00014_UnderDefocus0.7um_frameImage_aligned_mic.mrc 
+[32mmpirun -np 4  `which relion_autopick_mpi`  --pickname autopick --odir "" --LoG --shrink 0 --lowpass 20.000  --i input_micrographs.star --LoG_diam_min 100.000 --LoG_diam_max 200.000 --LoG_adjust_threshold 0.000 --LoG_upper_threshold 999.000[0m
+--------------------------------------------------------------------------
+[[39779,1],0]: A high-performance Open MPI point-to-point messaging module
+was unable to find any relevant network interfaces:
+
+Module: OpenFabrics (openib)
+  Host: ip-172-31-13-159
+
+Another transport will be used instead, although this may result in
+lower performance.
+--------------------------------------------------------------------------
+RELION version: 3.1.0-commit-GITDIR 
+Precision: BASE=double, CUDA-ACC=single 
+
+ === RELION MPI setup ===
+ + Number of MPI processes             = 4
+ + Master  (0) runs on host            = ip-172-31-13-159
+ + Slave     1 runs on host            = ip-172-31-13-159
+ + Slave     2 runs on host            = ip-172-31-13-159
+ + Slave     3 runs on host            = ip-172-31-13-159
+ =================
+ + Run autopicking on the following micrographs: 
+    * mic_000014.mrc
+ + Will use following diameters for Laplacian-of-Gaussian filter: 
+   * 20 (too low)
+   * 25 (too low)
+   * 33 (too low)
+   * 50 (too low)
+   * 100 (ok)
+   * 150 (ok)
+   * 200 (ok)
+   * 400 (too high)
+   * 600 (too high)
+   * 800 (too high)
+   * 1000 (too high)
+ + Will use micrographs scaled to 190 pixels as requested. The largest prime factor in FFTs is 19
+ Autopicking ...
+000/??? sec ~~(,_,">                                                          [oo]   3/   3 sec ............................................................~~(,_,">
+ Generating logfile.pdf ... 
+000/??? sec ~~(,_,">                                                          [oo]   0/   0 sec ............................................................~~(,_,">
+ Total number of particles from 1 micrographs is 89
+ i.e. on average there were 89 particles per micrograph
+sh: 1: gs: not found
+ ERROR in executing: gs -sDEVICE=pdfwrite -dNOPAUSE -dBATCH -dSAFER -dDEVICEWIDTHPOINTS=800 -dDEVICEHEIGHTPOINTS=800 -sOutputFile=logfile.pdf @logfile.pdf.lst > /dev/null
+ + Will make an empty PDF-file in logfile.pdf
+ Done! Written: logfile.pdf 
+[ip-172-31-13-159:12186] 3 more processes have sent help message help-mpi-btl-base.txt / btl:no-nics
+[ip-172-31-13-159:12186] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+[35mFINISHED[0m: pickMicrographStep, step 14, time 2020-11-13 15:44:34.359411
+Reading coordinates from mics: 14
+[35mSTARTED[0m: pickMicrographStep, step 15, time 2020-11-13 15:44:34.401852
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00015_UnderDefocus0.7um_frameImage_aligned_mic.mrc 
+[32mmpirun -np 4  `which relion_autopick_mpi`  --pickname autopick --odir "" --LoG --shrink 0 --lowpass 20.000  --i input_micrographs.star --LoG_diam_min 100.000 --LoG_diam_max 200.000 --LoG_adjust_threshold 0.000 --LoG_upper_threshold 999.000[0m
+--------------------------------------------------------------------------
+[[34000,1],1]: A high-performance Open MPI point-to-point messaging module
+was unable to find any relevant network interfaces:
+
+Module: OpenFabrics (openib)
+  Host: ip-172-31-13-159
+
+Another transport will be used instead, although this may result in
+lower performance.
+--------------------------------------------------------------------------
+RELION version: 3.1.0-commit-GITDIR 
+Precision: BASE=double, CUDA-ACC=single 
+
+ === RELION MPI setup ===
+ + Number of MPI processes             = 4
+ + Master  (0) runs on host            = ip-172-31-13-159
+ + Slave     1 runs on host            = ip-172-31-13-159
+ + Slave     2 runs on host            = ip-172-31-13-159
+ + Slave     3 runs on host            = ip-172-31-13-159
+ =================
+ + Run autopicking on the following micrographs: 
+    * mic_000015.mrc
+ + Will use following diameters for Laplacian-of-Gaussian filter: 
+   * 20 (too low)
+   * 25 (too low)
+   * 33 (too low)
+   * 50 (too low)
+   * 100 (ok)
+   * 150 (ok)
+   * 200 (ok)
+   * 400 (too high)
+   * 600 (too high)
+   * 800 (too high)
+   * 1000 (too high)
+ + Will use micrographs scaled to 190 pixels as requested. The largest prime factor in FFTs is 19
+ Autopicking ...
+000/??? sec ~~(,_,">                                                          [oo]   3/   3 sec ............................................................~~(,_,">
+ Generating logfile.pdf ... 
+000/??? sec ~~(,_,">                                                          [oo]   0/   0 sec ............................................................~~(,_,">
+ Total number of particles from 1 micrographs is 121
+ i.e. on average there were 121 particles per micrograph
+sh: 1: gs: not found
+ Done! Written: logfile.pdf 
+ ERROR in executing: gs -sDEVICE=pdfwrite -dNOPAUSE -dBATCH -dSAFER -dDEVICEWIDTHPOINTS=800 -dDEVICEHEIGHTPOINTS=800 -sOutputFile=logfile.pdf @logfile.pdf.lst > /dev/null
+ + Will make an empty PDF-file in logfile.pdf
+[ip-172-31-13-159:12329] 3 more processes have sent help message help-mpi-btl-base.txt / btl:no-nics
+[ip-172-31-13-159:12329] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+[35mFINISHED[0m: pickMicrographStep, step 15, time 2020-11-13 15:44:38.868530
+Reading coordinates from mics: 15
+[35mSTARTED[0m: pickMicrographStep, step 16, time 2020-11-13 15:44:38.908771
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00016_UnderDefocus0.7um_frameImage_aligned_mic.mrc 
+[32mmpirun -np 4  `which relion_autopick_mpi`  --pickname autopick --odir "" --LoG --shrink 0 --lowpass 20.000  --i input_micrographs.star --LoG_diam_min 100.000 --LoG_diam_max 200.000 --LoG_adjust_threshold 0.000 --LoG_upper_threshold 999.000[0m
+--------------------------------------------------------------------------
+[[33882,1],0]: A high-performance Open MPI point-to-point messaging module
+was unable to find any relevant network interfaces:
+
+Module: OpenFabrics (openib)
+  Host: ip-172-31-13-159
+
+Another transport will be used instead, although this may result in
+lower performance.
+--------------------------------------------------------------------------
+RELION version: 3.1.0-commit-GITDIR 
+Precision: BASE=double, CUDA-ACC=single 
+
+ === RELION MPI setup ===
+ + Number of MPI processes             = 4
+ + Master  (0) runs on host            = ip-172-31-13-159
+ + Slave     1 runs on host            = ip-172-31-13-159
+ + Slave     2 runs on host            = ip-172-31-13-159
+ + Slave     3 runs on host            = ip-172-31-13-159
+ =================
+ + Run autopicking on the following micrographs: 
+    * mic_000016.mrc
+ + Will use following diameters for Laplacian-of-Gaussian filter: 
+   * 20 (too low)
+   * 25 (too low)
+   * 33 (too low)
+   * 50 (too low)
+   * 100 (ok)
+   * 150 (ok)
+   * 200 (ok)
+   * 400 (too high)
+   * 600 (too high)
+   * 800 (too high)
+   * 1000 (too high)
+ + Will use micrographs scaled to 190 pixels as requested. The largest prime factor in FFTs is 19
+ Autopicking ...
+000/??? sec ~~(,_,">                                                          [oo]   3/   3 sec ............................................................~~(,_,">
+ Generating logfile.pdf ... 
+000/??? sec ~~(,_,">                                                          [oo]   0/   0 sec ............................................................~~(,_,">
+ Total number of particles from 1 micrographs is 181
+ i.e. on average there were 181 particles per micrograph
+sh: 1: gs: not found
+ ERROR in executing: gs -sDEVICE=pdfwrite -dNOPAUSE -dBATCH -dSAFER -dDEVICEWIDTHPOINTS=800 -dDEVICEHEIGHTPOINTS=800 -sOutputFile=logfile.pdf @logfile.pdf.lst > /dev/null
+ + Will make an empty PDF-file in logfile.pdf
+ Done! Written: logfile.pdf 
+[ip-172-31-13-159:12451] 3 more processes have sent help message help-mpi-btl-base.txt / btl:no-nics
+[ip-172-31-13-159:12451] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+[35mFINISHED[0m: pickMicrographStep, step 16, time 2020-11-13 15:44:43.300361
+Reading coordinates from mics: 16
+[35mSTARTED[0m: pickMicrographStep, step 17, time 2020-11-13 15:44:43.356672
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00017_UnderDefocus0.7um_frameImage_aligned_mic.mrc 
+[32mmpirun -np 4  `which relion_autopick_mpi`  --pickname autopick --odir "" --LoG --shrink 0 --lowpass 20.000  --i input_micrographs.star --LoG_diam_min 100.000 --LoG_diam_max 200.000 --LoG_adjust_threshold 0.000 --LoG_upper_threshold 999.000[0m
+--------------------------------------------------------------------------
+[[33811,1],1]: A high-performance Open MPI point-to-point messaging module
+was unable to find any relevant network interfaces:
+
+Module: OpenFabrics (openib)
+  Host: ip-172-31-13-159
+
+Another transport will be used instead, although this may result in
+lower performance.
+--------------------------------------------------------------------------
+RELION version: 3.1.0-commit-GITDIR 
+Precision: BASE=double, CUDA-ACC=single 
+
+ === RELION MPI setup ===
+ + Number of MPI processes             = 4
+ + Master  (0) runs on host            = ip-172-31-13-159
+ + Slave     1 runs on host            = ip-172-31-13-159
+ + Slave     2 runs on host            = ip-172-31-13-159
+ + Slave     3 runs on host            = ip-172-31-13-159
+ =================
+ + Run autopicking on the following micrographs: 
+    * mic_000017.mrc
+ + Will use following diameters for Laplacian-of-Gaussian filter: 
+   * 20 (too low)
+   * 25 (too low)
+   * 33 (too low)
+   * 50 (too low)
+   * 100 (ok)
+   * 150 (ok)
+   * 200 (ok)
+   * 400 (too high)
+   * 600 (too high)
+   * 800 (too high)
+   * 1000 (too high)
+ + Will use micrographs scaled to 190 pixels as requested. The largest prime factor in FFTs is 19
+ Autopicking ...
+000/??? sec ~~(,_,">                                                          [oo]   3/   3 sec ............................................................~~(,_,">
+ Generating logfile.pdf ... 
+000/??? sec ~~(,_,">                                                          [oo]   0/   0 sec ............................................................~~(,_,">
+ Total number of particles from 1 micrographs is 170
+ i.e. on average there were 170 particles per micrograph
+sh: 1: gs: not found
+ ERROR in executing: gs -sDEVICE=pdfwrite -dNOPAUSE -dBATCH -dSAFER -dDEVICEWIDTHPOINTS=800 -dDEVICEHEIGHTPOINTS=800 -sOutputFile=logfile.pdf @logfile.pdf.lst > /dev/null
+ + Will make an empty PDF-file in logfile.pdf
+ Done! Written: logfile.pdf 
+[ip-172-31-13-159:12522] 3 more processes have sent help message help-mpi-btl-base.txt / btl:no-nics
+[ip-172-31-13-159:12522] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+[35mFINISHED[0m: pickMicrographStep, step 17, time 2020-11-13 15:44:47.814754
+Reading coordinates from mics: 17
+[35mSTARTED[0m: pickMicrographStep, step 18, time 2020-11-13 15:44:47.856472
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00018_UnderDefocus0.7um_frameImage_aligned_mic.mrc 
+[32mmpirun -np 4  `which relion_autopick_mpi`  --pickname autopick --odir "" --LoG --shrink 0 --lowpass 20.000  --i input_micrographs.star --LoG_diam_min 100.000 --LoG_diam_max 200.000 --LoG_adjust_threshold 0.000 --LoG_upper_threshold 999.000[0m
+--------------------------------------------------------------------------
+[[34238,1],1]: A high-performance Open MPI point-to-point messaging module
+was unable to find any relevant network interfaces:
+
+Module: OpenFabrics (openib)
+  Host: ip-172-31-13-159
+
+Another transport will be used instead, although this may result in
+lower performance.
+--------------------------------------------------------------------------
+RELION version: 3.1.0-commit-GITDIR 
+Precision: BASE=double, CUDA-ACC=single 
+
+ === RELION MPI setup ===
+ + Number of MPI processes             = 4
+ + Master  (0) runs on host            = ip-172-31-13-159
+ + Slave     1 runs on host            = ip-172-31-13-159
+ + Slave     2 runs on host            = ip-172-31-13-159
+ + Slave     3 runs on host            = ip-172-31-13-159
+ =================
+ + Run autopicking on the following micrographs: 
+    * mic_000018.mrc
+ + Will use following diameters for Laplacian-of-Gaussian filter: 
+   * 20 (too low)
+   * 25 (too low)
+   * 33 (too low)
+   * 50 (too low)
+   * 100 (ok)
+   * 150 (ok)
+   * 200 (ok)
+   * 400 (too high)
+   * 600 (too high)
+   * 800 (too high)
+   * 1000 (too high)
+ + Will use micrographs scaled to 190 pixels as requested. The largest prime factor in FFTs is 19
+ Autopicking ...
+000/??? sec ~~(,_,">                                                          [oo]   3/   3 sec ............................................................~~(,_,">
+ Generating logfile.pdf ... 
+000/??? sec ~~(,_,">                                                          [oo]   0/   0 sec ............................................................~~(,_,">
+ Total number of particles from 1 micrographs is 179
+ i.e. on average there were 179 particles per micrograph
+sh: 1: gs: not found
+ ERROR in executing: gs -sDEVICE=pdfwrite -dNOPAUSE -dBATCH -dSAFER -dDEVICEWIDTHPOINTS=800 -dDEVICEHEIGHTPOINTS=800 -sOutputFile=logfile.pdf @logfile.pdf.lst > /dev/null
+ + Will make an empty PDF-file in logfile.pdf
+ Done! Written: logfile.pdf 
+[ip-172-31-13-159:12615] 3 more processes have sent help message help-mpi-btl-base.txt / btl:no-nics
+[ip-172-31-13-159:12615] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+[35mFINISHED[0m: pickMicrographStep, step 18, time 2020-11-13 15:44:52.626990
+Reading coordinates from mics: 18
+[35mSTARTED[0m: pickMicrographStep, step 19, time 2020-11-13 15:44:52.674082
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00019_UnderDefocus0.7um_frameImage_aligned_mic.mrc 
+[32mmpirun -np 4  `which relion_autopick_mpi`  --pickname autopick --odir "" --LoG --shrink 0 --lowpass 20.000  --i input_micrographs.star --LoG_diam_min 100.000 --LoG_diam_max 200.000 --LoG_adjust_threshold 0.000 --LoG_upper_threshold 999.000[0m
+--------------------------------------------------------------------------
+[[34133,1],0]: A high-performance Open MPI point-to-point messaging module
+was unable to find any relevant network interfaces:
+
+Module: OpenFabrics (openib)
+  Host: ip-172-31-13-159
+
+Another transport will be used instead, although this may result in
+lower performance.
+--------------------------------------------------------------------------
+RELION version: 3.1.0-commit-GITDIR 
+Precision: BASE=double, CUDA-ACC=single 
+
+ === RELION MPI setup ===
+ + Number of MPI processes             = 4
+ + Master  (0) runs on host            = ip-172-31-13-159
+ + Slave     1 runs on host            = ip-172-31-13-159
+ + Slave     2 runs on host            = ip-172-31-13-159
+ + Slave     3 runs on host            = ip-172-31-13-159
+ =================
+ + Run autopicking on the following micrographs: 
+    * mic_000019.mrc
+ + Will use following diameters for Laplacian-of-Gaussian filter: 
+   * 20 (too low)
+   * 25 (too low)
+   * 33 (too low)
+   * 50 (too low)
+   * 100 (ok)
+   * 150 (ok)
+   * 200 (ok)
+   * 400 (too high)
+   * 600 (too high)
+   * 800 (too high)
+   * 1000 (too high)
+ + Will use micrographs scaled to 190 pixels as requested. The largest prime factor in FFTs is 19
+ Autopicking ...
+000/??? sec ~~(,_,">                                                          [oo]   4/   4 sec ............................................................~~(,_,">
+ Generating logfile.pdf ... 
+000/??? sec ~~(,_,">                                                          [oo]   0/   0 sec ............................................................~~(,_,">
+ Total number of particles from 1 micrographs is 49
+ i.e. on average there were 49 particles per micrograph
+sh: 1: gs: not found
+ ERROR in executing: gs -sDEVICE=pdfwrite -dNOPAUSE -dBATCH -dSAFER -dDEVICEWIDTHPOINTS=800 -dDEVICEHEIGHTPOINTS=800 -sOutputFile=logfile.pdf @logfile.pdf.lst > /dev/null
+ + Will make an empty PDF-file in logfile.pdf
+ Done! Written: logfile.pdf 
+[ip-172-31-13-159:12716] 3 more processes have sent help message help-mpi-btl-base.txt / btl:no-nics
+[ip-172-31-13-159:12716] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+[35mFINISHED[0m: pickMicrographStep, step 19, time 2020-11-13 15:44:57.228798
+Reading coordinates from mics: 19
+[35mSTARTED[0m: pickMicrographStep, step 20, time 2020-11-13 15:44:57.266652
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00020_UnderDefocus0.7um_frameImage_aligned_mic.mrc 
+[32mmpirun -np 4  `which relion_autopick_mpi`  --pickname autopick --odir "" --LoG --shrink 0 --lowpass 20.000  --i input_micrographs.star --LoG_diam_min 100.000 --LoG_diam_max 200.000 --LoG_adjust_threshold 0.000 --LoG_upper_threshold 999.000[0m
+--------------------------------------------------------------------------
+[[34506,1],1]: A high-performance Open MPI point-to-point messaging module
+was unable to find any relevant network interfaces:
+
+Module: OpenFabrics (openib)
+  Host: ip-172-31-13-159
+
+Another transport will be used instead, although this may result in
+lower performance.
+--------------------------------------------------------------------------
+RELION version: 3.1.0-commit-GITDIR 
+Precision: BASE=double, CUDA-ACC=single 
+
+ === RELION MPI setup ===
+ + Number of MPI processes             = 4
+ + Master  (0) runs on host            = ip-172-31-13-159
+ + Slave     1 runs on host            = ip-172-31-13-159
+ + Slave     2 runs on host            = ip-172-31-13-159
+ + Slave     3 runs on host            = ip-172-31-13-159
+ =================
+ + Run autopicking on the following micrographs: 
+    * mic_000020.mrc
+ + Will use following diameters for Laplacian-of-Gaussian filter: 
+   * 20 (too low)
+   * 25 (too low)
+   * 33 (too low)
+   * 50 (too low)
+   * 100 (ok)
+   * 150 (ok)
+   * 200 (ok)
+   * 400 (too high)
+   * 600 (too high)
+   * 800 (too high)
+   * 1000 (too high)
+ + Will use micrographs scaled to 190 pixels as requested. The largest prime factor in FFTs is 19
+ Autopicking ...
+000/??? sec ~~(,_,">                                                          [oo]   3/   3 sec ............................................................~~(,_,">
+ Generating logfile.pdf ... 
+000/??? sec ~~(,_,">                                                          [oo]   0/   0 sec ............................................................~~(,_,">
+ Total number of particles from 1 micrographs is 98
+ i.e. on average there were 98 particles per micrograph
+sh: 1: gs: not found
+ ERROR in executing: gs -sDEVICE=pdfwrite -dNOPAUSE -dBATCH -dSAFER -dDEVICEWIDTHPOINTS=800 -dDEVICEHEIGHTPOINTS=800 -sOutputFile=logfile.pdf @logfile.pdf.lst > /dev/null
+ + Will make an empty PDF-file in logfile.pdf
+ Done! Written: logfile.pdf 
+[ip-172-31-13-159:12851] 3 more processes have sent help message help-mpi-btl-base.txt / btl:no-nics
+[ip-172-31-13-159:12851] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+[35mFINISHED[0m: pickMicrographStep, step 20, time 2020-11-13 15:45:02.000165
+Reading coordinates from mics: 20
+[35mSTARTED[0m: pickMicrographStep, step 21, time 2020-11-13 15:45:02.051063
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00021_UnderDefocus0.7um_frameImage_aligned_mic.mrc 
+[32mmpirun -np 4  `which relion_autopick_mpi`  --pickname autopick --odir "" --LoG --shrink 0 --lowpass 20.000  --i input_micrographs.star --LoG_diam_min 100.000 --LoG_diam_max 200.000 --LoG_adjust_threshold 0.000 --LoG_upper_threshold 999.000[0m
+--------------------------------------------------------------------------
+[[34399,1],1]: A high-performance Open MPI point-to-point messaging module
+was unable to find any relevant network interfaces:
+
+Module: OpenFabrics (openib)
+  Host: ip-172-31-13-159
+
+Another transport will be used instead, although this may result in
+lower performance.
+--------------------------------------------------------------------------
+RELION version: 3.1.0-commit-GITDIR 
+Precision: BASE=double, CUDA-ACC=single 
+
+ === RELION MPI setup ===
+ + Number of MPI processes             = 4
+ + Master  (0) runs on host            = ip-172-31-13-159
+ + Slave     1 runs on host            = ip-172-31-13-159
+ + Slave     2 runs on host            = ip-172-31-13-159
+ + Slave     3 runs on host            = ip-172-31-13-159
+ =================
+ + Run autopicking on the following micrographs: 
+    * mic_000021.mrc
+ + Will use following diameters for Laplacian-of-Gaussian filter: 
+   * 20 (too low)
+   * 25 (too low)
+   * 33 (too low)
+   * 50 (too low)
+   * 100 (ok)
+   * 150 (ok)
+   * 200 (ok)
+   * 400 (too high)
+   * 600 (too high)
+   * 800 (too high)
+   * 1000 (too high)
+ + Will use micrographs scaled to 190 pixels as requested. The largest prime factor in FFTs is 19
+ Autopicking ...
+000/??? sec ~~(,_,">                                                          [oo]   3/   3 sec ............................................................~~(,_,">
+ Generating logfile.pdf ... 
+000/??? sec ~~(,_,">                                                          [oo]   0/   0 sec ............................................................~~(,_,">
+ Total number of particles from 1 micrographs is 157
+ i.e. on average there were 157 particles per micrograph
+sh: 1: gs: not found
+ ERROR in executing: gs -sDEVICE=pdfwrite -dNOPAUSE -dBATCH -dSAFER -dDEVICEWIDTHPOINTS=800 -dDEVICEHEIGHTPOINTS=800 -sOutputFile=logfile.pdf @logfile.pdf.lst > /dev/null
+ + Will make an empty PDF-file in logfile.pdf
+ Done! Written: logfile.pdf 
+[ip-172-31-13-159:12966] 3 more processes have sent help message help-mpi-btl-base.txt / btl:no-nics
+[ip-172-31-13-159:12966] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+[35mFINISHED[0m: pickMicrographStep, step 21, time 2020-11-13 15:45:06.772837
+Reading coordinates from mics: 21
+[35mSTARTED[0m: pickMicrographStep, step 22, time 2020-11-13 15:45:06.811260
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00023_UnderDefocus0.7um_frameImage_aligned_mic.mrc 
+[32mmpirun -np 4  `which relion_autopick_mpi`  --pickname autopick --odir "" --LoG --shrink 0 --lowpass 20.000  --i input_micrographs.star --LoG_diam_min 100.000 --LoG_diam_max 200.000 --LoG_adjust_threshold 0.000 --LoG_upper_threshold 999.000[0m
+--------------------------------------------------------------------------
+[[34806,1],2]: A high-performance Open MPI point-to-point messaging module
+was unable to find any relevant network interfaces:
+
+Module: OpenFabrics (openib)
+  Host: ip-172-31-13-159
+
+Another transport will be used instead, although this may result in
+lower performance.
+--------------------------------------------------------------------------
+RELION version: 3.1.0-commit-GITDIR 
+Precision: BASE=double, CUDA-ACC=single 
+
+ === RELION MPI setup ===
+ + Number of MPI processes             = 4
+ + Master  (0) runs on host            = ip-172-31-13-159
+ + Slave     1 runs on host            = ip-172-31-13-159
+ + Slave     2 runs on host            = ip-172-31-13-159
+ + Slave     3 runs on host            = ip-172-31-13-159
+ =================
+ + Run autopicking on the following micrographs: 
+    * mic_000023.mrc
+ + Will use following diameters for Laplacian-of-Gaussian filter: 
+   * 20 (too low)
+   * 25 (too low)
+   * 33 (too low)
+   * 50 (too low)
+   * 100 (ok)
+   * 150 (ok)
+   * 200 (ok)
+   * 400 (too high)
+   * 600 (too high)
+   * 800 (too high)
+   * 1000 (too high)
+ + Will use micrographs scaled to 190 pixels as requested. The largest prime factor in FFTs is 19
+ Autopicking ...
+000/??? sec ~~(,_,">                                                          [oo]   4/   4 sec ............................................................~~(,_,">
+ Generating logfile.pdf ... 
+000/??? sec ~~(,_,">                                                          [oo]   0/   0 sec ............................................................~~(,_,">
+ Total number of particles from 1 micrographs is 73
+ i.e. on average there were 73 particles per micrograph
+sh: 1: gs: not found
+ Done! Written: logfile.pdf 
+ ERROR in executing: gs -sDEVICE=pdfwrite -dNOPAUSE -dBATCH -dSAFER -dDEVICEWIDTHPOINTS=800 -dDEVICEHEIGHTPOINTS=800 -sOutputFile=logfile.pdf @logfile.pdf.lst > /dev/null
+ + Will make an empty PDF-file in logfile.pdf
+[ip-172-31-13-159:13071] 3 more processes have sent help message help-mpi-btl-base.txt / btl:no-nics
+[ip-172-31-13-159:13071] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+[35mFINISHED[0m: pickMicrographStep, step 22, time 2020-11-13 15:45:11.408061
+Reading coordinates from mics: 23
+[35mSTARTED[0m: pickMicrographStep, step 23, time 2020-11-13 15:45:11.452167
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00024_UnderDefocus0.9um_frameImage_aligned_mic.mrc 
+[32mmpirun -np 4  `which relion_autopick_mpi`  --pickname autopick --odir "" --LoG --shrink 0 --lowpass 20.000  --i input_micrographs.star --LoG_diam_min 100.000 --LoG_diam_max 200.000 --LoG_adjust_threshold 0.000 --LoG_upper_threshold 999.000[0m
+--------------------------------------------------------------------------
+[[34703,1],1]: A high-performance Open MPI point-to-point messaging module
+was unable to find any relevant network interfaces:
+
+Module: OpenFabrics (openib)
+  Host: ip-172-31-13-159
+
+Another transport will be used instead, although this may result in
+lower performance.
+--------------------------------------------------------------------------
+RELION version: 3.1.0-commit-GITDIR 
+Precision: BASE=double, CUDA-ACC=single 
+
+ === RELION MPI setup ===
+ + Number of MPI processes             = 4
+ + Master  (0) runs on host            = ip-172-31-13-159
+ + Slave     1 runs on host            = ip-172-31-13-159
+ + Slave     2 runs on host            = ip-172-31-13-159
+ + Slave     3 runs on host            = ip-172-31-13-159
+ =================
+ + Run autopicking on the following micrographs: 
+    * mic_000024.mrc
+ + Will use following diameters for Laplacian-of-Gaussian filter: 
+   * 20 (too low)
+   * 25 (too low)
+   * 33 (too low)
+   * 50 (too low)
+   * 100 (ok)
+   * 150 (ok)
+   * 200 (ok)
+   * 400 (too high)
+   * 600 (too high)
+   * 800 (too high)
+   * 1000 (too high)
+ + Will use micrographs scaled to 190 pixels as requested. The largest prime factor in FFTs is 19
+ Autopicking ...
+000/??? sec ~~(,_,">                                                          [oo]   3/   3 sec ............................................................~~(,_,">
+ Generating logfile.pdf ... 
+000/??? sec ~~(,_,">                                                          [oo]   0/   0 sec ............................................................~~(,_,">
+ Total number of particles from 1 micrographs is 169
+ i.e. on average there were 169 particles per micrograph
+sh: 1: gs: not found
+ ERROR in executing: gs -sDEVICE=pdfwrite -dNOPAUSE -dBATCH -dSAFER -dDEVICEWIDTHPOINTS=800 -dDEVICEHEIGHTPOINTS=800 -sOutputFile=logfile.pdf @logfile.pdf.lst > /dev/null
+ + Will make an empty PDF-file in logfile.pdf
+ Done! Written: logfile.pdf 
+[ip-172-31-13-159:13174] 3 more processes have sent help message help-mpi-btl-base.txt / btl:no-nics
+[ip-172-31-13-159:13174] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+[35mFINISHED[0m: pickMicrographStep, step 23, time 2020-11-13 15:45:15.811048
+Reading coordinates from mics: 24
+[35mSTARTED[0m: pickMicrographStep, step 24, time 2020-11-13 15:45:15.859509
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00025_UnderDefocus0.9um_frameImage_aligned_mic.mrc 
+[32mmpirun -np 4  `which relion_autopick_mpi`  --pickname autopick --odir "" --LoG --shrink 0 --lowpass 20.000  --i input_micrographs.star --LoG_diam_min 100.000 --LoG_diam_max 200.000 --LoG_adjust_threshold 0.000 --LoG_upper_threshold 999.000[0m
+--------------------------------------------------------------------------
+[[34600,1],0]: A high-performance Open MPI point-to-point messaging module
+was unable to find any relevant network interfaces:
+
+Module: OpenFabrics (openib)
+  Host: ip-172-31-13-159
+
+Another transport will be used instead, although this may result in
+lower performance.
+--------------------------------------------------------------------------
+RELION version: 3.1.0-commit-GITDIR 
+Precision: BASE=double, CUDA-ACC=single 
+
+ === RELION MPI setup ===
+ + Number of MPI processes             = 4
+ + Master  (0) runs on host            = ip-172-31-13-159
+ + Slave     1 runs on host            = ip-172-31-13-159
+ + Slave     2 runs on host            = ip-172-31-13-159
+ + Slave     3 runs on host            = ip-172-31-13-159
+ =================
+ + Run autopicking on the following micrographs: 
+    * mic_000025.mrc
+ + Will use following diameters for Laplacian-of-Gaussian filter: 
+   * 20 (too low)
+   * 25 (too low)
+   * 33 (too low)
+   * 50 (too low)
+   * 100 (ok)
+   * 150 (ok)
+   * 200 (ok)
+   * 400 (too high)
+   * 600 (too high)
+   * 800 (too high)
+   * 1000 (too high)
+ + Will use micrographs scaled to 190 pixels as requested. The largest prime factor in FFTs is 19
+ Autopicking ...
+000/??? sec ~~(,_,">                                                          [oo]   4/   4 sec ............................................................~~(,_,">
+ Generating logfile.pdf ... 
+000/??? sec ~~(,_,">                                                          [oo]   0/   0 sec ............................................................~~(,_,">
+ Total number of particles from 1 micrographs is 156
+ i.e. on average there were 156 particles per micrograph
+sh: 1: gs: not found
+ ERROR in executing: gs -sDEVICE=pdfwrite -dNOPAUSE -dBATCH -dSAFER -dDEVICEWIDTHPOINTS=800 -dDEVICEHEIGHTPOINTS=800 -sOutputFile=logfile.pdf @logfile.pdf.lst > /dev/null
+ + Will make an empty PDF-file in logfile.pdf
+ Done! Written: logfile.pdf 
+[ip-172-31-13-159:13265] 3 more processes have sent help message help-mpi-btl-base.txt / btl:no-nics
+[ip-172-31-13-159:13265] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+[35mFINISHED[0m: pickMicrographStep, step 24, time 2020-11-13 15:45:20.925362
+Reading coordinates from mics: 25
+[35mSTARTED[0m: pickMicrographStep, step 25, time 2020-11-13 15:45:20.974254
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrc 
+[32mmpirun -np 4  `which relion_autopick_mpi`  --pickname autopick --odir "" --LoG --shrink 0 --lowpass 20.000  --i input_micrographs.star --LoG_diam_min 100.000 --LoG_diam_max 200.000 --LoG_adjust_threshold 0.000 --LoG_upper_threshold 999.000[0m
+--------------------------------------------------------------------------
+[[33022,1],0]: A high-performance Open MPI point-to-point messaging module
+was unable to find any relevant network interfaces:
+
+Module: OpenFabrics (openib)
+  Host: ip-172-31-13-159
+
+Another transport will be used instead, although this may result in
+lower performance.
+--------------------------------------------------------------------------
+RELION version: 3.1.0-commit-GITDIR 
+Precision: BASE=double, CUDA-ACC=single 
+
+ === RELION MPI setup ===
+ + Number of MPI processes             = 4
+ + Master  (0) runs on host            = ip-172-31-13-159
+ + Slave     1 runs on host            = ip-172-31-13-159
+ + Slave     2 runs on host            = ip-172-31-13-159
+ + Slave     3 runs on host            = ip-172-31-13-159
+ =================
+ + Run autopicking on the following micrographs: 
+    * mic_000026.mrc
+ + Will use following diameters for Laplacian-of-Gaussian filter: 
+   * 20 (too low)
+   * 25 (too low)
+   * 33 (too low)
+   * 50 (too low)
+   * 100 (ok)
+   * 150 (ok)
+   * 200 (ok)
+   * 400 (too high)
+   * 600 (too high)
+   * 800 (too high)
+   * 1000 (too high)
+ + Will use micrographs scaled to 190 pixels as requested. The largest prime factor in FFTs is 19
+ Autopicking ...
+000/??? sec ~~(,_,">                                                          [oo][ip-172-31-13-159:13319] 3 more processes have sent help message help-mpi-btl-base.txt / btl:no-nics
+[ip-172-31-13-159:13319] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+   4/   4 sec ............................................................~~(,_,">
+ Generating logfile.pdf ... 
+000/??? sec ~~(,_,">                                                          [oo]   0/   0 sec ............................................................~~(,_,">
+ Total number of particles from 1 micrographs is 127
+ i.e. on average there were 127 particles per micrograph
+sh: 1: gs: not found
+ ERROR in executing: gs -sDEVICE=pdfwrite -dNOPAUSE -dBATCH -dSAFER -dDEVICEWIDTHPOINTS=800 -dDEVICEHEIGHTPOINTS=800 -sOutputFile=logfile.pdf @logfile.pdf.lst > /dev/null
+ + Will make an empty PDF-file in logfile.pdf
+ Done! Written: logfile.pdf 
+[35mFINISHED[0m: pickMicrographStep, step 25, time 2020-11-13 15:45:26.337165
+Reading coordinates from mics: 26
+[35mSTARTED[0m: pickMicrographStep, step 26, time 2020-11-13 15:45:26.371001
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00028_UnderDefocus0.9um_frameImage_aligned_mic.mrc 
+[32mmpirun -np 4  `which relion_autopick_mpi`  --pickname autopick --odir "" --LoG --shrink 0 --lowpass 20.000  --i input_micrographs.star --LoG_diam_min 100.000 --LoG_diam_max 200.000 --LoG_adjust_threshold 0.000 --LoG_upper_threshold 999.000[0m
+--------------------------------------------------------------------------
+[[32932,1],0]: A high-performance Open MPI point-to-point messaging module
+was unable to find any relevant network interfaces:
+
+Module: OpenFabrics (openib)
+  Host: ip-172-31-13-159
+
+Another transport will be used instead, although this may result in
+lower performance.
+--------------------------------------------------------------------------
+RELION version: 3.1.0-commit-GITDIR 
+Precision: BASE=double, CUDA-ACC=single 
+
+ === RELION MPI setup ===
+ + Number of MPI processes             = 4
+ + Master  (0) runs on host            = ip-172-31-13-159
+ + Slave     1 runs on host            = ip-172-31-13-159
+ + Slave     2 runs on host            = ip-172-31-13-159
+ + Slave     3 runs on host            = ip-172-31-13-159
+ =================
+ + Run autopicking on the following micrographs: 
+    * mic_000028.mrc
+ + Will use following diameters for Laplacian-of-Gaussian filter: 
+   * 20 (too low)
+   * 25 (too low)
+   * 33 (too low)
+   * 50 (too low)
+   * 100 (ok)
+   * 150 (ok)
+   * 200 (ok)
+   * 400 (too high)
+   * 600 (too high)
+   * 800 (too high)
+   * 1000 (too high)
+ + Will use micrographs scaled to 190 pixels as requested. The largest prime factor in FFTs is 19
+ Autopicking ...
+000/??? sec ~~(,_,">                                                          [oo][ip-172-31-13-159:13405] 3 more processes have sent help message help-mpi-btl-base.txt / btl:no-nics
+[ip-172-31-13-159:13405] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+   5/   5 sec ............................................................~~(,_,">
+ Generating logfile.pdf ... 
+000/??? sec ~~(,_,">                                                          [oo]   0/   0 sec ............................................................~~(,_,">
+ Total number of particles from 1 micrographs is 116
+ i.e. on average there were 116 particles per micrograph
+sh: 1: gs: not found
+ ERROR in executing: gs -sDEVICE=pdfwrite -dNOPAUSE -dBATCH -dSAFER -dDEVICEWIDTHPOINTS=800 -dDEVICEHEIGHTPOINTS=800 -sOutputFile=logfile.pdf @logfile.pdf.lst > /dev/null
+ + Will make an empty PDF-file in logfile.pdf
+ Done! Written: logfile.pdf 
+[35mFINISHED[0m: pickMicrographStep, step 26, time 2020-11-13 15:45:32.135258
+Reading coordinates from mics: 28
+[35mSTARTED[0m: pickMicrographStep, step 27, time 2020-11-13 15:45:32.173962
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00029_UnderDefocus0.9um_frameImage_aligned_mic.mrc 
+[32mmpirun -np 4  `which relion_autopick_mpi`  --pickname autopick --odir "" --LoG --shrink 0 --lowpass 20.000  --i input_micrographs.star --LoG_diam_min 100.000 --LoG_diam_max 200.000 --LoG_adjust_threshold 0.000 --LoG_upper_threshold 999.000[0m
+--------------------------------------------------------------------------
+[[32817,1],0]: A high-performance Open MPI point-to-point messaging module
+was unable to find any relevant network interfaces:
+
+Module: OpenFabrics (openib)
+  Host: ip-172-31-13-159
+
+Another transport will be used instead, although this may result in
+lower performance.
+--------------------------------------------------------------------------
+RELION version: 3.1.0-commit-GITDIR 
+Precision: BASE=double, CUDA-ACC=single 
+
+ === RELION MPI setup ===
+ + Number of MPI processes             = 4
+ + Master  (0) runs on host            = ip-172-31-13-159
+ + Slave     1 runs on host            = ip-172-31-13-159
+ + Slave     2 runs on host            = ip-172-31-13-159
+ + Slave     3 runs on host            = ip-172-31-13-159
+ =================
+ + Run autopicking on the following micrographs: 
+    * mic_000029.mrc
+ + Will use following diameters for Laplacian-of-Gaussian filter: 
+   * 20 (too low)
+   * 25 (too low)
+   * 33 (too low)
+   * 50 (too low)
+   * 100 (ok)
+   * 150 (ok)
+   * 200 (ok)
+   * 400 (too high)
+   * 600 (too high)
+   * 800 (too high)
+   * 1000 (too high)
+ + Will use micrographs scaled to 190 pixels as requested. The largest prime factor in FFTs is 19
+ Autopicking ...
+000/??? sec ~~(,_,">                                                          [oo][ip-172-31-13-159:13512] 3 more processes have sent help message help-mpi-btl-base.txt / btl:no-nics
+[ip-172-31-13-159:13512] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+   5/   5 sec ............................................................~~(,_,">
+ Generating logfile.pdf ... 
+000/??? sec ~~(,_,">                                                          [oo]   0/   0 sec ............................................................~~(,_,">
+ Total number of particles from 1 micrographs is 186
+ i.e. on average there were 186 particles per micrograph
+sh: 1: gs: not found
+ ERROR in executing: gs -sDEVICE=pdfwrite -dNOPAUSE -dBATCH -dSAFER -dDEVICEWIDTHPOINTS=800 -dDEVICEHEIGHTPOINTS=800 -sOutputFile=logfile.pdf @logfile.pdf.lst > /dev/null
+ + Will make an empty PDF-file in logfile.pdf
+ Done! Written: logfile.pdf 
+[35mFINISHED[0m: pickMicrographStep, step 27, time 2020-11-13 15:45:38.453847
+Reading coordinates from mics: 29
+[35mSTARTED[0m: pickMicrographStep, step 28, time 2020-11-13 15:45:38.514277
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00030_UnderDefocus0.9um_frameImage_aligned_mic.mrc 
+[32mmpirun -np 4  `which relion_autopick_mpi`  --pickname autopick --odir "" --LoG --shrink 0 --lowpass 20.000  --i input_micrographs.star --LoG_diam_min 100.000 --LoG_diam_max 200.000 --LoG_adjust_threshold 0.000 --LoG_upper_threshold 999.000[0m
+--------------------------------------------------------------------------
+[[33226,1],2]: A high-performance Open MPI point-to-point messaging module
+was unable to find any relevant network interfaces:
+
+Module: OpenFabrics (openib)
+  Host: ip-172-31-13-159
+
+Another transport will be used instead, although this may result in
+lower performance.
+--------------------------------------------------------------------------
+RELION version: 3.1.0-commit-GITDIR 
+Precision: BASE=double, CUDA-ACC=single 
+
+ === RELION MPI setup ===
+ + Number of MPI processes             = 4
+ + Master  (0) runs on host            = ip-172-31-13-159
+ + Slave     1 runs on host            = ip-172-31-13-159
+ + Slave     2 runs on host            = ip-172-31-13-159
+ + Slave     3 runs on host            = ip-172-31-13-159
+ =================
+ + Run autopicking on the following micrographs: 
+    * mic_000030.mrc
+ + Will use following diameters for Laplacian-of-Gaussian filter: 
+   * 20 (too low)
+   * 25 (too low)
+   * 33 (too low)
+   * 50 (too low)
+   * 100 (ok)
+   * 150 (ok)
+   * 200 (ok)
+   * 400 (too high)
+   * 600 (too high)
+   * 800 (too high)
+   * 1000 (too high)
+ + Will use micrographs scaled to 190 pixels as requested. The largest prime factor in FFTs is 19
+ Autopicking ...
+000/??? sec ~~(,_,">                                                          [oo][ip-172-31-13-159:13619] 3 more processes have sent help message help-mpi-btl-base.txt / btl:no-nics
+[ip-172-31-13-159:13619] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+   5/   5 sec ............................................................~~(,_,">
+ Generating logfile.pdf ... 
+000/??? sec ~~(,_,">                                                          [oo]   0/   0 sec ............................................................~~(,_,">
+ Total number of particles from 1 micrographs is 163
+ i.e. on average there were 163 particles per micrograph
+sh: 1: gs: not found
+ ERROR in executing: gs -sDEVICE=pdfwrite -dNOPAUSE -dBATCH -dSAFER -dDEVICEWIDTHPOINTS=800 -dDEVICEHEIGHTPOINTS=800 -sOutputFile=logfile.pdf @logfile.pdf.lst > /dev/null
+ + Will make an empty PDF-file in logfile.pdf
+ Done! Written: logfile.pdf 
+[35mFINISHED[0m: pickMicrographStep, step 28, time 2020-11-13 15:45:44.399562
+Reading coordinates from mics: 30
+[35mSTARTED[0m: createOutputStep, step 29, time 2020-11-13 15:45:44.459406
+[35mFINISHED[0m: createOutputStep, step 29, time 2020-11-13 15:45:44.463369
+*** Last status is finished 
+Cleaning temp folder....
+[32m------------------- PROTOCOL FINISHED[0m

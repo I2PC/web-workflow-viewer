@@ -1,0 +1,154 @@
+[32mRUNNING PROTOCOL -----------------[0m
+Hostname: ip-172-31-13-159.eu-west-1.compute.internal
+PID: 30296
+pyworkflow: 3.0.6
+plugin: xmipp3
+currentDir: /home/scipion/ScipionUserData/projects/Example_10248_Scipion3
+workingDir: Runs/011163_XmippProtLocSharp
+runMode: Continue
+          MPI: 1
+      threads: 4
+ Starting at step: 1
+ Running steps 
+[35mSTARTED[0m: convertInputStep, step 1, time 2020-11-16 14:37:09.919429
+[35mFINISHED[0m: convertInputStep, step 1, time 2020-11-16 14:37:09.923351
+[35mSTARTED[0m: checkBackgroundStep, step 2, time 2020-11-16 14:37:09.930969
+[35mFINISHED[0m: checkBackgroundStep, step 2, time 2020-11-16 14:37:10.029232
+[35mSTARTED[0m: createMaskStep, step 3, time 2020-11-16 14:37:10.037139
+[32mxmipp_transform_threshold  -i Runs/011115_XmippProtCropResizeVolumes/extra/output_volume.vol -o Runs/011163_XmippProtLocSharp/tmp/binaryMask.mrc --select below 0.100000 --substitute binarize[0m
+Input File: Runs/011115_XmippProtCropResizeVolumes/extra/output_volume.vol
+Output File: Runs/011163_XmippProtLocSharp/tmp/binaryMask.mrc
+Selection method:    below
+Threshold:           0.1
+Substitution method: binarize
+[35mFINISHED[0m: createMaskStep, step 3, time 2020-11-16 14:37:10.206943
+[35mSTARTED[0m: sharpeningAndMonoResStep, step 4, time 2020-11-16 14:37:10.215154
+
+====================
+Iteration  1
+[32mxmipp_volume_local_sharpening  -o Runs/011163_XmippProtLocSharp/extra/sharpenedMap_1.mrc  --resolution_map Runs/011115_XmippProtCropResizeVolumes/extra/output_volume.vol --sampling 0.742500 -n 4 -k 0.025000 --md Runs/011163_XmippProtLocSharp/tmp/params.xmd --vol Runs/011000_XmippProtDeepVolPostProc/extra/deepPostProcess.mrc:mrc[0m
+Starting...
+used procesors = 4
+  lambda  3.05374
+[32mxmipp_image_header -i Runs/011163_XmippProtLocSharp/extra/sharpenedMap_1.mrc -s 0.742500 [0m
+Setting sampling rate into headers...
+Input: Runs/011163_XmippProtLocSharp/extra/sharpenedMap_1.mrc
+New sampling rate (Angstrom) = 0.7425
+[32mxmipp_resolution_monogenic_signal  --vol Runs/011163_XmippProtLocSharp/extra/sharpenedMap_1.mrc --mask Runs/011163_XmippProtLocSharp/tmp/binaryMask.mrc --sampling_rate 0.742500 --minRes 1.485000 --maxRes 6.691864 --step 0.250000 -o Runs/011163_XmippProtLocSharp/tmp --significance 0.950000 --threads 4[0m
+Starting...
+                                     
+The protein has a radius of 92 px 
+There is no noise beyond a radius of 125 px 
+Regions with a radius greater than 125 px will not be considered
+Analyzing frequencies
+resolution = 6.62946
+resolution = 6.40086
+resolution = 6.1875
+resolution = 5.9879
+resolution = 5.625
+resolution = 5.45956
+resolution = 5.15625
+resolution = 4.88487
+resolution = 4.64063
+resolution = 4.41964
+resolution = 4.21875
+resolution = 3.94947
+resolution = 3.7125
+resolution = 3.4375
+resolution = 3.20043
+resolution = 2.94643
+resolution = 2.69022
+resolution = 2.44243
+resolution = 2.18382
+resolution = 1.93359
+resolution = 1.6875
+
+====================
+Iteration  2
+[32mxmipp_volume_local_sharpening  -o Runs/011163_XmippProtLocSharp/extra/sharpenedMap_2.mrc  --resolution_map Runs/011163_XmippProtLocSharp/tmp/monoresResolutionMap.mrc --sampling 0.742500 -n 4 -k 0.025000 --md Runs/011163_XmippProtLocSharp/tmp/params.xmd --vol Runs/011163_XmippProtLocSharp/extra/sharpenedMap_1.mrc[0m
+Starting...
+used procesors = 4
+  lambda  2.60397
+[32mxmipp_image_header -i Runs/011163_XmippProtLocSharp/extra/sharpenedMap_2.mrc -s 0.742500 [0m
+Setting sampling rate into headers...
+Input: Runs/011163_XmippProtLocSharp/extra/sharpenedMap_2.mrc
+New sampling rate (Angstrom) = 0.7425
+[32mxmipp_resolution_monogenic_signal  --vol Runs/011163_XmippProtLocSharp/extra/sharpenedMap_2.mrc --mask Runs/011163_XmippProtLocSharp/tmp/binaryMask.mrc --sampling_rate 0.742500 --minRes 1.485000 --maxRes 5.028662 --step 0.250000 -o Runs/011163_XmippProtLocSharp/tmp --significance 0.950000 --threads 4[0m
+Starting...
+                                     
+The protein has a radius of 92 px 
+There is no noise beyond a radius of 125 px 
+Regions with a radius greater than 125 px will not be considered
+Analyzing frequencies
+resolution = 5.01689
+resolution = 4.75962
+resolution = 4.52744
+resolution = 4.31686
+resolution = 4.03533
+resolution = 3.78827
+resolution = 3.50236
+resolution = 3.25658
+resolution = 3.04303
+resolution = 2.77052
+resolution = 2.54281
+resolution = 2.29167
+resolution = 2.01766
+resolution = 1.78486
+resolution = 1.53409
+
+====================
+Iteration  3
+[32mxmipp_volume_local_sharpening  -o Runs/011163_XmippProtLocSharp/extra/sharpenedMap_3.mrc  --resolution_map Runs/011163_XmippProtLocSharp/tmp/monoresResolutionMap.mrc --sampling 0.742500 -n 4 -k 0.025000 --md Runs/011163_XmippProtLocSharp/tmp/params.xmd --vol Runs/011163_XmippProtLocSharp/extra/sharpenedMap_2.mrc[0m
+Starting...
+used procesors = 4
+  lambda  2.1492
+[32mxmipp_image_header -i Runs/011163_XmippProtLocSharp/extra/sharpenedMap_3.mrc -s 0.742500 [0m
+Setting sampling rate into headers...
+Input: Runs/011163_XmippProtLocSharp/extra/sharpenedMap_3.mrc
+New sampling rate (Angstrom) = 0.7425
+[32mxmipp_resolution_monogenic_signal  --vol Runs/011163_XmippProtLocSharp/extra/sharpenedMap_3.mrc --mask Runs/011163_XmippProtLocSharp/tmp/binaryMask.mrc --sampling_rate 0.742500 --minRes 1.485000 --maxRes 3.803391 --step 0.250000 -o Runs/011163_XmippProtLocSharp/tmp --significance 0.950000 --threads 4[0m
+Starting...
+                                     
+The protein has a radius of 92 px 
+There is no noise beyond a radius of 125 px 
+Regions with a radius greater than 125 px will not be considered
+Analyzing frequencies
+resolution = 3.78827
+resolution = 3.56971
+resolution = 3.31473
+resolution = 3.04303
+resolution = 2.8125
+resolution = 2.54281
+resolution = 2.29167
+resolution = 2.0625
+resolution = 1.80218
+resolution = 1.55987
+
+====================
+Iteration  4
+[32mxmipp_volume_local_sharpening  -o Runs/011163_XmippProtLocSharp/extra/sharpenedMap_4.mrc  --resolution_map Runs/011163_XmippProtLocSharp/tmp/monoresResolutionMap.mrc --sampling 0.742500 -n 4 -k 0.025000 --md Runs/011163_XmippProtLocSharp/tmp/params.xmd --vol Runs/011163_XmippProtLocSharp/extra/sharpenedMap_3.mrc[0m
+Starting...
+used procesors = 4
+  lambda  1.77013
+[32mxmipp_image_header -i Runs/011163_XmippProtLocSharp/extra/sharpenedMap_4.mrc -s 0.742500 [0m
+Setting sampling rate into headers...
+Input: Runs/011163_XmippProtLocSharp/extra/sharpenedMap_4.mrc
+New sampling rate (Angstrom) = 0.7425
+[32mxmipp_resolution_monogenic_signal  --vol Runs/011163_XmippProtLocSharp/extra/sharpenedMap_4.mrc --mask Runs/011163_XmippProtLocSharp/tmp/binaryMask.mrc --sampling_rate 0.742500 --minRes 1.485000 --maxRes 2.611086 --step 0.250000 -o Runs/011163_XmippProtLocSharp/tmp --significance 0.950000 --threads 4[0m
+Starting...
+                                     
+The protein has a radius of 92 px 
+There is no noise beyond a radius of 125 px 
+Regions with a radius greater than 125 px will not be considered
+Analyzing frequencies
+resolution = 2.61444
+resolution = 2.34968
+resolution = 2.10938
+resolution = 1.85625
+resolution = 1.61413
+[35mFINISHED[0m: sharpeningAndMonoResStep, step 4, time 2020-11-16 14:42:35.223235
+[35mSTARTED[0m: createOutputStep, step 5, time 2020-11-16 14:42:35.231701
+[35mFINISHED[0m: createOutputStep, step 5, time 2020-11-16 14:42:35.259827
+*** Last status is finished 
+Cleaning temp folder....
+[32m------------------- PROTOCOL FINISHED[0m

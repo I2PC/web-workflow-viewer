@@ -1,0 +1,134 @@
+[32mRUNNING PROTOCOL -----------------[0m
+Hostname: ip-172-31-13-159.eu-west-1.compute.internal
+PID: 18625
+pyworkflow: 3.0.6
+plugin: xmipp3
+currentDir: /home/scipion/ScipionUserData/projects/Example_10248_Scipion3
+workingDir: Runs/010948_XmippProtLocSharp
+runMode: Continue
+          MPI: 1
+      threads: 4
+ Starting at step: 1
+ Running steps 
+[35mSTARTED[0m: convertInputStep, step 1, time 2020-11-16 12:51:29.309959
+[35mFINISHED[0m: convertInputStep, step 1, time 2020-11-16 12:51:29.313490
+[35mSTARTED[0m: checkBackgroundStep, step 2, time 2020-11-16 12:51:29.321172
+[35mFINISHED[0m: checkBackgroundStep, step 2, time 2020-11-16 12:51:29.418671
+[35mSTARTED[0m: createMaskStep, step 3, time 2020-11-16 12:51:29.427142
+[32mxmipp_transform_threshold  -i Runs/010900_XmippProtCropResizeVolumes/extra/output_volume.vol -o Runs/010948_XmippProtLocSharp/tmp/binaryMask.mrc --select below 0.100000 --substitute binarize[0m
+Input File: Runs/010900_XmippProtCropResizeVolumes/extra/output_volume.vol
+Output File: Runs/010948_XmippProtLocSharp/tmp/binaryMask.mrc
+Selection method:    below
+Threshold:           0.1
+Substitution method: binarize
+[35mFINISHED[0m: createMaskStep, step 3, time 2020-11-16 12:51:29.600054
+[35mSTARTED[0m: sharpeningAndMonoResStep, step 4, time 2020-11-16 12:51:29.609228
+
+====================
+Iteration  1
+[32mxmipp_volume_local_sharpening  -o Runs/010948_XmippProtLocSharp/extra/sharpenedMap_1.mrc  --resolution_map Runs/010900_XmippProtCropResizeVolumes/extra/output_volume.vol --sampling 0.742500 -n 4 -k 0.025000 --md Runs/010948_XmippProtLocSharp/tmp/params.xmd --vol Runs/010450_XmippProtReconstructHighRes/extra/Iter001/volumeAvg.mrc:mrc[0m
+Starting...
+used procesors = 4
+  lambda  5.36002
+[32mxmipp_image_header -i Runs/010948_XmippProtLocSharp/extra/sharpenedMap_1.mrc -s 0.742500 [0m
+Setting sampling rate into headers...
+Input: Runs/010948_XmippProtLocSharp/extra/sharpenedMap_1.mrc
+New sampling rate (Angstrom) = 0.7425
+[32mxmipp_resolution_monogenic_signal  --vol Runs/010948_XmippProtLocSharp/extra/sharpenedMap_1.mrc --mask Runs/010948_XmippProtLocSharp/tmp/binaryMask.mrc --sampling_rate 0.742500 --minRes 1.485000 --maxRes 8.466775 --step 0.250000 -o Runs/010948_XmippProtLocSharp/tmp --significance 0.950000 --threads 4[0m
+Starting...
+                                     
+The protein has a radius of 92 px 
+There is no noise beyond a radius of 125 px 
+Regions with a radius greater than 125 px will not be considered
+Analyzing frequencies
+resolution = 8.4375
+resolution = 8.07065
+resolution = 7.73438
+resolution = 7.425
+resolution = 7.13942
+resolution = 6.875
+resolution = 6.62946
+resolution = 6.40086
+resolution = 6.1875
+resolution = 5.9879
+resolution = 5.80078
+resolution = 5.45956
+resolution = 5.15625
+resolution = 5.01689
+resolution = 4.75962
+resolution = 4.41964
+resolution = 4.21875
+resolution = 3.94947
+resolution = 3.7125
+resolution = 3.4375
+resolution = 3.20043
+resolution = 2.94643
+resolution = 2.72978
+resolution = 2.475
+resolution = 2.20982
+resolution = 1.97473
+resolution = 1.71875
+
+====================
+Iteration  2
+[32mxmipp_volume_local_sharpening  -o Runs/010948_XmippProtLocSharp/extra/sharpenedMap_2.mrc  --resolution_map Runs/010948_XmippProtLocSharp/tmp/monoresResolutionMap.mrc --sampling 0.742500 -n 4 -k 0.025000 --md Runs/010948_XmippProtLocSharp/tmp/params.xmd --vol Runs/010948_XmippProtLocSharp/extra/sharpenedMap_1.mrc[0m
+Starting...
+used procesors = 4
+  lambda  3.97599
+[32mxmipp_image_header -i Runs/010948_XmippProtLocSharp/extra/sharpenedMap_2.mrc -s 0.742500 [0m
+Setting sampling rate into headers...
+Input: Runs/010948_XmippProtLocSharp/extra/sharpenedMap_2.mrc
+New sampling rate (Angstrom) = 0.7425
+[32mxmipp_resolution_monogenic_signal  --vol Runs/010948_XmippProtLocSharp/extra/sharpenedMap_2.mrc --mask Runs/010948_XmippProtLocSharp/tmp/binaryMask.mrc --sampling_rate 0.742500 --minRes 1.485000 --maxRes 5.275349 --step 0.250000 -o Runs/010948_XmippProtLocSharp/tmp --significance 0.950000 --threads 4[0m
+Starting...
+                                     
+The protein has a radius of 92 px 
+There is no noise beyond a radius of 125 px 
+Regions with a radius greater than 125 px will not be considered
+Analyzing frequencies
+resolution = 5.30357
+resolution = 5.01689
+resolution = 4.75962
+resolution = 4.52744
+resolution = 4.31686
+resolution = 4.03533
+resolution = 3.78827
+resolution = 3.50236
+resolution = 3.25658
+resolution = 3.04303
+resolution = 2.77052
+resolution = 2.50845
+resolution = 2.26372
+resolution = 2.01766
+resolution = 1.76786
+resolution = 1.52152
+
+====================
+Iteration  3
+[32mxmipp_volume_local_sharpening  -o Runs/010948_XmippProtLocSharp/extra/sharpenedMap_3.mrc  --resolution_map Runs/010948_XmippProtLocSharp/tmp/monoresResolutionMap.mrc --sampling 0.742500 -n 4 -k 0.025000 --md Runs/010948_XmippProtLocSharp/tmp/params.xmd --vol Runs/010948_XmippProtLocSharp/extra/sharpenedMap_2.mrc[0m
+Starting...
+used procesors = 4
+  lambda  2.37283
+[32mxmipp_image_header -i Runs/010948_XmippProtLocSharp/extra/sharpenedMap_3.mrc -s 0.742500 [0m
+Setting sampling rate into headers...
+Input: Runs/010948_XmippProtLocSharp/extra/sharpenedMap_3.mrc
+New sampling rate (Angstrom) = 0.7425
+[32mxmipp_resolution_monogenic_signal  --vol Runs/010948_XmippProtLocSharp/extra/sharpenedMap_3.mrc --mask Runs/010948_XmippProtLocSharp/tmp/binaryMask.mrc --sampling_rate 0.742500 --minRes 1.485000 --maxRes 2.889767 --step 0.250000 -o Runs/010948_XmippProtLocSharp/tmp --significance 0.950000 --threads 4[0m
+Starting...
+                                     
+The protein has a radius of 92 px 
+There is no noise beyond a radius of 125 px 
+Regions with a radius greater than 125 px will not be considered
+Analyzing frequencies
+resolution = 2.90039
+resolution = 2.65179
+resolution = 2.37981
+resolution = 2.13362
+resolution = 1.89413
+resolution = 1.6427
+[35mFINISHED[0m: sharpeningAndMonoResStep, step 4, time 2020-11-16 12:59:34.508015
+[35mSTARTED[0m: createOutputStep, step 5, time 2020-11-16 12:59:34.517759
+[35mFINISHED[0m: createOutputStep, step 5, time 2020-11-16 12:59:34.548835
+*** Last status is finished 
+Cleaning temp folder....
+[32m------------------- PROTOCOL FINISHED[0m

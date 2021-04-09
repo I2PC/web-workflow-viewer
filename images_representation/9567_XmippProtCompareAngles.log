@@ -1,0 +1,33 @@
+[32mRUNNING PROTOCOL -----------------[0m
+Hostname: ip-172-31-13-159.eu-west-1.compute.internal
+PID: 973
+pyworkflow: 3.0.6
+plugin: xmipp3
+currentDir: /home/scipion/ScipionUserData/projects/Example_10248_Scipion3
+workingDir: Runs/009567_XmippProtCompareAngles
+runMode: Continue
+          MPI: 1
+      threads: 1
+ Starting at step: 1
+ Running steps 
+[35mSTARTED[0m: convertInputStep, step 1, time 2020-11-15 22:28:28.529452
+[35mFINISHED[0m: convertInputStep, step 1, time 2020-11-15 22:28:31.378750
+[35mSTARTED[0m: analyzeDistanceStep, step 2, time 2020-11-15 22:28:31.387925
+[32mxmipp_metadata_utilities -i Runs/009567_XmippProtCompareAngles/extra/angles1.xmd -o Runs/009567_XmippProtCompareAngles/tmp/ids1.xmd --operate keep_column itemId[0m
+[32mxmipp_metadata_utilities -i Runs/009567_XmippProtCompareAngles/extra/angles2.xmd -o Runs/009567_XmippProtCompareAngles/tmp/ids2.xmd --operate keep_column itemId[0m
+[32mxmipp_metadata_utilities -i Runs/009567_XmippProtCompareAngles/tmp/ids1.xmd --set intersection Runs/009567_XmippProtCompareAngles/tmp/ids2.xmd itemId -o Runs/009567_XmippProtCompareAngles/tmp/ids.xmd[0m
+[32mxmipp_metadata_utilities -i Runs/009567_XmippProtCompareAngles/extra/angles1.xmd --set intersection Runs/009567_XmippProtCompareAngles/tmp/ids.xmd itemId -o Runs/009567_XmippProtCompareAngles/extra/angles1_common.xmd[0m
+[32mxmipp_metadata_utilities -i Runs/009567_XmippProtCompareAngles/extra/angles2.xmd --set intersection Runs/009567_XmippProtCompareAngles/tmp/ids.xmd itemId -o Runs/009567_XmippProtCompareAngles/extra/angles2_common.xmd[0m
+[32mxmipp_metadata_utilities -i Runs/009567_XmippProtCompareAngles/extra/angles1_common.xmd --operate sort itemId[0m
+[32mxmipp_metadata_utilities -i Runs/009567_XmippProtCompareAngles/extra/angles2_common.xmd --operate sort itemId[0m
+[32mxmipp_angular_distance --ang1 Runs/009567_XmippProtCompareAngles/extra/angles1_common.xmd --ang2 Runs/009567_XmippProtCompareAngles/extra/angles2_common.xmd --sym o --check_mirrors --oroot Runs/009567_XmippProtCompareAngles/tmp/angular_distance[0m
+Global angular distance = 0.557566
+Global shift   distance = 0.356163
+[32mxmipp_metadata_utilities -i Runs/009567_XmippProtCompareAngles/tmp/angular_distance.xmd -o Runs/009567_XmippProtCompareAngles/tmp/diffs.xmd --operate keep_column "angleDiff shiftDiff"[0m
+[32mxmipp_metadata_utilities -i Runs/009567_XmippProtCompareAngles/extra/angles1_common.xmd --set merge Runs/009567_XmippProtCompareAngles/tmp/diffs.xmd[0m
+[35mFINISHED[0m: analyzeDistanceStep, step 2, time 2020-11-15 22:28:32.357538
+[35mSTARTED[0m: createOutputStep, step 3, time 2020-11-15 22:28:32.366896
+[35mFINISHED[0m: createOutputStep, step 3, time 2020-11-15 22:28:33.452644
+*** Last status is finished 
+Cleaning temp folder....
+[32m------------------- PROTOCOL FINISHED[0m

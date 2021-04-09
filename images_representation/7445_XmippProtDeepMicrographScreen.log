@@ -1,0 +1,206 @@
+[32mRUNNING PROTOCOL -----------------[0m
+Hostname: ip-172-31-13-159.eu-west-1.compute.internal
+PID: 29516
+pyworkflow: 3.0.6
+plugin: xmipp3
+currentDir: /home/scipion/ScipionUserData/projects/Example_10248_Scipion3
+workingDir: Runs/007445_XmippProtDeepMicrographScreen
+runMode: Continue
+          MPI: 1
+      threads: 1
+ Starting at step: 1
+ Running steps 
+[35mSTARTED[0m: extractMicrographListStepOwn, step 1, time 2020-11-13 17:52:08.150826
+Extracting micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrc 
+Extracting micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00002_UnderDefocus0.7um_frameImage_aligned_mic.mrc 
+Extracting micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00003_UnderDefocus0.7um_frameImage_aligned_mic.mrc 
+Extracting micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00004_UnderDefocus0.7um_frameImage_aligned_mic.mrc 
+[32mxmipp_deep_micrograph_cleaner -i Runs/007445_XmippProtDeepMicrographScreen/tmp/inputMics4530719345185223410.xmd -c Runs/007445_XmippProtDeepMicrographScreen/extra/inputCoords -o Runs/007445_XmippProtDeepMicrographScreen/extra/outputCoords -b 300 -s 1 -d /home/scipion/scipion3/software/em/xmipp/models/deepMicrographCleaner/defaultModel.keras -g 0[0m
+WARNING:tensorflow:From /home/scipion/miniconda3/envs/xmipp_MicCleaner/lib/python3.6/site-packages/tensorflow/python/ops/init_ops.py:87: calling VarianceScaling.__init__ (from tensorflow.python.ops.init_ops) with distribution=normal is deprecated and will be removed in a future version.
+Instructions for updating:
+`normal` is a deprecated alias for `truncated_normal`
+WARNING:tensorflow:No training configuration found in save file: the model was *not* compiled. Compile it manually.
+Runs/006458_XmippProtMovieCorr/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrc 300 /home/scipion/scipion3/software/em/xmipp/models/deepMicrographCleaner/defaultModel.keras Runs/007445_XmippProtDeepMicrographScreen/extra/inputCoords/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.pos Runs/007445_XmippProtDeepMicrographScreen/extra/outputCoords/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.pos None 1.0 None 0.8 [0]
+updating environ to select gpus [0]
+Runs/006458_XmippProtMovieCorr/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+8/8 [==============================] - 5s 653ms/step
+Runs/006458_XmippProtMovieCorr/extra/190117_02_00002_UnderDefocus0.7um_frameImage_aligned_mic.mrc 300 /home/scipion/scipion3/software/em/xmipp/models/deepMicrographCleaner/defaultModel.keras Runs/007445_XmippProtDeepMicrographScreen/extra/inputCoords/190117_02_00002_UnderDefocus0.7um_frameImage_aligned_mic.pos Runs/007445_XmippProtDeepMicrographScreen/extra/outputCoords/190117_02_00002_UnderDefocus0.7um_frameImage_aligned_mic.pos None 1.0 None 0.8 [0]
+Runs/006458_XmippProtMovieCorr/extra/190117_02_00002_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+8/8 [==============================] - 0s 32ms/step
+Runs/006458_XmippProtMovieCorr/extra/190117_02_00003_UnderDefocus0.7um_frameImage_aligned_mic.mrc 300 /home/scipion/scipion3/software/em/xmipp/models/deepMicrographCleaner/defaultModel.keras Runs/007445_XmippProtDeepMicrographScreen/extra/inputCoords/190117_02_00003_UnderDefocus0.7um_frameImage_aligned_mic.pos Runs/007445_XmippProtDeepMicrographScreen/extra/outputCoords/190117_02_00003_UnderDefocus0.7um_frameImage_aligned_mic.pos None 1.0 None 0.8 [0]
+Runs/006458_XmippProtMovieCorr/extra/190117_02_00003_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+8/8 [==============================] - 0s 35ms/step
+Runs/006458_XmippProtMovieCorr/extra/190117_02_00004_UnderDefocus0.7um_frameImage_aligned_mic.mrc 300 /home/scipion/scipion3/software/em/xmipp/models/deepMicrographCleaner/defaultModel.keras Runs/007445_XmippProtDeepMicrographScreen/extra/inputCoords/190117_02_00004_UnderDefocus0.7um_frameImage_aligned_mic.pos Runs/007445_XmippProtDeepMicrographScreen/extra/outputCoords/190117_02_00004_UnderDefocus0.7um_frameImage_aligned_mic.pos None 1.0 None 0.8 [0]
+Runs/006458_XmippProtMovieCorr/extra/190117_02_00004_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+8/8 [==============================] - 0s 36ms/step
+WARNING: This is xmipp_base implementation for script
+cleanMics --gpus 0 --inputMicsPath Runs/006458_XmippProtMovieCorr/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrc Runs/006458_XmippProtMovieCorr/extra/190117_02_00002_UnderDefocus0.7um_frameImage_aligned_mic.mrc Runs/006458_XmippProtMovieCorr/extra/190117_02_00003_UnderDefocus0.7um_frameImage_aligned_mic.mrc Runs/006458_XmippProtMovieCorr/extra/190117_02_00004_UnderDefocus0.7um_frameImage_aligned_mic.mrc --boxSize 300 --inputCoordsDir Runs/007445_XmippProtDeepMicrographScreen/extra/inputCoords --outputCoordsDir Runs/007445_XmippProtDeepMicrographScreen/extra/outputCoords --downFactorCoords 1.0 --sizeThr 0.8 --deepLearningModel /home/scipion/scipion3/software/em/xmipp/models/deepMicrographCleaner/defaultModel.keras
+[35mFINISHED[0m: extractMicrographListStepOwn, step 1, time 2020-11-13 17:52:47.319882
+Reading coordinates from mics: 1,2,3,4
+[35mSTARTED[0m: extractMicrographListStepOwn, step 2, time 2020-11-13 17:52:47.420325
+Extracting micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00005_UnderDefocus0.7um_frameImage_aligned_mic.mrc 
+Extracting micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00006_UnderDefocus0.7um_frameImage_aligned_mic.mrc 
+Extracting micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00007_UnderDefocus0.7um_frameImage_aligned_mic.mrc 
+Extracting micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00008_UnderDefocus0.7um_frameImage_aligned_mic.mrc 
+[32mxmipp_deep_micrograph_cleaner -i Runs/007445_XmippProtDeepMicrographScreen/tmp/inputMics-8054951439665522220.xmd -c Runs/007445_XmippProtDeepMicrographScreen/extra/inputCoords -o Runs/007445_XmippProtDeepMicrographScreen/extra/outputCoords -b 300 -s 1 -d /home/scipion/scipion3/software/em/xmipp/models/deepMicrographCleaner/defaultModel.keras -g 0[0m
+WARNING:tensorflow:From /home/scipion/miniconda3/envs/xmipp_MicCleaner/lib/python3.6/site-packages/tensorflow/python/ops/init_ops.py:87: calling VarianceScaling.__init__ (from tensorflow.python.ops.init_ops) with distribution=normal is deprecated and will be removed in a future version.
+Instructions for updating:
+`normal` is a deprecated alias for `truncated_normal`
+WARNING:tensorflow:No training configuration found in save file: the model was *not* compiled. Compile it manually.
+Runs/006458_XmippProtMovieCorr/extra/190117_02_00005_UnderDefocus0.7um_frameImage_aligned_mic.mrc 300 /home/scipion/scipion3/software/em/xmipp/models/deepMicrographCleaner/defaultModel.keras Runs/007445_XmippProtDeepMicrographScreen/extra/inputCoords/190117_02_00005_UnderDefocus0.7um_frameImage_aligned_mic.pos Runs/007445_XmippProtDeepMicrographScreen/extra/outputCoords/190117_02_00005_UnderDefocus0.7um_frameImage_aligned_mic.pos None 1.0 None 0.8 [0]
+updating environ to select gpus [0]
+Runs/006458_XmippProtMovieCorr/extra/190117_02_00005_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+8/8 [==============================] - 4s 516ms/step
+Runs/006458_XmippProtMovieCorr/extra/190117_02_00006_UnderDefocus0.7um_frameImage_aligned_mic.mrc 300 /home/scipion/scipion3/software/em/xmipp/models/deepMicrographCleaner/defaultModel.keras Runs/007445_XmippProtDeepMicrographScreen/extra/inputCoords/190117_02_00006_UnderDefocus0.7um_frameImage_aligned_mic.pos Runs/007445_XmippProtDeepMicrographScreen/extra/outputCoords/190117_02_00006_UnderDefocus0.7um_frameImage_aligned_mic.pos None 1.0 None 0.8 [0]
+Runs/006458_XmippProtMovieCorr/extra/190117_02_00006_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+8/8 [==============================] - 0s 35ms/step
+Runs/006458_XmippProtMovieCorr/extra/190117_02_00007_UnderDefocus0.7um_frameImage_aligned_mic.mrc 300 /home/scipion/scipion3/software/em/xmipp/models/deepMicrographCleaner/defaultModel.keras Runs/007445_XmippProtDeepMicrographScreen/extra/inputCoords/190117_02_00007_UnderDefocus0.7um_frameImage_aligned_mic.pos Runs/007445_XmippProtDeepMicrographScreen/extra/outputCoords/190117_02_00007_UnderDefocus0.7um_frameImage_aligned_mic.pos None 1.0 None 0.8 [0]
+Runs/006458_XmippProtMovieCorr/extra/190117_02_00007_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+8/8 [==============================] - 0s 30ms/step
+Runs/006458_XmippProtMovieCorr/extra/190117_02_00008_UnderDefocus0.7um_frameImage_aligned_mic.mrc 300 /home/scipion/scipion3/software/em/xmipp/models/deepMicrographCleaner/defaultModel.keras Runs/007445_XmippProtDeepMicrographScreen/extra/inputCoords/190117_02_00008_UnderDefocus0.7um_frameImage_aligned_mic.pos Runs/007445_XmippProtDeepMicrographScreen/extra/outputCoords/190117_02_00008_UnderDefocus0.7um_frameImage_aligned_mic.pos None 1.0 None 0.8 [0]
+Runs/006458_XmippProtMovieCorr/extra/190117_02_00008_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+8/8 [==============================] - 0s 31ms/step
+WARNING: This is xmipp_base implementation for script
+cleanMics --gpus 0 --inputMicsPath Runs/006458_XmippProtMovieCorr/extra/190117_02_00005_UnderDefocus0.7um_frameImage_aligned_mic.mrc Runs/006458_XmippProtMovieCorr/extra/190117_02_00006_UnderDefocus0.7um_frameImage_aligned_mic.mrc Runs/006458_XmippProtMovieCorr/extra/190117_02_00007_UnderDefocus0.7um_frameImage_aligned_mic.mrc Runs/006458_XmippProtMovieCorr/extra/190117_02_00008_UnderDefocus0.7um_frameImage_aligned_mic.mrc --boxSize 300 --inputCoordsDir Runs/007445_XmippProtDeepMicrographScreen/extra/inputCoords --outputCoordsDir Runs/007445_XmippProtDeepMicrographScreen/extra/outputCoords --downFactorCoords 1.0 --sizeThr 0.8 --deepLearningModel /home/scipion/scipion3/software/em/xmipp/models/deepMicrographCleaner/defaultModel.keras
+[35mFINISHED[0m: extractMicrographListStepOwn, step 2, time 2020-11-13 17:53:10.269700
+Reading coordinates from mics: 5,6,7,8
+[35mSTARTED[0m: extractMicrographListStepOwn, step 3, time 2020-11-13 17:53:10.355263
+Extracting micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00009_UnderDefocus0.7um_frameImage_aligned_mic.mrc 
+Extracting micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00010_UnderDefocus0.7um_frameImage_aligned_mic.mrc 
+Extracting micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00011_UnderDefocus0.7um_frameImage_aligned_mic.mrc 
+Extracting micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00012_UnderDefocus0.7um_frameImage_aligned_mic.mrc 
+[32mxmipp_deep_micrograph_cleaner -i Runs/007445_XmippProtDeepMicrographScreen/tmp/inputMics-4938766195658919031.xmd -c Runs/007445_XmippProtDeepMicrographScreen/extra/inputCoords -o Runs/007445_XmippProtDeepMicrographScreen/extra/outputCoords -b 300 -s 1 -d /home/scipion/scipion3/software/em/xmipp/models/deepMicrographCleaner/defaultModel.keras -g 0[0m
+WARNING:tensorflow:From /home/scipion/miniconda3/envs/xmipp_MicCleaner/lib/python3.6/site-packages/tensorflow/python/ops/init_ops.py:87: calling VarianceScaling.__init__ (from tensorflow.python.ops.init_ops) with distribution=normal is deprecated and will be removed in a future version.
+Instructions for updating:
+`normal` is a deprecated alias for `truncated_normal`
+WARNING:tensorflow:No training configuration found in save file: the model was *not* compiled. Compile it manually.
+Runs/006458_XmippProtMovieCorr/extra/190117_02_00009_UnderDefocus0.7um_frameImage_aligned_mic.mrc 300 /home/scipion/scipion3/software/em/xmipp/models/deepMicrographCleaner/defaultModel.keras Runs/007445_XmippProtDeepMicrographScreen/extra/inputCoords/190117_02_00009_UnderDefocus0.7um_frameImage_aligned_mic.pos Runs/007445_XmippProtDeepMicrographScreen/extra/outputCoords/190117_02_00009_UnderDefocus0.7um_frameImage_aligned_mic.pos None 1.0 None 0.8 [0]
+updating environ to select gpus [0]
+Runs/006458_XmippProtMovieCorr/extra/190117_02_00009_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+8/8 [==============================] - 4s 519ms/step
+Runs/006458_XmippProtMovieCorr/extra/190117_02_00010_UnderDefocus0.7um_frameImage_aligned_mic.mrc 300 /home/scipion/scipion3/software/em/xmipp/models/deepMicrographCleaner/defaultModel.keras Runs/007445_XmippProtDeepMicrographScreen/extra/inputCoords/190117_02_00010_UnderDefocus0.7um_frameImage_aligned_mic.pos Runs/007445_XmippProtDeepMicrographScreen/extra/outputCoords/190117_02_00010_UnderDefocus0.7um_frameImage_aligned_mic.pos None 1.0 None 0.8 [0]
+Runs/006458_XmippProtMovieCorr/extra/190117_02_00010_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+8/8 [==============================] - 0s 33ms/step
+Runs/006458_XmippProtMovieCorr/extra/190117_02_00011_UnderDefocus0.7um_frameImage_aligned_mic.mrc 300 /home/scipion/scipion3/software/em/xmipp/models/deepMicrographCleaner/defaultModel.keras Runs/007445_XmippProtDeepMicrographScreen/extra/inputCoords/190117_02_00011_UnderDefocus0.7um_frameImage_aligned_mic.pos Runs/007445_XmippProtDeepMicrographScreen/extra/outputCoords/190117_02_00011_UnderDefocus0.7um_frameImage_aligned_mic.pos None 1.0 None 0.8 [0]
+Runs/006458_XmippProtMovieCorr/extra/190117_02_00011_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+8/8 [==============================] - 0s 35ms/step
+Runs/006458_XmippProtMovieCorr/extra/190117_02_00012_UnderDefocus0.7um_frameImage_aligned_mic.mrc 300 /home/scipion/scipion3/software/em/xmipp/models/deepMicrographCleaner/defaultModel.keras Runs/007445_XmippProtDeepMicrographScreen/extra/inputCoords/190117_02_00012_UnderDefocus0.7um_frameImage_aligned_mic.pos Runs/007445_XmippProtDeepMicrographScreen/extra/outputCoords/190117_02_00012_UnderDefocus0.7um_frameImage_aligned_mic.pos None 1.0 None 0.8 [0]
+Runs/006458_XmippProtMovieCorr/extra/190117_02_00012_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+8/8 [==============================] - 0s 31ms/step
+WARNING: This is xmipp_base implementation for script
+cleanMics --gpus 0 --inputMicsPath Runs/006458_XmippProtMovieCorr/extra/190117_02_00009_UnderDefocus0.7um_frameImage_aligned_mic.mrc Runs/006458_XmippProtMovieCorr/extra/190117_02_00010_UnderDefocus0.7um_frameImage_aligned_mic.mrc Runs/006458_XmippProtMovieCorr/extra/190117_02_00011_UnderDefocus0.7um_frameImage_aligned_mic.mrc Runs/006458_XmippProtMovieCorr/extra/190117_02_00012_UnderDefocus0.7um_frameImage_aligned_mic.mrc --boxSize 300 --inputCoordsDir Runs/007445_XmippProtDeepMicrographScreen/extra/inputCoords --outputCoordsDir Runs/007445_XmippProtDeepMicrographScreen/extra/outputCoords --downFactorCoords 1.0 --sizeThr 0.8 --deepLearningModel /home/scipion/scipion3/software/em/xmipp/models/deepMicrographCleaner/defaultModel.keras
+[35mFINISHED[0m: extractMicrographListStepOwn, step 3, time 2020-11-13 17:53:33.100125
+Reading coordinates from mics: 9,10,11,12
+[35mSTARTED[0m: extractMicrographListStepOwn, step 4, time 2020-11-13 17:53:33.182581
+Extracting micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00013_UnderDefocus0.7um_frameImage_aligned_mic.mrc 
+Extracting micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00014_UnderDefocus0.7um_frameImage_aligned_mic.mrc 
+Extracting micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00015_UnderDefocus0.7um_frameImage_aligned_mic.mrc 
+Extracting micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00016_UnderDefocus0.7um_frameImage_aligned_mic.mrc 
+[32mxmipp_deep_micrograph_cleaner -i Runs/007445_XmippProtDeepMicrographScreen/tmp/inputMics-3122301204847882708.xmd -c Runs/007445_XmippProtDeepMicrographScreen/extra/inputCoords -o Runs/007445_XmippProtDeepMicrographScreen/extra/outputCoords -b 300 -s 1 -d /home/scipion/scipion3/software/em/xmipp/models/deepMicrographCleaner/defaultModel.keras -g 0[0m
+WARNING:tensorflow:From /home/scipion/miniconda3/envs/xmipp_MicCleaner/lib/python3.6/site-packages/tensorflow/python/ops/init_ops.py:87: calling VarianceScaling.__init__ (from tensorflow.python.ops.init_ops) with distribution=normal is deprecated and will be removed in a future version.
+Instructions for updating:
+`normal` is a deprecated alias for `truncated_normal`
+WARNING:tensorflow:No training configuration found in save file: the model was *not* compiled. Compile it manually.
+Runs/006458_XmippProtMovieCorr/extra/190117_02_00013_UnderDefocus0.7um_frameImage_aligned_mic.mrc 300 /home/scipion/scipion3/software/em/xmipp/models/deepMicrographCleaner/defaultModel.keras Runs/007445_XmippProtDeepMicrographScreen/extra/inputCoords/190117_02_00013_UnderDefocus0.7um_frameImage_aligned_mic.pos Runs/007445_XmippProtDeepMicrographScreen/extra/outputCoords/190117_02_00013_UnderDefocus0.7um_frameImage_aligned_mic.pos None 1.0 None 0.8 [0]
+updating environ to select gpus [0]
+Runs/006458_XmippProtMovieCorr/extra/190117_02_00013_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+8/8 [==============================] - 4s 519ms/step
+Runs/006458_XmippProtMovieCorr/extra/190117_02_00014_UnderDefocus0.7um_frameImage_aligned_mic.mrc 300 /home/scipion/scipion3/software/em/xmipp/models/deepMicrographCleaner/defaultModel.keras Runs/007445_XmippProtDeepMicrographScreen/extra/inputCoords/190117_02_00014_UnderDefocus0.7um_frameImage_aligned_mic.pos Runs/007445_XmippProtDeepMicrographScreen/extra/outputCoords/190117_02_00014_UnderDefocus0.7um_frameImage_aligned_mic.pos None 1.0 None 0.8 [0]
+Runs/006458_XmippProtMovieCorr/extra/190117_02_00014_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+8/8 [==============================] - 0s 36ms/step
+Runs/006458_XmippProtMovieCorr/extra/190117_02_00015_UnderDefocus0.7um_frameImage_aligned_mic.mrc 300 /home/scipion/scipion3/software/em/xmipp/models/deepMicrographCleaner/defaultModel.keras Runs/007445_XmippProtDeepMicrographScreen/extra/inputCoords/190117_02_00015_UnderDefocus0.7um_frameImage_aligned_mic.pos Runs/007445_XmippProtDeepMicrographScreen/extra/outputCoords/190117_02_00015_UnderDefocus0.7um_frameImage_aligned_mic.pos None 1.0 None 0.8 [0]
+Runs/006458_XmippProtMovieCorr/extra/190117_02_00015_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+8/8 [==============================] - 0s 35ms/step
+Runs/006458_XmippProtMovieCorr/extra/190117_02_00016_UnderDefocus0.7um_frameImage_aligned_mic.mrc 300 /home/scipion/scipion3/software/em/xmipp/models/deepMicrographCleaner/defaultModel.keras Runs/007445_XmippProtDeepMicrographScreen/extra/inputCoords/190117_02_00016_UnderDefocus0.7um_frameImage_aligned_mic.pos Runs/007445_XmippProtDeepMicrographScreen/extra/outputCoords/190117_02_00016_UnderDefocus0.7um_frameImage_aligned_mic.pos None 1.0 None 0.8 [0]
+Runs/006458_XmippProtMovieCorr/extra/190117_02_00016_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+8/8 [==============================] - 0s 35ms/step
+WARNING: This is xmipp_base implementation for script
+cleanMics --gpus 0 --inputMicsPath Runs/006458_XmippProtMovieCorr/extra/190117_02_00013_UnderDefocus0.7um_frameImage_aligned_mic.mrc Runs/006458_XmippProtMovieCorr/extra/190117_02_00014_UnderDefocus0.7um_frameImage_aligned_mic.mrc Runs/006458_XmippProtMovieCorr/extra/190117_02_00015_UnderDefocus0.7um_frameImage_aligned_mic.mrc Runs/006458_XmippProtMovieCorr/extra/190117_02_00016_UnderDefocus0.7um_frameImage_aligned_mic.mrc --boxSize 300 --inputCoordsDir Runs/007445_XmippProtDeepMicrographScreen/extra/inputCoords --outputCoordsDir Runs/007445_XmippProtDeepMicrographScreen/extra/outputCoords --downFactorCoords 1.0 --sizeThr 0.8 --deepLearningModel /home/scipion/scipion3/software/em/xmipp/models/deepMicrographCleaner/defaultModel.keras
+[35mFINISHED[0m: extractMicrographListStepOwn, step 4, time 2020-11-13 17:53:55.142494
+Reading coordinates from mics: 13,14,15,16
+[35mSTARTED[0m: extractMicrographListStepOwn, step 5, time 2020-11-13 17:53:55.212577
+Extracting micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00017_UnderDefocus0.7um_frameImage_aligned_mic.mrc 
+Extracting micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00018_UnderDefocus0.7um_frameImage_aligned_mic.mrc 
+Extracting micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00019_UnderDefocus0.7um_frameImage_aligned_mic.mrc 
+Extracting micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00020_UnderDefocus0.7um_frameImage_aligned_mic.mrc 
+[32mxmipp_deep_micrograph_cleaner -i Runs/007445_XmippProtDeepMicrographScreen/tmp/inputMics7901335016305998416.xmd -c Runs/007445_XmippProtDeepMicrographScreen/extra/inputCoords -o Runs/007445_XmippProtDeepMicrographScreen/extra/outputCoords -b 300 -s 1 -d /home/scipion/scipion3/software/em/xmipp/models/deepMicrographCleaner/defaultModel.keras -g 0[0m
+WARNING:tensorflow:From /home/scipion/miniconda3/envs/xmipp_MicCleaner/lib/python3.6/site-packages/tensorflow/python/ops/init_ops.py:87: calling VarianceScaling.__init__ (from tensorflow.python.ops.init_ops) with distribution=normal is deprecated and will be removed in a future version.
+Instructions for updating:
+`normal` is a deprecated alias for `truncated_normal`
+WARNING:tensorflow:No training configuration found in save file: the model was *not* compiled. Compile it manually.
+Runs/006458_XmippProtMovieCorr/extra/190117_02_00017_UnderDefocus0.7um_frameImage_aligned_mic.mrc 300 /home/scipion/scipion3/software/em/xmipp/models/deepMicrographCleaner/defaultModel.keras Runs/007445_XmippProtDeepMicrographScreen/extra/inputCoords/190117_02_00017_UnderDefocus0.7um_frameImage_aligned_mic.pos Runs/007445_XmippProtDeepMicrographScreen/extra/outputCoords/190117_02_00017_UnderDefocus0.7um_frameImage_aligned_mic.pos None 1.0 None 0.8 [0]
+updating environ to select gpus [0]
+Runs/006458_XmippProtMovieCorr/extra/190117_02_00017_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+8/8 [==============================] - 4s 524ms/step
+Runs/006458_XmippProtMovieCorr/extra/190117_02_00018_UnderDefocus0.7um_frameImage_aligned_mic.mrc 300 /home/scipion/scipion3/software/em/xmipp/models/deepMicrographCleaner/defaultModel.keras Runs/007445_XmippProtDeepMicrographScreen/extra/inputCoords/190117_02_00018_UnderDefocus0.7um_frameImage_aligned_mic.pos Runs/007445_XmippProtDeepMicrographScreen/extra/outputCoords/190117_02_00018_UnderDefocus0.7um_frameImage_aligned_mic.pos None 1.0 None 0.8 [0]
+Runs/006458_XmippProtMovieCorr/extra/190117_02_00018_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+8/8 [==============================] - 0s 36ms/step
+Runs/006458_XmippProtMovieCorr/extra/190117_02_00019_UnderDefocus0.7um_frameImage_aligned_mic.mrc 300 /home/scipion/scipion3/software/em/xmipp/models/deepMicrographCleaner/defaultModel.keras Runs/007445_XmippProtDeepMicrographScreen/extra/inputCoords/190117_02_00019_UnderDefocus0.7um_frameImage_aligned_mic.pos Runs/007445_XmippProtDeepMicrographScreen/extra/outputCoords/190117_02_00019_UnderDefocus0.7um_frameImage_aligned_mic.pos None 1.0 None 0.8 [0]
+Runs/006458_XmippProtMovieCorr/extra/190117_02_00019_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+8/8 [==============================] - 0s 32ms/step
+Runs/006458_XmippProtMovieCorr/extra/190117_02_00020_UnderDefocus0.7um_frameImage_aligned_mic.mrc 300 /home/scipion/scipion3/software/em/xmipp/models/deepMicrographCleaner/defaultModel.keras Runs/007445_XmippProtDeepMicrographScreen/extra/inputCoords/190117_02_00020_UnderDefocus0.7um_frameImage_aligned_mic.pos Runs/007445_XmippProtDeepMicrographScreen/extra/outputCoords/190117_02_00020_UnderDefocus0.7um_frameImage_aligned_mic.pos None 1.0 None 0.8 [0]
+Runs/006458_XmippProtMovieCorr/extra/190117_02_00020_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+8/8 [==============================] - 0s 35ms/step
+WARNING: This is xmipp_base implementation for script
+cleanMics --gpus 0 --inputMicsPath Runs/006458_XmippProtMovieCorr/extra/190117_02_00017_UnderDefocus0.7um_frameImage_aligned_mic.mrc Runs/006458_XmippProtMovieCorr/extra/190117_02_00018_UnderDefocus0.7um_frameImage_aligned_mic.mrc Runs/006458_XmippProtMovieCorr/extra/190117_02_00019_UnderDefocus0.7um_frameImage_aligned_mic.mrc Runs/006458_XmippProtMovieCorr/extra/190117_02_00020_UnderDefocus0.7um_frameImage_aligned_mic.mrc --boxSize 300 --inputCoordsDir Runs/007445_XmippProtDeepMicrographScreen/extra/inputCoords --outputCoordsDir Runs/007445_XmippProtDeepMicrographScreen/extra/outputCoords --downFactorCoords 1.0 --sizeThr 0.8 --deepLearningModel /home/scipion/scipion3/software/em/xmipp/models/deepMicrographCleaner/defaultModel.keras
+[35mFINISHED[0m: extractMicrographListStepOwn, step 5, time 2020-11-13 17:54:18.020161
+Reading coordinates from mics: 17,18,19,20
+[35mSTARTED[0m: extractMicrographListStepOwn, step 6, time 2020-11-13 17:54:18.086124
+Extracting micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00021_UnderDefocus0.7um_frameImage_aligned_mic.mrc 
+Extracting micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00023_UnderDefocus0.7um_frameImage_aligned_mic.mrc 
+Extracting micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00024_UnderDefocus0.9um_frameImage_aligned_mic.mrc 
+Extracting micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00025_UnderDefocus0.9um_frameImage_aligned_mic.mrc 
+[32mxmipp_deep_micrograph_cleaner -i Runs/007445_XmippProtDeepMicrographScreen/tmp/inputMics7071057703261291649.xmd -c Runs/007445_XmippProtDeepMicrographScreen/extra/inputCoords -o Runs/007445_XmippProtDeepMicrographScreen/extra/outputCoords -b 300 -s 1 -d /home/scipion/scipion3/software/em/xmipp/models/deepMicrographCleaner/defaultModel.keras -g 0[0m
+WARNING:tensorflow:From /home/scipion/miniconda3/envs/xmipp_MicCleaner/lib/python3.6/site-packages/tensorflow/python/ops/init_ops.py:87: calling VarianceScaling.__init__ (from tensorflow.python.ops.init_ops) with distribution=normal is deprecated and will be removed in a future version.
+Instructions for updating:
+`normal` is a deprecated alias for `truncated_normal`
+WARNING:tensorflow:No training configuration found in save file: the model was *not* compiled. Compile it manually.
+Runs/006458_XmippProtMovieCorr/extra/190117_02_00021_UnderDefocus0.7um_frameImage_aligned_mic.mrc 300 /home/scipion/scipion3/software/em/xmipp/models/deepMicrographCleaner/defaultModel.keras Runs/007445_XmippProtDeepMicrographScreen/extra/inputCoords/190117_02_00021_UnderDefocus0.7um_frameImage_aligned_mic.pos Runs/007445_XmippProtDeepMicrographScreen/extra/outputCoords/190117_02_00021_UnderDefocus0.7um_frameImage_aligned_mic.pos None 1.0 None 0.8 [0]
+updating environ to select gpus [0]
+Runs/006458_XmippProtMovieCorr/extra/190117_02_00021_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+8/8 [==============================] - 4s 520ms/step
+Runs/006458_XmippProtMovieCorr/extra/190117_02_00023_UnderDefocus0.7um_frameImage_aligned_mic.mrc 300 /home/scipion/scipion3/software/em/xmipp/models/deepMicrographCleaner/defaultModel.keras Runs/007445_XmippProtDeepMicrographScreen/extra/inputCoords/190117_02_00023_UnderDefocus0.7um_frameImage_aligned_mic.pos Runs/007445_XmippProtDeepMicrographScreen/extra/outputCoords/190117_02_00023_UnderDefocus0.7um_frameImage_aligned_mic.pos None 1.0 None 0.8 [0]
+Runs/006458_XmippProtMovieCorr/extra/190117_02_00023_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+8/8 [==============================] - 0s 31ms/step
+Runs/006458_XmippProtMovieCorr/extra/190117_02_00024_UnderDefocus0.9um_frameImage_aligned_mic.mrc 300 /home/scipion/scipion3/software/em/xmipp/models/deepMicrographCleaner/defaultModel.keras Runs/007445_XmippProtDeepMicrographScreen/extra/inputCoords/190117_02_00024_UnderDefocus0.9um_frameImage_aligned_mic.pos Runs/007445_XmippProtDeepMicrographScreen/extra/outputCoords/190117_02_00024_UnderDefocus0.9um_frameImage_aligned_mic.pos None 1.0 None 0.8 [0]
+Runs/006458_XmippProtMovieCorr/extra/190117_02_00024_UnderDefocus0.9um_frameImage_aligned_mic.mrc
+8/8 [==============================] - 0s 32ms/step
+Runs/006458_XmippProtMovieCorr/extra/190117_02_00025_UnderDefocus0.9um_frameImage_aligned_mic.mrc 300 /home/scipion/scipion3/software/em/xmipp/models/deepMicrographCleaner/defaultModel.keras Runs/007445_XmippProtDeepMicrographScreen/extra/inputCoords/190117_02_00025_UnderDefocus0.9um_frameImage_aligned_mic.pos Runs/007445_XmippProtDeepMicrographScreen/extra/outputCoords/190117_02_00025_UnderDefocus0.9um_frameImage_aligned_mic.pos None 1.0 None 0.8 [0]
+Runs/006458_XmippProtMovieCorr/extra/190117_02_00025_UnderDefocus0.9um_frameImage_aligned_mic.mrc
+8/8 [==============================] - 0s 32ms/step
+WARNING: This is xmipp_base implementation for script
+cleanMics --gpus 0 --inputMicsPath Runs/006458_XmippProtMovieCorr/extra/190117_02_00021_UnderDefocus0.7um_frameImage_aligned_mic.mrc Runs/006458_XmippProtMovieCorr/extra/190117_02_00023_UnderDefocus0.7um_frameImage_aligned_mic.mrc Runs/006458_XmippProtMovieCorr/extra/190117_02_00024_UnderDefocus0.9um_frameImage_aligned_mic.mrc Runs/006458_XmippProtMovieCorr/extra/190117_02_00025_UnderDefocus0.9um_frameImage_aligned_mic.mrc --boxSize 300 --inputCoordsDir Runs/007445_XmippProtDeepMicrographScreen/extra/inputCoords --outputCoordsDir Runs/007445_XmippProtDeepMicrographScreen/extra/outputCoords --downFactorCoords 1.0 --sizeThr 0.8 --deepLearningModel /home/scipion/scipion3/software/em/xmipp/models/deepMicrographCleaner/defaultModel.keras
+[35mFINISHED[0m: extractMicrographListStepOwn, step 6, time 2020-11-13 17:54:39.192386
+Reading coordinates from mics: 21,23,24,25
+[35mSTARTED[0m: extractMicrographListStepOwn, step 7, time 2020-11-13 17:54:39.275639
+Extracting micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrc 
+Extracting micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00028_UnderDefocus0.9um_frameImage_aligned_mic.mrc 
+Extracting micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00029_UnderDefocus0.9um_frameImage_aligned_mic.mrc 
+Extracting micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00030_UnderDefocus0.9um_frameImage_aligned_mic.mrc 
+[32mxmipp_deep_micrograph_cleaner -i Runs/007445_XmippProtDeepMicrographScreen/tmp/inputMics1659332711302664859.xmd -c Runs/007445_XmippProtDeepMicrographScreen/extra/inputCoords -o Runs/007445_XmippProtDeepMicrographScreen/extra/outputCoords -b 300 -s 1 -d /home/scipion/scipion3/software/em/xmipp/models/deepMicrographCleaner/defaultModel.keras -g 0[0m
+WARNING:tensorflow:From /home/scipion/miniconda3/envs/xmipp_MicCleaner/lib/python3.6/site-packages/tensorflow/python/ops/init_ops.py:87: calling VarianceScaling.__init__ (from tensorflow.python.ops.init_ops) with distribution=normal is deprecated and will be removed in a future version.
+Instructions for updating:
+`normal` is a deprecated alias for `truncated_normal`
+WARNING:tensorflow:No training configuration found in save file: the model was *not* compiled. Compile it manually.
+Runs/006458_XmippProtMovieCorr/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrc 300 /home/scipion/scipion3/software/em/xmipp/models/deepMicrographCleaner/defaultModel.keras Runs/007445_XmippProtDeepMicrographScreen/extra/inputCoords/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.pos Runs/007445_XmippProtDeepMicrographScreen/extra/outputCoords/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.pos None 1.0 None 0.8 [0]
+updating environ to select gpus [0]
+Runs/006458_XmippProtMovieCorr/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrc
+8/8 [==============================] - 4s 536ms/step
+Runs/006458_XmippProtMovieCorr/extra/190117_02_00028_UnderDefocus0.9um_frameImage_aligned_mic.mrc 300 /home/scipion/scipion3/software/em/xmipp/models/deepMicrographCleaner/defaultModel.keras Runs/007445_XmippProtDeepMicrographScreen/extra/inputCoords/190117_02_00028_UnderDefocus0.9um_frameImage_aligned_mic.pos Runs/007445_XmippProtDeepMicrographScreen/extra/outputCoords/190117_02_00028_UnderDefocus0.9um_frameImage_aligned_mic.pos None 1.0 None 0.8 [0]
+Runs/006458_XmippProtMovieCorr/extra/190117_02_00028_UnderDefocus0.9um_frameImage_aligned_mic.mrc
+8/8 [==============================] - 0s 37ms/step
+Runs/006458_XmippProtMovieCorr/extra/190117_02_00029_UnderDefocus0.9um_frameImage_aligned_mic.mrc 300 /home/scipion/scipion3/software/em/xmipp/models/deepMicrographCleaner/defaultModel.keras Runs/007445_XmippProtDeepMicrographScreen/extra/inputCoords/190117_02_00029_UnderDefocus0.9um_frameImage_aligned_mic.pos Runs/007445_XmippProtDeepMicrographScreen/extra/outputCoords/190117_02_00029_UnderDefocus0.9um_frameImage_aligned_mic.pos None 1.0 None 0.8 [0]
+Runs/006458_XmippProtMovieCorr/extra/190117_02_00029_UnderDefocus0.9um_frameImage_aligned_mic.mrc
+8/8 [==============================] - 0s 34ms/step
+Runs/006458_XmippProtMovieCorr/extra/190117_02_00030_UnderDefocus0.9um_frameImage_aligned_mic.mrc 300 /home/scipion/scipion3/software/em/xmipp/models/deepMicrographCleaner/defaultModel.keras Runs/007445_XmippProtDeepMicrographScreen/extra/inputCoords/190117_02_00030_UnderDefocus0.9um_frameImage_aligned_mic.pos Runs/007445_XmippProtDeepMicrographScreen/extra/outputCoords/190117_02_00030_UnderDefocus0.9um_frameImage_aligned_mic.pos None 1.0 None 0.8 [0]
+Runs/006458_XmippProtMovieCorr/extra/190117_02_00030_UnderDefocus0.9um_frameImage_aligned_mic.mrc
+8/8 [==============================] - 0s 36ms/step
+WARNING: This is xmipp_base implementation for script
+cleanMics --gpus 0 --inputMicsPath Runs/006458_XmippProtMovieCorr/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrc Runs/006458_XmippProtMovieCorr/extra/190117_02_00028_UnderDefocus0.9um_frameImage_aligned_mic.mrc Runs/006458_XmippProtMovieCorr/extra/190117_02_00029_UnderDefocus0.9um_frameImage_aligned_mic.mrc Runs/006458_XmippProtMovieCorr/extra/190117_02_00030_UnderDefocus0.9um_frameImage_aligned_mic.mrc --boxSize 300 --inputCoordsDir Runs/007445_XmippProtDeepMicrographScreen/extra/inputCoords --outputCoordsDir Runs/007445_XmippProtDeepMicrographScreen/extra/outputCoords --downFactorCoords 1.0 --sizeThr 0.8 --deepLearningModel /home/scipion/scipion3/software/em/xmipp/models/deepMicrographCleaner/defaultModel.keras
+[35mFINISHED[0m: extractMicrographListStepOwn, step 7, time 2020-11-13 17:55:01.047495
+Reading coordinates from mics: 26,28,29,30
+[35mSTARTED[0m: createOutputStep, step 8, time 2020-11-13 17:55:01.117137
+[35mFINISHED[0m: createOutputStep, step 8, time 2020-11-13 17:55:01.121224
+*** Last status is finished 
+Cleaning temp folder....
+[32m------------------- PROTOCOL FINISHED[0m

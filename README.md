@@ -16,8 +16,9 @@ To use the web component we need to:
 ```
 3. Place the viewer wherever it suits best, linking its json file:
 ```
-<scipion-workflow src="workflow.json" height="600px" width="600px"></scipion-workflow>
+<scipion-workflow src="workflow.json"></scipion-workflow>
 ```
+4. If you want to see the Scipion representation output images (which is highly recommended), you must paste at project level the "images_representation" folder previously obtained with the [scipion-em-empiar plugin](https://github.com/scipion-em/scipion-em-empiar) 
 
 To view the demo, get inside this repo's dir and serve index.html via http:
 ```

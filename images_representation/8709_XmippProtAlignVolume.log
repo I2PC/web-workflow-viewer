@@ -1,0 +1,186 @@
+[32mRUNNING PROTOCOL -----------------[0m
+Hostname: ip-172-31-13-159.eu-west-1.compute.internal
+PID: 12057
+pyworkflow: 3.0.6
+plugin: xmipp3
+currentDir: /home/scipion/ScipionUserData/projects/Example_10248_Scipion3
+workingDir: Runs/008709_XmippProtAlignVolume
+runMode: Continue
+          MPI: 1
+      threads: 8
+ Starting at step: 1
+ Running steps 
+[35mSTARTED[0m: alignVolumeStep, step 1, time 2020-11-15 14:14:03.977337
+[35mSTARTED[0m: alignVolumeStep, step 2, time 2020-11-15 14:14:03.981093
+[32mxmipp_volume_align --i1 Runs/008163_XmippProtReconstructSignificant/extra/volume_iter050.vol --i2 Runs/008163_XmippProtReconstructSignificant/extra/volume_iter050.vol --apply Runs/008709_XmippProtAlignVolume/extra/vol01.mrc --frm --copyGeo Runs/008709_XmippProtAlignVolume/extra/transformation-matrix_vol000001.txt[0m
+[32mxmipp_volume_align --i1 Runs/008163_XmippProtReconstructSignificant/extra/volume_iter050.vol --i2 000001@Runs/008661_XmippProtCropResizeVolumes/extra/output_volume.vol --apply Runs/008709_XmippProtAlignVolume/extra/vol02.mrc --frm --copyGeo Runs/008709_XmippProtAlignVolume/extra/transformation-matrix_vol000002.txt[0m
+[35mSTARTED[0m: alignVolumeStep, step 3, time 2020-11-15 14:14:03.990166
+[35mSTARTED[0m: alignVolumeStep, step 4, time 2020-11-15 14:14:03.997234
+[32mxmipp_volume_align --i1 Runs/008163_XmippProtReconstructSignificant/extra/volume_iter050.vol --i2 Runs/007983_ProtRelionInitialModel/extra/relion_it300_class001.mrc:mrc --apply Runs/008709_XmippProtAlignVolume/extra/vol03.mrc --frm --copyGeo Runs/008709_XmippProtAlignVolume/extra/transformation-matrix_vol000003.txt[0m
+[35mSTARTED[0m: alignVolumeStep, step 5, time 2020-11-15 14:14:04.006794
+[32mxmipp_volume_align --i1 Runs/008163_XmippProtReconstructSignificant/extra/volume_iter050.vol --i2 Runs/007920_XmippProtRansac/proposedVolume00000.vol --apply Runs/008709_XmippProtAlignVolume/extra/vol04.mrc --frm --copyGeo Runs/008709_XmippProtAlignVolume/extra/transformation-matrix_vol000004.txt[0m
+[35mSTARTED[0m: alignVolumeStep, step 6, time 2020-11-15 14:14:04.021323
+[32mxmipp_volume_align --i1 Runs/008163_XmippProtReconstructSignificant/extra/volume_iter050.vol --i2 Runs/007920_XmippProtRansac/proposedVolume00001.vol --apply Runs/008709_XmippProtAlignVolume/extra/vol05.mrc --frm --copyGeo Runs/008709_XmippProtAlignVolume/extra/transformation-matrix_vol000005.txt[0m
+[35mSTARTED[0m: alignVolumeStep, step 7, time 2020-11-15 14:14:04.031374
+[32mxmipp_volume_align --i1 Runs/008163_XmippProtReconstructSignificant/extra/volume_iter050.vol --i2 Runs/007920_XmippProtRansac/proposedVolume00002.vol --apply Runs/008709_XmippProtAlignVolume/extra/vol06.mrc --frm --copyGeo Runs/008709_XmippProtAlignVolume/extra/transformation-matrix_vol000006.txt[0m
+[32mxmipp_volume_align --i1 Runs/008163_XmippProtReconstructSignificant/extra/volume_iter050.vol --i2 Runs/007920_XmippProtRansac/proposedVolume00003.vol --apply Runs/008709_XmippProtAlignVolume/extra/vol07.mrc --frm --copyGeo Runs/008709_XmippProtAlignVolume/extra/transformation-matrix_vol000007.txt[0m
+The best correlation is for
+Scale                  : 1
+Translation (X,Y,Z)    : -0.339287 0.348355 0.334343
+Rotation (rot,tilt,psi): 1.76238 179.949 -178.289
+Best grey scale       : 1
+Best grey shift       : 0
+Fitness value         : -0.919436
+xmipp_transform_geometry will require the following values
+   Angles: 1.76238 179.949 -178.289
+   Shifts: -0.338677 -0.348667 -0.334636
+[35mFINISHED[0m: alignVolumeStep, step 4, time 2020-11-15 14:15:42.579069
+[35mSTARTED[0m: alignVolumeStep, step 8, time 2020-11-15 14:15:42.664314
+[32mxmipp_volume_align --i1 Runs/008163_XmippProtReconstructSignificant/extra/volume_iter050.vol --i2 Runs/007920_XmippProtRansac/proposedVolume00004.vol --apply Runs/008709_XmippProtAlignVolume/extra/vol08.mrc --frm --copyGeo Runs/008709_XmippProtAlignVolume/extra/transformation-matrix_vol000008.txt[0m
+The best correlation is for
+Scale                  : 1
+Translation (X,Y,Z)    : -0.340764 0.348535 0.334774
+Rotation (rot,tilt,psi): -0.897265 179.93 179.032
+Best grey scale       : 1
+Best grey shift       : 0
+Fitness value         : -0.955301
+xmipp_transform_geometry will require the following values
+   Angles: -0.897265 179.93 179.032
+   Shifts: -0.339923 -0.348947 -0.3352
+[35mFINISHED[0m: alignVolumeStep, step 6, time 2020-11-15 14:15:42.953779
+[35mSTARTED[0m: alignVolumeStep, step 9, time 2020-11-15 14:15:43.187589
+[32mxmipp_volume_align --i1 Runs/008163_XmippProtReconstructSignificant/extra/volume_iter050.vol --i2 Runs/007920_XmippProtRansac/proposedVolume00005.vol --apply Runs/008709_XmippProtAlignVolume/extra/vol09.mrc --frm --copyGeo Runs/008709_XmippProtAlignVolume/extra/transformation-matrix_vol000009.txt[0m
+The best correlation is for
+Scale                  : 1
+Translation (X,Y,Z)    : -0.339076 0.348155 0.334062
+Rotation (rot,tilt,psi): 1.65237 179.951 -178.397
+Best grey scale       : 1
+Best grey shift       : 0
+Fitness value         : -0.917424
+xmipp_transform_geometry will require the following values
+   Angles: 1.65237 179.951 -178.397
+   Shifts: -0.338493 -0.348453 -0.334344
+The best correlation is for
+Scale                  : 1
+Translation (X,Y,Z)    : -0.00103451 0.0026005 -0.00319803
+Rotation (rot,tilt,psi): -90.0001 0.445711 90
+Best grey scale       : 1
+Best grey shift       : 0
+Fitness value         : -0.999414
+xmipp_transform_geometry will require the following values
+   Angles: -90.0001 0.445711 90
+   Shifts: -0.00103452 0.00257554 -0.00321816
+[35mFINISHED[0m: alignVolumeStep, step 5, time 2020-11-15 14:15:43.593063
+[35mSTARTED[0m: alignVolumeStep, step 10, time 2020-11-15 14:15:43.716345
+[32mxmipp_volume_align --i1 Runs/008163_XmippProtReconstructSignificant/extra/volume_iter050.vol --i2 Runs/007920_XmippProtRansac/proposedVolume00006.vol --apply Runs/008709_XmippProtAlignVolume/extra/vol10.mrc --frm --copyGeo Runs/008709_XmippProtAlignVolume/extra/transformation-matrix_vol000010.txt[0m
+The best correlation is for
+Scale                  : 1
+Translation (X,Y,Z)    : 0.338363 -0.331854 0.336488
+Rotation (rot,tilt,psi): 179.758 179.528 -179.77
+Best grey scale       : 1
+Best grey shift       : 0
+Fitness value         : -0.930183
+xmipp_transform_geometry will require the following values
+   Angles: 179.758 179.528 -179.77
+   Shifts: -0.338301 -0.329066 -0.339275
+[35mFINISHED[0m: alignVolumeStep, step 1, time 2020-11-15 14:15:43.743644
+[35mFINISHED[0m: alignVolumeStep, step 3, time 2020-11-15 14:15:44.192522
+[35mSTARTED[0m: alignVolumeStep, step 11, time 2020-11-15 14:15:44.250908
+[35mSTARTED[0m: alignVolumeStep, step 12, time 2020-11-15 14:15:44.261340
+[32mxmipp_volume_align --i1 Runs/008163_XmippProtReconstructSignificant/extra/volume_iter050.vol --i2 Runs/007920_XmippProtRansac/proposedVolume00007.vol --apply Runs/008709_XmippProtAlignVolume/extra/vol11.mrc --frm --copyGeo Runs/008709_XmippProtAlignVolume/extra/transformation-matrix_vol000011.txt[0m
+[32mxmipp_volume_align --i1 Runs/008163_XmippProtReconstructSignificant/extra/volume_iter050.vol --i2 Runs/007920_XmippProtRansac/proposedVolume00008.vol --apply Runs/008709_XmippProtAlignVolume/extra/vol12.mrc --frm --copyGeo Runs/008709_XmippProtAlignVolume/extra/transformation-matrix_vol000012.txt[0m
+The best correlation is for
+Scale                  : 1
+Translation (X,Y,Z)    : 0.338916 0.339382 0.355696
+Rotation (rot,tilt,psi): -90.0188 88.9289 -88.9928
+Best grey scale       : 1
+Best grey shift       : 0
+Fitness value         : -0.818913
+xmipp_transform_geometry will require the following values
+   Angles: -90.0188 88.9289 -88.9928
+   Shifts: -0.345115 -0.355968 -0.332785
+[35mFINISHED[0m: alignVolumeStep, step 2, time 2020-11-15 14:15:44.724615
+[35mSTARTED[0m: alignVolumeStep, step 13, time 2020-11-15 14:15:44.788657
+[32mxmipp_volume_align --i1 Runs/008163_XmippProtReconstructSignificant/extra/volume_iter050.vol --i2 Runs/007920_XmippProtRansac/proposedVolume00009.vol --apply Runs/008709_XmippProtAlignVolume/extra/vol13.mrc --frm --copyGeo Runs/008709_XmippProtAlignVolume/extra/transformation-matrix_vol000013.txt[0m
+The best correlation is for
+Scale                  : 1
+Translation (X,Y,Z)    : -0.338517 0.348595 0.33476
+Rotation (rot,tilt,psi): 158.271 179.993 -21.7352
+Best grey scale       : 1
+Best grey shift       : 0
+Fitness value         : -0.918418
+xmipp_transform_geometry will require the following values
+   Angles: 158.271 179.993 -21.7352
+   Shifts: -0.338515 -0.348648 -0.334706
+[35mFINISHED[0m: alignVolumeStep, step 7, time 2020-11-15 14:15:45.604779
+The best correlation is for
+Scale                  : 1
+Translation (X,Y,Z)    : -0.339966 0.348896 0.335265
+Rotation (rot,tilt,psi): -175.496 179.992 4.49615
+Best grey scale       : 1
+Best grey shift       : 0
+Fitness value         : -0.954032
+xmipp_transform_geometry will require the following values
+   Angles: -175.496 179.992 4.49615
+   Shifts: -0.339964 -0.348941 -0.33522
+The best correlation is for
+Scale                  : 1
+Translation (X,Y,Z)    : 0.350918 0.329189 0.343871
+Rotation (rot,tilt,psi): -90.7296 89.996 -90.7296
+Best grey scale       : 1
+Best grey shift       : 0
+Fitness value         : -0.918988
+xmipp_transform_geometry will require the following values
+   Angles: -90.7296 89.996 -90.7296
+   Shifts: -0.342291 -0.348281 -0.333607
+[35mFINISHED[0m: alignVolumeStep, step 8, time 2020-11-15 14:17:02.960628
+[35mFINISHED[0m: alignVolumeStep, step 10, time 2020-11-15 14:17:03.335242
+The best correlation is for
+Scale                  : 1
+Translation (X,Y,Z)    : 0.347152 -0.330597 -0.34944
+Rotation (rot,tilt,psi): 90.8727 90.0025 90
+Best grey scale       : 1
+Best grey shift       : 0
+Fitness value         : -0.95547
+xmipp_transform_geometry will require the following values
+   Angles: 90.8727 90.0025 90
+   Shifts: -0.342076 -0.349454 -0.335831
+The best correlation is for
+Scale                  : 1
+Translation (X,Y,Z)    : 0.340762 -0.331763 -0.352052
+Rotation (rot,tilt,psi): 90.7176 90.0084 90.7176
+Best grey scale       : 1
+Best grey shift       : 0
+Fitness value         : -0.918559
+xmipp_transform_geometry will require the following values
+   Angles: 90.7176 90.0084 90.7176
+   Shifts: -0.340964 -0.347859 -0.335953
+[35mFINISHED[0m: alignVolumeStep, step 13, time 2020-11-15 14:17:03.690191
+The best correlation is for
+Scale                  : 1
+Translation (X,Y,Z)    : 0.336262 -0.354239 0.3355
+Rotation (rot,tilt,psi): -178.195 179.974 -177.283
+Best grey scale       : 1
+Best grey shift       : 0
+Fitness value         : -0.954021
+xmipp_transform_geometry will require the following values
+   Angles: -178.195 179.974 -177.283
+   Shifts: -0.341709 -0.348845 -0.335649
+[35mFINISHED[0m: alignVolumeStep, step 9, time 2020-11-15 14:17:04.008148
+[35mFINISHED[0m: alignVolumeStep, step 12, time 2020-11-15 14:17:03.960794
+The best correlation is for
+Scale                  : 1
+Translation (X,Y,Z)    : 0.34127 -0.35247 0.33243
+Rotation (rot,tilt,psi): 179.916 179.403 -179.487
+Best grey scale       : 1
+Best grey shift       : 0
+Fitness value         : -0.954666
+xmipp_transform_geometry will require the following values
+   Angles: 179.916 179.403 -179.487
+   Shifts: -0.341442 -0.348923 -0.335976
+[35mFINISHED[0m: alignVolumeStep, step 11, time 2020-11-15 14:17:05.179976
+[35mSTARTED[0m: createOutputStep, step 14, time 2020-11-15 14:17:05.471388
+[35mFINISHED[0m: createOutputStep, step 14, time 2020-11-15 14:17:05.515480
+*** Last status is finished 
+Cleaning temp folder....
+[32m------------------- PROTOCOL FINISHED[0m

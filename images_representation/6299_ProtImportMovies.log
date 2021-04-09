@@ -1,0 +1,52 @@
+[32mRUNNING PROTOCOL -----------------[0m
+Hostname: ip-172-31-13-159.eu-west-1.compute.internal
+PID: 4617
+pyworkflow: 3.0.6
+plugin: pwem
+plugin v: 3.0.5
+currentDir: /home/scipion/ScipionUserData/projects/Example_10248_Scipion3
+workingDir: Runs/006299_ProtImportMovies
+runMode: Continue
+          MPI: 1
+      threads: 1
+ Starting at step: 1
+ Running steps 
+[35mSTARTED[0m: importImagesStep, step 1, time 2020-11-12 16:47:04.003499
+Using pattern: '/home/scipion/ScipionUserData/projects/Example_10248_Scipion3/EMPIAR/*.tiff'
+Dim: (3710, 3838, 50)
+Imported 1/30
+Imported 2/30
+Imported 3/30
+Imported 4/30
+Imported 5/30
+Imported 6/30
+Imported 7/30
+Imported 8/30
+Imported 9/30
+Imported 10/30
+Imported 11/30
+Imported 12/30
+Imported 13/30
+Imported 14/30
+Imported 15/30
+Imported 16/30
+Imported 17/30
+Imported 18/30
+Imported 19/30
+Imported 20/30
+Imported 21/30
+Imported 22/30
+Imported 23/30
+Imported 24/30
+Imported 25/30
+Imported 26/30
+Imported 27/30
+Imported 28/30
+Imported 29/30
+Imported 30/30
+
+
+[35mFINISHED[0m: importImagesStep, step 1, time 2020-11-12 16:47:04.049993
+*** Last status is finished 
+Cleaning temp folder....
+[32m------------------- PROTOCOL FINISHED[0m

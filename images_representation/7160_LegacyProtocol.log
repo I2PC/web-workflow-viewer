@@ -1,0 +1,168 @@
+[32mRUNNING PROTOCOL -----------------[0m
+Hostname: ip-172-31-13-159.eu-west-1.compute.internal
+PID: 12736
+pyworkflow: 3.0.6
+plugin: sphire
+plugin v: 3.0.5
+currentDir: /home/scipion/ScipionUserData/projects/Example_10248_Scipion3
+workingDir: Runs/007160_SphireProtCRYOLOPicking
+runMode: Continue
+          MPI: 1
+      threads: 1
+ Starting at step: 1
+ Running steps 
+[35mSTARTED[0m: createConfigStep, step 1, time 2020-11-13 15:44:57.808335
+[35mFINISHED[0m: createConfigStep, step 1, time 2020-11-13 15:44:57.812476
+[35mSTARTED[0m: pickMicrographListStep, step 2, time 2020-11-13 15:44:57.819833
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrc 
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00002_UnderDefocus0.7um_frameImage_aligned_mic.mrc 
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00003_UnderDefocus0.7um_frameImage_aligned_mic.mrc 
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00004_UnderDefocus0.7um_frameImage_aligned_mic.mrc 
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00005_UnderDefocus0.7um_frameImage_aligned_mic.mrc 
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00006_UnderDefocus0.7um_frameImage_aligned_mic.mrc 
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00007_UnderDefocus0.7um_frameImage_aligned_mic.mrc 
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00008_UnderDefocus0.7um_frameImage_aligned_mic.mrc 
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00009_UnderDefocus0.7um_frameImage_aligned_mic.mrc 
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00010_UnderDefocus0.7um_frameImage_aligned_mic.mrc 
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00011_UnderDefocus0.7um_frameImage_aligned_mic.mrc 
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00012_UnderDefocus0.7um_frameImage_aligned_mic.mrc 
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00013_UnderDefocus0.7um_frameImage_aligned_mic.mrc 
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00014_UnderDefocus0.7um_frameImage_aligned_mic.mrc 
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00015_UnderDefocus0.7um_frameImage_aligned_mic.mrc 
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00016_UnderDefocus0.7um_frameImage_aligned_mic.mrc 
+[32m. /home/scipion/miniconda3/etc/profile.d/conda.sh&& conda activate cryolo-1.7.6 && cryolo_predict.py -c Runs/007160_SphireProtCRYOLOPicking/extra/config.json -w /home/scipion/scipion3/software/em/cryolo_model-202005_N63_c17/gmodel_phosnet_202005_N63_c17.h5 -i Runs/007160_SphireProtCRYOLOPicking/tmp/micrographs_1-16/ -o Runs/007160_SphireProtCRYOLOPicking/tmp/micrographs_1-16/ -t 0.300 -g 0 -nc 4[0m
+2020-11-13 15:45:13.783281: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2020-11-13 15:45:13.929078: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:897] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-13 15:45:13.930114: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1405] Found device 0 with properties: 
+name: Tesla T4 major: 7 minor: 5 memoryClockRate(GHz): 1.59
+pciBusID: 0000:00:1e.0
+totalMemory: 14.75GiB freeMemory: 14.60GiB
+2020-11-13 15:45:13.930138: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1484] Adding visible gpu devices: 0
+2020-11-13 15:45:17.122361: I tensorflow/core/common_runtime/gpu/gpu_device.cc:965] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-11-13 15:45:17.122413: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971]      0 
+2020-11-13 15:45:17.122424: I tensorflow/core/common_runtime/gpu/gpu_device.cc:984] 0:   N 
+2020-11-13 15:45:17.123681: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1097] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14118 MB memory) -> physical GPU (device: 0, name: Tesla T4, pci bus id: 0000:00:1e.0, compute capability: 7.5)
+Using TensorFlow backend.
+Your training input size 1024 was adjusted to [1056, 1024]
+Load crYOLO model which was trained with 1.7.0b2
+Read Anchor from model [3.2220039292730847, 3.2220039292730847]
+Initialization of model with /home/scipion/miniconda3/envs/cryolo-1.7.6/lib/python3.6/site-packages/cryolo/full_yolo_backend.h5
+
+ Load weights:  /home/scipion/scipion3/software/em/cryolo_model-202005_N63_c17/gmodel_phosnet_202005_N63_c17.h5
+Reset progress bar: ( Progress: -1 % )
+210 particles are found in /home/scipion/ScipionUserData/projects/Example_10248_Scipion3/Runs/007160_SphireProtCRYOLOPicking/tmp/micrographs_1-16/mic00001.mrc  ( Progress:  6 % )
+212 particles are found in /home/scipion/ScipionUserData/projects/Example_10248_Scipion3/Runs/007160_SphireProtCRYOLOPicking/tmp/micrographs_1-16/mic00002.mrc  ( Progress:  12 % )
+205 particles are found in /home/scipion/ScipionUserData/projects/Example_10248_Scipion3/Runs/007160_SphireProtCRYOLOPicking/tmp/micrographs_1-16/mic00003.mrc  ( Progress:  18 % )
+213 particles are found in /home/scipion/ScipionUserData/projects/Example_10248_Scipion3/Runs/007160_SphireProtCRYOLOPicking/tmp/micrographs_1-16/mic00004.mrc  ( Progress:  25 % )
+221 particles are found in /home/scipion/ScipionUserData/projects/Example_10248_Scipion3/Runs/007160_SphireProtCRYOLOPicking/tmp/micrographs_1-16/mic00005.mrc  ( Progress:  31 % )
+221 particles are found in /home/scipion/ScipionUserData/projects/Example_10248_Scipion3/Runs/007160_SphireProtCRYOLOPicking/tmp/micrographs_1-16/mic00006.mrc  ( Progress:  37 % )
+218 particles are found in /home/scipion/ScipionUserData/projects/Example_10248_Scipion3/Runs/007160_SphireProtCRYOLOPicking/tmp/micrographs_1-16/mic00007.mrc  ( Progress:  43 % )
+221 particles are found in /home/scipion/ScipionUserData/projects/Example_10248_Scipion3/Runs/007160_SphireProtCRYOLOPicking/tmp/micrographs_1-16/mic00008.mrc  ( Progress:  50 % )
+204 particles are found in /home/scipion/ScipionUserData/projects/Example_10248_Scipion3/Runs/007160_SphireProtCRYOLOPicking/tmp/micrographs_1-16/mic00009.mrc  ( Progress:  56 % )
+205 particles are found in /home/scipion/ScipionUserData/projects/Example_10248_Scipion3/Runs/007160_SphireProtCRYOLOPicking/tmp/micrographs_1-16/mic00010.mrc  ( Progress:  62 % )
+213 particles are found in /home/scipion/ScipionUserData/projects/Example_10248_Scipion3/Runs/007160_SphireProtCRYOLOPicking/tmp/micrographs_1-16/mic00011.mrc  ( Progress:  68 % )
+218 particles are found in /home/scipion/ScipionUserData/projects/Example_10248_Scipion3/Runs/007160_SphireProtCRYOLOPicking/tmp/micrographs_1-16/mic00012.mrc  ( Progress:  75 % )
+215 particles are found in /home/scipion/ScipionUserData/projects/Example_10248_Scipion3/Runs/007160_SphireProtCRYOLOPicking/tmp/micrographs_1-16/mic00013.mrc  ( Progress:  81 % )
+48 particles are found in /home/scipion/ScipionUserData/projects/Example_10248_Scipion3/Runs/007160_SphireProtCRYOLOPicking/tmp/micrographs_1-16/mic00014.mrc  ( Progress:  87 % )
+141 particles are found in /home/scipion/ScipionUserData/projects/Example_10248_Scipion3/Runs/007160_SphireProtCRYOLOPicking/tmp/micrographs_1-16/mic00015.mrc  ( Progress:  93 % )
+224 particles are found in /home/scipion/ScipionUserData/projects/Example_10248_Scipion3/Runs/007160_SphireProtCRYOLOPicking/tmp/micrographs_1-16/mic00016.mrc  ( Progress:  100 % )
+#####################################
+3189 particles in total has been found ( 50 seconds)
+Deleted 637 particles as they were not fully immersed in the micrograph
+Deleted 0 particles as they were out of specified size range
+#####################################
+#####################################
+
+## Particle diameter distribution ##
+MEAN: 244 px
+SD: 3 px
+25%-Quantile: 243 px
+50%-Quantile: 245 px
+75%-Quantile: 247 px
+Wrote particle size distribution summary to Runs/007160_SphireProtCRYOLOPicking/tmp/micrographs_1-16/DISTR/size_distribution_summary_20201113-154701.txt
+Wrote plot of particle size distribution to Runs/007160_SphireProtCRYOLOPicking/tmp/micrographs_1-16/DISTR/size_distribution_20201113-154701.png
+
+## Particle confidence distribution ##
+Wrote confidence distribution summary Runs/007160_SphireProtCRYOLOPicking/tmp/micrographs_1-16/DISTR/confidence_distribution_summary_20201113-154701.txt
+Wrote confidence distribution to Runs/007160_SphireProtCRYOLOPicking/tmp/micrographs_1-16/DISTR/confidence_distribution_20201113-154701.png
+
+#####################################
+[32mmv Runs/007160_SphireProtCRYOLOPicking/tmp/micrographs_1-16/CBOX/* Runs/007160_SphireProtCRYOLOPicking/tmp/outputCBOX/[0m
+[32mmv Runs/007160_SphireProtCRYOLOPicking/tmp/micrographs_1-16/DISTR/* Runs/007160_SphireProtCRYOLOPicking/extra/outputDISTR/[0m
+[35mFINISHED[0m: pickMicrographListStep, step 2, time 2020-11-13 15:47:03.695826
+Reading coordinates from mics: 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16
+[35mSTARTED[0m: pickMicrographListStep, step 3, time 2020-11-13 15:47:03.807309
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00017_UnderDefocus0.7um_frameImage_aligned_mic.mrc 
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00018_UnderDefocus0.7um_frameImage_aligned_mic.mrc 
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00019_UnderDefocus0.7um_frameImage_aligned_mic.mrc 
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00020_UnderDefocus0.7um_frameImage_aligned_mic.mrc 
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00021_UnderDefocus0.7um_frameImage_aligned_mic.mrc 
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00023_UnderDefocus0.7um_frameImage_aligned_mic.mrc 
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00024_UnderDefocus0.9um_frameImage_aligned_mic.mrc 
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00025_UnderDefocus0.9um_frameImage_aligned_mic.mrc 
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrc 
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00028_UnderDefocus0.9um_frameImage_aligned_mic.mrc 
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00029_UnderDefocus0.9um_frameImage_aligned_mic.mrc 
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00030_UnderDefocus0.9um_frameImage_aligned_mic.mrc 
+[32m. /home/scipion/miniconda3/etc/profile.d/conda.sh&& conda activate cryolo-1.7.6 && cryolo_predict.py -c Runs/007160_SphireProtCRYOLOPicking/extra/config.json -w /home/scipion/scipion3/software/em/cryolo_model-202005_N63_c17/gmodel_phosnet_202005_N63_c17.h5 -i Runs/007160_SphireProtCRYOLOPicking/tmp/micrographs_17-30/ -o Runs/007160_SphireProtCRYOLOPicking/tmp/micrographs_17-30/ -t 0.300 -g 0 -nc 4[0m
+2020-11-13 15:47:05.343988: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2020-11-13 15:47:05.454139: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:897] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-13 15:47:05.454991: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1405] Found device 0 with properties: 
+name: Tesla T4 major: 7 minor: 5 memoryClockRate(GHz): 1.59
+pciBusID: 0000:00:1e.0
+totalMemory: 14.75GiB freeMemory: 14.60GiB
+2020-11-13 15:47:05.455011: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1484] Adding visible gpu devices: 0
+2020-11-13 15:47:05.877804: I tensorflow/core/common_runtime/gpu/gpu_device.cc:965] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-11-13 15:47:05.877845: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971]      0 
+2020-11-13 15:47:05.877852: I tensorflow/core/common_runtime/gpu/gpu_device.cc:984] 0:   N 
+2020-11-13 15:47:05.877956: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1097] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14118 MB memory) -> physical GPU (device: 0, name: Tesla T4, pci bus id: 0000:00:1e.0, compute capability: 7.5)
+Using TensorFlow backend.
+Your training input size 1024 was adjusted to [1056, 1024]
+Load crYOLO model which was trained with 1.7.0b2
+Read Anchor from model [3.2220039292730847, 3.2220039292730847]
+Initialization of model with /home/scipion/miniconda3/envs/cryolo-1.7.6/lib/python3.6/site-packages/cryolo/full_yolo_backend.h5
+
+ Load weights:  /home/scipion/scipion3/software/em/cryolo_model-202005_N63_c17/gmodel_phosnet_202005_N63_c17.h5
+Reset progress bar: ( Progress: -1 % )
+219 particles are found in /home/scipion/ScipionUserData/projects/Example_10248_Scipion3/Runs/007160_SphireProtCRYOLOPicking/tmp/micrographs_17-30/mic00017.mrc  ( Progress:  8 % )
+224 particles are found in /home/scipion/ScipionUserData/projects/Example_10248_Scipion3/Runs/007160_SphireProtCRYOLOPicking/tmp/micrographs_17-30/mic00018.mrc  ( Progress:  16 % )
+12 particles are found in /home/scipion/ScipionUserData/projects/Example_10248_Scipion3/Runs/007160_SphireProtCRYOLOPicking/tmp/micrographs_17-30/mic00019.mrc  ( Progress:  25 % )
+114 particles are found in /home/scipion/ScipionUserData/projects/Example_10248_Scipion3/Runs/007160_SphireProtCRYOLOPicking/tmp/micrographs_17-30/mic00020.mrc  ( Progress:  33 % )
+218 particles are found in /home/scipion/ScipionUserData/projects/Example_10248_Scipion3/Runs/007160_SphireProtCRYOLOPicking/tmp/micrographs_17-30/mic00021.mrc  ( Progress:  41 % )
+65 particles are found in /home/scipion/ScipionUserData/projects/Example_10248_Scipion3/Runs/007160_SphireProtCRYOLOPicking/tmp/micrographs_17-30/mic00023.mrc  ( Progress:  50 % )
+130 particles are found in /home/scipion/ScipionUserData/projects/Example_10248_Scipion3/Runs/007160_SphireProtCRYOLOPicking/tmp/micrographs_17-30/mic00024.mrc  ( Progress:  58 % )
+193 particles are found in /home/scipion/ScipionUserData/projects/Example_10248_Scipion3/Runs/007160_SphireProtCRYOLOPicking/tmp/micrographs_17-30/mic00025.mrc  ( Progress:  66 % )
+132 particles are found in /home/scipion/ScipionUserData/projects/Example_10248_Scipion3/Runs/007160_SphireProtCRYOLOPicking/tmp/micrographs_17-30/mic00026.mrc  ( Progress:  75 % )
+69 particles are found in /home/scipion/ScipionUserData/projects/Example_10248_Scipion3/Runs/007160_SphireProtCRYOLOPicking/tmp/micrographs_17-30/mic00028.mrc  ( Progress:  83 % )
+228 particles are found in /home/scipion/ScipionUserData/projects/Example_10248_Scipion3/Runs/007160_SphireProtCRYOLOPicking/tmp/micrographs_17-30/mic00029.mrc  ( Progress:  91 % )
+209 particles are found in /home/scipion/ScipionUserData/projects/Example_10248_Scipion3/Runs/007160_SphireProtCRYOLOPicking/tmp/micrographs_17-30/mic00030.mrc  ( Progress:  100 % )
+#####################################
+1813 particles in total has been found ( 7 seconds)
+Deleted 325 particles as they were not fully immersed in the micrograph
+Deleted 0 particles as they were out of specified size range
+#####################################
+#####################################
+
+## Particle diameter distribution ##
+MEAN: 244 px
+SD: 8 px
+25%-Quantile: 242 px
+50%-Quantile: 244 px
+75%-Quantile: 247 px
+Wrote particle size distribution summary to Runs/007160_SphireProtCRYOLOPicking/tmp/micrographs_17-30/DISTR/size_distribution_summary_20201113-154721.txt
+Wrote plot of particle size distribution to Runs/007160_SphireProtCRYOLOPicking/tmp/micrographs_17-30/DISTR/size_distribution_20201113-154721.png
+
+## Particle confidence distribution ##
+Wrote confidence distribution summary Runs/007160_SphireProtCRYOLOPicking/tmp/micrographs_17-30/DISTR/confidence_distribution_summary_20201113-154721.txt
+Wrote confidence distribution to Runs/007160_SphireProtCRYOLOPicking/tmp/micrographs_17-30/DISTR/confidence_distribution_20201113-154721.png
+
+#####################################
+[32mmv Runs/007160_SphireProtCRYOLOPicking/tmp/micrographs_17-30/CBOX/* Runs/007160_SphireProtCRYOLOPicking/tmp/outputCBOX/[0m
+[32mmv Runs/007160_SphireProtCRYOLOPicking/tmp/micrographs_17-30/DISTR/* Runs/007160_SphireProtCRYOLOPicking/extra/outputDISTR/[0m
+[35mFINISHED[0m: pickMicrographListStep, step 3, time 2020-11-13 15:47:22.187404
+Reading coordinates from mics: 17,18,19,20,21,23,24,25,26,28,29,30
+[35mSTARTED[0m: createOutputStep, step 4, time 2020-11-13 15:47:22.253381
+[35mFINISHED[0m: createOutputStep, step 4, time 2020-11-13 15:47:22.257966
+*** Last status is finished 
+Cleaning temp folder....
+[32m------------------- PROTOCOL FINISHED[0m

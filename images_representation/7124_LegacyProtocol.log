@@ -1,0 +1,246 @@
+[32mRUNNING PROTOCOL -----------------[0m
+Hostname: ip-172-31-13-159.eu-west-1.compute.internal
+PID: 12176
+pyworkflow: 3.0.6
+plugin: eman2
+currentDir: /home/scipion/ScipionUserData/projects/Example_10248_Scipion3
+workingDir: Runs/007124_SparxGaussianProtPicking
+runMode: Continue
+          MPI: 1
+      threads: 1
+ Starting at step: 1
+ Running steps 
+[35mSTARTED[0m: initSparxDb, step 1, time 2020-11-13 15:44:34.609248
+[32m/home/scipion/scipion3/software/em/eman-2.31/bin/sxprocess.py  demoparms --makedb=thr_low=0.2:thr_hi=30.0:boxsize=300:invert_contrast=true:use_variance=false:gauss_width=30.0:pixel_input=1:pixel_output=1[0m
+database key under which params will be stored:  demoparms
+Done!
+[35mFINISHED[0m: initSparxDb, step 1, time 2020-11-13 15:44:53.299631
+[35mSTARTED[0m: pickMicrographStep, step 2, time 2020-11-13 15:44:53.316093
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrc 
+[32m/home/scipion/scipion3/software/em/eman-2.31/bin/e2boxer_old.py --gauss_autoboxer=demoparms --write_dbbox --boxsize=300 ../../006458_XmippProtMovieCorr/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrc[0m
+Gauss method............start command line auto boxing
+npeak:  247
+Autoboxed 247 Particles
+[35mFINISHED[0m: pickMicrographStep, step 2, time 2020-11-13 15:45:28.857801
+Reading coordinates from mics: 1
+[35mSTARTED[0m: pickMicrographStep, step 3, time 2020-11-13 15:45:28.957557
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00002_UnderDefocus0.7um_frameImage_aligned_mic.mrc 
+[32m/home/scipion/scipion3/software/em/eman-2.31/bin/e2boxer_old.py --gauss_autoboxer=demoparms --write_dbbox --boxsize=300 ../../006458_XmippProtMovieCorr/extra/190117_02_00002_UnderDefocus0.7um_frameImage_aligned_mic.mrc[0m
+Gauss method............start command line auto boxing
+npeak:  228
+Autoboxed 228 Particles
+[35mFINISHED[0m: pickMicrographStep, step 3, time 2020-11-13 15:45:39.281495
+Reading coordinates from mics: 2
+[35mSTARTED[0m: pickMicrographStep, step 4, time 2020-11-13 15:45:39.340028
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00003_UnderDefocus0.7um_frameImage_aligned_mic.mrc 
+[32m/home/scipion/scipion3/software/em/eman-2.31/bin/e2boxer_old.py --gauss_autoboxer=demoparms --write_dbbox --boxsize=300 ../../006458_XmippProtMovieCorr/extra/190117_02_00003_UnderDefocus0.7um_frameImage_aligned_mic.mrc[0m
+Gauss method............start command line auto boxing
+npeak:  244
+Autoboxed 244 Particles
+[35mFINISHED[0m: pickMicrographStep, step 4, time 2020-11-13 15:45:47.032973
+Reading coordinates from mics: 3
+[35mSTARTED[0m: pickMicrographStep, step 5, time 2020-11-13 15:45:47.068619
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00004_UnderDefocus0.7um_frameImage_aligned_mic.mrc 
+[32m/home/scipion/scipion3/software/em/eman-2.31/bin/e2boxer_old.py --gauss_autoboxer=demoparms --write_dbbox --boxsize=300 ../../006458_XmippProtMovieCorr/extra/190117_02_00004_UnderDefocus0.7um_frameImage_aligned_mic.mrc[0m
+Gauss method............start command line auto boxing
+npeak:  233
+Autoboxed 232 Particles
+[35mFINISHED[0m: pickMicrographStep, step 5, time 2020-11-13 15:45:51.696992
+Reading coordinates from mics: 4
+[35mSTARTED[0m: pickMicrographStep, step 6, time 2020-11-13 15:45:51.733944
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00005_UnderDefocus0.7um_frameImage_aligned_mic.mrc 
+[32m/home/scipion/scipion3/software/em/eman-2.31/bin/e2boxer_old.py --gauss_autoboxer=demoparms --write_dbbox --boxsize=300 ../../006458_XmippProtMovieCorr/extra/190117_02_00005_UnderDefocus0.7um_frameImage_aligned_mic.mrc[0m
+Gauss method............start command line auto boxing
+npeak:  236
+Autoboxed 234 Particles
+[35mFINISHED[0m: pickMicrographStep, step 6, time 2020-11-13 15:45:56.363412
+Reading coordinates from mics: 5
+[35mSTARTED[0m: pickMicrographStep, step 7, time 2020-11-13 15:45:56.398816
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00006_UnderDefocus0.7um_frameImage_aligned_mic.mrc 
+[32m/home/scipion/scipion3/software/em/eman-2.31/bin/e2boxer_old.py --gauss_autoboxer=demoparms --write_dbbox --boxsize=300 ../../006458_XmippProtMovieCorr/extra/190117_02_00006_UnderDefocus0.7um_frameImage_aligned_mic.mrc[0m
+Gauss method............start command line auto boxing
+npeak:  235
+Autoboxed 235 Particles
+[35mFINISHED[0m: pickMicrographStep, step 7, time 2020-11-13 15:46:00.962646
+Reading coordinates from mics: 6
+[35mSTARTED[0m: pickMicrographStep, step 8, time 2020-11-13 15:46:00.999965
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00007_UnderDefocus0.7um_frameImage_aligned_mic.mrc 
+[32m/home/scipion/scipion3/software/em/eman-2.31/bin/e2boxer_old.py --gauss_autoboxer=demoparms --write_dbbox --boxsize=300 ../../006458_XmippProtMovieCorr/extra/190117_02_00007_UnderDefocus0.7um_frameImage_aligned_mic.mrc[0m
+Gauss method............start command line auto boxing
+npeak:  230
+Autoboxed 230 Particles
+[35mFINISHED[0m: pickMicrographStep, step 8, time 2020-11-13 15:46:05.589225
+Reading coordinates from mics: 7
+[35mSTARTED[0m: pickMicrographStep, step 9, time 2020-11-13 15:46:05.624002
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00008_UnderDefocus0.7um_frameImage_aligned_mic.mrc 
+[32m/home/scipion/scipion3/software/em/eman-2.31/bin/e2boxer_old.py --gauss_autoboxer=demoparms --write_dbbox --boxsize=300 ../../006458_XmippProtMovieCorr/extra/190117_02_00008_UnderDefocus0.7um_frameImage_aligned_mic.mrc[0m
+Gauss method............start command line auto boxing
+npeak:  249
+Autoboxed 249 Particles
+[35mFINISHED[0m: pickMicrographStep, step 9, time 2020-11-13 15:46:10.186457
+Reading coordinates from mics: 8
+[35mSTARTED[0m: pickMicrographStep, step 10, time 2020-11-13 15:46:10.220025
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00009_UnderDefocus0.7um_frameImage_aligned_mic.mrc 
+[32m/home/scipion/scipion3/software/em/eman-2.31/bin/e2boxer_old.py --gauss_autoboxer=demoparms --write_dbbox --boxsize=300 ../../006458_XmippProtMovieCorr/extra/190117_02_00009_UnderDefocus0.7um_frameImage_aligned_mic.mrc[0m
+Gauss method............start command line auto boxing
+npeak:  238
+Autoboxed 238 Particles
+[35mFINISHED[0m: pickMicrographStep, step 10, time 2020-11-13 15:46:14.777667
+Reading coordinates from mics: 9
+[35mSTARTED[0m: pickMicrographStep, step 11, time 2020-11-13 15:46:14.812603
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00010_UnderDefocus0.7um_frameImage_aligned_mic.mrc 
+[32m/home/scipion/scipion3/software/em/eman-2.31/bin/e2boxer_old.py --gauss_autoboxer=demoparms --write_dbbox --boxsize=300 ../../006458_XmippProtMovieCorr/extra/190117_02_00010_UnderDefocus0.7um_frameImage_aligned_mic.mrc[0m
+Gauss method............start command line auto boxing
+npeak:  238
+Autoboxed 238 Particles
+[35mFINISHED[0m: pickMicrographStep, step 11, time 2020-11-13 15:46:19.354985
+Reading coordinates from mics: 10
+[35mSTARTED[0m: pickMicrographStep, step 12, time 2020-11-13 15:46:19.390607
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00011_UnderDefocus0.7um_frameImage_aligned_mic.mrc 
+[32m/home/scipion/scipion3/software/em/eman-2.31/bin/e2boxer_old.py --gauss_autoboxer=demoparms --write_dbbox --boxsize=300 ../../006458_XmippProtMovieCorr/extra/190117_02_00011_UnderDefocus0.7um_frameImage_aligned_mic.mrc[0m
+Gauss method............start command line auto boxing
+npeak:  249
+Autoboxed 248 Particles
+[35mFINISHED[0m: pickMicrographStep, step 12, time 2020-11-13 15:46:23.950573
+Reading coordinates from mics: 11
+[35mSTARTED[0m: pickMicrographStep, step 13, time 2020-11-13 15:46:23.990977
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00012_UnderDefocus0.7um_frameImage_aligned_mic.mrc 
+[32m/home/scipion/scipion3/software/em/eman-2.31/bin/e2boxer_old.py --gauss_autoboxer=demoparms --write_dbbox --boxsize=300 ../../006458_XmippProtMovieCorr/extra/190117_02_00012_UnderDefocus0.7um_frameImage_aligned_mic.mrc[0m
+Gauss method............start command line auto boxing
+npeak:  239
+Autoboxed 239 Particles
+[35mFINISHED[0m: pickMicrographStep, step 13, time 2020-11-13 15:46:28.551846
+Reading coordinates from mics: 12
+[35mSTARTED[0m: pickMicrographStep, step 14, time 2020-11-13 15:46:28.588646
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00013_UnderDefocus0.7um_frameImage_aligned_mic.mrc 
+[32m/home/scipion/scipion3/software/em/eman-2.31/bin/e2boxer_old.py --gauss_autoboxer=demoparms --write_dbbox --boxsize=300 ../../006458_XmippProtMovieCorr/extra/190117_02_00013_UnderDefocus0.7um_frameImage_aligned_mic.mrc[0m
+Gauss method............start command line auto boxing
+npeak:  246
+Autoboxed 246 Particles
+[35mFINISHED[0m: pickMicrographStep, step 14, time 2020-11-13 15:46:33.164588
+Reading coordinates from mics: 13
+[35mSTARTED[0m: pickMicrographStep, step 15, time 2020-11-13 15:46:33.198354
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00014_UnderDefocus0.7um_frameImage_aligned_mic.mrc 
+[32m/home/scipion/scipion3/software/em/eman-2.31/bin/e2boxer_old.py --gauss_autoboxer=demoparms --write_dbbox --boxsize=300 ../../006458_XmippProtMovieCorr/extra/190117_02_00014_UnderDefocus0.7um_frameImage_aligned_mic.mrc[0m
+Gauss method............start command line auto boxing
+npeak:  233
+Autoboxed 233 Particles
+[35mFINISHED[0m: pickMicrographStep, step 15, time 2020-11-13 15:46:37.745476
+Reading coordinates from mics: 14
+[35mSTARTED[0m: pickMicrographStep, step 16, time 2020-11-13 15:46:37.779135
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00015_UnderDefocus0.7um_frameImage_aligned_mic.mrc 
+[32m/home/scipion/scipion3/software/em/eman-2.31/bin/e2boxer_old.py --gauss_autoboxer=demoparms --write_dbbox --boxsize=300 ../../006458_XmippProtMovieCorr/extra/190117_02_00015_UnderDefocus0.7um_frameImage_aligned_mic.mrc[0m
+Gauss method............start command line auto boxing
+npeak:  220
+Autoboxed 220 Particles
+[35mFINISHED[0m: pickMicrographStep, step 16, time 2020-11-13 15:46:42.328341
+Reading coordinates from mics: 15
+[35mSTARTED[0m: pickMicrographStep, step 17, time 2020-11-13 15:46:42.361980
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00016_UnderDefocus0.7um_frameImage_aligned_mic.mrc 
+[32m/home/scipion/scipion3/software/em/eman-2.31/bin/e2boxer_old.py --gauss_autoboxer=demoparms --write_dbbox --boxsize=300 ../../006458_XmippProtMovieCorr/extra/190117_02_00016_UnderDefocus0.7um_frameImage_aligned_mic.mrc[0m
+Gauss method............start command line auto boxing
+npeak:  239
+Autoboxed 239 Particles
+[35mFINISHED[0m: pickMicrographStep, step 17, time 2020-11-13 15:46:46.977794
+Reading coordinates from mics: 16
+[35mSTARTED[0m: pickMicrographStep, step 18, time 2020-11-13 15:46:47.012767
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00017_UnderDefocus0.7um_frameImage_aligned_mic.mrc 
+[32m/home/scipion/scipion3/software/em/eman-2.31/bin/e2boxer_old.py --gauss_autoboxer=demoparms --write_dbbox --boxsize=300 ../../006458_XmippProtMovieCorr/extra/190117_02_00017_UnderDefocus0.7um_frameImage_aligned_mic.mrc[0m
+Gauss method............start command line auto boxing
+npeak:  235
+Autoboxed 235 Particles
+[35mFINISHED[0m: pickMicrographStep, step 18, time 2020-11-13 15:46:51.596764
+Reading coordinates from mics: 17
+[35mSTARTED[0m: pickMicrographStep, step 19, time 2020-11-13 15:46:51.630247
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00018_UnderDefocus0.7um_frameImage_aligned_mic.mrc 
+[32m/home/scipion/scipion3/software/em/eman-2.31/bin/e2boxer_old.py --gauss_autoboxer=demoparms --write_dbbox --boxsize=300 ../../006458_XmippProtMovieCorr/extra/190117_02_00018_UnderDefocus0.7um_frameImage_aligned_mic.mrc[0m
+Gauss method............start command line auto boxing
+npeak:  246
+Autoboxed 246 Particles
+[35mFINISHED[0m: pickMicrographStep, step 19, time 2020-11-13 15:46:56.226550
+Reading coordinates from mics: 18
+[35mSTARTED[0m: pickMicrographStep, step 20, time 2020-11-13 15:46:56.263218
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00019_UnderDefocus0.7um_frameImage_aligned_mic.mrc 
+[32m/home/scipion/scipion3/software/em/eman-2.31/bin/e2boxer_old.py --gauss_autoboxer=demoparms --write_dbbox --boxsize=300 ../../006458_XmippProtMovieCorr/extra/190117_02_00019_UnderDefocus0.7um_frameImage_aligned_mic.mrc[0m
+Gauss method............start command line auto boxing
+npeak:  237
+Autoboxed 237 Particles
+[35mFINISHED[0m: pickMicrographStep, step 20, time 2020-11-13 15:47:00.864156
+Reading coordinates from mics: 19
+[35mSTARTED[0m: pickMicrographStep, step 21, time 2020-11-13 15:47:00.903852
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00020_UnderDefocus0.7um_frameImage_aligned_mic.mrc 
+[32m/home/scipion/scipion3/software/em/eman-2.31/bin/e2boxer_old.py --gauss_autoboxer=demoparms --write_dbbox --boxsize=300 ../../006458_XmippProtMovieCorr/extra/190117_02_00020_UnderDefocus0.7um_frameImage_aligned_mic.mrc[0m
+Gauss method............start command line auto boxing
+npeak:  234
+Autoboxed 234 Particles
+[35mFINISHED[0m: pickMicrographStep, step 21, time 2020-11-13 15:47:05.733006
+Reading coordinates from mics: 20
+[35mSTARTED[0m: pickMicrographStep, step 22, time 2020-11-13 15:47:05.779279
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00021_UnderDefocus0.7um_frameImage_aligned_mic.mrc 
+[32m/home/scipion/scipion3/software/em/eman-2.31/bin/e2boxer_old.py --gauss_autoboxer=demoparms --write_dbbox --boxsize=300 ../../006458_XmippProtMovieCorr/extra/190117_02_00021_UnderDefocus0.7um_frameImage_aligned_mic.mrc[0m
+Gauss method............start command line auto boxing
+npeak:  232
+Autoboxed 231 Particles
+[35mFINISHED[0m: pickMicrographStep, step 22, time 2020-11-13 15:47:11.021198
+Reading coordinates from mics: 21
+[35mSTARTED[0m: pickMicrographStep, step 23, time 2020-11-13 15:47:11.054238
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00023_UnderDefocus0.7um_frameImage_aligned_mic.mrc 
+[32m/home/scipion/scipion3/software/em/eman-2.31/bin/e2boxer_old.py --gauss_autoboxer=demoparms --write_dbbox --boxsize=300 ../../006458_XmippProtMovieCorr/extra/190117_02_00023_UnderDefocus0.7um_frameImage_aligned_mic.mrc[0m
+Gauss method............start command line auto boxing
+npeak:  243
+Autoboxed 243 Particles
+[35mFINISHED[0m: pickMicrographStep, step 23, time 2020-11-13 15:47:15.643667
+Reading coordinates from mics: 23
+[35mSTARTED[0m: pickMicrographStep, step 24, time 2020-11-13 15:47:15.678721
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00024_UnderDefocus0.9um_frameImage_aligned_mic.mrc 
+[32m/home/scipion/scipion3/software/em/eman-2.31/bin/e2boxer_old.py --gauss_autoboxer=demoparms --write_dbbox --boxsize=300 ../../006458_XmippProtMovieCorr/extra/190117_02_00024_UnderDefocus0.9um_frameImage_aligned_mic.mrc[0m
+Gauss method............start command line auto boxing
+npeak:  235
+Autoboxed 234 Particles
+[35mFINISHED[0m: pickMicrographStep, step 24, time 2020-11-13 15:47:20.681020
+Reading coordinates from mics: 24
+[35mSTARTED[0m: pickMicrographStep, step 25, time 2020-11-13 15:47:20.714613
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00025_UnderDefocus0.9um_frameImage_aligned_mic.mrc 
+[32m/home/scipion/scipion3/software/em/eman-2.31/bin/e2boxer_old.py --gauss_autoboxer=demoparms --write_dbbox --boxsize=300 ../../006458_XmippProtMovieCorr/extra/190117_02_00025_UnderDefocus0.9um_frameImage_aligned_mic.mrc[0m
+Gauss method............start command line auto boxing
+npeak:  240
+Autoboxed 240 Particles
+[35mFINISHED[0m: pickMicrographStep, step 25, time 2020-11-13 15:47:25.484092
+Reading coordinates from mics: 25
+[35mSTARTED[0m: pickMicrographStep, step 26, time 2020-11-13 15:47:25.522880
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrc 
+[32m/home/scipion/scipion3/software/em/eman-2.31/bin/e2boxer_old.py --gauss_autoboxer=demoparms --write_dbbox --boxsize=300 ../../006458_XmippProtMovieCorr/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrc[0m
+Gauss method............start command line auto boxing
+npeak:  247
+Autoboxed 247 Particles
+[35mFINISHED[0m: pickMicrographStep, step 26, time 2020-11-13 15:47:30.080965
+Reading coordinates from mics: 26
+[35mSTARTED[0m: pickMicrographStep, step 27, time 2020-11-13 15:47:30.131808
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00028_UnderDefocus0.9um_frameImage_aligned_mic.mrc 
+[32m/home/scipion/scipion3/software/em/eman-2.31/bin/e2boxer_old.py --gauss_autoboxer=demoparms --write_dbbox --boxsize=300 ../../006458_XmippProtMovieCorr/extra/190117_02_00028_UnderDefocus0.9um_frameImage_aligned_mic.mrc[0m
+Gauss method............start command line auto boxing
+npeak:  230
+Autoboxed 230 Particles
+[35mFINISHED[0m: pickMicrographStep, step 27, time 2020-11-13 15:47:34.742232
+Reading coordinates from mics: 28
+[35mSTARTED[0m: pickMicrographStep, step 28, time 2020-11-13 15:47:34.777707
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00029_UnderDefocus0.9um_frameImage_aligned_mic.mrc 
+[32m/home/scipion/scipion3/software/em/eman-2.31/bin/e2boxer_old.py --gauss_autoboxer=demoparms --write_dbbox --boxsize=300 ../../006458_XmippProtMovieCorr/extra/190117_02_00029_UnderDefocus0.9um_frameImage_aligned_mic.mrc[0m
+Gauss method............start command line auto boxing
+npeak:  244
+Autoboxed 244 Particles
+[35mFINISHED[0m: pickMicrographStep, step 28, time 2020-11-13 15:47:39.331538
+Reading coordinates from mics: 29
+[35mSTARTED[0m: pickMicrographStep, step 29, time 2020-11-13 15:47:39.373979
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00030_UnderDefocus0.9um_frameImage_aligned_mic.mrc 
+[32m/home/scipion/scipion3/software/em/eman-2.31/bin/e2boxer_old.py --gauss_autoboxer=demoparms --write_dbbox --boxsize=300 ../../006458_XmippProtMovieCorr/extra/190117_02_00030_UnderDefocus0.9um_frameImage_aligned_mic.mrc[0m
+Gauss method............start command line auto boxing
+npeak:  235
+Autoboxed 235 Particles
+[35mFINISHED[0m: pickMicrographStep, step 29, time 2020-11-13 15:47:43.949510
+Reading coordinates from mics: 30
+[35mSTARTED[0m: createOutputStep, step 30, time 2020-11-13 15:47:43.984108
+[35mFINISHED[0m: createOutputStep, step 30, time 2020-11-13 15:47:43.988087
+*** Last status is finished 
+Cleaning temp folder....
+[32m------------------- PROTOCOL FINISHED[0m

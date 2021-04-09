@@ -1,0 +1,18 @@
+[32mRUNNING PROTOCOL -----------------[0m
+Hostname: ip-172-31-13-159.eu-west-1.compute.internal
+PID: 3119
+pyworkflow: 3.0.6
+plugin: pwem
+plugin v: 3.0.6
+currentDir: /home/scipion/ScipionUserData/projects/Example_10248_Scipion3
+workingDir: Runs/009620_ProtUserSubSet
+runMode: Continue
+          MPI: 1
+      threads: 1
+ Starting at step: 1
+ Running steps 
+[35mSTARTED[0m: createSetStep, step 1, time 2020-11-15 22:30:25.383248
+[35mFINISHED[0m: createSetStep, step 1, time 2020-11-15 22:30:25.722992
+*** Last status is finished 
+Cleaning temp folder....
+[32m------------------- PROTOCOL FINISHED[0m

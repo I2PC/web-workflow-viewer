@@ -1,0 +1,18 @@
+[32mRUNNING PROTOCOL -----------------[0m
+Hostname: ip-172-31-13-159.eu-west-1.compute.internal
+PID: 13527
+pyworkflow: 3.0.6
+plugin: xmipp3
+currentDir: /home/scipion/ScipionUserData/projects/Example_10248_Scipion3
+workingDir: Runs/007212_XmippProtParticlePicking
+runMode: Continue
+          MPI: 1
+      threads: 1
+ Starting at step: 1
+ Running steps 
+[35mSTARTED[0m: launchParticlePickGUIStep, step 1, time 2020-11-13 15:45:39.115718
+java -Xmx2g -d64 -Djava.library.path=/home/scipion/scipion3/software/em/xmipp/lib -Dplugins.dir=/home/scipion/scipion3/software/em/xmipp/bindings/java/imagej/plugins -cp lib/*:/home/scipion/scipion3/software/em/xmipp/bindings/java/imagej/*:/home/scipion/scipion3/software/em/xmipp/bindings/java/lib/* xmipp.viewer.particlepicker.training.SupervisedPickerRunner --input Runs/006988_XmippProtCTFConsensus/micrographs.sqlite --output Runs/007212_XmippProtParticlePicking/extra --scipion 33044
+[35mINTERACTIVE[0m: launchParticlePickGUIStep, step 1, time 2020-11-13 15:50:28.705062
+*** Last status is interactive 
+Cleaning temp folder....
+[32m------------------- PROTOCOL INTERACTIVE[0m

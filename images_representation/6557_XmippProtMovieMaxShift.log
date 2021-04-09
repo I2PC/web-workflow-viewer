@@ -1,0 +1,80 @@
+[32mRUNNING PROTOCOL -----------------[0m
+Hostname: ip-172-31-13-159.eu-west-1.compute.internal
+PID: 3462
+pyworkflow: 3.0.6
+plugin: xmipp3
+currentDir: /home/scipion/ScipionUserData/projects/Example_10248_Scipion3
+workingDir: Runs/006557_XmippProtMovieMaxShift
+runMode: Continue
+          MPI: 1
+      threads: 1
+WARNING: The 'xmipp3 - FlexAlign (copy)' has no outputMicrographsDoseWeighted. Then, no Dose Weighted Mics will be produced.
+ Starting at step: 1
+ Running steps 
+[35mSTARTED[0m: _convertInputStep, step 1, time 2020-11-13 15:16:48.539504
+[35mFINISHED[0m: _convertInputStep, step 1, time 2020-11-13 15:16:48.543521
+[35mSTARTED[0m: _evaluateMovieAlign, step 2, time 2020-11-13 15:16:48.551087
+[35mFINISHED[0m: _evaluateMovieAlign, step 2, time 2020-11-13 15:16:48.556731
+[35mSTARTED[0m: _evaluateMovieAlign, step 3, time 2020-11-13 15:16:48.564785
+[35mFINISHED[0m: _evaluateMovieAlign, step 3, time 2020-11-13 15:16:48.569584
+[35mSTARTED[0m: _evaluateMovieAlign, step 4, time 2020-11-13 15:16:48.576224
+[35mFINISHED[0m: _evaluateMovieAlign, step 4, time 2020-11-13 15:16:48.580991
+[35mSTARTED[0m: _evaluateMovieAlign, step 5, time 2020-11-13 15:16:48.588591
+[35mFINISHED[0m: _evaluateMovieAlign, step 5, time 2020-11-13 15:16:48.593849
+[35mSTARTED[0m: _evaluateMovieAlign, step 6, time 2020-11-13 15:16:48.602095
+[35mFINISHED[0m: _evaluateMovieAlign, step 6, time 2020-11-13 15:16:48.607098
+[35mSTARTED[0m: _evaluateMovieAlign, step 8, time 2020-11-13 15:17:24.790780
+[35mFINISHED[0m: _evaluateMovieAlign, step 8, time 2020-11-13 15:17:24.795324
+[35mSTARTED[0m: _evaluateMovieAlign, step 9, time 2020-11-13 15:18:12.925764
+[35mFINISHED[0m: _evaluateMovieAlign, step 9, time 2020-11-13 15:18:12.932092
+[35mSTARTED[0m: _evaluateMovieAlign, step 10, time 2020-11-13 15:18:55.053234
+[35mFINISHED[0m: _evaluateMovieAlign, step 10, time 2020-11-13 15:18:55.057650
+[35mSTARTED[0m: _evaluateMovieAlign, step 11, time 2020-11-13 15:19:40.179834
+[35mFINISHED[0m: _evaluateMovieAlign, step 11, time 2020-11-13 15:19:40.184755
+[35mSTARTED[0m: _evaluateMovieAlign, step 12, time 2020-11-13 15:20:25.313540
+[35mFINISHED[0m: _evaluateMovieAlign, step 12, time 2020-11-13 15:20:25.318542
+[35mSTARTED[0m: _evaluateMovieAlign, step 13, time 2020-11-13 15:21:10.443243
+[35mFINISHED[0m: _evaluateMovieAlign, step 13, time 2020-11-13 15:21:10.447440
+[35mSTARTED[0m: _evaluateMovieAlign, step 14, time 2020-11-13 15:21:52.573618
+[35mFINISHED[0m: _evaluateMovieAlign, step 14, time 2020-11-13 15:21:52.580102
+[35mSTARTED[0m: _evaluateMovieAlign, step 15, time 2020-11-13 15:22:37.710793
+[35mFINISHED[0m: _evaluateMovieAlign, step 15, time 2020-11-13 15:22:37.715659
+[35mSTARTED[0m: _evaluateMovieAlign, step 16, time 2020-11-13 15:23:22.847947
+[35mFINISHED[0m: _evaluateMovieAlign, step 16, time 2020-11-13 15:23:22.852188
+[35mSTARTED[0m: _evaluateMovieAlign, step 17, time 2020-11-13 15:24:04.983435
+[35mFINISHED[0m: _evaluateMovieAlign, step 17, time 2020-11-13 15:24:04.989194
+[35mSTARTED[0m: _evaluateMovieAlign, step 18, time 2020-11-13 15:24:50.122785
+[35mFINISHED[0m: _evaluateMovieAlign, step 18, time 2020-11-13 15:24:50.127351
+[35mSTARTED[0m: _evaluateMovieAlign, step 19, time 2020-11-13 15:25:32.275400
+[35mFINISHED[0m: _evaluateMovieAlign, step 19, time 2020-11-13 15:25:32.279815
+[35mSTARTED[0m: _evaluateMovieAlign, step 20, time 2020-11-13 15:26:17.424080
+[35mFINISHED[0m: _evaluateMovieAlign, step 20, time 2020-11-13 15:26:17.429802
+[35mSTARTED[0m: _evaluateMovieAlign, step 21, time 2020-11-13 15:27:02.579343
+[35mFINISHED[0m: _evaluateMovieAlign, step 21, time 2020-11-13 15:27:02.584638
+[35mSTARTED[0m: _evaluateMovieAlign, step 22, time 2020-11-13 15:27:50.726336
+[35mFINISHED[0m: _evaluateMovieAlign, step 22, time 2020-11-13 15:27:50.730790
+[35mSTARTED[0m: _evaluateMovieAlign, step 23, time 2020-11-13 15:28:41.908154
+[35mFINISHED[0m: _evaluateMovieAlign, step 23, time 2020-11-13 15:28:41.913303
+[35mSTARTED[0m: _evaluateMovieAlign, step 24, time 2020-11-13 15:29:30.088199
+[35mFINISHED[0m: _evaluateMovieAlign, step 24, time 2020-11-13 15:29:30.096287
+[35mSTARTED[0m: _evaluateMovieAlign, step 25, time 2020-11-13 15:30:15.284733
+[35mFINISHED[0m: _evaluateMovieAlign, step 25, time 2020-11-13 15:30:15.290126
+[35mSTARTED[0m: _evaluateMovieAlign, step 26, time 2020-11-13 15:31:00.436338
+[35mFINISHED[0m: _evaluateMovieAlign, step 26, time 2020-11-13 15:31:00.440804
+[35mSTARTED[0m: _evaluateMovieAlign, step 27, time 2020-11-13 15:31:42.580707
+[35mFINISHED[0m: _evaluateMovieAlign, step 27, time 2020-11-13 15:31:42.585368
+[35mSTARTED[0m: _evaluateMovieAlign, step 28, time 2020-11-13 15:32:27.731418
+[35mFINISHED[0m: _evaluateMovieAlign, step 28, time 2020-11-13 15:32:27.736699
+[35mSTARTED[0m: _evaluateMovieAlign, step 29, time 2020-11-13 15:33:12.886568
+[35mFINISHED[0m: _evaluateMovieAlign, step 29, time 2020-11-13 15:33:12.890848
+[35mSTARTED[0m: _evaluateMovieAlign, step 30, time 2020-11-13 15:33:58.028527
+[35mFINISHED[0m: _evaluateMovieAlign, step 30, time 2020-11-13 15:33:58.033604
+[35mSTARTED[0m: _evaluateMovieAlign, step 31, time 2020-11-13 15:34:43.189866
+[35mFINISHED[0m: _evaluateMovieAlign, step 31, time 2020-11-13 15:34:43.195426
+[35mSTARTED[0m: _evaluateMovieAlign, step 32, time 2020-11-13 15:35:25.341809
+[35mFINISHED[0m: _evaluateMovieAlign, step 32, time 2020-11-13 15:35:25.346516
+[35mSTARTED[0m: createOutputStep, step 7, time 2020-11-13 15:35:28.400577
+[35mFINISHED[0m: createOutputStep, step 7, time 2020-11-13 15:35:28.404098
+*** Last status is finished 
+Cleaning temp folder....
+[32m------------------- PROTOCOL FINISHED[0m

@@ -1,0 +1,134 @@
+[32mRUNNING PROTOCOL -----------------[0m
+Hostname: ip-172-31-13-159.eu-west-1.compute.internal
+PID: 27329
+pyworkflow: 3.0.6
+plugin: xmipp3
+currentDir: /home/scipion/ScipionUserData/projects/Example_10248_Scipion3
+workingDir: Runs/011072_XmippProtDeepRes
+runMode: Continue
+          MPI: 1
+      threads: 1
+updating environ to select gpu 0
+ Starting at step: 1
+ Running steps 
+[35mSTARTED[0m: convertInputStep, step 1, time 2020-11-16 14:28:57.487296
+[35mFINISHED[0m: convertInputStep, step 1, time 2020-11-16 14:28:57.490755
+[35mSTARTED[0m: transformStep, step 2, time 2020-11-16 14:28:57.498050
+[32mxmipp_transform_morphology  -i Runs/010749_XmippProtCreateMask3D/mask.vol -o Runs/011072_XmippProtDeepRes/tmp/Mask_dilate.vol  --binaryOperation dilation --size 1 [0m
+Performing a Dilation
+Size=1
+Neighbourhood2D=8
+Neighbourhood3D=18
+Count=0
+Initially the image has 1.40121e+06 pixels set to 1
+Finally the image has 1.75169e+06 pixels set to 1
+[32mxmipp_image_operate  -i Runs/011000_XmippProtDeepVolPostProc/extra/deepPostProcess.mrc:mrc --mult Runs/011072_XmippProtDeepRes/tmp/Mask_dilate.vol -o Runs/011072_XmippProtDeepRes/tmp/operateVolume.vol[0m
+Input File: Runs/011000_XmippProtDeepVolPostProc/extra/deepPostProcess.mrc:mrc
+Output File: Runs/011072_XmippProtDeepRes/tmp/operateVolume.vol
+[35mFINISHED[0m: transformStep, step 2, time 2020-11-16 14:28:58.383586
+[35mSTARTED[0m: resizeStep, step 3, time 2020-11-16 14:28:58.392224
+[32mxmipp_transform_filter  -i Runs/010749_XmippProtCreateMask3D/mask.vol -o Runs/011072_XmippProtDeepRes/extra/binaryMask.vol --fourier low_pass 0.37125[0m
+Filter Band: Lowpass before 0.37125
+Filter Shape: Raised cosine with 0.02 raised frequencies
+Input File: Runs/010749_XmippProtCreateMask3D/mask.vol
+Output File: Runs/011072_XmippProtDeepRes/extra/binaryMask.vol
+[32mxmipp_image_resize  -i Runs/011072_XmippProtDeepRes/extra/binaryMask.vol -o Runs/011072_XmippProtDeepRes/extra/binaryMask.vol --factor 0.7425[0m
+[1;35m=== XMIPP_WARNING ===
+Do not apply large scale factor using B-splines choose fourier option.[0m
+Input File: Runs/011072_XmippProtDeepRes/extra/binaryMask.vol
+Output File: Runs/011072_XmippProtDeepRes/extra/binaryMask.vol
+[32mxmipp_transform_filter  -i Runs/011072_XmippProtDeepRes/tmp/operateVolume.vol -o Runs/011072_XmippProtDeepRes/extra/originalVolume.vol --fourier low_pass 0.37125[0m
+Filter Band: Lowpass before 0.37125
+Filter Shape: Raised cosine with 0.02 raised frequencies
+Input File: Runs/011072_XmippProtDeepRes/tmp/operateVolume.vol
+Output File: Runs/011072_XmippProtDeepRes/extra/originalVolume.vol
+[32mxmipp_image_resize  -i Runs/011072_XmippProtDeepRes/extra/originalVolume.vol -o Runs/011072_XmippProtDeepRes/extra/originalVolume.vol --factor 0.7425[0m
+[1;35m=== XMIPP_WARNING ===
+Do not apply large scale factor using B-splines choose fourier option.[0m
+Input File: Runs/011072_XmippProtDeepRes/extra/originalVolume.vol
+Output File: Runs/011072_XmippProtDeepRes/extra/originalVolume.vol
+[32mxmipp_transform_threshold  -i Runs/011072_XmippProtDeepRes/extra/binaryMask.vol -o Runs/011072_XmippProtDeepRes/extra/binaryMask.vol --select below 0.150000 --substitute binarize[0m
+Input File: Runs/011072_XmippProtDeepRes/extra/binaryMask.vol
+Output File: Runs/011072_XmippProtDeepRes/extra/binaryMask.vol
+Selection method:    below
+Threshold:           0.15
+Substitution method: binarize
+[35mFINISHED[0m: resizeStep, step 3, time 2020-11-16 14:29:06.745658
+[35mSTARTED[0m: resolutionStep, step 4, time 2020-11-16 14:29:06.758612
+[32mxmipp_deepRes_resolution  -dl /home/scipion/scipion3/software/em/xmipp/models/deepRes/model_w13.h5 -i  Runs/011072_XmippProtDeepRes/extra/originalVolume.vol -m  Runs/011072_XmippProtDeepRes/extra/binaryMask.vol -s  0.742500 -o  Runs/011072_XmippProtDeepRes/extra/deepRes_resolution.vol[0m
+Using TensorFlow backend.
+WARNING:tensorflow:From /home/scipion/miniconda3/envs/xmipp_DLTK_v0.3/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:74: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+WARNING:tensorflow:From /home/scipion/miniconda3/envs/xmipp_DLTK_v0.3/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:517: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+WARNING:tensorflow:From /home/scipion/miniconda3/envs/xmipp_DLTK_v0.3/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:4138: The name tf.random_uniform is deprecated. Please use tf.random.uniform instead.
+
+WARNING:tensorflow:From /home/scipion/miniconda3/envs/xmipp_DLTK_v0.3/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:133: The name tf.placeholder_with_default is deprecated. Please use tf.compat.v1.placeholder_with_default instead.
+
+WARNING:tensorflow:From /home/scipion/miniconda3/envs/xmipp_DLTK_v0.3/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:3445: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+WARNING:tensorflow:From /home/scipion/miniconda3/envs/xmipp_DLTK_v0.3/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:174: The name tf.get_default_session is deprecated. Please use tf.compat.v1.get_default_session instead.
+
+WARNING:tensorflow:From /home/scipion/miniconda3/envs/xmipp_DLTK_v0.3/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:181: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+WARNING:tensorflow:From /home/scipion/miniconda3/envs/xmipp_DLTK_v0.3/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:186: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2020-11-16 14:29:08.705542: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 AVX512F FMA
+2020-11-16 14:29:08.711616: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2499995000 Hz
+2020-11-16 14:29:08.711803: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55fb31a32620 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-11-16 14:29:08.711844: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2020-11-16 14:29:08.712943: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2020-11-16 14:29:08.740606: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:983] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-16 14:29:08.741421: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: Tesla T4 major: 7 minor: 5 memoryClockRate(GHz): 1.59
+pciBusID: 0000:00:1e.0
+2020-11-16 14:29:08.741622: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2020-11-16 14:29:08.742872: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2020-11-16 14:29:08.743995: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2020-11-16 14:29:08.744286: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2020-11-16 14:29:08.745752: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2020-11-16 14:29:08.746885: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2020-11-16 14:29:08.750451: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-11-16 14:29:08.750554: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:983] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-16 14:29:08.751420: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:983] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-16 14:29:08.752197: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0
+2020-11-16 14:29:08.752235: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2020-11-16 14:29:08.842023: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1159] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-11-16 14:29:08.842054: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1165]      0 
+2020-11-16 14:29:08.842065: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1178] 0:   N 
+2020-11-16 14:29:08.842220: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:983] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-16 14:29:08.843080: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:983] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-16 14:29:08.843875: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:983] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-16 14:29:08.844654: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1304] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14224 MB memory) -> physical GPU (device: 0, name: Tesla T4, pci bus id: 0000:00:1e.0, compute capability: 7.5)
+2020-11-16 14:29:08.846396: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55fb3280f0d0 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2020-11-16 14:29:08.846417: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Tesla T4, Compute Capability 7.5
+WARNING:tensorflow:From /home/scipion/miniconda3/envs/xmipp_DLTK_v0.3/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:190: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+WARNING:tensorflow:From /home/scipion/miniconda3/envs/xmipp_DLTK_v0.3/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:199: The name tf.is_variable_initialized is deprecated. Please use tf.compat.v1.is_variable_initialized instead.
+
+WARNING:tensorflow:From /home/scipion/miniconda3/envs/xmipp_DLTK_v0.3/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:206: The name tf.variables_initializer is deprecated. Please use tf.compat.v1.variables_initializer instead.
+
+WARNING:tensorflow:From /home/scipion/miniconda3/envs/xmipp_DLTK_v0.3/lib/python3.7/site-packages/keras/optimizers.py:790: The name tf.train.Optimizer is deprecated. Please use tf.compat.v1.train.Optimizer instead.
+
+WARNING:tensorflow:From /home/scipion/miniconda3/envs/xmipp_DLTK_v0.3/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:986: The name tf.assign_add is deprecated. Please use tf.compat.v1.assign_add instead.
+
+WARNING:tensorflow:From /home/scipion/miniconda3/envs/xmipp_DLTK_v0.3/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:973: The name tf.assign is deprecated. Please use tf.compat.v1.assign instead.
+
+2020-11-16 14:29:24.242212: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2020-11-16 14:29:24.518359: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-11-16 14:29:26.286189: E tensorflow/stream_executor/cuda/ptxas_utils.cc:110] You are using ptxas 8.x, but TF requires ptxas 9.x (and strongly prefers >= 9.2.88).  Compilation of XLA kernels below will likely fail.
+
+You do not need to update CUDA; cherry-picking the ptxas binary is sufficient.
+2020-11-16 14:29:26.340850: W tensorflow/stream_executor/cuda/redzone_allocator.cc:312] Internal: ptxas exited with non-zero error code 65280, output: ptxas fatal   : Value 'sm_75' is not defined for option 'gpu-name'
+
+Relying on driver to perform ptx compilation. This message will be only logged once.
+[35mFINISHED[0m: resolutionStep, step 4, time 2020-11-16 14:30:23.251765
+[35mSTARTED[0m: createOutputStep, step 5, time 2020-11-16 14:30:23.261173
+[35mFINISHED[0m: createOutputStep, step 5, time 2020-11-16 14:30:39.245251
+[35mSTARTED[0m: createHistrogram, step 6, time 2020-11-16 14:30:39.253233
+[32mxmipp_image_histogram  -i Runs/011072_XmippProtDeepRes/extra/deepRes_resolution.vol --mask binary_file Runs/011072_XmippProtDeepRes/extra/binaryMask.vol --steps 18.000000 --range 2.500000 6.890000 -o Runs/011072_XmippProtDeepRes/extra/hist.xmd[0m
+[35mFINISHED[0m: createHistrogram, step 6, time 2020-11-16 14:30:39.362804
+*** Last status is finished 
+Cleaning temp folder....
+[32m------------------- PROTOCOL FINISHED[0m

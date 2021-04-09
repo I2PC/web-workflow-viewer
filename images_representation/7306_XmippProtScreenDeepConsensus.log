@@ -1,0 +1,1516 @@
+[32mRUNNING PROTOCOL -----------------[0m
+Hostname: ip-172-31-13-159.eu-west-1.compute.internal
+PID: 24134
+pyworkflow: 3.0.6
+plugin: xmipp3
+currentDir: /home/scipion/ScipionUserData/projects/Example_10248_Scipion3
+workingDir: Runs/007306_XmippProtScreenDeepConsensus
+runMode: Continue
+          MPI: 1
+      threads: 2
+ Starting at step: 1
+ Running steps 
+[35mSTARTED[0m: initializeStep, step 1, time 2020-11-13 16:51:26.775431
+[35mFINISHED[0m: initializeStep, step 1, time 2020-11-13 16:51:27.300836
+[35mSTARTED[0m: preprocessMicsStep, step 2, time 2020-11-13 16:51:27.309172
+[32mxmipp_preprocess_mics -i Runs/007306_XmippProtScreenDeepConsensus/tmp/preprocMic_inputs.txt -s 0.495 -d 2.34375 -o Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics -t 2 --invert_contrast[0m
+WARNING: This is xmipp_base implementation for script
+Input File: Runs/006458_XmippProtMovieCorr/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Input File: Runs/006458_XmippProtMovieCorr/extra/190117_02_00002_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Output File: Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrc.tmp.mrc
+Output File: Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00002_UnderDefocus0.7um_frameImage_aligned_mic.mrc.tmp.mrc
+Input File: Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00002_UnderDefocus0.7um_frameImage_aligned_mic.mrc.tmp.mrc
+Reading geometrical transformations stored in metadata
+Output File: Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00002_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Normalizing method: OldXmipp
+Invert contrast 
+Input File: Runs/006458_XmippProtMovieCorr/extra/190117_02_00003_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Output File: Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00003_UnderDefocus0.7um_frameImage_aligned_mic.mrc.tmp.mrc
+Input File: Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrc.tmp.mrc
+Reading geometrical transformations stored in metadata
+Output File: Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Normalizing method: OldXmipp
+Invert contrast 
+Input File: Runs/006458_XmippProtMovieCorr/extra/190117_02_00004_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Output File: Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00004_UnderDefocus0.7um_frameImage_aligned_mic.mrc.tmp.mrc
+Input File: Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00003_UnderDefocus0.7um_frameImage_aligned_mic.mrc.tmp.mrc
+Reading geometrical transformations stored in metadata
+Output File: Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00003_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Normalizing method: OldXmipp
+Invert contrast 
+Input File: Runs/006458_XmippProtMovieCorr/extra/190117_02_00005_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Output File: Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00005_UnderDefocus0.7um_frameImage_aligned_mic.mrc.tmp.mrc
+Input File: Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00004_UnderDefocus0.7um_frameImage_aligned_mic.mrc.tmp.mrc
+Reading geometrical transformations stored in metadata
+Output File: Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00004_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Normalizing method: OldXmipp
+Invert contrast 
+Input File: Runs/006458_XmippProtMovieCorr/extra/190117_02_00006_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Output File: Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00006_UnderDefocus0.7um_frameImage_aligned_mic.mrc.tmp.mrc
+Input File: Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00006_UnderDefocus0.7um_frameImage_aligned_mic.mrc.tmp.mrc
+Reading geometrical transformations stored in metadata
+Output File: Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00006_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Normalizing method: OldXmipp
+Invert contrast 
+Input File: Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00005_UnderDefocus0.7um_frameImage_aligned_mic.mrc.tmp.mrc
+Reading geometrical transformations stored in metadata
+Output File: Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00005_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Normalizing method: OldXmipp
+Invert contrast 
+Input File: Runs/006458_XmippProtMovieCorr/extra/190117_02_00007_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Output File: Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00007_UnderDefocus0.7um_frameImage_aligned_mic.mrc.tmp.mrc
+Input File: Runs/006458_XmippProtMovieCorr/extra/190117_02_00008_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Output File: Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00008_UnderDefocus0.7um_frameImage_aligned_mic.mrc.tmp.mrc
+Input File: Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00007_UnderDefocus0.7um_frameImage_aligned_mic.mrc.tmp.mrc
+Reading geometrical transformations stored in metadata
+Output File: Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00007_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Normalizing method: OldXmipp
+Invert contrast 
+Input File: Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00008_UnderDefocus0.7um_frameImage_aligned_mic.mrc.tmp.mrc
+Reading geometrical transformations stored in metadata
+Output File: Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00008_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Normalizing method: OldXmipp
+Invert contrast 
+Input File: Runs/006458_XmippProtMovieCorr/extra/190117_02_00009_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Output File: Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00009_UnderDefocus0.7um_frameImage_aligned_mic.mrc.tmp.mrc
+Input File: Runs/006458_XmippProtMovieCorr/extra/190117_02_00010_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Output File: Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00010_UnderDefocus0.7um_frameImage_aligned_mic.mrc.tmp.mrc
+Input File: Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00010_UnderDefocus0.7um_frameImage_aligned_mic.mrc.tmp.mrc
+Reading geometrical transformations stored in metadata
+Output File: Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00010_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Normalizing method: OldXmipp
+Invert contrast 
+Input File: Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00009_UnderDefocus0.7um_frameImage_aligned_mic.mrc.tmp.mrc
+Reading geometrical transformations stored in metadata
+Output File: Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00009_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Normalizing method: OldXmipp
+Invert contrast 
+Input File: Runs/006458_XmippProtMovieCorr/extra/190117_02_00011_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Output File: Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00011_UnderDefocus0.7um_frameImage_aligned_mic.mrc.tmp.mrc
+Input File: Runs/006458_XmippProtMovieCorr/extra/190117_02_00012_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Output File: Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00012_UnderDefocus0.7um_frameImage_aligned_mic.mrc.tmp.mrc
+Input File: Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00012_UnderDefocus0.7um_frameImage_aligned_mic.mrc.tmp.mrc
+Reading geometrical transformations stored in metadata
+Output File: Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00012_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Normalizing method: OldXmipp
+Invert contrast 
+Input File: Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00011_UnderDefocus0.7um_frameImage_aligned_mic.mrc.tmp.mrc
+Reading geometrical transformations stored in metadata
+Output File: Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00011_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Normalizing method: OldXmipp
+Invert contrast 
+Input File: Runs/006458_XmippProtMovieCorr/extra/190117_02_00013_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Output File: Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00013_UnderDefocus0.7um_frameImage_aligned_mic.mrc.tmp.mrc
+Input File: Runs/006458_XmippProtMovieCorr/extra/190117_02_00014_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Output File: Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00014_UnderDefocus0.7um_frameImage_aligned_mic.mrc.tmp.mrc
+Input File: Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00014_UnderDefocus0.7um_frameImage_aligned_mic.mrc.tmp.mrc
+Reading geometrical transformations stored in metadata
+Output File: Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00014_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Normalizing method: OldXmipp
+Invert contrast 
+Input File: Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00013_UnderDefocus0.7um_frameImage_aligned_mic.mrc.tmp.mrc
+Reading geometrical transformations stored in metadata
+Output File: Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00013_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Normalizing method: OldXmipp
+Invert contrast 
+Input File: Runs/006458_XmippProtMovieCorr/extra/190117_02_00016_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Output File: Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00016_UnderDefocus0.7um_frameImage_aligned_mic.mrc.tmp.mrc
+Input File: Runs/006458_XmippProtMovieCorr/extra/190117_02_00015_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Output File: Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00015_UnderDefocus0.7um_frameImage_aligned_mic.mrc.tmp.mrc
+Input File: Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00016_UnderDefocus0.7um_frameImage_aligned_mic.mrc.tmp.mrc
+Reading geometrical transformations stored in metadata
+Output File: Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00016_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Normalizing method: OldXmipp
+Invert contrast 
+Input File: Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00015_UnderDefocus0.7um_frameImage_aligned_mic.mrc.tmp.mrc
+Reading geometrical transformations stored in metadata
+Output File: Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00015_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Normalizing method: OldXmipp
+Invert contrast 
+Input File: Runs/006458_XmippProtMovieCorr/extra/190117_02_00017_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Output File: Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00017_UnderDefocus0.7um_frameImage_aligned_mic.mrc.tmp.mrc
+Input File: Runs/006458_XmippProtMovieCorr/extra/190117_02_00018_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Output File: Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00018_UnderDefocus0.7um_frameImage_aligned_mic.mrc.tmp.mrc
+Input File: Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00017_UnderDefocus0.7um_frameImage_aligned_mic.mrc.tmp.mrc
+Reading geometrical transformations stored in metadata
+Output File: Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00017_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Normalizing method: OldXmipp
+Invert contrast 
+Input File: Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00018_UnderDefocus0.7um_frameImage_aligned_mic.mrc.tmp.mrc
+Reading geometrical transformations stored in metadata
+Output File: Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00018_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Normalizing method: OldXmipp
+Invert contrast 
+Input File: Runs/006458_XmippProtMovieCorr/extra/190117_02_00019_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Output File: Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00019_UnderDefocus0.7um_frameImage_aligned_mic.mrc.tmp.mrc
+Input File: Runs/006458_XmippProtMovieCorr/extra/190117_02_00020_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Output File: Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00020_UnderDefocus0.7um_frameImage_aligned_mic.mrc.tmp.mrc
+Input File: Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00019_UnderDefocus0.7um_frameImage_aligned_mic.mrc.tmp.mrc
+Reading geometrical transformations stored in metadata
+Output File: Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00019_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Normalizing method: OldXmipp
+Invert contrast 
+Input File: Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00020_UnderDefocus0.7um_frameImage_aligned_mic.mrc.tmp.mrc
+Reading geometrical transformations stored in metadata
+Output File: Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00020_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Normalizing method: OldXmipp
+Invert contrast 
+Input File: Runs/006458_XmippProtMovieCorr/extra/190117_02_00021_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Output File: Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00021_UnderDefocus0.7um_frameImage_aligned_mic.mrc.tmp.mrc
+Input File: Runs/006458_XmippProtMovieCorr/extra/190117_02_00023_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Output File: Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00023_UnderDefocus0.7um_frameImage_aligned_mic.mrc.tmp.mrc
+Input File: Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00021_UnderDefocus0.7um_frameImage_aligned_mic.mrc.tmp.mrc
+Reading geometrical transformations stored in metadata
+Output File: Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00021_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Normalizing method: OldXmipp
+Invert contrast 
+Input File: Runs/006458_XmippProtMovieCorr/extra/190117_02_00024_UnderDefocus0.9um_frameImage_aligned_mic.mrc
+Output File: Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00024_UnderDefocus0.9um_frameImage_aligned_mic.mrc.tmp.mrc
+Input File: Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00023_UnderDefocus0.7um_frameImage_aligned_mic.mrc.tmp.mrc
+Reading geometrical transformations stored in metadata
+Output File: Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00023_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Normalizing method: OldXmipp
+Invert contrast 
+Input File: Runs/006458_XmippProtMovieCorr/extra/190117_02_00025_UnderDefocus0.9um_frameImage_aligned_mic.mrc
+Output File: Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00025_UnderDefocus0.9um_frameImage_aligned_mic.mrc.tmp.mrc
+Input File: Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00024_UnderDefocus0.9um_frameImage_aligned_mic.mrc.tmp.mrc
+Reading geometrical transformations stored in metadata
+Output File: Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00024_UnderDefocus0.9um_frameImage_aligned_mic.mrc
+Normalizing method: OldXmipp
+Invert contrast 
+Input File: Runs/006458_XmippProtMovieCorr/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrc
+Output File: Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrc.tmp.mrc
+Input File: Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00025_UnderDefocus0.9um_frameImage_aligned_mic.mrc.tmp.mrc
+Reading geometrical transformations stored in metadata
+Output File: Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00025_UnderDefocus0.9um_frameImage_aligned_mic.mrc
+Normalizing method: OldXmipp
+Invert contrast 
+Input File: Runs/006458_XmippProtMovieCorr/extra/190117_02_00028_UnderDefocus0.9um_frameImage_aligned_mic.mrc
+Output File: Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00028_UnderDefocus0.9um_frameImage_aligned_mic.mrc.tmp.mrc
+Input File: Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrc.tmp.mrc
+Reading geometrical transformations stored in metadata
+Output File: Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrc
+Normalizing method: OldXmipp
+Invert contrast 
+Input File: Runs/006458_XmippProtMovieCorr/extra/190117_02_00029_UnderDefocus0.9um_frameImage_aligned_mic.mrc
+Output File: Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00029_UnderDefocus0.9um_frameImage_aligned_mic.mrc.tmp.mrc
+Input File: Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00028_UnderDefocus0.9um_frameImage_aligned_mic.mrc.tmp.mrc
+Reading geometrical transformations stored in metadata
+Output File: Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00028_UnderDefocus0.9um_frameImage_aligned_mic.mrc
+Normalizing method: OldXmipp
+Invert contrast 
+Input File: Runs/006458_XmippProtMovieCorr/extra/190117_02_00030_UnderDefocus0.9um_frameImage_aligned_mic.mrc
+Output File: Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00030_UnderDefocus0.9um_frameImage_aligned_mic.mrc.tmp.mrc
+xmipp_transform_downsample -i Runs/006458_XmippProtMovieCorr/extra/190117_02_00002_UnderDefocus0.7um_frameImage_aligned_mic.mrc -o Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00002_UnderDefocus0.7um_frameImage_aligned_mic.mrc.tmp.mrc --step 2.343750 --method fourier
+xmipp_transform_normalize -i Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00002_UnderDefocus0.7um_frameImage_aligned_mic.mrc.tmp.mrc -o Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00002_UnderDefocus0.7um_frameImage_aligned_mic.mrc --method OldXmipp --invert
+xmipp_transform_downsample -i Runs/006458_XmippProtMovieCorr/extra/190117_02_00003_UnderDefocus0.7um_frameImage_aligned_mic.mrc -o Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00003_UnderDefocus0.7um_frameImage_aligned_mic.mrc.tmp.mrc --step 2.343750 --method fourier
+xmipp_transform_normalize -i Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00003_UnderDefocus0.7um_frameImage_aligned_mic.mrc.tmp.mrc -o Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00003_UnderDefocus0.7um_frameImage_aligned_mic.mrc --method OldXmipp --invert
+xmipp_transform_downsample -i Runs/006458_XmippProtMovieCorr/extra/190117_02_00005_UnderDefocus0.7um_frameImage_aligned_mic.mrc -o Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00005_UnderDefocus0.7um_frameImage_aligned_mic.mrc.tmp.mrc --step 2.343750 --method fourier
+xmipp_transform_normalize -i Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00005_UnderDefocus0.7um_frameImage_aligned_mic.mrc.tmp.mrc -o Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00005_UnderDefocus0.7um_frameImage_aligned_mic.mrc --method OldXmipp --invert
+xmipp_transform_downsample -i Runs/006458_XmippProtMovieCorr/extra/190117_02_00008_UnderDefocus0.7um_frameImage_aligned_mic.mrc -o Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00008_UnderDefocus0.7um_frameImage_aligned_mic.mrc.tmp.mrc --step 2.343750 --method fourier
+xmipp_transform_normalize -i Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00008_UnderDefocus0.7um_frameImage_aligned_mic.mrc.tmp.mrc -o Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00008_UnderDefocus0.7um_frameImage_aligned_mic.mrc --method OldXmipp --invert
+xmipp_transform_downsample -i Runs/006458_XmippProtMovieCorr/extra/190117_02_00010_UnderDefocus0.7um_frameImage_aligned_mic.mrc -o Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00010_UnderDefocus0.7um_frameImage_aligned_mic.mrc.tmp.mrc --step 2.343750 --method fourier
+xmipp_transform_normalize -i Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00010_UnderDefocus0.7um_frameImage_aligned_mic.mrc.tmp.mrc -o Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00010_UnderDefocus0.7um_frameImage_aligned_mic.mrc --method OldXmipp --invert
+xmipp_transform_downsample -i Runs/006458_XmippProtMovieCorr/extra/190117_02_00012_UnderDefocus0.7um_frameImage_aligned_mic.mrc -o Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00012_UnderDefocus0.7um_frameImage_aligned_mic.mrc.tmp.mrc --step 2.343750 --method fourier
+xmipp_transform_normalize -i Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00012_UnderDefocus0.7um_frameImage_aligned_mic.mrc.tmp.mrc -o Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00012_UnderDefocus0.7um_frameImage_aligned_mic.mrc --method OldXmipp --invert
+xmipp_transform_downsample -i Runs/006458_XmippProtMovieCorr/extra/190117_02_00013_UnderDefocus0.7um_frameImage_aligned_mic.mrc -o Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00013_UnderDefocus0.7um_frameImage_aligned_mic.mrc.tmp.mrc --step 2.343750 --method fourier
+xmipp_transform_normalize -i Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00013_UnderDefocus0.7um_frameImage_aligned_mic.mrc.tmp.mrc -o Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00013_UnderDefocus0.7um_frameImage_aligned_mic.mrc --method OldXmipp --invert
+xmipp_transform_downsample -i Runs/006458_XmippProtMovieCorr/extra/190117_02_00016_UnderDefocus0.7um_frameImage_aligned_mic.mrc -o Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00016_UnderDefocus0.7um_frameImage_aligned_mic.mrc.tmp.mrc --step 2.343750 --method fourier
+xmipp_transform_normalize -i Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00016_UnderDefocus0.7um_frameImage_aligned_mic.mrc.tmp.mrc -o Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00016_UnderDefocus0.7um_frameImage_aligned_mic.mrc --method OldXmipp --invert
+xmipp_transform_downsample -i Runs/006458_XmippProtMovieCorr/extra/190117_02_00017_UnderDefocus0.7um_frameImage_aligned_mic.mrc -o Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00017_UnderDefocus0.7um_frameImage_aligned_mic.mrc.tmp.mrc --step 2.343750 --method fourier
+xmipp_transform_normalize -i Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00017_UnderDefocus0.7um_frameImage_aligned_mic.mrc.tmp.mrc -o Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00017_UnderDefocus0.7um_frameImage_aligned_mic.mrc --method OldXmipp --invert
+xmipp_transform_downsample -i Runs/006458_XmippProtMovieCorr/extra/190117_02_00019_UnderDefocus0.7um_frameImage_aligned_mic.mrc -o Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00019_UnderDefocus0.7um_frameImage_aligned_mic.mrc.tmp.mrc --step 2.343750 --method fourier
+xmipp_transform_normalize -i Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00019_UnderDefocus0.7um_frameImage_aligned_mic.mrc.tmp.mrc -o Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00019_UnderDefocus0.7um_frameImage_aligned_mic.mrc --method OldXmipp --invert
+xmipp_transform_downsample -i Runs/006458_XmippProtMovieCorr/extra/190117_02_00021_UnderDefocus0.7um_frameImage_aligned_mic.mrc -o Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00021_UnderDefocus0.7um_frameImage_aligned_mic.mrc.tmp.mrc --step 2.343750 --method fourier
+xmipp_transform_normalize -i Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00021_UnderDefocus0.7um_frameImage_aligned_mic.mrc.tmp.mrc -o Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00021_UnderDefocus0.7um_frameImage_aligned_mic.mrc --method OldXmipp --invert
+xmipp_transform_downsample -i Runs/006458_XmippProtMovieCorr/extra/190117_02_00024_UnderDefocus0.9um_frameImage_aligned_mic.mrc -o Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00024_UnderDefocus0.9um_frameImage_aligned_mic.mrc.tmp.mrc --step 2.343750 --method fourier
+xmipp_transform_normalize -i Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00024_UnderDefocus0.9um_frameImage_aligned_mic.mrc.tmp.mrc -o Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00024_UnderDefocus0.9um_frameImage_aligned_mic.mrc --method OldXmipp --invert
+xmipp_transform_downsample -i Runs/006458_XmippProtMovieCorr/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrc -o Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrc.tmp.mrc --step 2.343750 --method fourier
+xmipp_transform_normalize -i Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrc.tmp.mrc -o Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrc --method OldXmipp --invert
+xmipp_transform_downsample -i Runs/006458_XmippProtMovieCorr/extra/190117_02_00029_UnderDefocus0.9um_frameImage_aligned_mic.mrc -o Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00029_UnderDefocus0.9um_frameImage_aligned_mic.mrc.tmp.mrc --step 2.343750 --method fourier
+xmipp_transform_normalize -i Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00029_UnderDefocus0.9um_frameImage_aligned_mic.mrc.tmp.mrc -o Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00029_UnderDefocus0.9um_frameImage_aligned_mic.mrc --method OldXmipp --invertInput File: Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00029_UnderDefocus0.9um_frameImage_aligned_mic.mrc.tmp.mrc
+Reading geometrical transformations stored in metadata
+Output File: Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00029_UnderDefocus0.9um_frameImage_aligned_mic.mrc
+Normalizing method: OldXmipp
+Invert contrast 
+xmipp_transform_downsample -i Runs/006458_XmippProtMovieCorr/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrc -o Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrc.tmp.mrc --step 2.343750 --method fourier
+xmipp_transform_normalize -i Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrc.tmp.mrc -o Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrc --method OldXmipp --invert
+xmipp_transform_downsample -i Runs/006458_XmippProtMovieCorr/extra/190117_02_00004_UnderDefocus0.7um_frameImage_aligned_mic.mrc -o Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00004_UnderDefocus0.7um_frameImage_aligned_mic.mrc.tmp.mrc --step 2.343750 --method fourier
+xmipp_transform_normalize -i Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00004_UnderDefocus0.7um_frameImage_aligned_mic.mrc.tmp.mrc -o Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00004_UnderDefocus0.7um_frameImage_aligned_mic.mrc --method OldXmipp --invert
+xmipp_transform_downsample -i Runs/006458_XmippProtMovieCorr/extra/190117_02_00006_UnderDefocus0.7um_frameImage_aligned_mic.mrc -o Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00006_UnderDefocus0.7um_frameImage_aligned_mic.mrc.tmp.mrc --step 2.343750 --method fourier
+xmipp_transform_normalize -i Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00006_UnderDefocus0.7um_frameImage_aligned_mic.mrc.tmp.mrc -o Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00006_UnderDefocus0.7um_frameImage_aligned_mic.mrc --method OldXmipp --invert
+xmipp_transform_downsample -i Runs/006458_XmippProtMovieCorr/extra/190117_02_00007_UnderDefocus0.7um_frameImage_aligned_mic.mrc -o Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00007_UnderDefocus0.7um_frameImage_aligned_mic.mrc.tmp.mrc --step 2.343750 --method fourier
+xmipp_transform_normalize -i Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00007_UnderDefocus0.7um_frameImage_aligned_mic.mrc.tmp.mrc -o Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00007_UnderDefocus0.7um_frameImage_aligned_mic.mrc --method OldXmipp --invert
+xmipp_transform_downsample -i Runs/006458_XmippProtMovieCorr/extra/190117_02_00009_UnderDefocus0.7um_frameImage_aligned_mic.mrc -o Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00009_UnderDefocus0.7um_frameImage_aligned_mic.mrc.tmp.mrc --step 2.343750 --method fourier
+xmipp_transform_normalize -i Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00009_UnderDefocus0.7um_frameImage_aligned_mic.mrc.tmp.mrc -o Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00009_UnderDefocus0.7um_frameImage_aligned_mic.mrc --method OldXmipp --invert
+xmipp_transform_downsample -i Runs/006458_XmippProtMovieCorr/extra/190117_02_00011_UnderDefocus0.7um_frameImage_aligned_mic.mrc -o Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00011_UnderDefocus0.7um_frameImage_aligned_mic.mrc.tmp.mrc --step 2.343750 --method fourier
+xmipp_transform_normalize -i Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00011_UnderDefocus0.7um_frameImage_aligned_mic.mrc.tmp.mrc -o Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00011_UnderDefocus0.7um_frameImage_aligned_mic.mrc --method OldXmipp --invert
+xmipp_transform_downsample -i Runs/006458_XmippProtMovieCorr/extra/190117_02_00014_UnderDefocus0.7um_frameImage_aligned_mic.mrc -o Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00014_UnderDefocus0.7um_frameImage_aligned_mic.mrc.tmp.mrc --step 2.343750 --method fourier
+xmipp_transform_normalize -i Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00014_UnderDefocus0.7um_frameImage_aligned_mic.mrc.tmp.mrc -o Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00014_UnderDefocus0.7um_frameImage_aligned_mic.mrc --method OldXmipp --invert
+xmipp_transform_downsample -i Runs/006458_XmippProtMovieCorr/extra/190117_02_00015_UnderDefocus0.7um_frameImage_aligned_mic.mrc -o Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00015_UnderDefocus0.7um_frameImage_aligned_mic.mrc.tmp.mrc --step 2.343750 --method fourier
+xmipp_transform_normalize -i Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00015_UnderDefocus0.7um_frameImage_aligned_mic.mrc.tmp.mrc -o Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00015_UnderDefocus0.7um_frameImage_aligned_mic.mrc --method OldXmipp --invert
+xmipp_transform_downsample -i Runs/006458_XmippProtMovieCorr/extra/190117_02_00018_UnderDefocus0.7um_frameImage_aligned_mic.mrc -o Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00018_UnderDefocus0.7um_frameImage_aligned_mic.mrc.tmp.mrc --step 2.343750 --method fourier
+xmipp_transform_normalize -i Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00018_UnderDefocus0.7um_frameImage_aligned_mic.mrc.tmp.mrc -o Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00018_UnderDefocus0.7um_frameImage_aligned_mic.mrc --method OldXmipp --invert
+xmipp_transform_downsample -i Runs/006458_XmippProtMovieCorr/extra/190117_02_00020_UnderDefocus0.7um_frameImage_aligned_mic.mrc -o Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00020_UnderDefocus0.7um_frameImage_aligned_mic.mrc.tmp.mrc --step 2.343750 --method fourier
+xmipp_transform_normalize -i Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00020_UnderDefocus0.7um_frameImage_aligned_mic.mrc.tmp.mrc -o Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00020_UnderDefocus0.7um_frameImage_aligned_mic.mrc --method OldXmipp --invert
+xmipp_transform_downsample -i Runs/006458_XmippProtMovieCorr/extra/190117_02_00023_UnderDefocus0.7um_frameImage_aligned_mic.mrc -o Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00023_UnderDefocus0.7um_frameImage_aligned_mic.mrc.tmp.mrc --step 2.343750 --method fourier
+xmipp_transform_normalize -i Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00023_UnderDefocus0.7um_frameImage_aligned_mic.mrc.tmp.mrc -o Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00023_UnderDefocus0.7um_frameImage_aligned_mic.mrc --method OldXmipp --invert
+xmipp_transform_downsample -i Runs/006458_XmippProtMovieCorr/extra/190117_02_00025_UnderDefocus0.9um_frameImage_aligned_mic.mrc -o Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00025_UnderDefocus0.9um_frameImage_aligned_mic.mrc.tmp.mrc --step 2.343750 --method fourier
+xmipp_transform_normalize -i Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00025_UnderDefocus0.9um_frameImage_aligned_mic.mrc.tmp.mrc -o Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00025_UnderDefocus0.9um_frameImage_aligned_mic.mrc --method OldXmipp --invert
+xmipp_transform_downsample -i Runs/006458_XmippProtMovieCorr/extra/190117_02_00028_UnderDefocus0.9um_frameImage_aligned_mic.mrc -o Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00028_UnderDefocus0.9um_frameImage_aligned_mic.mrc.tmp.mrc --step 2.343750 --method fourier
+xmipp_transform_normalize -i Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00028_UnderDefocus0.9um_frameImage_aligned_mic.mrc.tmp.mrc -o Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00028_UnderDefocus0.9um_frameImage_aligned_mic.mrc --method OldXmipp --invert
+xmipp_transform_downsample -i Runs/006458_XmippProtMovieCorr/extra/190117_02_00030_UnderDefocus0.9um_frameImage_aligned_mic.mrc -o Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00030_UnderDefocus0.9um_frameImage_aligned_mic.mrc.tmp.mrc --step 2.343750 --method fourier
+xmipp_transform_normalize -i Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00030_UnderDefocus0.9um_frameImage_aligned_mic.mrc.tmp.mrc -o Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00030_UnderDefocus0.9um_frameImage_aligned_mic.mrc --method OldXmipp --invertInput File: Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00030_UnderDefocus0.9um_frameImage_aligned_mic.mrc.tmp.mrc
+Reading geometrical transformations stored in metadata
+Output File: Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00030_UnderDefocus0.9um_frameImage_aligned_mic.mrc
+Normalizing method: OldXmipp
+Invert contrast 
+
+[Parallel(n_jobs=2)]: Using backend MultiprocessingBackend with 2 concurrent workers.
+[Parallel(n_jobs=2)]: Done  28 out of  28 | elapsed:   30.1s finished
+[35mFINISHED[0m: preprocessMicsStep, step 2, time 2020-11-13 16:51:58.140539
+[35mSTARTED[0m: calculateCoorConsensusStep, step 3, time 2020-11-13 16:51:58.149566
+writeCoordsConfig: state= Manual
+writeCoordsConfig: state= Manual
+writeCoordsConfig: state= Manual
+writeCoordsConfig: state= Manual
+[32mxmipp_coordinates_consensus -i Runs/007306_XmippProtScreenDeepConsensus/tmp/consensus_OR_inputs.txt -s 300 -c 1 -d 0.100000 -o Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_OR -t 2[0m
+WARNING: This is xmipp_base implementation for script
+N coords: 62
+N coords: 111
+N coords: 234
+N coords: 98
+442 Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_OR/190117_02_00020_UnderDefocus0.7um_frameImage_aligned_mic.pos Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_OR/190117_02_00020_UnderDefocus0.7um_frameImage_aligned_mic.pos
+N coords: 165
+N coords: 188
+N coords: 244
+N coords: 186
+592 Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_OR/190117_02_00029_UnderDefocus0.9um_frameImage_aligned_mic.pos Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_OR/190117_02_00029_UnderDefocus0.9um_frameImage_aligned_mic.pos
+N coords: 164
+N coords: 183
+N coords: 246
+N coords: 179
+581 Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_OR/190117_02_00018_UnderDefocus0.7um_frameImage_aligned_mic.pos Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_OR/190117_02_00018_UnderDefocus0.7um_frameImage_aligned_mic.pos
+N coords: 165
+N coords: 187
+N coords: 230
+N coords: 177
+564 Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_OR/190117_02_00007_UnderDefocus0.7um_frameImage_aligned_mic.pos Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_OR/190117_02_00007_UnderDefocus0.7um_frameImage_aligned_mic.pos
+N coords: 163
+N coords: 191
+N coords: 239
+N coords: 181
+584 Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_OR/190117_02_00016_UnderDefocus0.7um_frameImage_aligned_mic.pos Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_OR/190117_02_00016_UnderDefocus0.7um_frameImage_aligned_mic.pos
+N coords: 162
+N coords: 185
+N coords: 246
+N coords: 176
+590 Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_OR/190117_02_00013_UnderDefocus0.7um_frameImage_aligned_mic.pos Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_OR/190117_02_00013_UnderDefocus0.7um_frameImage_aligned_mic.pos
+N coords: 151
+N coords: 182
+N coords: 248
+N coords: 170
+582 Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_OR/190117_02_00011_UnderDefocus0.7um_frameImage_aligned_mic.pos Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_OR/190117_02_00011_UnderDefocus0.7um_frameImage_aligned_mic.pos
+N coords: 153
+N coords: 180
+N coords: 238
+N coords: 177
+564 Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_OR/190117_02_00010_UnderDefocus0.7um_frameImage_aligned_mic.pos Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_OR/190117_02_00010_UnderDefocus0.7um_frameImage_aligned_mic.pos
+N coords: 153
+N coords: 182
+N coords: 235
+N coords: 163
+554 Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_OR/190117_02_00030_UnderDefocus0.9um_frameImage_aligned_mic.pos Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_OR/190117_02_00030_UnderDefocus0.9um_frameImage_aligned_mic.pos
+N coords: 51
+N coords: 29
+N coords: 237
+N coords: 49
+349 Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_OR/190117_02_00019_UnderDefocus0.7um_frameImage_aligned_mic.pos Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_OR/190117_02_00019_UnderDefocus0.7um_frameImage_aligned_mic.pos
+N coords: 99
+N coords: 133
+N coords: 247
+N coords: 127
+500 Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_OR/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.pos Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_OR/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.pos
+N coords: 151
+N coords: 189
+N coords: 228
+N coords: 172
+580 Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_OR/190117_02_00002_UnderDefocus0.7um_frameImage_aligned_mic.pos Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_OR/190117_02_00002_UnderDefocus0.7um_frameImage_aligned_mic.pos
+N coords: 150
+N coords: 175
+N coords: 244
+N coords: 171
+568 Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_OR/190117_02_00003_UnderDefocus0.7um_frameImage_aligned_mic.pos Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_OR/190117_02_00003_UnderDefocus0.7um_frameImage_aligned_mic.pos
+N coords: 125
+N coords: 172
+N coords: 234
+N coords: 169
+574 Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_OR/190117_02_00024_UnderDefocus0.9um_frameImage_aligned_mic.pos Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_OR/190117_02_00024_UnderDefocus0.9um_frameImage_aligned_mic.pos
+N coords: 157
+N coords: 188
+N coords: 235
+N coords: 170
+565 Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_OR/190117_02_00017_UnderDefocus0.7um_frameImage_aligned_mic.pos Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_OR/190117_02_00017_UnderDefocus0.7um_frameImage_aligned_mic.pos
+N coords: 158
+N coords: 185
+N coords: 249
+N coords: 174
+583 Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_OR/190117_02_00008_UnderDefocus0.7um_frameImage_aligned_mic.pos Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_OR/190117_02_00008_UnderDefocus0.7um_frameImage_aligned_mic.pos
+N coords: 87
+N coords: 103
+N coords: 230
+N coords: 116
+484 Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_OR/190117_02_00028_UnderDefocus0.9um_frameImage_aligned_mic.pos Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_OR/190117_02_00028_UnderDefocus0.9um_frameImage_aligned_mic.pos
+N coords: 142
+N coords: 181
+N coords: 247
+N coords: 168
+581 Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_OR/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.pos Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_OR/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.pos
+N coords: 160
+N coords: 187
+N coords: 234
+N coords: 182
+567 Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_OR/190117_02_00005_UnderDefocus0.7um_frameImage_aligned_mic.pos Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_OR/190117_02_00005_UnderDefocus0.7um_frameImage_aligned_mic.pos
+N coords: 51
+N coords: 68
+N coords: 243
+N coords: 73
+396 Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_OR/190117_02_00023_UnderDefocus0.7um_frameImage_aligned_mic.pos Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_OR/190117_02_00023_UnderDefocus0.7um_frameImage_aligned_mic.pos
+N coords: 160
+N coords: 186
+N coords: 235
+N coords: 172
+574 Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_OR/190117_02_00006_UnderDefocus0.7um_frameImage_aligned_mic.pos Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_OR/190117_02_00006_UnderDefocus0.7um_frameImage_aligned_mic.pos
+N coords: 169
+N coords: 188
+N coords: 239
+N coords: 174
+575 Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_OR/190117_02_00012_UnderDefocus0.7um_frameImage_aligned_mic.pos Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_OR/190117_02_00012_UnderDefocus0.7um_frameImage_aligned_mic.pos
+N coords: 138
+N coords: 183
+N coords: 238
+N coords: 170
+563 Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_OR/190117_02_00009_UnderDefocus0.7um_frameImage_aligned_mic.pos Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_OR/190117_02_00009_UnderDefocus0.7um_frameImage_aligned_mic.pos
+N coords: 161
+N coords: 181
+N coords: 232
+N coords: 174
+568 Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_OR/190117_02_00004_UnderDefocus0.7um_frameImage_aligned_mic.pos Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_OR/190117_02_00004_UnderDefocus0.7um_frameImage_aligned_mic.pos
+N coords: 37
+N coords: 71
+N coords: 233
+N coords: 89
+389 Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_OR/190117_02_00014_UnderDefocus0.7um_frameImage_aligned_mic.pos Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_OR/190117_02_00014_UnderDefocus0.7um_frameImage_aligned_mic.pos
+N coords: 139
+N coords: 176
+N coords: 240
+N coords: 156
+557 Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_OR/190117_02_00025_UnderDefocus0.9um_frameImage_aligned_mic.pos Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_OR/190117_02_00025_UnderDefocus0.9um_frameImage_aligned_mic.pos
+N coords: 156
+N coords: 178
+N coords: 231
+N coords: 157
+543 Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_OR/190117_02_00021_UnderDefocus0.7um_frameImage_aligned_mic.pos Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_OR/190117_02_00021_UnderDefocus0.7um_frameImage_aligned_mic.pos
+N coords: 102
+N coords: 149
+N coords: 220
+N coords: 121
+485 Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_OR/190117_02_00015_UnderDefocus0.7um_frameImage_aligned_mic.pos Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_OR/190117_02_00015_UnderDefocus0.7um_frameImage_aligned_mic.pos
+[Parallel(n_jobs=2)]: Using backend MultiprocessingBackend with 2 concurrent workers.
+[Parallel(n_jobs=2)]: Done  28 out of  28 | elapsed:    0.5s finished
+[35mFINISHED[0m: calculateCoorConsensusStep, step 3, time 2020-11-13 16:51:59.499357
+[35mSTARTED[0m: loadCoords, step 4, time 2020-11-13 16:51:59.519543
+Coordinates OR size: 15054
+[35mFINISHED[0m: loadCoords, step 4, time 2020-11-13 16:52:00.591366
+[35mSTARTED[0m: extractParticles, step 5, time 2020-11-13 16:52:00.598777
+[32mxmipp_extract_particles -i Runs/007306_XmippProtScreenDeepConsensus/tmp/extractParticles_inputs_OR.txt -s 128 -d 2.34375 -o Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_parts_OR -t 2[0m
+WARNING: This is xmipp_base implementation for script
+xmipp_micrograph_scissor -i Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00017_UnderDefocus0.7um_frameImage_aligned_mic.mrc --pos particles@Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_OR/190117_02_00017_UnderDefocus0.7um_frameImage_aligned_mic.pos -o Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_parts_OR/190117_02_00017_UnderDefocus0.7um_frameImage_aligned_mic --Xdim 128 --downsampling 2.343750 --fillBorders
+xmipp_micrograph_scissor -i Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00008_UnderDefocus0.7um_frameImage_aligned_mic.mrc --pos particles@Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_OR/190117_02_00008_UnderDefocus0.7um_frameImage_aligned_mic.pos -o Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_parts_OR/190117_02_00008_UnderDefocus0.7um_frameImage_aligned_mic --Xdim 128 --downsampling 2.343750 --fillBorders
+xmipp_micrograph_scissor -i Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00007_UnderDefocus0.7um_frameImage_aligned_mic.mrc --pos particles@Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_OR/190117_02_00007_UnderDefocus0.7um_frameImage_aligned_mic.pos -o Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_parts_OR/190117_02_00007_UnderDefocus0.7um_frameImage_aligned_mic --Xdim 128 --downsampling 2.343750 --fillBorders
+xmipp_micrograph_scissor -i Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrc --pos particles@Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_OR/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.pos -o Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_parts_OR/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic --Xdim 128 --downsampling 2.343750 --fillBorders
+xmipp_micrograph_scissor -i Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00023_UnderDefocus0.7um_frameImage_aligned_mic.mrc --pos particles@Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_OR/190117_02_00023_UnderDefocus0.7um_frameImage_aligned_mic.pos -o Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_parts_OR/190117_02_00023_UnderDefocus0.7um_frameImage_aligned_mic --Xdim 128 --downsampling 2.343750 --fillBorders
+xmipp_micrograph_scissor -i Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00013_UnderDefocus0.7um_frameImage_aligned_mic.mrc --pos particles@Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_OR/190117_02_00013_UnderDefocus0.7um_frameImage_aligned_mic.pos -o Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_parts_OR/190117_02_00013_UnderDefocus0.7um_frameImage_aligned_mic --Xdim 128 --downsampling 2.343750 --fillBorders
+xmipp_micrograph_scissor -i Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00010_UnderDefocus0.7um_frameImage_aligned_mic.mrc --pos particles@Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_OR/190117_02_00010_UnderDefocus0.7um_frameImage_aligned_mic.pos -o Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_parts_OR/190117_02_00010_UnderDefocus0.7um_frameImage_aligned_mic --Xdim 128 --downsampling 2.343750 --fillBorders
+xmipp_micrograph_scissor -i Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00019_UnderDefocus0.7um_frameImage_aligned_mic.mrc --pos particles@Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_OR/190117_02_00019_UnderDefocus0.7um_frameImage_aligned_mic.pos -o Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_parts_OR/190117_02_00019_UnderDefocus0.7um_frameImage_aligned_mic --Xdim 128 --downsampling 2.343750 --fillBorders
+xmipp_micrograph_scissor -i Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00006_UnderDefocus0.7um_frameImage_aligned_mic.mrc --pos particles@Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_OR/190117_02_00006_UnderDefocus0.7um_frameImage_aligned_mic.pos -o Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_parts_OR/190117_02_00006_UnderDefocus0.7um_frameImage_aligned_mic --Xdim 128 --downsampling 2.343750 --fillBorders
+xmipp_micrograph_scissor -i Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00009_UnderDefocus0.7um_frameImage_aligned_mic.mrc --pos particles@Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_OR/190117_02_00009_UnderDefocus0.7um_frameImage_aligned_mic.pos -o Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_parts_OR/190117_02_00009_UnderDefocus0.7um_frameImage_aligned_mic --Xdim 128 --downsampling 2.343750 --fillBorders
+xmipp_micrograph_scissor -i Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrc --pos particles@Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_OR/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.pos -o Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_parts_OR/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic --Xdim 128 --downsampling 2.343750 --fillBorders
+xmipp_micrograph_scissor -i Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00003_UnderDefocus0.7um_frameImage_aligned_mic.mrc --pos particles@Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_OR/190117_02_00003_UnderDefocus0.7um_frameImage_aligned_mic.pos -o Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_parts_OR/190117_02_00003_UnderDefocus0.7um_frameImage_aligned_mic --Xdim 128 --downsampling 2.343750 --fillBorders
+xmipp_micrograph_scissor -i Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00014_UnderDefocus0.7um_frameImage_aligned_mic.mrc --pos particles@Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_OR/190117_02_00014_UnderDefocus0.7um_frameImage_aligned_mic.pos -o Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_parts_OR/190117_02_00014_UnderDefocus0.7um_frameImage_aligned_mic --Xdim 128 --downsampling 2.343750 --fillBorders
+xmipp_micrograph_scissor -i Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00021_UnderDefocus0.7um_frameImage_aligned_mic.mrc --pos particles@Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_OR/190117_02_00021_UnderDefocus0.7um_frameImage_aligned_mic.pos -o Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_parts_OR/190117_02_00021_UnderDefocus0.7um_frameImage_aligned_mic --Xdim 128 --downsampling 2.343750 --fillBorders
+[Parallel(n_jobs=2)]: Using backend MultiprocessingBackend with 2 concurrent workers.
+[Parallel(n_jobs=2)]: Done  28 out of  28 | elapsed:    2.1s finished
+[35mFINISHED[0m: extractParticles, step 5, time 2020-11-13 16:52:03.067931
+[35mSTARTED[0m: joinSetOfParticlesStep, step 6, time 2020-11-13 16:52:03.076975
+[35mFINISHED[0m: joinSetOfParticlesStep, step 6, time 2020-11-13 16:52:03.595180
+[35mSTARTED[0m: pickNoise, step 7, time 2020-11-13 16:52:03.604348
+writeCoordsConfig: state= Manual
+[32mxmipp_pick_noise  -i Runs/006458_XmippProtMovieCorr/extra -c Runs/007306_XmippProtScreenDeepConsensus/tmp/pickNoiseInPosCoordinates -o Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_NOISE -s 300 -n -1 -t 2[0m
+WARNING: This is xmipp_base implementation for script
+pick noise one mic 190117_02_00017_UnderDefocus0 Runs/006458_XmippProtMovieCorr/extra/190117_02_00017_UnderDefocus0.7um_frameImage_aligned_mic.mrc Runs/007306_XmippProtScreenDeepConsensus/tmp/pickNoiseInPosCoordinates/190117_02_00017_UnderDefocus0.7um_frameImage_aligned_mic.pos (3838, 3710) Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_NOISE -1 300
+N coords: 565
+565 Runs/006458_XmippProtMovieCorr/extra/190117_02_00017_UnderDefocus0.7um_frameImage_aligned_mic.mrc Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_NOISE/190117_02_00017_UnderDefocus0.7um_frameImage_aligned_mic.pos
+pick noise one mic 190117_02_00018_UnderDefocus0 Runs/006458_XmippProtMovieCorr/extra/190117_02_00018_UnderDefocus0.7um_frameImage_aligned_mic.mrc Runs/007306_XmippProtScreenDeepConsensus/tmp/pickNoiseInPosCoordinates/190117_02_00018_UnderDefocus0.7um_frameImage_aligned_mic.pos (3838, 3710) Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_NOISE -1 300
+N coords: 581
+581 Runs/006458_XmippProtMovieCorr/extra/190117_02_00018_UnderDefocus0.7um_frameImage_aligned_mic.mrc Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_NOISE/190117_02_00018_UnderDefocus0.7um_frameImage_aligned_mic.pos
+pick noise one mic 190117_02_00007_UnderDefocus0 Runs/006458_XmippProtMovieCorr/extra/190117_02_00007_UnderDefocus0.7um_frameImage_aligned_mic.mrc Runs/007306_XmippProtScreenDeepConsensus/tmp/pickNoiseInPosCoordinates/190117_02_00007_UnderDefocus0.7um_frameImage_aligned_mic.pos (3838, 3710) Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_NOISE -1 300
+N coords: 564
+564 Runs/006458_XmippProtMovieCorr/extra/190117_02_00007_UnderDefocus0.7um_frameImage_aligned_mic.mrc Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_NOISE/190117_02_00007_UnderDefocus0.7um_frameImage_aligned_mic.pos
+pick noise one mic 190117_02_00028_UnderDefocus0 Runs/006458_XmippProtMovieCorr/extra/190117_02_00028_UnderDefocus0.9um_frameImage_aligned_mic.mrc Runs/007306_XmippProtScreenDeepConsensus/tmp/pickNoiseInPosCoordinates/190117_02_00028_UnderDefocus0.9um_frameImage_aligned_mic.pos (3838, 3710) Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_NOISE -1 300
+N coords: 484
+484 Runs/006458_XmippProtMovieCorr/extra/190117_02_00028_UnderDefocus0.9um_frameImage_aligned_mic.mrc Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_NOISE/190117_02_00028_UnderDefocus0.9um_frameImage_aligned_mic.pos
+pick noise one mic 190117_02_00001_UnderDefocus0 Runs/006458_XmippProtMovieCorr/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrc Runs/007306_XmippProtScreenDeepConsensus/tmp/pickNoiseInPosCoordinates/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.pos (3838, 3710) Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_NOISE -1 300
+N coords: 581
+581 Runs/006458_XmippProtMovieCorr/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrc Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_NOISE/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.pos
+pick noise one mic 190117_02_00011_UnderDefocus0 Runs/006458_XmippProtMovieCorr/extra/190117_02_00011_UnderDefocus0.7um_frameImage_aligned_mic.mrc Runs/007306_XmippProtScreenDeepConsensus/tmp/pickNoiseInPosCoordinates/190117_02_00011_UnderDefocus0.7um_frameImage_aligned_mic.pos (3838, 3710) Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_NOISE -1 300
+N coords: 582
+582 Runs/006458_XmippProtMovieCorr/extra/190117_02_00011_UnderDefocus0.7um_frameImage_aligned_mic.mrc Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_NOISE/190117_02_00011_UnderDefocus0.7um_frameImage_aligned_mic.pos
+pick noise one mic 190117_02_00010_UnderDefocus0 Runs/006458_XmippProtMovieCorr/extra/190117_02_00010_UnderDefocus0.7um_frameImage_aligned_mic.mrc Runs/007306_XmippProtScreenDeepConsensus/tmp/pickNoiseInPosCoordinates/190117_02_00010_UnderDefocus0.7um_frameImage_aligned_mic.pos (3838, 3710) Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_NOISE -1 300
+N coords: 564
+564 Runs/006458_XmippProtMovieCorr/extra/190117_02_00010_UnderDefocus0.7um_frameImage_aligned_mic.mrc Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_NOISE/190117_02_00010_UnderDefocus0.7um_frameImage_aligned_mic.pos
+pick noise one mic 190117_02_00030_UnderDefocus0 Runs/006458_XmippProtMovieCorr/extra/190117_02_00030_UnderDefocus0.9um_frameImage_aligned_mic.mrc Runs/007306_XmippProtScreenDeepConsensus/tmp/pickNoiseInPosCoordinates/190117_02_00030_UnderDefocus0.9um_frameImage_aligned_mic.pos (3838, 3710) Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_NOISE -1 300
+N coords: 554
+554 Runs/006458_XmippProtMovieCorr/extra/190117_02_00030_UnderDefocus0.9um_frameImage_aligned_mic.mrc Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_NOISE/190117_02_00030_UnderDefocus0.9um_frameImage_aligned_mic.pos
+pick noise one mic 190117_02_00019_UnderDefocus0 Runs/006458_XmippProtMovieCorr/extra/190117_02_00019_UnderDefocus0.7um_frameImage_aligned_mic.mrc Runs/007306_XmippProtScreenDeepConsensus/tmp/pickNoiseInPosCoordinates/190117_02_00019_UnderDefocus0.7um_frameImage_aligned_mic.pos (3838, 3710) Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_NOISE -1 300
+N coords: 349
+349 Runs/006458_XmippProtMovieCorr/extra/190117_02_00019_UnderDefocus0.7um_frameImage_aligned_mic.mrc Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_NOISE/190117_02_00019_UnderDefocus0.7um_frameImage_aligned_mic.pos
+pick noise one mic 190117_02_00009_UnderDefocus0 Runs/006458_XmippProtMovieCorr/extra/190117_02_00009_UnderDefocus0.7um_frameImage_aligned_mic.mrc Runs/007306_XmippProtScreenDeepConsensus/tmp/pickNoiseInPosCoordinates/190117_02_00009_UnderDefocus0.7um_frameImage_aligned_mic.pos (3838, 3710) Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_NOISE -1 300
+N coords: 563
+563 Runs/006458_XmippProtMovieCorr/extra/190117_02_00009_UnderDefocus0.7um_frameImage_aligned_mic.mrc Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_NOISE/190117_02_00009_UnderDefocus0.7um_frameImage_aligned_mic.pos
+pick noise one mic 190117_02_00004_UnderDefocus0 Runs/006458_XmippProtMovieCorr/extra/190117_02_00004_UnderDefocus0.7um_frameImage_aligned_mic.mrc Runs/007306_XmippProtScreenDeepConsensus/tmp/pickNoiseInPosCoordinates/190117_02_00004_UnderDefocus0.7um_frameImage_aligned_mic.pos (3838, 3710) Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_NOISE -1 300
+N coords: 568
+568 Runs/006458_XmippProtMovieCorr/extra/190117_02_00004_UnderDefocus0.7um_frameImage_aligned_mic.mrc Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_NOISE/190117_02_00004_UnderDefocus0.7um_frameImage_aligned_mic.pos
+pick noise one mic 190117_02_00026_UnderDefocus0 Runs/006458_XmippProtMovieCorr/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrc Runs/007306_XmippProtScreenDeepConsensus/tmp/pickNoiseInPosCoordinates/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.pos (3838, 3710) Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_NOISE -1 300
+N coords: 500
+500 Runs/006458_XmippProtMovieCorr/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrc Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_NOISE/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.pos
+pick noise one mic 190117_02_00002_UnderDefocus0 Runs/006458_XmippProtMovieCorr/extra/190117_02_00002_UnderDefocus0.7um_frameImage_aligned_mic.mrc Runs/007306_XmippProtScreenDeepConsensus/tmp/pickNoiseInPosCoordinates/190117_02_00002_UnderDefocus0.7um_frameImage_aligned_mic.pos (3838, 3710) Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_NOISE -1 300
+N coords: 580
+580 Runs/006458_XmippProtMovieCorr/extra/190117_02_00002_UnderDefocus0.7um_frameImage_aligned_mic.mrc Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_NOISE/190117_02_00002_UnderDefocus0.7um_frameImage_aligned_mic.pos
+pick noise one mic 190117_02_00014_UnderDefocus0 Runs/006458_XmippProtMovieCorr/extra/190117_02_00014_UnderDefocus0.7um_frameImage_aligned_mic.mrc Runs/007306_XmippProtScreenDeepConsensus/tmp/pickNoiseInPosCoordinates/190117_02_00014_UnderDefocus0.7um_frameImage_aligned_mic.pos (3838, 3710) Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_NOISE -1 300
+N coords: 389
+389 Runs/006458_XmippProtMovieCorr/extra/190117_02_00014_UnderDefocus0.7um_frameImage_aligned_mic.mrc Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_NOISE/190117_02_00014_UnderDefocus0.7um_frameImage_aligned_mic.pos
+pick noise one mic 190117_02_00025_UnderDefocus0 Runs/006458_XmippProtMovieCorr/extra/190117_02_00025_UnderDefocus0.9um_frameImage_aligned_mic.mrc Runs/007306_XmippProtScreenDeepConsensus/tmp/pickNoiseInPosCoordinates/190117_02_00025_UnderDefocus0.9um_frameImage_aligned_mic.pos (3838, 3710) Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_NOISE -1 300
+N coords: 557
+557 Runs/006458_XmippProtMovieCorr/extra/190117_02_00025_UnderDefocus0.9um_frameImage_aligned_mic.mrc Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_NOISE/190117_02_00025_UnderDefocus0.9um_frameImage_aligned_mic.pos
+pick noise one mic 190117_02_00020_UnderDefocus0 Runs/006458_XmippProtMovieCorr/extra/190117_02_00020_UnderDefocus0.7um_frameImage_aligned_mic.mrc Runs/007306_XmippProtScreenDeepConsensus/tmp/pickNoiseInPosCoordinates/190117_02_00020_UnderDefocus0.7um_frameImage_aligned_mic.pos (3838, 3710) Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_NOISE -1 300
+N coords: 442
+442 Runs/006458_XmippProtMovieCorr/extra/190117_02_00020_UnderDefocus0.7um_frameImage_aligned_mic.mrc Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_NOISE/190117_02_00020_UnderDefocus0.7um_frameImage_aligned_mic.pos
+pick noise one mic 190117_02_00029_UnderDefocus0 Runs/006458_XmippProtMovieCorr/extra/190117_02_00029_UnderDefocus0.9um_frameImage_aligned_mic.mrc Runs/007306_XmippProtScreenDeepConsensus/tmp/pickNoiseInPosCoordinates/190117_02_00029_UnderDefocus0.9um_frameImage_aligned_mic.pos (3838, 3710) Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_NOISE -1 300
+N coords: 592
+592 Runs/006458_XmippProtMovieCorr/extra/190117_02_00029_UnderDefocus0.9um_frameImage_aligned_mic.mrc Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_NOISE/190117_02_00029_UnderDefocus0.9um_frameImage_aligned_mic.pos
+pick noise one mic 190117_02_00008_UnderDefocus0 Runs/006458_XmippProtMovieCorr/extra/190117_02_00008_UnderDefocus0.7um_frameImage_aligned_mic.mrc Runs/007306_XmippProtScreenDeepConsensus/tmp/pickNoiseInPosCoordinates/190117_02_00008_UnderDefocus0.7um_frameImage_aligned_mic.pos (3838, 3710) Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_NOISE -1 300
+N coords: 583
+583 Runs/006458_XmippProtMovieCorr/extra/190117_02_00008_UnderDefocus0.7um_frameImage_aligned_mic.mrc Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_NOISE/190117_02_00008_UnderDefocus0.7um_frameImage_aligned_mic.pos
+pick noise one mic 190117_02_00005_UnderDefocus0 Runs/006458_XmippProtMovieCorr/extra/190117_02_00005_UnderDefocus0.7um_frameImage_aligned_mic.mrc Runs/007306_XmippProtScreenDeepConsensus/tmp/pickNoiseInPosCoordinates/190117_02_00005_UnderDefocus0.7um_frameImage_aligned_mic.pos (3838, 3710) Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_NOISE -1 300
+N coords: 567
+567 Runs/006458_XmippProtMovieCorr/extra/190117_02_00005_UnderDefocus0.7um_frameImage_aligned_mic.mrc Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_NOISE/190117_02_00005_UnderDefocus0.7um_frameImage_aligned_mic.pos
+pick noise one mic 190117_02_00023_UnderDefocus0 Runs/006458_XmippProtMovieCorr/extra/190117_02_00023_UnderDefocus0.7um_frameImage_aligned_mic.mrc Runs/007306_XmippProtScreenDeepConsensus/tmp/pickNoiseInPosCoordinates/190117_02_00023_UnderDefocus0.7um_frameImage_aligned_mic.pos (3838, 3710) Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_NOISE -1 300
+N coords: 396
+396 Runs/006458_XmippProtMovieCorr/extra/190117_02_00023_UnderDefocus0.7um_frameImage_aligned_mic.mrc Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_NOISE/190117_02_00023_UnderDefocus0.7um_frameImage_aligned_mic.pos
+pick noise one mic 190117_02_00016_UnderDefocus0 Runs/006458_XmippProtMovieCorr/extra/190117_02_00016_UnderDefocus0.7um_frameImage_aligned_mic.mrc Runs/007306_XmippProtScreenDeepConsensus/tmp/pickNoiseInPosCoordinates/190117_02_00016_UnderDefocus0.7um_frameImage_aligned_mic.pos (3838, 3710) Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_NOISE -1 300
+N coords: 584
+584 Runs/006458_XmippProtMovieCorr/extra/190117_02_00016_UnderDefocus0.7um_frameImage_aligned_mic.mrc Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_NOISE/190117_02_00016_UnderDefocus0.7um_frameImage_aligned_mic.pos
+pick noise one mic 190117_02_00013_UnderDefocus0 Runs/006458_XmippProtMovieCorr/extra/190117_02_00013_UnderDefocus0.7um_frameImage_aligned_mic.mrc Runs/007306_XmippProtScreenDeepConsensus/tmp/pickNoiseInPosCoordinates/190117_02_00013_UnderDefocus0.7um_frameImage_aligned_mic.pos (3838, 3710) Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_NOISE -1 300
+N coords: 590
+590 Runs/006458_XmippProtMovieCorr/extra/190117_02_00013_UnderDefocus0.7um_frameImage_aligned_mic.mrc Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_NOISE/190117_02_00013_UnderDefocus0.7um_frameImage_aligned_mic.pos
+pick noise one mic 190117_02_00006_UnderDefocus0 Runs/006458_XmippProtMovieCorr/extra/190117_02_00006_UnderDefocus0.7um_frameImage_aligned_mic.mrc Runs/007306_XmippProtScreenDeepConsensus/tmp/pickNoiseInPosCoordinates/190117_02_00006_UnderDefocus0.7um_frameImage_aligned_mic.pos (3838, 3710) Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_NOISE -1 300
+N coords: 574
+574 Runs/006458_XmippProtMovieCorr/extra/190117_02_00006_UnderDefocus0.7um_frameImage_aligned_mic.mrc Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_NOISE/190117_02_00006_UnderDefocus0.7um_frameImage_aligned_mic.pos
+pick noise one mic 190117_02_00012_UnderDefocus0 Runs/006458_XmippProtMovieCorr/extra/190117_02_00012_UnderDefocus0.7um_frameImage_aligned_mic.mrc Runs/007306_XmippProtScreenDeepConsensus/tmp/pickNoiseInPosCoordinates/190117_02_00012_UnderDefocus0.7um_frameImage_aligned_mic.pos (3838, 3710) Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_NOISE -1 300
+N coords: 575
+575 Runs/006458_XmippProtMovieCorr/extra/190117_02_00012_UnderDefocus0.7um_frameImage_aligned_mic.mrc Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_NOISE/190117_02_00012_UnderDefocus0.7um_frameImage_aligned_mic.pos
+pick noise one mic 190117_02_00003_UnderDefocus0 Runs/006458_XmippProtMovieCorr/extra/190117_02_00003_UnderDefocus0.7um_frameImage_aligned_mic.mrc Runs/007306_XmippProtScreenDeepConsensus/tmp/pickNoiseInPosCoordinates/190117_02_00003_UnderDefocus0.7um_frameImage_aligned_mic.pos (3838, 3710) Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_NOISE -1 300
+N coords: 568
+568 Runs/006458_XmippProtMovieCorr/extra/190117_02_00003_UnderDefocus0.7um_frameImage_aligned_mic.mrc Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_NOISE/190117_02_00003_UnderDefocus0.7um_frameImage_aligned_mic.pos
+pick noise one mic 190117_02_00024_UnderDefocus0 Runs/006458_XmippProtMovieCorr/extra/190117_02_00024_UnderDefocus0.9um_frameImage_aligned_mic.mrc Runs/007306_XmippProtScreenDeepConsensus/tmp/pickNoiseInPosCoordinates/190117_02_00024_UnderDefocus0.9um_frameImage_aligned_mic.pos (3838, 3710) Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_NOISE -1 300
+N coords: 574
+574 Runs/006458_XmippProtMovieCorr/extra/190117_02_00024_UnderDefocus0.9um_frameImage_aligned_mic.mrc Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_NOISE/190117_02_00024_UnderDefocus0.9um_frameImage_aligned_mic.pos
+pick noise one mic 190117_02_00021_UnderDefocus0 Runs/006458_XmippProtMovieCorr/extra/190117_02_00021_UnderDefocus0.7um_frameImage_aligned_mic.mrc Runs/007306_XmippProtScreenDeepConsensus/tmp/pickNoiseInPosCoordinates/190117_02_00021_UnderDefocus0.7um_frameImage_aligned_mic.pos (3838, 3710) Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_NOISE -1 300
+N coords: 543
+543 Runs/006458_XmippProtMovieCorr/extra/190117_02_00021_UnderDefocus0.7um_frameImage_aligned_mic.mrc Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_NOISE/190117_02_00021_UnderDefocus0.7um_frameImage_aligned_mic.pos
+pick noise one mic 190117_02_00015_UnderDefocus0 Runs/006458_XmippProtMovieCorr/extra/190117_02_00015_UnderDefocus0.7um_frameImage_aligned_mic.mrc Runs/007306_XmippProtScreenDeepConsensus/tmp/pickNoiseInPosCoordinates/190117_02_00015_UnderDefocus0.7um_frameImage_aligned_mic.pos (3838, 3710) Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_NOISE -1 300
+N coords: 485
+485 Runs/006458_XmippProtMovieCorr/extra/190117_02_00015_UnderDefocus0.7um_frameImage_aligned_mic.mrc Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_NOISE/190117_02_00015_UnderDefocus0.7um_frameImage_aligned_mic.pos
+[Parallel(n_jobs=2)]: Using backend MultiprocessingBackend with 2 concurrent workers.
+[Parallel(n_jobs=2)]: Done  28 out of  28 | elapsed:    1.2s finished
+Coordinates NOISE size: 15054
+[35mFINISHED[0m: pickNoise, step 7, time 2020-11-13 16:52:07.518091
+[35mSTARTED[0m: extractParticles, step 8, time 2020-11-13 16:52:07.526385
+[32mxmipp_extract_particles -i Runs/007306_XmippProtScreenDeepConsensus/tmp/extractParticles_inputs_NOISE.txt -s 128 -d 2.34375 -o Runs/007306_XmippProtScreenDeepConsensus/tmp/consensus_parts_NOISE -t 2[0m
+WARNING: This is xmipp_base implementation for script
+xmipp_micrograph_scissor -i Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00017_UnderDefocus0.7um_frameImage_aligned_mic.mrc --pos particles@Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_NOISE/190117_02_00017_UnderDefocus0.7um_frameImage_aligned_mic.pos -o Runs/007306_XmippProtScreenDeepConsensus/tmp/consensus_parts_NOISE/190117_02_00017_UnderDefocus0.7um_frameImage_aligned_mic --Xdim 128 --downsampling 2.343750 --fillBorders
+xmipp_micrograph_scissor -i Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00029_UnderDefocus0.9um_frameImage_aligned_mic.mrc --pos particles@Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_NOISE/190117_02_00029_UnderDefocus0.9um_frameImage_aligned_mic.pos -o Runs/007306_XmippProtScreenDeepConsensus/tmp/consensus_parts_NOISE/190117_02_00029_UnderDefocus0.9um_frameImage_aligned_mic --Xdim 128 --downsampling 2.343750 --fillBorders
+xmipp_micrograph_scissor -i Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00018_UnderDefocus0.7um_frameImage_aligned_mic.mrc --pos particles@Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_NOISE/190117_02_00018_UnderDefocus0.7um_frameImage_aligned_mic.pos -o Runs/007306_XmippProtScreenDeepConsensus/tmp/consensus_parts_NOISE/190117_02_00018_UnderDefocus0.7um_frameImage_aligned_mic --Xdim 128 --downsampling 2.343750 --fillBorders
+xmipp_micrograph_scissor -i Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00007_UnderDefocus0.7um_frameImage_aligned_mic.mrc --pos particles@Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_NOISE/190117_02_00007_UnderDefocus0.7um_frameImage_aligned_mic.pos -o Runs/007306_XmippProtScreenDeepConsensus/tmp/consensus_parts_NOISE/190117_02_00007_UnderDefocus0.7um_frameImage_aligned_mic --Xdim 128 --downsampling 2.343750 --fillBorders
+xmipp_micrograph_scissor -i Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00005_UnderDefocus0.7um_frameImage_aligned_mic.mrc --pos particles@Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_NOISE/190117_02_00005_UnderDefocus0.7um_frameImage_aligned_mic.pos -o Runs/007306_XmippProtScreenDeepConsensus/tmp/consensus_parts_NOISE/190117_02_00005_UnderDefocus0.7um_frameImage_aligned_mic --Xdim 128 --downsampling 2.343750 --fillBorders
+xmipp_micrograph_scissor -i Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00023_UnderDefocus0.7um_frameImage_aligned_mic.mrc --pos particles@Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_NOISE/190117_02_00023_UnderDefocus0.7um_frameImage_aligned_mic.pos -o Runs/007306_XmippProtScreenDeepConsensus/tmp/consensus_parts_NOISE/190117_02_00023_UnderDefocus0.7um_frameImage_aligned_mic --Xdim 128 --downsampling 2.343750 --fillBorders
+xmipp_micrograph_scissor -i Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00011_UnderDefocus0.7um_frameImage_aligned_mic.mrc --pos particles@Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_NOISE/190117_02_00011_UnderDefocus0.7um_frameImage_aligned_mic.pos -o Runs/007306_XmippProtScreenDeepConsensus/tmp/consensus_parts_NOISE/190117_02_00011_UnderDefocus0.7um_frameImage_aligned_mic --Xdim 128 --downsampling 2.343750 --fillBorders
+xmipp_micrograph_scissor -i Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00010_UnderDefocus0.7um_frameImage_aligned_mic.mrc --pos particles@Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_NOISE/190117_02_00010_UnderDefocus0.7um_frameImage_aligned_mic.pos -o Runs/007306_XmippProtScreenDeepConsensus/tmp/consensus_parts_NOISE/190117_02_00010_UnderDefocus0.7um_frameImage_aligned_mic --Xdim 128 --downsampling 2.343750 --fillBorders
+xmipp_micrograph_scissor -i Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00006_UnderDefocus0.7um_frameImage_aligned_mic.mrc --pos particles@Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_NOISE/190117_02_00006_UnderDefocus0.7um_frameImage_aligned_mic.pos -o Runs/007306_XmippProtScreenDeepConsensus/tmp/consensus_parts_NOISE/190117_02_00006_UnderDefocus0.7um_frameImage_aligned_mic --Xdim 128 --downsampling 2.343750 --fillBorders
+xmipp_micrograph_scissor -i Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00012_UnderDefocus0.7um_frameImage_aligned_mic.mrc --pos particles@Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_NOISE/190117_02_00012_UnderDefocus0.7um_frameImage_aligned_mic.pos -o Runs/007306_XmippProtScreenDeepConsensus/tmp/consensus_parts_NOISE/190117_02_00012_UnderDefocus0.7um_frameImage_aligned_mic --Xdim 128 --downsampling 2.343750 --fillBorders
+xmipp_micrograph_scissor -i Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrc --pos particles@Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_NOISE/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.pos -o Runs/007306_XmippProtScreenDeepConsensus/tmp/consensus_parts_NOISE/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic --Xdim 128 --downsampling 2.343750 --fillBorders
+xmipp_micrograph_scissor -i Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00002_UnderDefocus0.7um_frameImage_aligned_mic.mrc --pos particles@Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_NOISE/190117_02_00002_UnderDefocus0.7um_frameImage_aligned_mic.pos -o Runs/007306_XmippProtScreenDeepConsensus/tmp/consensus_parts_NOISE/190117_02_00002_UnderDefocus0.7um_frameImage_aligned_mic --Xdim 128 --downsampling 2.343750 --fillBorders
+xmipp_micrograph_scissor -i Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00014_UnderDefocus0.7um_frameImage_aligned_mic.mrc --pos particles@Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_NOISE/190117_02_00014_UnderDefocus0.7um_frameImage_aligned_mic.pos -o Runs/007306_XmippProtScreenDeepConsensus/tmp/consensus_parts_NOISE/190117_02_00014_UnderDefocus0.7um_frameImage_aligned_mic --Xdim 128 --downsampling 2.343750 --fillBorders
+xmipp_micrograph_scissor -i Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00025_UnderDefocus0.9um_frameImage_aligned_mic.mrc --pos particles@Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_NOISE/190117_02_00025_UnderDefocus0.9um_frameImage_aligned_mic.pos -o Runs/007306_XmippProtScreenDeepConsensus/tmp/consensus_parts_NOISE/190117_02_00025_UnderDefocus0.9um_frameImage_aligned_mic --Xdim 128 --downsampling 2.343750 --fillBorders
+xmipp_micrograph_scissor -i Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00020_UnderDefocus0.7um_frameImage_aligned_mic.mrc --pos particles@Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_NOISE/190117_02_00020_UnderDefocus0.7um_frameImage_aligned_mic.pos -o Runs/007306_XmippProtScreenDeepConsensus/tmp/consensus_parts_NOISE/190117_02_00020_UnderDefocus0.7um_frameImage_aligned_mic --Xdim 128 --downsampling 2.343750 --fillBorders
+xmipp_micrograph_scissor -i Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00008_UnderDefocus0.7um_frameImage_aligned_mic.mrc --pos particles@Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_NOISE/190117_02_00008_UnderDefocus0.7um_frameImage_aligned_mic.pos -o Runs/007306_XmippProtScreenDeepConsensus/tmp/consensus_parts_NOISE/190117_02_00008_UnderDefocus0.7um_frameImage_aligned_mic --Xdim 128 --downsampling 2.343750 --fillBorders
+xmipp_micrograph_scissor -i Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00028_UnderDefocus0.9um_frameImage_aligned_mic.mrc --pos particles@Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_NOISE/190117_02_00028_UnderDefocus0.9um_frameImage_aligned_mic.pos -o Runs/007306_XmippProtScreenDeepConsensus/tmp/consensus_parts_NOISE/190117_02_00028_UnderDefocus0.9um_frameImage_aligned_mic --Xdim 128 --downsampling 2.343750 --fillBorders
+xmipp_micrograph_scissor -i Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrc --pos particles@Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_NOISE/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.pos -o Runs/007306_XmippProtScreenDeepConsensus/tmp/consensus_parts_NOISE/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic --Xdim 128 --downsampling 2.343750 --fillBorders
+xmipp_micrograph_scissor -i Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00016_UnderDefocus0.7um_frameImage_aligned_mic.mrc --pos particles@Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_NOISE/190117_02_00016_UnderDefocus0.7um_frameImage_aligned_mic.pos -o Runs/007306_XmippProtScreenDeepConsensus/tmp/consensus_parts_NOISE/190117_02_00016_UnderDefocus0.7um_frameImage_aligned_mic --Xdim 128 --downsampling 2.343750 --fillBorders
+xmipp_micrograph_scissor -i Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00013_UnderDefocus0.7um_frameImage_aligned_mic.mrc --pos particles@Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_NOISE/190117_02_00013_UnderDefocus0.7um_frameImage_aligned_mic.pos -o Runs/007306_XmippProtScreenDeepConsensus/tmp/consensus_parts_NOISE/190117_02_00013_UnderDefocus0.7um_frameImage_aligned_mic --Xdim 128 --downsampling 2.343750 --fillBorders
+xmipp_micrograph_scissor -i Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00030_UnderDefocus0.9um_frameImage_aligned_mic.mrc --pos particles@Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_NOISE/190117_02_00030_UnderDefocus0.9um_frameImage_aligned_mic.pos -o Runs/007306_XmippProtScreenDeepConsensus/tmp/consensus_parts_NOISE/190117_02_00030_UnderDefocus0.9um_frameImage_aligned_mic --Xdim 128 --downsampling 2.343750 --fillBorders
+xmipp_micrograph_scissor -i Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00019_UnderDefocus0.7um_frameImage_aligned_mic.mrc --pos particles@Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_NOISE/190117_02_00019_UnderDefocus0.7um_frameImage_aligned_mic.pos -o Runs/007306_XmippProtScreenDeepConsensus/tmp/consensus_parts_NOISE/190117_02_00019_UnderDefocus0.7um_frameImage_aligned_mic --Xdim 128 --downsampling 2.343750 --fillBorders
+xmipp_micrograph_scissor -i Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00009_UnderDefocus0.7um_frameImage_aligned_mic.mrc --pos particles@Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_NOISE/190117_02_00009_UnderDefocus0.7um_frameImage_aligned_mic.pos -o Runs/007306_XmippProtScreenDeepConsensus/tmp/consensus_parts_NOISE/190117_02_00009_UnderDefocus0.7um_frameImage_aligned_mic --Xdim 128 --downsampling 2.343750 --fillBorders
+xmipp_micrograph_scissor -i Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00004_UnderDefocus0.7um_frameImage_aligned_mic.mrc --pos particles@Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_NOISE/190117_02_00004_UnderDefocus0.7um_frameImage_aligned_mic.pos -o Runs/007306_XmippProtScreenDeepConsensus/tmp/consensus_parts_NOISE/190117_02_00004_UnderDefocus0.7um_frameImage_aligned_mic --Xdim 128 --downsampling 2.343750 --fillBorders
+xmipp_micrograph_scissor -i Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00003_UnderDefocus0.7um_frameImage_aligned_mic.mrc --pos particles@Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_NOISE/190117_02_00003_UnderDefocus0.7um_frameImage_aligned_mic.pos -o Runs/007306_XmippProtScreenDeepConsensus/tmp/consensus_parts_NOISE/190117_02_00003_UnderDefocus0.7um_frameImage_aligned_mic --Xdim 128 --downsampling 2.343750 --fillBorders
+xmipp_micrograph_scissor -i Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00024_UnderDefocus0.9um_frameImage_aligned_mic.mrc --pos particles@Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_NOISE/190117_02_00024_UnderDefocus0.9um_frameImage_aligned_mic.pos -o Runs/007306_XmippProtScreenDeepConsensus/tmp/consensus_parts_NOISE/190117_02_00024_UnderDefocus0.9um_frameImage_aligned_mic --Xdim 128 --downsampling 2.343750 --fillBorders
+xmipp_micrograph_scissor -i Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00021_UnderDefocus0.7um_frameImage_aligned_mic.mrc --pos particles@Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_NOISE/190117_02_00021_UnderDefocus0.7um_frameImage_aligned_mic.pos -o Runs/007306_XmippProtScreenDeepConsensus/tmp/consensus_parts_NOISE/190117_02_00021_UnderDefocus0.7um_frameImage_aligned_mic --Xdim 128 --downsampling 2.343750 --fillBorders
+xmipp_micrograph_scissor -i Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00015_UnderDefocus0.7um_frameImage_aligned_mic.mrc --pos particles@Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_NOISE/190117_02_00015_UnderDefocus0.7um_frameImage_aligned_mic.pos -o Runs/007306_XmippProtScreenDeepConsensus/tmp/consensus_parts_NOISE/190117_02_00015_UnderDefocus0.7um_frameImage_aligned_mic --Xdim 128 --downsampling 2.343750 --fillBorders
+[Parallel(n_jobs=2)]: Using backend MultiprocessingBackend with 2 concurrent workers.
+[Parallel(n_jobs=2)]: Done  28 out of  28 | elapsed:    2.0s finished
+[35mFINISHED[0m: extractParticles, step 8, time 2020-11-13 16:52:09.813177
+[35mSTARTED[0m: joinSetOfParticlesStep, step 9, time 2020-11-13 16:52:11.089656
+[35mFINISHED[0m: joinSetOfParticlesStep, step 9, time 2020-11-13 16:52:12.345648
+[35mSTARTED[0m: calculateCoorConsensusStep, step 10, time 2020-11-13 16:52:13.267966
+writeCoordsConfig: state= Manual
+writeCoordsConfig: state= Manual
+writeCoordsConfig: state= Manual
+writeCoordsConfig: state= Manual
+[32mxmipp_coordinates_consensus -i Runs/007306_XmippProtScreenDeepConsensus/tmp/consensus_AND_inputs.txt -s 300 -c -1 -d 0.100000 -o Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_AND -t 2[0m
+WARNING: This is xmipp_base implementation for script
+N coords: 157
+N coords: 188
+N coords: 235
+N coords: 170
+19 Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_AND/190117_02_00017_UnderDefocus0.7um_frameImage_aligned_mic.pos Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_AND/190117_02_00017_UnderDefocus0.7um_frameImage_aligned_mic.pos
+N coords: 158
+N coords: 185
+N coords: 249
+N coords: 174
+12 Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_AND/190117_02_00008_UnderDefocus0.7um_frameImage_aligned_mic.pos Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_AND/190117_02_00008_UnderDefocus0.7um_frameImage_aligned_mic.pos
+N coords: 164
+N coords: 183
+N coords: 246
+N coords: 179
+19 Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_AND/190117_02_00018_UnderDefocus0.7um_frameImage_aligned_mic.pos Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_AND/190117_02_00018_UnderDefocus0.7um_frameImage_aligned_mic.pos
+N coords: 165
+N coords: 187
+N coords: 230
+N coords: 177
+26 Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_AND/190117_02_00007_UnderDefocus0.7um_frameImage_aligned_mic.pos Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_AND/190117_02_00007_UnderDefocus0.7um_frameImage_aligned_mic.pos
+N coords: 160
+N coords: 187
+N coords: 234
+N coords: 182
+29 Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_AND/190117_02_00005_UnderDefocus0.7um_frameImage_aligned_mic.pos Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_AND/190117_02_00005_UnderDefocus0.7um_frameImage_aligned_mic.pos
+N coords: 51
+N coords: 68
+N coords: 243
+N coords: 73
+2 Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_AND/190117_02_00023_UnderDefocus0.7um_frameImage_aligned_mic.pos Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_AND/190117_02_00023_UnderDefocus0.7um_frameImage_aligned_mic.pos
+N coords: 151
+N coords: 182
+N coords: 248
+N coords: 170
+11 Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_AND/190117_02_00011_UnderDefocus0.7um_frameImage_aligned_mic.pos Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_AND/190117_02_00011_UnderDefocus0.7um_frameImage_aligned_mic.pos
+N coords: 153
+N coords: 180
+N coords: 238
+N coords: 177
+20 Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_AND/190117_02_00010_UnderDefocus0.7um_frameImage_aligned_mic.pos Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_AND/190117_02_00010_UnderDefocus0.7um_frameImage_aligned_mic.pos
+N coords: 153
+N coords: 182
+N coords: 235
+N coords: 163
+24 Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_AND/190117_02_00030_UnderDefocus0.9um_frameImage_aligned_mic.pos Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_AND/190117_02_00030_UnderDefocus0.9um_frameImage_aligned_mic.pos
+N coords: 51
+N coords: 29
+N coords: 237
+N coords: 49
+1 Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_AND/190117_02_00019_UnderDefocus0.7um_frameImage_aligned_mic.pos Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_AND/190117_02_00019_UnderDefocus0.7um_frameImage_aligned_mic.pos
+N coords: 99
+N coords: 133
+N coords: 247
+N coords: 127
+9 Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_AND/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.pos Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_AND/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.pos
+N coords: 151
+N coords: 189
+N coords: 228
+N coords: 172
+8 Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_AND/190117_02_00002_UnderDefocus0.7um_frameImage_aligned_mic.pos Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_AND/190117_02_00002_UnderDefocus0.7um_frameImage_aligned_mic.pos
+N coords: 150
+N coords: 175
+N coords: 244
+N coords: 171
+10 Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_AND/190117_02_00003_UnderDefocus0.7um_frameImage_aligned_mic.pos Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_AND/190117_02_00003_UnderDefocus0.7um_frameImage_aligned_mic.pos
+N coords: 125
+N coords: 172
+N coords: 234
+N coords: 169
+13 Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_AND/190117_02_00024_UnderDefocus0.9um_frameImage_aligned_mic.pos Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_AND/190117_02_00024_UnderDefocus0.9um_frameImage_aligned_mic.pos
+N coords: 62
+N coords: 111
+N coords: 234
+N coords: 98
+9 Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_AND/190117_02_00020_UnderDefocus0.7um_frameImage_aligned_mic.pos Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_AND/190117_02_00020_UnderDefocus0.7um_frameImage_aligned_mic.pos
+N coords: 165
+N coords: 188
+N coords: 244
+N coords: 186
+21 Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_AND/190117_02_00029_UnderDefocus0.9um_frameImage_aligned_mic.pos Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_AND/190117_02_00029_UnderDefocus0.9um_frameImage_aligned_mic.pos
+N coords: 87
+N coords: 103
+N coords: 230
+N coords: 116
+5 Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_AND/190117_02_00028_UnderDefocus0.9um_frameImage_aligned_mic.pos Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_AND/190117_02_00028_UnderDefocus0.9um_frameImage_aligned_mic.pos
+N coords: 142
+N coords: 181
+N coords: 247
+N coords: 168
+10 Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_AND/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.pos Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_AND/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.pos
+N coords: 163
+N coords: 191
+N coords: 239
+N coords: 181
+26 Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_AND/190117_02_00016_UnderDefocus0.7um_frameImage_aligned_mic.pos Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_AND/190117_02_00016_UnderDefocus0.7um_frameImage_aligned_mic.pos
+N coords: 162
+N coords: 185
+N coords: 246
+N coords: 176
+12 Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_AND/190117_02_00013_UnderDefocus0.7um_frameImage_aligned_mic.pos Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_AND/190117_02_00013_UnderDefocus0.7um_frameImage_aligned_mic.pos
+N coords: 160
+N coords: 186
+N coords: 235
+N coords: 172
+15 Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_AND/190117_02_00006_UnderDefocus0.7um_frameImage_aligned_mic.pos Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_AND/190117_02_00006_UnderDefocus0.7um_frameImage_aligned_mic.pos
+N coords: 169
+N coords: 188
+N coords: 239
+N coords: 174
+20 Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_AND/190117_02_00012_UnderDefocus0.7um_frameImage_aligned_mic.pos Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_AND/190117_02_00012_UnderDefocus0.7um_frameImage_aligned_mic.pos
+N coords: 138
+N coords: 183
+N coords: 238
+N coords: 170
+16 Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_AND/190117_02_00009_UnderDefocus0.7um_frameImage_aligned_mic.pos Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_AND/190117_02_00009_UnderDefocus0.7um_frameImage_aligned_mic.pos
+N coords: 161
+N coords: 181
+N coords: 232
+N coords: 174
+12 Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_AND/190117_02_00004_UnderDefocus0.7um_frameImage_aligned_mic.pos Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_AND/190117_02_00004_UnderDefocus0.7um_frameImage_aligned_mic.pos
+N coords: 37
+N coords: 71
+N coords: 233
+N coords: 89
+2 Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_AND/190117_02_00014_UnderDefocus0.7um_frameImage_aligned_mic.pos Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_AND/190117_02_00014_UnderDefocus0.7um_frameImage_aligned_mic.pos
+N coords: 139
+N coords: 176
+N coords: 240
+N coords: 156
+21 Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_AND/190117_02_00025_UnderDefocus0.9um_frameImage_aligned_mic.pos Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_AND/190117_02_00025_UnderDefocus0.9um_frameImage_aligned_mic.pos
+N coords: 156
+N coords: 178
+N coords: 231
+N coords: 157
+22 Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_AND/190117_02_00021_UnderDefocus0.7um_frameImage_aligned_mic.pos Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_AND/190117_02_00021_UnderDefocus0.7um_frameImage_aligned_mic.pos
+N coords: 102
+N coords: 149
+N coords: 220
+N coords: 121
+9 Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_AND/190117_02_00015_UnderDefocus0.7um_frameImage_aligned_mic.pos Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_AND/190117_02_00015_UnderDefocus0.7um_frameImage_aligned_mic.pos
+[Parallel(n_jobs=2)]: Using backend MultiprocessingBackend with 2 concurrent workers.
+[Parallel(n_jobs=2)]: Done  28 out of  28 | elapsed:    0.5s finished
+[35mFINISHED[0m: calculateCoorConsensusStep, step 10, time 2020-11-13 16:52:14.401283
+[35mSTARTED[0m: loadCoords, step 11, time 2020-11-13 16:52:14.409903
+Coordinates AND size: 403
+[35mFINISHED[0m: loadCoords, step 11, time 2020-11-13 16:52:14.497175
+[35mSTARTED[0m: extractParticles, step 12, time 2020-11-13 16:52:14.504451
+[32mxmipp_extract_particles -i Runs/007306_XmippProtScreenDeepConsensus/tmp/extractParticles_inputs_AND.txt -s 128 -d 2.34375 -o Runs/007306_XmippProtScreenDeepConsensus/tmp/consensus_parts_AND -t 2[0m
+WARNING: This is xmipp_base implementation for script
+xmipp_micrograph_scissor -i Runs/007306_XmippProtScreenDeepConsensus/tmp/preProcMics/190117_02_00020_UnderDefocus0.7um_frameImage_aligned_mic.mrc --pos particles@Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_coords_AND/190117_02_00020_UnderDefocus0.7um_frameImage_aligned_mic.pos -o Runs/007306_XmippProtScreenDeepConsensus/tmp/consensus_parts_AND/190117_02_00020_Under[Parallel(n_jobs=2)]: Using backend MultiprocessingBackend with 2 concurrent workers.
+[Parallel(n_jobs=2)]: Done  28 out of  28 | elapsed:    0.4s finished
+[35mFINISHED[0m: extractParticles, step 12, time 2020-11-13 16:52:15.169559
+[35mSTARTED[0m: joinSetOfParticlesStep, step 13, time 2020-11-13 16:52:15.559126
+[35mFINISHED[0m: joinSetOfParticlesStep, step 13, time 2020-11-13 16:52:16.186205
+[35mSTARTED[0m: trainCNN, step 14, time 2020-11-13 16:52:17.319410
+None None None None
+[32mxmipp_deep_consensus  -n Runs/007306_XmippProtScreenDeepConsensus/extra/nnetData --mode train -p Runs/007306_XmippProtScreenDeepConsensus/extra/particles_AND.xmd -f Runs/007306_XmippProtScreenDeepConsensus/extra/particles_NOISE.xmd:Runs/007306_XmippProtScreenDeepConsensus/tmp/addNegTrainParticles.xmd --trueW 1 --falseW 1:1 -e 50.0 -l 0.0001 -r 1e-05 -m 3  -g 0[0m
+WARNING: This is xmipp_base implementation for script
+mode 1: training
+TRAIN ARGS: {'netDataPath': 'Runs/007306_XmippProtScreenDeepConsensus/extra/nnetData', 'posTrainDict': {'Runs/007306_XmippProtScreenDeepConsensus/extra/particles_AND.xmd': '1'}, 'negTrainDict': {'Runs/007306_XmippProtScreenDeepConsensus/extra/particles_NOISE.xmd': '1', 'Runs/007306_XmippProtScreenDeepConsensus/tmp/addNegTrainParticles.xmd': '1'}, 'nEpochs': 50.0, 'learningRate': 0.0001, 'l2RegStrength': 1e-05, 'auto_stop': True, 'numModels': 3, 'effective_data_size': -1, 'gpuToUse': 0, 'numberOfThreads': None}
+updating environ to select gpus: 0
+['Runs/007306_XmippProtScreenDeepConsensus/extra/particles_AND.xmd']
+['Runs/007306_XmippProtScreenDeepConsensus/extra/particles_NOISE.xmd', 'Runs/007306_XmippProtScreenDeepConsensus/tmp/addNegTrainParticles.xmd']
+Learning rate: 1.0e-04
+L2 regularization strength: 1.0e-05
+auto_stop: True
+Using TensorFlow backend.
+WARNING:tensorflow:From /home/scipion/scipion3/software/em/xmipp/pylib/xmippPyModules/deepConsensusWorkers/deepConsensus_deepLearning1.py:131: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2020-11-13 16:52:26.497074: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2020-11-13 16:52:26.531712: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:983] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-13 16:52:26.532571: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: Tesla T4 major: 7 minor: 5 memoryClockRate(GHz): 1.59
+pciBusID: 0000:00:1e.0
+2020-11-13 16:52:26.538045: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2020-11-13 16:52:26.633490: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2020-11-13 16:52:26.692955: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2020-11-13 16:52:26.711682: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2020-11-13 16:52:26.839729: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2020-11-13 16:52:26.905455: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2020-11-13 16:52:27.077135: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-11-13 16:52:27.077337: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:983] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-13 16:52:27.078214: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:983] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-13 16:52:27.079047: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0
+2020-11-13 16:52:27.080094: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 AVX512F FMA
+2020-11-13 16:52:27.118225: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2499995000 Hz
+2020-11-13 16:52:27.118477: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x5653b405b7a0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-11-13 16:52:27.120033: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2020-11-13 16:52:27.124578: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:983] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-13 16:52:27.125443: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: Tesla T4 major: 7 minor: 5 memoryClockRate(GHz): 1.59
+pciBusID: 0000:00:1e.0
+2020-11-13 16:52:27.125499: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2020-11-13 16:52:27.125512: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2020-11-13 16:52:27.125523: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2020-11-13 16:52:27.125533: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2020-11-13 16:52:27.125543: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2020-11-13 16:52:27.125553: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2020-11-13 16:52:27.125564: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-11-13 16:52:27.125630: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:983] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-13 16:52:27.126377: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:983] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-13 16:52:27.127192: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0
+2020-11-13 16:52:27.128639: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2020-11-13 16:52:27.264263: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1159] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-11-13 16:52:27.264298: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1165]      0 
+2020-11-13 16:52:27.264305: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1178] 0:   N 
+2020-11-13 16:52:27.264496: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:983] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-13 16:52:27.265406: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:983] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-13 16:52:27.266251: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:983] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-13 16:52:27.267008: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1304] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14199 MB memory) -> physical GPU (device: 0, name: Tesla T4, pci bus id: 0000:00:1e.0, compute capability: 7.5)
+2020-11-13 16:52:27.271314: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x5653b4a26470 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2020-11-13 16:52:27.271340: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Tesla T4, Compute Capability 7.5
+WARNING:tensorflow:From /home/scipion/miniconda3/envs/xmipp_DLTK_v0.3/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:74: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+WARNING:tensorflow:From /home/scipion/miniconda3/envs/xmipp_DLTK_v0.3/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:517: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+WARNING:tensorflow:From /home/scipion/miniconda3/envs/xmipp_DLTK_v0.3/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:4138: The name tf.random_uniform is deprecated. Please use tf.random.uniform instead.
+
+WARNING:tensorflow:From /home/scipion/miniconda3/envs/xmipp_DLTK_v0.3/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:174: The name tf.get_default_session is deprecated. Please use tf.compat.v1.get_default_session instead.
+
+WARNING:tensorflow:From /home/scipion/miniconda3/envs/xmipp_DLTK_v0.3/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:190: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+WARNING:tensorflow:From /home/scipion/miniconda3/envs/xmipp_DLTK_v0.3/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:199: The name tf.is_variable_initialized is deprecated. Please use tf.compat.v1.is_variable_initialized instead.
+
+WARNING:tensorflow:From /home/scipion/miniconda3/envs/xmipp_DLTK_v0.3/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:206: The name tf.variables_initializer is deprecated. Please use tf.compat.v1.variables_initializer instead.
+
+WARNING:tensorflow:From /home/scipion/miniconda3/envs/xmipp_DLTK_v0.3/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:1834: The name tf.nn.fused_batch_norm is deprecated. Please use tf.compat.v1.nn.fused_batch_norm instead.
+
+WARNING:tensorflow:From /home/scipion/miniconda3/envs/xmipp_DLTK_v0.3/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:133: The name tf.placeholder_with_default is deprecated. Please use tf.compat.v1.placeholder_with_default instead.
+
+WARNING:tensorflow:From /home/scipion/miniconda3/envs/xmipp_DLTK_v0.3/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:3976: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+WARNING:tensorflow:From /home/scipion/miniconda3/envs/xmipp_DLTK_v0.3/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:3980: The name tf.nn.avg_pool is deprecated. Please use tf.nn.avg_pool2d instead.
+
+WARNING:tensorflow:From /home/scipion/miniconda3/envs/xmipp_DLTK_v0.3/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:3445: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+WARNING:tensorflow:From /home/scipion/miniconda3/envs/xmipp_DLTK_v0.3/lib/python3.7/site-packages/keras/optimizers.py:790: The name tf.train.Optimizer is deprecated. Please use tf.compat.v1.train.Optimizer instead.
+
+WARNING:tensorflow:From /home/scipion/miniconda3/envs/xmipp_DLTK_v0.3/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:3295: The name tf.log is deprecated. Please use tf.math.log instead.
+
+Training model 1/3
+current checkpoint name Runs/007306_XmippProtScreenDeepConsensus/extra/nnetData/tfchkpoints_0/deepModel.hdf5
+Creating net.
+Model depth: 4
+nEpochs : 50.0 --> Epochs: 11.
+Training begins: Epoch 0/11
+WARNING:tensorflow:From /home/scipion/miniconda3/envs/xmipp_DLTK_v0.3/lib/python3.7/site-packages/tensorflow_core/python/ops/math_grad.py:1424: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+WARNING:tensorflow:From /home/scipion/miniconda3/envs/xmipp_DLTK_v0.3/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:986: The name tf.assign_add is deprecated. Please use tf.compat.v1.assign_add instead.
+
+WARNING:tensorflow:From /home/scipion/miniconda3/envs/xmipp_DLTK_v0.3/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:973: The name tf.assign is deprecated. Please use tf.compat.v1.assign instead.
+
+Epoch 1/11
+2020-11-13 16:52:35.435820: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2020-11-13 16:52:36.595635: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-11-13 16:52:45.572612: E tensorflow/stream_executor/cuda/ptxas_utils.cc:110] You are using ptxas 8.x, but TF requires ptxas 9.x (and strongly prefers >= 9.2.88).  Compilation of XLA kernels below will likely fail.
+
+You do not need to update CUDA; cherry-picking the ptxas binary is sufficient.
+2020-11-13 16:52:45.644352: W tensorflow/stream_executor/cuda/redzone_allocator.cc:312] Internal: ptxas exited with non-zero error code 65280, output: ptxas fatal   : Value 'sm_75' is not defined for option 'gpu-name'
+
+Relying on driver to perform ptx compilation. This message will be only logged once.
+ - 85s - loss: 0.4987 - acc: 0.7525 - val_loss: 0.2815 - val_acc: 0.9688
+
+Epoch 00001: val_acc improved from -inf to 0.96875, saving model to Runs/007306_XmippProtScreenDeepConsensus/extra/nnetData/tfchkpoints_0/deepModel.hdf5
+Epoch 2/11
+ - 3s - loss: 0.2098 - acc: 0.9357 - val_loss: 0.1280 - val_acc: 0.9688
+
+Epoch 00002: val_acc did not improve from 0.96875
+Epoch 3/11
+ - 3s - loss: 0.1094 - acc: 0.9692 - val_loss: 0.0662 - val_acc: 1.0000
+
+Epoch 00003: val_acc improved from 0.96875 to 1.00000, saving model to Runs/007306_XmippProtScreenDeepConsensus/extra/nnetData/tfchkpoints_0/deepModel.hdf5
+Epoch 4/11
+ - 3s - loss: 0.0796 - acc: 0.9752 - val_loss: 0.0581 - val_acc: 1.0000
+
+Epoch 00004: val_acc did not improve from 1.00000
+Epoch 5/11
+ - 3s - loss: 0.0641 - acc: 0.9814 - val_loss: 0.0423 - val_acc: 1.0000
+
+Epoch 00005: val_acc did not improve from 1.00000
+Epoch 6/11
+ - 3s - loss: 0.0632 - acc: 0.9812 - val_loss: 0.0311 - val_acc: 1.0000
+
+Epoch 00006: val_acc did not improve from 1.00000
+
+Epoch 00006: ReduceLROnPlateau reducing learning rate to 9.999999747378752e-06.
+Epoch 7/11
+ - 3s - loss: 0.0459 - acc: 0.9887 - val_loss: 0.0293 - val_acc: 1.0000
+
+Epoch 00007: val_acc did not improve from 1.00000
+Epoch 8/11
+ - 3s - loss: 0.0534 - acc: 0.9850 - val_loss: 0.0289 - val_acc: 1.0000
+
+Epoch 00008: val_acc did not improve from 1.00000
+Epoch 9/11
+ - 4s - loss: 0.0487 - acc: 0.9887 - val_loss: 0.0273 - val_acc: 1.0000
+
+Epoch 00009: val_acc did not improve from 1.00000
+
+Epoch 00009: ReduceLROnPlateau reducing learning rate to 9.999999747378752e-07.
+Epoch 10/11
+ - 3s - loss: 0.0528 - acc: 0.9859 - val_loss: 0.0273 - val_acc: 1.0000
+
+Epoch 00010: val_acc did not improve from 1.00000
+Epoch 11/11
+ - 3s - loss: 0.0521 - acc: 0.9874 - val_loss: 0.0271 - val_acc: 1.0000
+WARNING:tensorflow:From /home/scipion/miniconda3/envs/xmipp_DLTK_v0.3/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:95: The name tf.reset_default_graph is deprecated. Please use tf.compat.v1.reset_default_graph instead.
+
+2020-11-13 16:54:30.707301: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:983] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-13 16:54:30.707674: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: Tesla T4 major: 7 minor: 5 memoryClockRate(GHz): 1.59
+pciBusID: 0000:00:1e.0
+2020-11-13 16:54:30.707732: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2020-11-13 16:54:30.707752: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2020-11-13 16:54:30.707764: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2020-11-13 16:54:30.707787: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2020-11-13 16:54:30.707803: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2020-11-13 16:54:30.707816: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2020-11-13 16:54:30.707829: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-11-13 16:54:30.707893: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:983] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-13 16:54:30.708222: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:983] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-13 16:54:30.708505: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0
+2020-11-13 16:54:30.708535: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1159] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-11-13 16:54:30.708542: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1165]      0 
+2020-11-13 16:54:30.708547: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1178] 0:   N 
+2020-11-13 16:54:30.708621: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:983] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-13 16:54:30.708961: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:983] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-13 16:54:30.709257: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1304] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14199 MB memory) -> physical GPU (device: 0, name: Tesla T4, pci bus id: 0000:00:1e.0, compute capability: 7.5)
+
+Epoch 00011: val_acc did not improve from 1.00000
+Training model 2/3
+current checkpoint name Runs/007306_XmippProtScreenDeepConsensus/extra/nnetData/tfchkpoints_1/deepModel.hdf5
+Creating net.
+Model depth: 4
+nEpochs : 50.0 --> Epochs: 11.
+Training begins: Epoch 0/11
+Epoch 1/11
+ - 4s - loss: 0.6046 - acc: 0.6688 - val_loss: 0.3994 - val_acc: 0.7969
+
+Epoch 00001: val_acc improved from -inf to 0.79688, saving model to Runs/007306_XmippProtScreenDeepConsensus/extra/nnetData/tfchkpoints_1/deepModel.hdf5
+Epoch 2/11
+ - 2s - loss: 0.2879 - acc: 0.8866 - val_loss: 0.0950 - val_acc: 0.9844
+
+Epoch 00002: val_acc improved from 0.79688 to 0.98438, saving model to Runs/007306_XmippProtScreenDeepConsensus/extra/nnetData/tfchkpoints_1/deepModel.hdf5
+Epoch 3/11
+ - 3s - loss: 0.1371 - acc: 0.9598 - val_loss: 0.0421 - val_acc: 1.0000
+
+Epoch 00003: val_acc improved from 0.98438 to 1.00000, saving model to Runs/007306_XmippProtScreenDeepConsensus/extra/nnetData/tfchkpoints_1/deepModel.hdf5
+Epoch 4/11
+ - 3s - loss: 0.0852 - acc: 0.9758 - val_loss: 0.0170 - val_acc: 1.0000
+
+Epoch 00004: val_acc did not improve from 1.00000
+Epoch 5/11
+ - 3s - loss: 0.0727 - acc: 0.9817 - val_loss: 0.0277 - val_acc: 1.0000
+
+Epoch 00005: val_acc did not improve from 1.00000
+Epoch 6/11
+ - 3s - loss: 0.0472 - acc: 0.9886 - val_loss: 0.0107 - val_acc: 1.0000
+
+Epoch 00006: val_acc did not improve from 1.00000
+
+Epoch 00006: ReduceLROnPlateau reducing learning rate to 9.999999747378752e-06.
+Epoch 7/11
+ - 3s - loss: 0.0434 - acc: 0.9908 - val_loss: 0.0112 - val_acc: 1.0000
+
+Epoch 00007: val_acc did not improve from 1.00000
+Epoch 8/11
+ - 3s - loss: 0.0389 - acc: 0.9927 - val_loss: 0.0112 - val_acc: 1.0000
+
+Epoch 00008: val_acc did not improve from 1.00000
+Epoch 9/11
+ - 3s - loss: 0.0345 - acc: 0.9944 - val_loss: 0.0113 - val_acc: 1.0000
+
+Epoch 00009: val_acc did not improve from 1.00000
+
+Epoch 00009: ReduceLROnPlateau reducing learning rate to 9.999999747378752e-07.
+Epoch 10/11
+ - 3s - loss: 0.0462 - acc: 0.9890 - val_loss: 0.0115 - val_acc: 1.0000
+
+Epoch 00010: val_acc did not improve from 1.00000
+Epoch 11/11
+ - 3s - loss: 0.0371 - acc: 0.9915 - val_loss: 0.0115 - val_acc: 1.0000
+2020-11-13 16:55:05.210918: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:983] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-13 16:55:05.211384: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: Tesla T4 major: 7 minor: 5 memoryClockRate(GHz): 1.59
+pciBusID: 0000:00:1e.0
+2020-11-13 16:55:05.211489: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2020-11-13 16:55:05.211519: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2020-11-13 16:55:05.211539: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2020-11-13 16:55:05.211558: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2020-11-13 16:55:05.211575: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2020-11-13 16:55:05.211594: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2020-11-13 16:55:05.211615: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-11-13 16:55:05.211700: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:983] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-13 16:55:05.212041: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:983] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-13 16:55:05.212326: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0
+2020-11-13 16:55:05.212355: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1159] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-11-13 16:55:05.212363: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1165]      0 
+2020-11-13 16:55:05.212369: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1178] 0:   N 
+2020-11-13 16:55:05.212451: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:983] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-13 16:55:05.212780: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:983] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-13 16:55:05.213077: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1304] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14199 MB memory) -> physical GPU (device: 0, name: Tesla T4, pci bus id: 0000:00:1e.0, compute capability: 7.5)
+
+Epoch 00011: val_acc did not improve from 1.00000
+Training model 3/3
+current checkpoint name Runs/007306_XmippProtScreenDeepConsensus/extra/nnetData/tfchkpoints_2/deepModel.hdf5
+Creating net.
+Model depth: 4
+nEpochs : 50.0 --> Epochs: 11.
+Training begins: Epoch 0/11
+Epoch 1/11
+ - 4s - loss: 0.5926 - acc: 0.6766 - val_loss: 0.4540 - val_acc: 0.7656
+
+Epoch 00001: val_acc improved from -inf to 0.76562, saving model to Runs/007306_XmippProtScreenDeepConsensus/extra/nnetData/tfchkpoints_2/deepModel.hdf5
+Epoch 2/11
+ - 2s - loss: 0.3367 - acc: 0.8620 - val_loss: 0.2277 - val_acc: 0.9375
+
+Epoch 00002: val_acc improved from 0.76562 to 0.93750, saving model to Runs/007306_XmippProtScreenDeepConsensus/extra/nnetData/tfchkpoints_2/deepModel.hdf5
+Epoch 3/11
+ - 2s - loss: 0.1570 - acc: 0.9503 - val_loss: 0.1752 - val_acc: 0.9531
+
+Epoch 00003: val_acc improved from 0.93750 to 0.95312, saving model to Runs/007306_XmippProtScreenDeepConsensus/extra/nnetData/tfchkpoints_2/deepModel.hdf5
+Epoch 4/11
+ - 2s - loss: 0.0894 - acc: 0.9745 - val_loss: 0.1574 - val_acc: 0.9219
+
+Epoch 00004: val_acc did not improve from 0.95312
+Epoch 5/11
+ - 2s - loss: 0.0724 - acc: 0.9770 - val_loss: 0.1899 - val_acc: 0.9219
+
+Epoch 00005: val_acc did not improve from 0.95312
+Epoch 6/11
+ - 3s - loss: 0.0526 - acc: 0.9855 - val_loss: 0.0533 - val_acc: 0.9844
+
+Epoch 00006: val_acc improved from 0.95312 to 0.98438, saving model to Runs/007306_XmippProtScreenDeepConsensus/extra/nnetData/tfchkpoints_2/deepModel.hdf5
+Epoch 7/11
+ - 3s - loss: 0.0446 - acc: 0.9906 - val_loss: 0.0400 - val_acc: 0.9844
+
+Epoch 00007: val_acc did not improve from 0.98438
+Epoch 8/11
+ - 3s - loss: 0.0459 - acc: 0.9846 - val_loss: 0.0717 - val_acc: 0.9688
+
+Epoch 00008: val_acc did not improve from 0.98438
+Epoch 9/11
+ - 3s - loss: 0.0427 - acc: 0.9869 - val_loss: 0.0530 - val_acc: 0.9688
+
+Epoch 00009: val_acc did not improve from 0.98438
+
+Epoch 00009: ReduceLROnPlateau reducing learning rate to 9.999999747378752e-06.
+Epoch 10/11
+ - 3s - loss: 0.0388 - acc: 0.9903 - val_loss: 0.0541 - val_acc: 0.9688
+
+Epoch 00010: val_acc did not improve from 0.98438
+Epoch 11/11
+ - 3s - loss: 0.0344 - acc: 0.9912 - val_loss: 0.0450 - val_acc: 0.9844
+
+Epoch 00011: val_acc did not improve from 0.98438
+[32mRUNNING PROTOCOL -----------------[0m
+Hostname: ip-172-31-13-159.eu-west-1.compute.internal
+PID: 26561
+pyworkflow: 3.0.6
+plugin: xmipp3
+currentDir: /home/scipion/ScipionUserData/projects/Example_10248_Scipion3
+workingDir: Runs/007306_XmippProtScreenDeepConsensus
+runMode: Continue
+          MPI: 1
+      threads: 2
+ Starting at step: 14
+ Running steps 
+[35mSTARTED[0m: trainCNN, step 14, time 2020-11-13 17:43:22.364841
+None None None None
+[32mxmipp_deep_consensus  -n Runs/007306_XmippProtScreenDeepConsensus/extra/nnetData --mode train -p Runs/007306_XmippProtScreenDeepConsensus/extra/particles_AND.xmd -f Runs/007306_XmippProtScreenDeepConsensus/extra/particles_NOISE.xmd:Runs/007306_XmippProtScreenDeepConsensus/tmp/addNegTrainParticles.xmd --trueW 1 --falseW 1:1 -e 50.0 -l 0.0001 -r 1e-05 -m 3  -g 0[0m
+WARNING: This is xmipp_base implementation for script
+mode 1: training
+TRAIN ARGS: {'netDataPath': 'Runs/007306_XmippProtScreenDeepConsensus/extra/nnetData', 'posTrainDict': {'Runs/007306_XmippProtScreenDeepConsensus/extra/particles_AND.xmd': '1'}, 'negTrainDict': {'Runs/007306_XmippProtScreenDeepConsensus/extra/particles_NOISE.xmd': '1', 'Runs/007306_XmippProtScreenDeepConsensus/tmp/addNegTrainParticles.xmd': '1'}, 'nEpochs': 50.0, 'learningRate': 0.0001, 'l2RegStrength': 1e-05, 'auto_stop': True, 'numModels': 3, 'effective_data_size': -1, 'gpuToUse': 0, 'numberOfThreads': None}
+updating environ to select gpus: 0
+['Runs/007306_XmippProtScreenDeepConsensus/extra/particles_AND.xmd']
+['Runs/007306_XmippProtScreenDeepConsensus/extra/particles_NOISE.xmd', 'Runs/007306_XmippProtScreenDeepConsensus/tmp/addNegTrainParticles.xmd']
+Learning rate: 1.0e-04
+L2 regularization strength: 1.0e-05
+auto_stop: True
+Using TensorFlow backend.
+WARNING:tensorflow:From /home/scipion/scipion3/software/em/xmipp/pylib/xmippPyModules/deepConsensusWorkers/deepConsensus_deepLearning1.py:131: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2020-11-13 17:43:24.928556: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2020-11-13 17:43:24.958664: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:983] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-13 17:43:24.959585: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: Tesla T4 major: 7 minor: 5 memoryClockRate(GHz): 1.59
+pciBusID: 0000:00:1e.0
+2020-11-13 17:43:24.959858: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2020-11-13 17:43:24.961153: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2020-11-13 17:43:24.962263: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2020-11-13 17:43:24.962556: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2020-11-13 17:43:24.963876: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2020-11-13 17:43:24.964889: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2020-11-13 17:43:24.972124: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-11-13 17:43:24.972259: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:983] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-13 17:43:24.973141: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:983] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-13 17:43:24.973938: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0
+2020-11-13 17:43:24.974258: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 AVX512F FMA
+2020-11-13 17:43:24.980596: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2499995000 Hz
+2020-11-13 17:43:24.980772: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55b2d8818700 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-11-13 17:43:24.980796: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2020-11-13 17:43:24.981008: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:983] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-13 17:43:24.981844: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: Tesla T4 major: 7 minor: 5 memoryClockRate(GHz): 1.59
+pciBusID: 0000:00:1e.0
+2020-11-13 17:43:24.981880: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2020-11-13 17:43:24.981892: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2020-11-13 17:43:24.981903: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2020-11-13 17:43:24.981914: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2020-11-13 17:43:24.981925: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2020-11-13 17:43:24.981935: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2020-11-13 17:43:24.981946: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-11-13 17:43:24.982005: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:983] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-13 17:43:24.982861: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:983] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-13 17:43:24.983666: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0
+2020-11-13 17:43:24.983715: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2020-11-13 17:43:25.085489: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1159] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-11-13 17:43:25.085525: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1165]      0 
+2020-11-13 17:43:25.085532: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1178] 0:   N 
+2020-11-13 17:43:25.085737: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:983] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-13 17:43:25.086605: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:983] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-13 17:43:25.087371: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:983] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-13 17:43:25.088182: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1304] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14199 MB memory) -> physical GPU (device: 0, name: Tesla T4, pci bus id: 0000:00:1e.0, compute capability: 7.5)
+2020-11-13 17:43:25.090096: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55b2d91e33c0 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2020-11-13 17:43:25.090123: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Tesla T4, Compute Capability 7.5
+WARNING:tensorflow:From /home/scipion/miniconda3/envs/xmipp_DLTK_v0.3/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:517: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+WARNING:tensorflow:From /home/scipion/miniconda3/envs/xmipp_DLTK_v0.3/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:4138: The name tf.random_uniform is deprecated. Please use tf.random.uniform instead.
+
+WARNING:tensorflow:From /home/scipion/miniconda3/envs/xmipp_DLTK_v0.3/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:245: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+WARNING:tensorflow:From /home/scipion/miniconda3/envs/xmipp_DLTK_v0.3/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:174: The name tf.get_default_session is deprecated. Please use tf.compat.v1.get_default_session instead.
+
+WARNING:tensorflow:From /home/scipion/miniconda3/envs/xmipp_DLTK_v0.3/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:190: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+WARNING:tensorflow:From /home/scipion/miniconda3/envs/xmipp_DLTK_v0.3/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:199: The name tf.is_variable_initialized is deprecated. Please use tf.compat.v1.is_variable_initialized instead.
+
+WARNING:tensorflow:From /home/scipion/miniconda3/envs/xmipp_DLTK_v0.3/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:206: The name tf.variables_initializer is deprecated. Please use tf.compat.v1.variables_initializer instead.
+
+WARNING:tensorflow:From /home/scipion/miniconda3/envs/xmipp_DLTK_v0.3/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:1834: The name tf.nn.fused_batch_norm is deprecated. Please use tf.compat.v1.nn.fused_batch_norm instead.
+
+WARNING:tensorflow:From /home/scipion/miniconda3/envs/xmipp_DLTK_v0.3/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:133: The name tf.placeholder_with_default is deprecated. Please use tf.compat.v1.placeholder_with_default instead.
+
+WARNING:tensorflow:From /home/scipion/miniconda3/envs/xmipp_DLTK_v0.3/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:3976: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+WARNING:tensorflow:From /home/scipion/miniconda3/envs/xmipp_DLTK_v0.3/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:3980: The name tf.nn.avg_pool is deprecated. Please use tf.nn.avg_pool2d instead.
+
+WARNING:tensorflow:From /home/scipion/miniconda3/envs/xmipp_DLTK_v0.3/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:3445: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+WARNING:tensorflow:From /home/scipion/miniconda3/envs/xmipp_DLTK_v0.3/lib/python3.7/site-packages/keras/optimizers.py:790: The name tf.train.Optimizer is deprecated. Please use tf.compat.v1.train.Optimizer instead.
+
+WARNING:tensorflow:From /home/scipion/miniconda3/envs/xmipp_DLTK_v0.3/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:3295: The name tf.log is deprecated. Please use tf.math.log instead.
+
+WARNING:tensorflow:From /home/scipion/miniconda3/envs/xmipp_DLTK_v0.3/lib/python3.7/site-packages/tensorflow_core/python/ops/math_grad.py:1424: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+WARNING:tensorflow:From /home/scipion/miniconda3/envs/xmipp_DLTK_v0.3/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:986: The name tf.assign_add is deprecated. Please use tf.compat.v1.assign_add instead.
+
+WARNING:tensorflow:From /home/scipion/miniconda3/envs/xmipp_DLTK_v0.3/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:973: The name tf.assign is deprecated. Please use tf.compat.v1.assign instead.
+
+Training model 1/3
+current checkpoint name Runs/007306_XmippProtScreenDeepConsensus/extra/nnetData/tfchkpoints_0/deepModel.hdf5
+loading previosly saved model Runs/007306_XmippProtScreenDeepConsensus/extra/nnetData/tfchkpoints_0/deepModel.hdf5
+nEpochs : 50.0 --> Epochs: 11.
+Training begins: Epoch 0/11
+Epoch 1/11
+2020-11-13 17:43:30.780214: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2020-11-13 17:43:31.073628: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-11-13 17:43:32.714459: E tensorflow/stream_executor/cuda/ptxas_utils.cc:110] You are using ptxas 8.x, but TF requires ptxas 9.x (and strongly prefers >= 9.2.88).  Compilation of XLA kernels below will likely fail.
+
+You do not need to update CUDA; cherry-picking the ptxas binary is sufficient.
+2020-11-13 17:43:32.788450: W tensorflow/stream_executor/cuda/redzone_allocator.cc:312] Internal: ptxas exited with non-zero error code 65280, output: ptxas fatal   : Value 'sm_75' is not defined for option 'gpu-name'
+
+Relying on driver to perform ptx compilation. This message will be only logged once.
+ - 79s - loss: 0.0816 - acc: 0.9726 - val_loss: 0.0420 - val_acc: 0.9844
+
+Epoch 00001: val_acc improved from -inf to 0.98438, saving model to Runs/007306_XmippProtScreenDeepConsensus/extra/nnetData/tfchkpoints_0/deepModel.hdf5
+Epoch 2/11
+ - 2s - loss: 0.0598 - acc: 0.9811 - val_loss: 0.0370 - val_acc: 0.9844
+
+Epoch 00002: val_acc did not improve from 0.98438
+Epoch 3/11
+ - 3s - loss: 0.0484 - acc: 0.9862 - val_loss: 0.0348 - val_acc: 1.0000
+
+Epoch 00003: val_acc improved from 0.98438 to 1.00000, saving model to Runs/007306_XmippProtScreenDeepConsensus/extra/nnetData/tfchkpoints_0/deepModel.hdf5
+Epoch 4/11
+ - 3s - loss: 0.0452 - acc: 0.9868 - val_loss: 0.0331 - val_acc: 0.9844
+
+Epoch 00004: val_acc did not improve from 1.00000
+Epoch 5/11
+ - 3s - loss: 0.0336 - acc: 0.9909 - val_loss: 0.0345 - val_acc: 0.9844
+
+Epoch 00005: val_acc did not improve from 1.00000
+Epoch 6/11
+ - 3s - loss: 0.0321 - acc: 0.9916 - val_loss: 0.0301 - val_acc: 0.9844
+
+Epoch 00006: val_acc did not improve from 1.00000
+
+Epoch 00006: ReduceLROnPlateau reducing learning rate to 9.999999747378752e-06.
+Epoch 7/11
+ - 3s - loss: 0.0319 - acc: 0.9900 - val_loss: 0.0325 - val_acc: 0.9844
+
+Epoch 00007: val_acc did not improve from 1.00000
+Epoch 8/11
+ - 3s - loss: 0.0292 - acc: 0.9919 - val_loss: 0.0365 - val_acc: 0.9844
+
+Epoch 00008: val_acc did not improve from 1.00000
+Epoch 9/11
+ - 3s - loss: 0.0312 - acc: 0.9906 - val_loss: 0.0346 - val_acc: 0.9844
+
+Epoch 00009: val_acc did not improve from 1.00000
+
+Epoch 00009: ReduceLROnPlateau reducing learning rate to 9.999999747378752e-07.
+Epoch 10/11
+ - 3s - loss: 0.0323 - acc: 0.9903 - val_loss: 0.0362 - val_acc: 0.9844
+
+Epoch 00010: val_acc did not improve from 1.00000
+Epoch 11/11
+ - 2s - loss: 0.0270 - acc: 0.9916 - val_loss: 0.0368 - val_acc: 0.9844
+WARNING:tensorflow:From /home/scipion/miniconda3/envs/xmipp_DLTK_v0.3/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:95: The name tf.reset_default_graph is deprecated. Please use tf.compat.v1.reset_default_graph instead.
+
+2020-11-13 17:45:18.625245: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:983] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-13 17:45:18.625780: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: Tesla T4 major: 7 minor: 5 memoryClockRate(GHz): 1.59
+pciBusID: 0000:00:1e.0
+2020-11-13 17:45:18.625867: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2020-11-13 17:45:18.625889: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2020-11-13 17:45:18.625907: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2020-11-13 17:45:18.625927: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2020-11-13 17:45:18.625947: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2020-11-13 17:45:18.625967: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2020-11-13 17:45:18.625986: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-11-13 17:45:18.626074: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:983] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-13 17:45:18.626553: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:983] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-13 17:45:18.626994: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0
+2020-11-13 17:45:18.627036: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1159] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-11-13 17:45:18.627049: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1165]      0 
+2020-11-13 17:45:18.627058: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1178] 0:   N 
+2020-11-13 17:45:18.627222: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:983] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-13 17:45:18.627754: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:983] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-13 17:45:18.628264: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1304] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14199 MB memory) -> physical GPU (device: 0, name: Tesla T4, pci bus id: 0000:00:1e.0, compute capability: 7.5)
+
+Epoch 00011: val_acc did not improve from 1.00000
+Training model 2/3
+current checkpoint name Runs/007306_XmippProtScreenDeepConsensus/extra/nnetData/tfchkpoints_1/deepModel.hdf5
+loading previosly saved model Runs/007306_XmippProtScreenDeepConsensus/extra/nnetData/tfchkpoints_1/deepModel.hdf5
+nEpochs : 50.0 --> Epochs: 11.
+Training begins: Epoch 0/11
+Epoch 1/11
+ - 4s - loss: 0.0691 - acc: 0.9793 - val_loss: 0.0341 - val_acc: 1.0000
+
+Epoch 00001: val_acc improved from -inf to 1.00000, saving model to Runs/007306_XmippProtScreenDeepConsensus/extra/nnetData/tfchkpoints_1/deepModel.hdf5
+Epoch 2/11
+ - 2s - loss: 0.0406 - acc: 0.9878 - val_loss: 0.0204 - val_acc: 1.0000
+
+Epoch 00002: val_acc did not improve from 1.00000
+Epoch 3/11
+ - 3s - loss: 0.0373 - acc: 0.9889 - val_loss: 0.0479 - val_acc: 0.9844
+
+Epoch 00003: val_acc did not improve from 1.00000
+Epoch 4/11
+ - 3s - loss: 0.0336 - acc: 0.9928 - val_loss: 0.0470 - val_acc: 0.9844
+
+Epoch 00004: val_acc did not improve from 1.00000
+
+Epoch 00004: ReduceLROnPlateau reducing learning rate to 9.999999747378752e-06.
+Epoch 5/11
+ - 3s - loss: 0.0254 - acc: 0.9944 - val_loss: 0.0143 - val_acc: 1.0000
+
+Epoch 00005: val_acc did not improve from 1.00000
+Epoch 6/11
+ - 3s - loss: 0.0222 - acc: 0.9962 - val_loss: 0.0109 - val_acc: 1.0000
+
+Epoch 00006: val_acc did not improve from 1.00000
+Epoch 7/11
+ - 2s - loss: 0.0282 - acc: 0.9931 - val_loss: 0.0104 - val_acc: 1.0000
+
+Epoch 00007: val_acc did not improve from 1.00000
+
+Epoch 00007: ReduceLROnPlateau reducing learning rate to 9.999999747378752e-07.
+Epoch 8/11
+ - 3s - loss: 0.0242 - acc: 0.9949 - val_loss: 0.0103 - val_acc: 1.0000
+
+Epoch 00008: val_acc did not improve from 1.00000
+Epoch 9/11
+ - 3s - loss: 0.0229 - acc: 0.9953 - val_loss: 0.0104 - val_acc: 1.0000
+
+Epoch 00009: val_acc did not improve from 1.00000
+Epoch 10/11
+ - 3s - loss: 0.0216 - acc: 0.9962 - val_loss: 0.0104 - val_acc: 1.0000
+
+Epoch 00010: val_acc did not improve from 1.00000
+
+Epoch 00010: ReduceLROnPlateau reducing learning rate to 1.0000000000000001e-07.
+Epoch 11/11
+ - 3s - loss: 0.0239 - acc: 0.9949 - val_loss: 0.0104 - val_acc: 1.0000
+2020-11-13 17:45:56.321058: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:983] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-13 17:45:56.321491: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: Tesla T4 major: 7 minor: 5 memoryClockRate(GHz): 1.59
+pciBusID: 0000:00:1e.0
+2020-11-13 17:45:56.321566: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2020-11-13 17:45:56.321584: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2020-11-13 17:45:56.321599: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2020-11-13 17:45:56.321613: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2020-11-13 17:45:56.321628: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2020-11-13 17:45:56.321643: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2020-11-13 17:45:56.321657: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-11-13 17:45:56.321731: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:983] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-13 17:45:56.322072: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:983] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-13 17:45:56.322365: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0
+2020-11-13 17:45:56.322394: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1159] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-11-13 17:45:56.322402: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1165]      0 
+2020-11-13 17:45:56.322408: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1178] 0:   N 
+2020-11-13 17:45:56.322492: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:983] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-13 17:45:56.322861: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:983] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-13 17:45:56.323163: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1304] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14199 MB memory) -> physical GPU (device: 0, name: Tesla T4, pci bus id: 0000:00:1e.0, compute capability: 7.5)
+Epoch 1/11
+
+Epoch 00011: val_acc did not improve from 1.00000
+Epoch 00011: early stopping
+Training model 3/3
+current checkpoint name Runs/007306_XmippProtScreenDeepConsensus/extra/nnetData/tfchkpoints_2/deepModel.hdf5
+loading previosly saved model Runs/007306_XmippProtScreenDeepConsensus/extra/nnetData/tfchkpoints_2/deepModel.hdf5
+nEpochs : 50.0 --> Epochs: 11.
+Training begins: Epoch 0/11
+Epoch 1/11
+ - 5s - loss: 0.0543 - acc: 0.9830 - val_loss: 0.0871 - val_acc: 0.9688
+
+Epoch 00001: val_acc improved from -inf to 0.96875, saving model to Runs/007306_XmippProtScreenDeepConsensus/extra/nnetData/tfchkpoints_2/deepModel.hdf5
+Epoch 2/11
+ - 2s - loss: 0.0366 - acc: 0.9890 - val_loss: 0.0212 - val_acc: 1.0000
+
+Epoch 00002: val_acc improved from 0.96875 to 1.00000, saving model to Runs/007306_XmippProtScreenDeepConsensus/extra/nnetData/tfchkpoints_2/deepModel.hdf5
+Epoch 3/11
+ - 3s - loss: 0.0294 - acc: 0.9912 - val_loss: 0.0159 - val_acc: 1.0000
+
+Epoch 00003: val_acc did not improve from 1.00000
+Epoch 4/11
+ - 3s - loss: 0.0268 - acc: 0.9944 - val_loss: 0.0174 - val_acc: 1.0000
+
+Epoch 00004: val_acc did not improve from 1.00000
+Epoch 5/11
+ - 3s - loss: 0.0258 - acc: 0.9930 - val_loss: 0.0103 - val_acc: 1.0000
+
+Epoch 00005: val_acc did not improve from 1.00000
+
+Epoch 00005: ReduceLROnPlateau reducing learning rate to 9.999999747378752e-06.
+Epoch 6/11
+ - 3s - loss: 0.0221 - acc: 0.9940 - val_loss: 0.0089 - val_acc: 1.0000
+
+Epoch 00006: val_acc did not improve from 1.00000
+Epoch 7/11
+ - 3s - loss: 0.0219 - acc: 0.9947 - val_loss: 0.0093 - val_acc: 1.0000
+
+Epoch 00007: val_acc did not improve from 1.00000
+Epoch 8/11
+ - 3s - loss: 0.0242 - acc: 0.9944 - val_loss: 0.0095 - val_acc: 1.0000
+
+Epoch 00008: val_acc did not improve from 1.00000
+
+Epoch 00008: ReduceLROnPlateau reducing learning rate to 9.999999747378752e-07.
+Epoch 9/11
+ - 3s - loss: 0.0223 - acc: 0.9937 - val_loss: 0.0095 - val_acc: 1.0000
+
+Epoch 00009: val_acc did not improve from 1.00000
+Epoch 10/11
+ - 3s - loss: 0.0227 - acc: 0.9931 - val_loss: 0.0093 - val_acc: 1.0000
+
+Epoch 00010: val_acc did not improve from 1.00000
+Epoch 11/11
+ - 3s - loss: 0.0196 - acc: 0.9953 - val_loss: 0.0093 - val_acc: 1.0000
+
+Epoch 00011: val_acc did not improve from 1.00000
+
+Epoch 00011: ReduceLROnPlateau reducing learning rate to 1.0000000000000001e-07.
+[35mFINISHED[0m: trainCNN, step 14, time 2020-11-13 17:46:34.958585
+[35mSTARTED[0m: predictCNN, step 15, time 2020-11-13 17:46:34.967328
+[32mxmipp_deep_consensus  -n Runs/007306_XmippProtScreenDeepConsensus/extra/nnetData --mode score -i Runs/007306_XmippProtScreenDeepConsensus/extra/particles_OR.xmd -o Runs/007306_XmippProtScreenDeepConsensus/particles.xmd  -g 0[0m
+Using TensorFlow backend.
+WARNING:tensorflow:From /home/scipion/scipion3/software/em/xmipp/pylib/xmippPyModules/deepConsensusWorkers/deepConsensus_deepLearning1.py:131: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2020-11-13 17:46:37.078814: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2020-11-13 17:46:37.105363: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:983] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-13 17:46:37.106217: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: Tesla T4 major: 7 minor: 5 memoryClockRate(GHz): 1.59
+pciBusID: 0000:00:1e.0
+2020-11-13 17:46:37.106439: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2020-11-13 17:46:37.107617: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2020-11-13 17:46:37.108653: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2020-11-13 17:46:37.108936: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2020-11-13 17:46:37.110228: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2020-11-13 17:46:37.111254: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2020-11-13 17:46:37.114838: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-11-13 17:46:37.114973: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:983] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-13 17:46:37.115861: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:983] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-13 17:46:37.116645: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0
+2020-11-13 17:46:37.116956: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 AVX512F FMA
+2020-11-13 17:46:37.123344: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2499995000 Hz
+2020-11-13 17:46:37.123521: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x5635b22cf060 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-11-13 17:46:37.123543: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2020-11-13 17:46:37.123762: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:983] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-13 17:46:37.124587: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: Tesla T4 major: 7 minor: 5 memoryClockRate(GHz): 1.59
+pciBusID: 0000:00:1e.0
+2020-11-13 17:46:37.124620: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2020-11-13 17:46:37.124632: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2020-11-13 17:46:37.124642: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2020-11-13 17:46:37.124653: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2020-11-13 17:46:37.124663: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2020-11-13 17:46:37.124673: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2020-11-13 17:46:37.124691: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-11-13 17:46:37.124752: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:983] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-13 17:46:37.125590: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:983] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-13 17:46:37.126372: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0
+2020-11-13 17:46:37.126419: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2020-11-13 17:46:37.206452: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1159] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-11-13 17:46:37.206488: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1165]      0 
+2020-11-13 17:46:37.206494: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1178] 0:   N 
+2020-11-13 17:46:37.206688: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:983] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-13 17:46:37.207583: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:983] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-13 17:46:37.208411: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:983] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-13 17:46:37.209219: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1304] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14199 MB memory) -> physical GPU (device: 0, name: Tesla T4, pci bus id: 0000:00:1e.0, compute capability: 7.5)
+2020-11-13 17:46:37.211134: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x5635b2c9ff50 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2020-11-13 17:46:37.211160: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Tesla T4, Compute Capability 7.5
+WARNING: This is xmipp_base implementation for script
+mode 2: scoring
+SCORING ARGS: {'netDataPath': 'Runs/007306_XmippProtScreenDeepConsensus/extra/nnetData', 'predictDict': {'Runs/007306_XmippProtScreenDeepConsensus/extra/particles_OR.xmd': 1}, 'outParticlesPath': 'Runs/007306_XmippProtScreenDeepConsensus/particles.xmd', 'posTestDict': None, 'negTestDict': None, 'gpuToUse': 0, 'numberOfThreads': None}
+updating environ to select gpus: 0
+['Runs/007306_XmippProtScreenDeepConsensus/extra/particles_OR.xmd']
+loading model Runs/007306_XmippProtScreenDeepConsensus/extra/nnetData/tfchkpoints_0/deepModel.hdf5
+WARNING:tensorflow:From /home/scipion/miniconda3/envs/xmipp_DLTK_v0.3/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:517: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+WARNING:tensorflow:From /home/scipion/miniconda3/envs/xmipp_DLTK_v0.3/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:4138: The name tf.random_uniform is deprecated. Please use tf.random.uniform instead.
+
+WARNING:tensorflow:From /home/scipion/miniconda3/envs/xmipp_DLTK_v0.3/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:245: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+WARNING:tensorflow:From /home/scipion/miniconda3/envs/xmipp_DLTK_v0.3/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:174: The name tf.get_default_session is deprecated. Please use tf.compat.v1.get_default_session instead.
+
+WARNING:tensorflow:From /home/scipion/miniconda3/envs/xmipp_DLTK_v0.3/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:190: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+WARNING:tensorflow:From /home/scipion/miniconda3/envs/xmipp_DLTK_v0.3/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:199: The name tf.is_variable_initialized is deprecated. Please use tf.compat.v1.is_variable_initialized instead.
+
+WARNING:tensorflow:From /home/scipion/miniconda3/envs/xmipp_DLTK_v0.3/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:206: The name tf.variables_initializer is deprecated. Please use tf.compat.v1.variables_initializer instead.
+
+WARNING:tensorflow:From /home/scipion/miniconda3/envs/xmipp_DLTK_v0.3/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:1834: The name tf.nn.fused_batch_norm is deprecated. Please use tf.compat.v1.nn.fused_batch_norm instead.
+
+WARNING:tensorflow:From /home/scipion/miniconda3/envs/xmipp_DLTK_v0.3/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:133: The name tf.placeholder_with_default is deprecated. Please use tf.compat.v1.placeholder_with_default instead.
+
+WARNING:tensorflow:From /home/scipion/miniconda3/envs/xmipp_DLTK_v0.3/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:3976: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+WARNING:tensorflow:From /home/scipion/miniconda3/envs/xmipp_DLTK_v0.3/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:3980: The name tf.nn.avg_pool is deprecated. Please use tf.nn.avg_pool2d instead.
+
+WARNING:tensorflow:From /home/scipion/miniconda3/envs/xmipp_DLTK_v0.3/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:3445: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+WARNING:tensorflow:From /home/scipion/miniconda3/envs/xmipp_DLTK_v0.3/lib/python3.7/site-packages/keras/optimizers.py:790: The name tf.train.Optimizer is deprecated. Please use tf.compat.v1.train.Optimizer instead.
+
+WARNING:tensorflow:From /home/scipion/miniconda3/envs/xmipp_DLTK_v0.3/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:3295: The name tf.log is deprecated. Please use tf.math.log instead.
+
+WARNING:tensorflow:From /home/scipion/miniconda3/envs/xmipp_DLTK_v0.3/lib/python3.7/site-packages/tensorflow_core/python/ops/math_grad.py:1424: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+WARNING:tensorflow:From /home/scipion/miniconda3/envs/xmipp_DLTK_v0.3/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:986: The name tf.assign_add is deprecated. Please use tf.compat.v1.assign_add instead.
+
+WARNING:tensorflow:From /home/scipion/miniconda3/envs/xmipp_DLTK_v0.3/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:973: The name tf.assign is deprecated. Please use tf.compat.v1.assign instead.
+
+predicting with model 1/3
+2020-11-13 17:46:40.690646: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2020-11-13 17:46:40.977459: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-11-13 17:46:42.619837: E tensorflow/stream_executor/cuda/ptxas_utils.cc:110] You are using ptxas 8.x, but TF requires ptxas 9.x (and strongly prefers >= 9.2.88).  Compilation of XLA kernels below will likely fail.
+
+You do not need to update CUDA; cherry-picking the ptxas binary is sufficient.
+2020-11-13 17:46:42.692571: W tensorflow/stream_executor/cuda/redzone_allocator.cc:312] Internal: ptxas exited with non-zero error code 65280, output: ptxas fatal   : Value 'sm_75' is not defined for option 'gpu-name'
+
+Relying on driver to perform ptx compilation. This message will be only logged once.
+prediction done
+WARNING:tensorflow:From /home/scipion/miniconda3/envs/xmipp_DLTK_v0.3/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:95: The name tf.reset_default_graph is deprecated. Please use tf.compat.v1.reset_default_graph instead.
+
+2020-11-13 17:47:15.664739: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:983] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-13 17:47:15.665116: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: Tesla T4 major: 7 minor: 5 memoryClockRate(GHz): 1.59
+pciBusID: 0000:00:1e.0
+2020-11-13 17:47:15.665169: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2020-11-13 17:47:15.665181: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2020-11-13 17:47:15.665193: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2020-11-13 17:47:15.665214: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2020-11-13 17:47:15.665230: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2020-11-13 17:47:15.665243: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2020-11-13 17:47:15.665256: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-11-13 17:47:15.665321: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:983] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-13 17:47:15.665671: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:983] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-13 17:47:15.665960: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0
+2020-11-13 17:47:15.665992: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1159] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-11-13 17:47:15.665999: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1165]      0 
+2020-11-13 17:47:15.666005: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1178] 0:   N 
+2020-11-13 17:47:15.666085: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:983] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-13 17:47:15.666411: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:983] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-13 17:47:15.666707: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1304] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14199 MB memory) -> physical GPU (device: 0, name: Tesla T4, pci bus id: 0000:00:1e.0, compute capability: 7.5)
+loading model Runs/007306_XmippProtScreenDeepConsensus/extra/nnetData/tfchkpoints_1/deepModel.hdf5
+predicting with model 2/3
+prediction done
+2020-11-13 17:47:22.596881: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:983] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-13 17:47:22.597267: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: Tesla T4 major: 7 minor: 5 memoryClockRate(GHz): 1.59
+pciBusID: 0000:00:1e.0
+2020-11-13 17:47:22.597332: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2020-11-13 17:47:22.597346: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2020-11-13 17:47:22.597369: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2020-11-13 17:47:22.597386: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2020-11-13 17:47:22.597400: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2020-11-13 17:47:22.597414: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2020-11-13 17:47:22.597428: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-11-13 17:47:22.597499: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:983] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-13 17:47:22.597829: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:983] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-13 17:47:22.598114: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0
+2020-11-13 17:47:22.598149: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1159] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-11-13 17:47:22.598157: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1165]      0 
+2020-11-13 17:47:22.598162: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1178] 0:   N 
+2020-11-13 17:47:22.598242: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:983] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-13 17:47:22.598570: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:983] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-13 17:47:22.598887: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1304] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14199 MB memory) -> physical GPU (device: 0, name: Tesla T4, pci bus id: 0000:00:1e.0, compute capability: 7.5)
+loading model Runs/007306_XmippProtScreenDeepConsensus/extra/nnetData/tfchkpoints_2/deepModel.hdf5
+predicting with model 3/3
+prediction done
+[35mFINISHED[0m: predictCNN, step 15, time 2020-11-13 17:47:30.728692
+[35mSTARTED[0m: createOutputStep, step 16, time 2020-11-13 17:47:30.739733
+Coordinates OR size: 15054
+[35mFINISHED[0m: createOutputStep, step 16, time 2020-11-13 17:47:38.787406
+*** Last status is finished 
+Cleaning temp folder....
+[32m------------------- PROTOCOL FINISHED[0m

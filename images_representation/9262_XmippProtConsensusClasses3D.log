@@ -1,0 +1,20 @@
+[32mRUNNING PROTOCOL -----------------[0m
+Hostname: ip-172-31-13-159.eu-west-1.compute.internal
+PID: 12796
+pyworkflow: 3.0.6
+plugin: xmipp3
+currentDir: /home/scipion/ScipionUserData/projects/Example_10248_Scipion3
+workingDir: Runs/009262_XmippProtConsensusClasses3D
+runMode: Continue
+          MPI: 1
+      threads: 1
+ Starting at step: 1
+ Running steps 
+[35mSTARTED[0m: compareFirstStep, step 1, time 2020-11-15 20:37:38.502102
+Computing intersections between classes form set 9154.outputClasses.9237 and set 9046.outputClasses.9129:
+[35mFINISHED[0m: compareFirstStep, step 1, time 2020-11-15 20:37:39.158908
+[35mSTARTED[0m: createOutputStep, step 2, time 2020-11-15 20:37:39.168458
+[35mFINISHED[0m: createOutputStep, step 2, time 2020-11-15 20:37:39.845232
+*** Last status is finished 
+Cleaning temp folder....
+[32m------------------- PROTOCOL FINISHED[0m

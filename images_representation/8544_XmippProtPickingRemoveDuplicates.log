@@ -1,0 +1,101 @@
+[32mRUNNING PROTOCOL -----------------[0m
+Hostname: ip-172-31-13-159.eu-west-1.compute.internal
+PID: 10557
+pyworkflow: 3.0.6
+plugin: xmipp3
+currentDir: /home/scipion/ScipionUserData/projects/Example_10248_Scipion3
+workingDir: Runs/008544_XmippProtPickingRemoveDuplicates
+runMode: Continue
+          MPI: 1
+      threads: 1
+ Starting at step: 1
+ Running steps 
+[35mSTARTED[0m: removeDuplicatesStep, step 2, time 2020-11-15 12:38:55.819574
+Removing duplicates for micrograph 1: '190117_02_00001_UnderDefocus0.7um_frameImage.tiff'
+[35mFINISHED[0m: removeDuplicatesStep, step 2, time 2020-11-15 12:38:55.831686
+[35mSTARTED[0m: removeDuplicatesStep, step 3, time 2020-11-15 12:38:55.841895
+Removing duplicates for micrograph 2: '190117_02_00002_UnderDefocus0.7um_frameImage.tiff'
+[35mFINISHED[0m: removeDuplicatesStep, step 3, time 2020-11-15 12:38:55.850706
+[35mSTARTED[0m: removeDuplicatesStep, step 4, time 2020-11-15 12:38:55.873634
+Removing duplicates for micrograph 3: '190117_02_00003_UnderDefocus0.7um_frameImage.tiff'
+[35mFINISHED[0m: removeDuplicatesStep, step 4, time 2020-11-15 12:38:55.885378
+[35mSTARTED[0m: removeDuplicatesStep, step 5, time 2020-11-15 12:38:55.894669
+Removing duplicates for micrograph 4: '190117_02_00004_UnderDefocus0.7um_frameImage.tiff'
+[35mFINISHED[0m: removeDuplicatesStep, step 5, time 2020-11-15 12:38:55.903848
+[35mSTARTED[0m: removeDuplicatesStep, step 6, time 2020-11-15 12:38:55.912378
+Removing duplicates for micrograph 5: '190117_02_00005_UnderDefocus0.7um_frameImage.tiff'
+[35mFINISHED[0m: removeDuplicatesStep, step 6, time 2020-11-15 12:38:55.923914
+[35mSTARTED[0m: removeDuplicatesStep, step 7, time 2020-11-15 12:38:55.933337
+Removing duplicates for micrograph 6: '190117_02_00006_UnderDefocus0.7um_frameImage.tiff'
+[35mFINISHED[0m: removeDuplicatesStep, step 7, time 2020-11-15 12:38:55.945495
+[35mSTARTED[0m: removeDuplicatesStep, step 8, time 2020-11-15 12:38:55.954109
+Removing duplicates for micrograph 7: '190117_02_00007_UnderDefocus0.7um_frameImage.tiff'
+[35mFINISHED[0m: removeDuplicatesStep, step 8, time 2020-11-15 12:38:55.962437
+[35mSTARTED[0m: removeDuplicatesStep, step 9, time 2020-11-15 12:38:55.971577
+Removing duplicates for micrograph 8: '190117_02_00008_UnderDefocus0.7um_frameImage.tiff'
+[35mFINISHED[0m: removeDuplicatesStep, step 9, time 2020-11-15 12:38:55.982899
+[35mSTARTED[0m: removeDuplicatesStep, step 10, time 2020-11-15 12:38:55.991566
+Removing duplicates for micrograph 9: '190117_02_00009_UnderDefocus0.7um_frameImage.tiff'
+[35mFINISHED[0m: removeDuplicatesStep, step 10, time 2020-11-15 12:38:56.002485
+[35mSTARTED[0m: removeDuplicatesStep, step 11, time 2020-11-15 12:38:56.010355
+Removing duplicates for micrograph 10: '190117_02_00010_UnderDefocus0.7um_frameImage.tiff'
+[35mFINISHED[0m: removeDuplicatesStep, step 11, time 2020-11-15 12:38:56.021518
+[35mSTARTED[0m: removeDuplicatesStep, step 12, time 2020-11-15 12:38:56.028520
+Removing duplicates for micrograph 11: '190117_02_00011_UnderDefocus0.7um_frameImage.tiff'
+[35mFINISHED[0m: removeDuplicatesStep, step 12, time 2020-11-15 12:38:56.039451
+[35mSTARTED[0m: removeDuplicatesStep, step 13, time 2020-11-15 12:38:56.048808
+Removing duplicates for micrograph 12: '190117_02_00012_UnderDefocus0.7um_frameImage.tiff'
+[35mFINISHED[0m: removeDuplicatesStep, step 13, time 2020-11-15 12:38:56.061072
+[35mSTARTED[0m: removeDuplicatesStep, step 14, time 2020-11-15 12:38:56.068091
+Removing duplicates for micrograph 13: '190117_02_00013_UnderDefocus0.7um_frameImage.tiff'
+[35mFINISHED[0m: removeDuplicatesStep, step 14, time 2020-11-15 12:38:56.078564
+[35mSTARTED[0m: removeDuplicatesStep, step 15, time 2020-11-15 12:38:56.085347
+Removing duplicates for micrograph 14: '190117_02_00014_UnderDefocus0.7um_frameImage.tiff'
+[35mFINISHED[0m: removeDuplicatesStep, step 15, time 2020-11-15 12:38:56.090469
+[35mSTARTED[0m: removeDuplicatesStep, step 16, time 2020-11-15 12:38:56.097233
+Removing duplicates for micrograph 15: '190117_02_00015_UnderDefocus0.7um_frameImage.tiff'
+[35mFINISHED[0m: removeDuplicatesStep, step 16, time 2020-11-15 12:38:56.103332
+[35mSTARTED[0m: removeDuplicatesStep, step 17, time 2020-11-15 12:38:56.109982
+Removing duplicates for micrograph 16: '190117_02_00016_UnderDefocus0.7um_frameImage.tiff'
+[35mFINISHED[0m: removeDuplicatesStep, step 17, time 2020-11-15 12:38:56.117754
+[35mSTARTED[0m: removeDuplicatesStep, step 18, time 2020-11-15 12:38:56.124285
+Removing duplicates for micrograph 17: '190117_02_00017_UnderDefocus0.7um_frameImage.tiff'
+[35mFINISHED[0m: removeDuplicatesStep, step 18, time 2020-11-15 12:38:56.131809
+[35mSTARTED[0m: removeDuplicatesStep, step 19, time 2020-11-15 12:38:56.138142
+Removing duplicates for micrograph 18: '190117_02_00018_UnderDefocus0.7um_frameImage.tiff'
+[35mFINISHED[0m: removeDuplicatesStep, step 19, time 2020-11-15 12:38:56.145532
+[35mSTARTED[0m: removeDuplicatesStep, step 20, time 2020-11-15 12:38:56.151987
+Removing duplicates for micrograph 19: '190117_02_00019_UnderDefocus0.7um_frameImage.tiff'
+[35mFINISHED[0m: removeDuplicatesStep, step 20, time 2020-11-15 12:38:56.155919
+[35mSTARTED[0m: removeDuplicatesStep, step 21, time 2020-11-15 12:38:56.162474
+Removing duplicates for micrograph 20: '190117_02_00020_UnderDefocus0.7um_frameImage.tiff'
+[35mFINISHED[0m: removeDuplicatesStep, step 21, time 2020-11-15 12:38:56.168069
+[35mSTARTED[0m: removeDuplicatesStep, step 22, time 2020-11-15 12:38:56.174477
+Removing duplicates for micrograph 21: '190117_02_00021_UnderDefocus0.7um_frameImage.tiff'
+[35mFINISHED[0m: removeDuplicatesStep, step 22, time 2020-11-15 12:38:56.181765
+[35mSTARTED[0m: removeDuplicatesStep, step 23, time 2020-11-15 12:38:56.188048
+Removing duplicates for micrograph 23: '190117_02_00023_UnderDefocus0.7um_frameImage.tiff'
+[35mFINISHED[0m: removeDuplicatesStep, step 23, time 2020-11-15 12:38:56.192382
+[35mSTARTED[0m: removeDuplicatesStep, step 24, time 2020-11-15 12:38:56.198791
+Removing duplicates for micrograph 24: '190117_02_00024_UnderDefocus0.9um_frameImage.tiff'
+[35mFINISHED[0m: removeDuplicatesStep, step 24, time 2020-11-15 12:38:56.205880
+[35mSTARTED[0m: removeDuplicatesStep, step 25, time 2020-11-15 12:38:56.212602
+Removing duplicates for micrograph 25: '190117_02_00025_UnderDefocus0.9um_frameImage.tiff'
+[35mFINISHED[0m: removeDuplicatesStep, step 25, time 2020-11-15 12:38:56.219666
+[35mSTARTED[0m: removeDuplicatesStep, step 26, time 2020-11-15 12:38:56.226119
+Removing duplicates for micrograph 26: '190117_02_00026_UnderDefocus0.9um_frameImage.tiff'
+[35mFINISHED[0m: removeDuplicatesStep, step 26, time 2020-11-15 12:38:56.232375
+[35mSTARTED[0m: removeDuplicatesStep, step 27, time 2020-11-15 12:38:56.238963
+Removing duplicates for micrograph 28: '190117_02_00028_UnderDefocus0.9um_frameImage.tiff'
+[35mFINISHED[0m: removeDuplicatesStep, step 27, time 2020-11-15 12:38:56.244065
+[35mSTARTED[0m: removeDuplicatesStep, step 28, time 2020-11-15 12:38:56.251153
+Removing duplicates for micrograph 29: '190117_02_00029_UnderDefocus0.9um_frameImage.tiff'
+[35mFINISHED[0m: removeDuplicatesStep, step 28, time 2020-11-15 12:38:56.265062
+[35mSTARTED[0m: removeDuplicatesStep, step 29, time 2020-11-15 12:38:56.272211
+Removing duplicates for micrograph 30: '190117_02_00030_UnderDefocus0.9um_frameImage.tiff'
+[35mFINISHED[0m: removeDuplicatesStep, step 29, time 2020-11-15 12:38:56.282010
+[35mSTARTED[0m: createOutputStep, step 1, time 2020-11-15 12:38:59.258848
+[35mFINISHED[0m: createOutputStep, step 1, time 2020-11-15 12:38:59.262323
+*** Last status is finished 
+Cleaning temp folder....
+[32m------------------- PROTOCOL FINISHED[0m

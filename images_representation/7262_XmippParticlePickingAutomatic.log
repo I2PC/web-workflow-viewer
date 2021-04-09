@@ -1,0 +1,149 @@
+[32mRUNNING PROTOCOL -----------------[0m
+Hostname: ip-172-31-13-159.eu-west-1.compute.internal
+PID: 15159
+pyworkflow: 3.0.6
+plugin: xmipp3
+currentDir: /home/scipion/ScipionUserData/projects/Example_10248_Scipion3
+workingDir: Runs/007262_XmippParticlePickingAutomatic
+runMode: Continue
+          MPI: 1
+      threads: 1
+ Starting at step: 1
+ Running steps 
+[35mSTARTED[0m: copyInputFilesStep, step 1, time 2020-11-13 15:52:38.702400
+[35mFINISHED[0m: copyInputFilesStep, step 1, time 2020-11-13 15:52:38.708425
+[35mSTARTED[0m: pickMicrographStep, step 2, time 2020-11-13 15:52:38.717435
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrc 
+[35mFINISHED[0m: pickMicrographStep, step 2, time 2020-11-13 15:52:38.722674
+[35mSTARTED[0m: pickMicrographStep, step 3, time 2020-11-13 15:52:38.730418
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00002_UnderDefocus0.7um_frameImage_aligned_mic.mrc 
+[35mFINISHED[0m: pickMicrographStep, step 3, time 2020-11-13 15:52:38.735273
+[35mSTARTED[0m: pickMicrographStep, step 4, time 2020-11-13 15:52:38.744747
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00003_UnderDefocus0.7um_frameImage_aligned_mic.mrc 
+[35mFINISHED[0m: pickMicrographStep, step 4, time 2020-11-13 15:52:38.751978
+[35mSTARTED[0m: pickMicrographStep, step 5, time 2020-11-13 15:52:38.760668
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00004_UnderDefocus0.7um_frameImage_aligned_mic.mrc 
+[35mFINISHED[0m: pickMicrographStep, step 5, time 2020-11-13 15:52:38.765656
+[35mSTARTED[0m: pickMicrographStep, step 6, time 2020-11-13 15:52:38.774387
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00005_UnderDefocus0.7um_frameImage_aligned_mic.mrc 
+[35mFINISHED[0m: pickMicrographStep, step 6, time 2020-11-13 15:52:38.779263
+[35mSTARTED[0m: pickMicrographStep, step 7, time 2020-11-13 15:52:38.787663
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00006_UnderDefocus0.7um_frameImage_aligned_mic.mrc 
+[32mxmipp_micrograph_automatic_picking -i Runs/006458_XmippProtMovieCorr/extra/190117_02_00006_UnderDefocus0.7um_frameImage_aligned_mic.mrc --particleSize 300 --model Runs/007262_XmippParticlePickingAutomatic/extra/model --outputRoot Runs/007262_XmippParticlePickingAutomatic/extra/190117_02_00006_UnderDefocus0.7um_frameImage_aligned_mic --mode autoselect --thr 1[0m
+[35mFINISHED[0m: pickMicrographStep, step 7, time 2020-11-13 15:52:41.937355
+Reading coordinates from mics: 1,2,3,4,5,6
+[35mSTARTED[0m: pickMicrographStep, step 8, time 2020-11-13 15:52:42.063301
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00007_UnderDefocus0.7um_frameImage_aligned_mic.mrc 
+[32mxmipp_micrograph_automatic_picking -i Runs/006458_XmippProtMovieCorr/extra/190117_02_00007_UnderDefocus0.7um_frameImage_aligned_mic.mrc --particleSize 300 --model Runs/007262_XmippParticlePickingAutomatic/extra/model --outputRoot Runs/007262_XmippParticlePickingAutomatic/extra/190117_02_00007_UnderDefocus0.7um_frameImage_aligned_mic --mode autoselect --thr 1[0m
+[35mFINISHED[0m: pickMicrographStep, step 8, time 2020-11-13 15:52:45.217839
+Reading coordinates from mics: 7
+[35mSTARTED[0m: pickMicrographStep, step 9, time 2020-11-13 15:52:45.255885
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00008_UnderDefocus0.7um_frameImage_aligned_mic.mrc 
+[32mxmipp_micrograph_automatic_picking -i Runs/006458_XmippProtMovieCorr/extra/190117_02_00008_UnderDefocus0.7um_frameImage_aligned_mic.mrc --particleSize 300 --model Runs/007262_XmippParticlePickingAutomatic/extra/model --outputRoot Runs/007262_XmippParticlePickingAutomatic/extra/190117_02_00008_UnderDefocus0.7um_frameImage_aligned_mic --mode autoselect --thr 1[0m
+[35mFINISHED[0m: pickMicrographStep, step 9, time 2020-11-13 15:52:48.413552
+Reading coordinates from mics: 8
+[35mSTARTED[0m: pickMicrographStep, step 10, time 2020-11-13 15:52:48.452673
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00009_UnderDefocus0.7um_frameImage_aligned_mic.mrc 
+[32mxmipp_micrograph_automatic_picking -i Runs/006458_XmippProtMovieCorr/extra/190117_02_00009_UnderDefocus0.7um_frameImage_aligned_mic.mrc --particleSize 300 --model Runs/007262_XmippParticlePickingAutomatic/extra/model --outputRoot Runs/007262_XmippParticlePickingAutomatic/extra/190117_02_00009_UnderDefocus0.7um_frameImage_aligned_mic --mode autoselect --thr 1[0m
+[35mFINISHED[0m: pickMicrographStep, step 10, time 2020-11-13 15:52:51.522188
+Reading coordinates from mics: 9
+[35mSTARTED[0m: pickMicrographStep, step 11, time 2020-11-13 15:52:51.558868
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00010_UnderDefocus0.7um_frameImage_aligned_mic.mrc 
+[32mxmipp_micrograph_automatic_picking -i Runs/006458_XmippProtMovieCorr/extra/190117_02_00010_UnderDefocus0.7um_frameImage_aligned_mic.mrc --particleSize 300 --model Runs/007262_XmippParticlePickingAutomatic/extra/model --outputRoot Runs/007262_XmippParticlePickingAutomatic/extra/190117_02_00010_UnderDefocus0.7um_frameImage_aligned_mic --mode autoselect --thr 1[0m
+[35mFINISHED[0m: pickMicrographStep, step 11, time 2020-11-13 15:52:54.756369
+Reading coordinates from mics: 10
+[35mSTARTED[0m: pickMicrographStep, step 12, time 2020-11-13 15:52:54.795294
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00011_UnderDefocus0.7um_frameImage_aligned_mic.mrc 
+[32mxmipp_micrograph_automatic_picking -i Runs/006458_XmippProtMovieCorr/extra/190117_02_00011_UnderDefocus0.7um_frameImage_aligned_mic.mrc --particleSize 300 --model Runs/007262_XmippParticlePickingAutomatic/extra/model --outputRoot Runs/007262_XmippParticlePickingAutomatic/extra/190117_02_00011_UnderDefocus0.7um_frameImage_aligned_mic --mode autoselect --thr 1[0m
+[35mFINISHED[0m: pickMicrographStep, step 12, time 2020-11-13 15:52:57.803014
+Reading coordinates from mics: 11
+[35mSTARTED[0m: pickMicrographStep, step 13, time 2020-11-13 15:52:57.842454
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00012_UnderDefocus0.7um_frameImage_aligned_mic.mrc 
+[32mxmipp_micrograph_automatic_picking -i Runs/006458_XmippProtMovieCorr/extra/190117_02_00012_UnderDefocus0.7um_frameImage_aligned_mic.mrc --particleSize 300 --model Runs/007262_XmippParticlePickingAutomatic/extra/model --outputRoot Runs/007262_XmippParticlePickingAutomatic/extra/190117_02_00012_UnderDefocus0.7um_frameImage_aligned_mic --mode autoselect --thr 1[0m
+[35mFINISHED[0m: pickMicrographStep, step 13, time 2020-11-13 15:53:00.946117
+Reading coordinates from mics: 12
+[35mSTARTED[0m: pickMicrographStep, step 14, time 2020-11-13 15:53:00.996285
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00013_UnderDefocus0.7um_frameImage_aligned_mic.mrc 
+[32mxmipp_micrograph_automatic_picking -i Runs/006458_XmippProtMovieCorr/extra/190117_02_00013_UnderDefocus0.7um_frameImage_aligned_mic.mrc --particleSize 300 --model Runs/007262_XmippParticlePickingAutomatic/extra/model --outputRoot Runs/007262_XmippParticlePickingAutomatic/extra/190117_02_00013_UnderDefocus0.7um_frameImage_aligned_mic --mode autoselect --thr 1[0m
+[35mFINISHED[0m: pickMicrographStep, step 14, time 2020-11-13 15:53:04.094608
+Reading coordinates from mics: 13
+[35mSTARTED[0m: pickMicrographStep, step 15, time 2020-11-13 15:53:04.137766
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00014_UnderDefocus0.7um_frameImage_aligned_mic.mrc 
+[32mxmipp_micrograph_automatic_picking -i Runs/006458_XmippProtMovieCorr/extra/190117_02_00014_UnderDefocus0.7um_frameImage_aligned_mic.mrc --particleSize 300 --model Runs/007262_XmippParticlePickingAutomatic/extra/model --outputRoot Runs/007262_XmippParticlePickingAutomatic/extra/190117_02_00014_UnderDefocus0.7um_frameImage_aligned_mic --mode autoselect --thr 1[0m
+[35mFINISHED[0m: pickMicrographStep, step 15, time 2020-11-13 15:53:07.419367
+Reading coordinates from mics: 14
+[35mSTARTED[0m: pickMicrographStep, step 16, time 2020-11-13 15:53:07.449940
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00015_UnderDefocus0.7um_frameImage_aligned_mic.mrc 
+[32mxmipp_micrograph_automatic_picking -i Runs/006458_XmippProtMovieCorr/extra/190117_02_00015_UnderDefocus0.7um_frameImage_aligned_mic.mrc --particleSize 300 --model Runs/007262_XmippParticlePickingAutomatic/extra/model --outputRoot Runs/007262_XmippParticlePickingAutomatic/extra/190117_02_00015_UnderDefocus0.7um_frameImage_aligned_mic --mode autoselect --thr 1[0m
+[35mFINISHED[0m: pickMicrographStep, step 16, time 2020-11-13 15:53:10.538508
+Reading coordinates from mics: 15
+[35mSTARTED[0m: pickMicrographStep, step 17, time 2020-11-13 15:53:10.574222
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00016_UnderDefocus0.7um_frameImage_aligned_mic.mrc 
+[32mxmipp_micrograph_automatic_picking -i Runs/006458_XmippProtMovieCorr/extra/190117_02_00016_UnderDefocus0.7um_frameImage_aligned_mic.mrc --particleSize 300 --model Runs/007262_XmippParticlePickingAutomatic/extra/model --outputRoot Runs/007262_XmippParticlePickingAutomatic/extra/190117_02_00016_UnderDefocus0.7um_frameImage_aligned_mic --mode autoselect --thr 1[0m
+[35mFINISHED[0m: pickMicrographStep, step 17, time 2020-11-13 15:53:13.630823
+Reading coordinates from mics: 16
+[35mSTARTED[0m: pickMicrographStep, step 18, time 2020-11-13 15:53:13.670292
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00017_UnderDefocus0.7um_frameImage_aligned_mic.mrc 
+[32mxmipp_micrograph_automatic_picking -i Runs/006458_XmippProtMovieCorr/extra/190117_02_00017_UnderDefocus0.7um_frameImage_aligned_mic.mrc --particleSize 300 --model Runs/007262_XmippParticlePickingAutomatic/extra/model --outputRoot Runs/007262_XmippParticlePickingAutomatic/extra/190117_02_00017_UnderDefocus0.7um_frameImage_aligned_mic --mode autoselect --thr 1[0m
+[35mFINISHED[0m: pickMicrographStep, step 18, time 2020-11-13 15:53:16.718810
+Reading coordinates from mics: 17
+[35mSTARTED[0m: pickMicrographStep, step 19, time 2020-11-13 15:53:16.758655
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00018_UnderDefocus0.7um_frameImage_aligned_mic.mrc 
+[32mxmipp_micrograph_automatic_picking -i Runs/006458_XmippProtMovieCorr/extra/190117_02_00018_UnderDefocus0.7um_frameImage_aligned_mic.mrc --particleSize 300 --model Runs/007262_XmippParticlePickingAutomatic/extra/model --outputRoot Runs/007262_XmippParticlePickingAutomatic/extra/190117_02_00018_UnderDefocus0.7um_frameImage_aligned_mic --mode autoselect --thr 1[0m
+[35mFINISHED[0m: pickMicrographStep, step 19, time 2020-11-13 15:53:19.898082
+Reading coordinates from mics: 18
+[35mSTARTED[0m: pickMicrographStep, step 20, time 2020-11-13 15:53:19.937209
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00019_UnderDefocus0.7um_frameImage_aligned_mic.mrc 
+[32mxmipp_micrograph_automatic_picking -i Runs/006458_XmippProtMovieCorr/extra/190117_02_00019_UnderDefocus0.7um_frameImage_aligned_mic.mrc --particleSize 300 --model Runs/007262_XmippParticlePickingAutomatic/extra/model --outputRoot Runs/007262_XmippParticlePickingAutomatic/extra/190117_02_00019_UnderDefocus0.7um_frameImage_aligned_mic --mode autoselect --thr 1[0m
+[35mFINISHED[0m: pickMicrographStep, step 20, time 2020-11-13 15:53:23.014314
+Reading coordinates from mics: 19
+[35mSTARTED[0m: pickMicrographStep, step 21, time 2020-11-13 15:53:23.044489
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00020_UnderDefocus0.7um_frameImage_aligned_mic.mrc 
+[32mxmipp_micrograph_automatic_picking -i Runs/006458_XmippProtMovieCorr/extra/190117_02_00020_UnderDefocus0.7um_frameImage_aligned_mic.mrc --particleSize 300 --model Runs/007262_XmippParticlePickingAutomatic/extra/model --outputRoot Runs/007262_XmippParticlePickingAutomatic/extra/190117_02_00020_UnderDefocus0.7um_frameImage_aligned_mic --mode autoselect --thr 1[0m
+[35mFINISHED[0m: pickMicrographStep, step 21, time 2020-11-13 15:53:26.124975
+Reading coordinates from mics: 20
+[35mSTARTED[0m: pickMicrographStep, step 22, time 2020-11-13 15:53:26.156455
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00021_UnderDefocus0.7um_frameImage_aligned_mic.mrc 
+[32mxmipp_micrograph_automatic_picking -i Runs/006458_XmippProtMovieCorr/extra/190117_02_00021_UnderDefocus0.7um_frameImage_aligned_mic.mrc --particleSize 300 --model Runs/007262_XmippParticlePickingAutomatic/extra/model --outputRoot Runs/007262_XmippParticlePickingAutomatic/extra/190117_02_00021_UnderDefocus0.7um_frameImage_aligned_mic --mode autoselect --thr 1[0m
+[35mFINISHED[0m: pickMicrographStep, step 22, time 2020-11-13 15:53:29.241942
+Reading coordinates from mics: 21
+[35mSTARTED[0m: pickMicrographStep, step 23, time 2020-11-13 15:53:29.285089
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00023_UnderDefocus0.7um_frameImage_aligned_mic.mrc 
+[32mxmipp_micrograph_automatic_picking -i Runs/006458_XmippProtMovieCorr/extra/190117_02_00023_UnderDefocus0.7um_frameImage_aligned_mic.mrc --particleSize 300 --model Runs/007262_XmippParticlePickingAutomatic/extra/model --outputRoot Runs/007262_XmippParticlePickingAutomatic/extra/190117_02_00023_UnderDefocus0.7um_frameImage_aligned_mic --mode autoselect --thr 1[0m
+[35mFINISHED[0m: pickMicrographStep, step 23, time 2020-11-13 15:53:32.462903
+Reading coordinates from mics: 23
+[35mSTARTED[0m: pickMicrographStep, step 24, time 2020-11-13 15:53:32.492999
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00024_UnderDefocus0.9um_frameImage_aligned_mic.mrc 
+[32mxmipp_micrograph_automatic_picking -i Runs/006458_XmippProtMovieCorr/extra/190117_02_00024_UnderDefocus0.9um_frameImage_aligned_mic.mrc --particleSize 300 --model Runs/007262_XmippParticlePickingAutomatic/extra/model --outputRoot Runs/007262_XmippParticlePickingAutomatic/extra/190117_02_00024_UnderDefocus0.9um_frameImage_aligned_mic --mode autoselect --thr 1[0m
+[35mFINISHED[0m: pickMicrographStep, step 24, time 2020-11-13 15:53:35.580385
+Reading coordinates from mics: 24
+[35mSTARTED[0m: pickMicrographStep, step 25, time 2020-11-13 15:53:35.621672
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00025_UnderDefocus0.9um_frameImage_aligned_mic.mrc 
+[32mxmipp_micrograph_automatic_picking -i Runs/006458_XmippProtMovieCorr/extra/190117_02_00025_UnderDefocus0.9um_frameImage_aligned_mic.mrc --particleSize 300 --model Runs/007262_XmippParticlePickingAutomatic/extra/model --outputRoot Runs/007262_XmippParticlePickingAutomatic/extra/190117_02_00025_UnderDefocus0.9um_frameImage_aligned_mic --mode autoselect --thr 1[0m
+[35mFINISHED[0m: pickMicrographStep, step 25, time 2020-11-13 15:53:38.677725
+Reading coordinates from mics: 25
+[35mSTARTED[0m: pickMicrographStep, step 26, time 2020-11-13 15:53:38.713370
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrc 
+[32mxmipp_micrograph_automatic_picking -i Runs/006458_XmippProtMovieCorr/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrc --particleSize 300 --model Runs/007262_XmippParticlePickingAutomatic/extra/model --outputRoot Runs/007262_XmippParticlePickingAutomatic/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic --mode autoselect --thr 1[0m
+[35mFINISHED[0m: pickMicrographStep, step 26, time 2020-11-13 15:53:41.789108
+Reading coordinates from mics: 26
+[35mSTARTED[0m: pickMicrographStep, step 27, time 2020-11-13 15:53:41.822801
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00028_UnderDefocus0.9um_frameImage_aligned_mic.mrc 
+[32mxmipp_micrograph_automatic_picking -i Runs/006458_XmippProtMovieCorr/extra/190117_02_00028_UnderDefocus0.9um_frameImage_aligned_mic.mrc --particleSize 300 --model Runs/007262_XmippParticlePickingAutomatic/extra/model --outputRoot Runs/007262_XmippParticlePickingAutomatic/extra/190117_02_00028_UnderDefocus0.9um_frameImage_aligned_mic --mode autoselect --thr 1[0m
+[35mFINISHED[0m: pickMicrographStep, step 27, time 2020-11-13 15:53:44.908332
+Reading coordinates from mics: 28
+[35mSTARTED[0m: pickMicrographStep, step 28, time 2020-11-13 15:53:44.942153
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00029_UnderDefocus0.9um_frameImage_aligned_mic.mrc 
+[32mxmipp_micrograph_automatic_picking -i Runs/006458_XmippProtMovieCorr/extra/190117_02_00029_UnderDefocus0.9um_frameImage_aligned_mic.mrc --particleSize 300 --model Runs/007262_XmippParticlePickingAutomatic/extra/model --outputRoot Runs/007262_XmippParticlePickingAutomatic/extra/190117_02_00029_UnderDefocus0.9um_frameImage_aligned_mic --mode autoselect --thr 1[0m
+[35mFINISHED[0m: pickMicrographStep, step 28, time 2020-11-13 15:53:48.054476
+Reading coordinates from mics: 29
+[35mSTARTED[0m: pickMicrographStep, step 29, time 2020-11-13 15:53:48.105790
+Picking micrograph: Runs/006458_XmippProtMovieCorr/extra/190117_02_00030_UnderDefocus0.9um_frameImage_aligned_mic.mrc 
+[32mxmipp_micrograph_automatic_picking -i Runs/006458_XmippProtMovieCorr/extra/190117_02_00030_UnderDefocus0.9um_frameImage_aligned_mic.mrc --particleSize 300 --model Runs/007262_XmippParticlePickingAutomatic/extra/model --outputRoot Runs/007262_XmippParticlePickingAutomatic/extra/190117_02_00030_UnderDefocus0.9um_frameImage_aligned_mic --mode autoselect --thr 1[0m
+[35mFINISHED[0m: pickMicrographStep, step 29, time 2020-11-13 15:53:51.230245
+Reading coordinates from mics: 30
+[35mSTARTED[0m: createOutputStep, step 30, time 2020-11-13 15:53:51.285370
+[35mFINISHED[0m: createOutputStep, step 30, time 2020-11-13 15:53:51.289098
+*** Last status is finished 
+Cleaning temp folder....
+[32m------------------- PROTOCOL FINISHED[0m

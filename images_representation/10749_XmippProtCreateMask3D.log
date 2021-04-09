@@ -1,0 +1,64 @@
+[32mRUNNING PROTOCOL -----------------[0m
+Hostname: ip-172-31-13-159.eu-west-1.compute.internal
+PID: 8207
+pyworkflow: 3.0.6
+plugin: xmipp3
+currentDir: /home/scipion/ScipionUserData/projects/Example_10248_Scipion3
+workingDir: Runs/010749_XmippProtCreateMask3D
+runMode: Continue
+          MPI: 1
+      threads: 1
+ Starting at step: 1
+ Running steps 
+[35mSTARTED[0m: createMaskFromVolumeStep, step 1, time 2020-11-16 12:42:47.995875
+[32mxmipp_transform_threshold -i Runs/010450_XmippProtReconstructHighRes/extra/Iter001/volumeAvg.mrc:mrc -o Runs/010749_XmippProtCreateMask3D/mask.vol --select below 0.002000 --substitute binarize[0m
+Input File: Runs/010450_XmippProtReconstructHighRes/extra/Iter001/volumeAvg.mrc:mrc
+Output File: Runs/010749_XmippProtCreateMask3D/mask.vol
+Selection method:    below
+Threshold:           0.002
+Substitution method: binarize
+[35mFINISHED[0m: createMaskFromVolumeStep, step 1, time 2020-11-16 12:42:48.169384
+[35mSTARTED[0m: postProcessMaskStep, step 2, time 2020-11-16 12:42:48.177517
+[32mxmipp_transform_morphology -i Runs/010749_XmippProtCreateMask3D/mask.vol --binaryOperation removeSmall 50[0m
+Performing a Removing small objects
+Small size < 50
+Size=1
+Neighbourhood2D=8
+Neighbourhood3D=18
+Count=0
+Initially the image has 418806 pixels set to 1
+Finally the image has 417160 pixels set to 1
+[32mxmipp_transform_morphology -i Runs/010749_XmippProtCreateMask3D/mask.vol --binaryOperation keepBiggest[0m
+Performing a Keeping biggest component
+Size=1
+Neighbourhood2D=8
+Neighbourhood3D=18
+Count=0
+Initially the image has 417160 pixels set to 1
+Finally the image has 417160 pixels set to 1
+[32mxmipp_transform_symmetrize -i Runs/010749_XmippProtCreateMask3D/mask.vol --sym o --dont_wrap[0m
+Input File: Runs/010749_XmippProtCreateMask3D/mask.vol
+Symmetry: o
+No group: 0
+Wrap:     0
+Sum:      0
+Spline:   3
+[32mxmipp_transform_threshold -i Runs/010749_XmippProtCreateMask3D/mask.vol --select below 0.5 --substitute binarize[0m
+Input File: Runs/010749_XmippProtCreateMask3D/mask.vol
+Selection method:    below
+Threshold:           0.5
+Substitution method: binarize
+[32mxmipp_transform_morphology -i Runs/010749_XmippProtCreateMask3D/mask.vol --binaryOperation dilation --size 2[0m
+Performing a Dilation
+Size=2
+Neighbourhood2D=8
+Neighbourhood3D=18
+Count=0
+Initially the image has 417206 pixels set to 1
+Finally the image has 1.40121e+06 pixels set to 1
+[35mFINISHED[0m: postProcessMaskStep, step 2, time 2020-11-16 12:45:37.665697
+[35mSTARTED[0m: createOutputStep, step 3, time 2020-11-16 12:45:37.682644
+[35mFINISHED[0m: createOutputStep, step 3, time 2020-11-16 12:45:37.687004
+*** Last status is finished 
+Cleaning temp folder....
+[32m------------------- PROTOCOL FINISHED[0m

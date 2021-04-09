@@ -1,0 +1,743 @@
+[32mRUNNING PROTOCOL -----------------[0m
+Hostname: ip-172-31-13-159.eu-west-1.compute.internal
+PID: 7062
+pyworkflow: 3.0.6
+plugin: cistem
+plugin v: 3.0.9
+currentDir: /home/scipion/ScipionUserData/projects/Example_10248_Scipion3
+workingDir: Runs/006631_CistemProtCTFFind
+runMode: Restart
+          MPI: 1
+      threads: 4
+ Starting at step: 1
+ Running steps 
+[35mSTARTED[0m: estimateCtfStep, step 1, time 2020-11-13 15:28:22.269355
+[35mSTARTED[0m: estimateCtfStep, step 2, time 2020-11-13 15:28:22.272527
+Estimating CTF of micrograph: 1 
+[32m/home/scipion/scipion3/software/em/cistem-1.0.0-beta/ctffind    << eof > Runs/006631_CistemProtCTFFind/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic_ctf.txt
+Runs/006631_CistemProtCTFFind/tmp/mic_000001/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Runs/006631_CistemProtCTFFind/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic_ctf.mrc
+0.495000
+300.000000
+2.700000
+0.100000
+512
+30.000000
+5.000000
+5000.000000
+50000.000000
+100.000000
+no
+no
+yes
+100.000000
+no
+no
+eof
+
+[0m
+[35mSTARTED[0m: estimateCtfStep, step 3, time 2020-11-13 15:28:22.367233
+Estimating CTF of micrograph: 2 
+[32m/home/scipion/scipion3/software/em/cistem-1.0.0-beta/ctffind    << eof > Runs/006631_CistemProtCTFFind/extra/190117_02_00002_UnderDefocus0.7um_frameImage_aligned_mic_ctf.txt
+Runs/006631_CistemProtCTFFind/tmp/mic_000002/190117_02_00002_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Runs/006631_CistemProtCTFFind/extra/190117_02_00002_UnderDefocus0.7um_frameImage_aligned_mic_ctf.mrc
+0.495000
+300.000000
+2.700000
+0.100000
+512
+30.000000
+5.000000
+5000.000000
+50000.000000
+100.000000
+no
+no
+yes
+100.000000
+no
+no
+eof
+
+[0m
+Estimating CTF of micrograph: 3 
+[32m/home/scipion/scipion3/software/em/cistem-1.0.0-beta/ctffind    << eof > Runs/006631_CistemProtCTFFind/extra/190117_02_00003_UnderDefocus0.7um_frameImage_aligned_mic_ctf.txt
+Runs/006631_CistemProtCTFFind/tmp/mic_000003/190117_02_00003_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Runs/006631_CistemProtCTFFind/extra/190117_02_00003_UnderDefocus0.7um_frameImage_aligned_mic_ctf.mrc
+0.495000
+300.000000
+2.700000
+0.100000
+512
+30.000000
+5.000000
+5000.000000
+50000.000000
+100.000000
+no
+no
+yes
+100.000000
+no
+no
+eof
+
+[0m
+[35mFINISHED[0m: estimateCtfStep, step 1, time 2020-11-13 15:28:26.466069
+[35mSTARTED[0m: estimateCtfStep, step 4, time 2020-11-13 15:28:26.504936
+Estimating CTF of micrograph: 4 
+[32m/home/scipion/scipion3/software/em/cistem-1.0.0-beta/ctffind    << eof > Runs/006631_CistemProtCTFFind/extra/190117_02_00004_UnderDefocus0.7um_frameImage_aligned_mic_ctf.txt
+Runs/006631_CistemProtCTFFind/tmp/mic_000004/190117_02_00004_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Runs/006631_CistemProtCTFFind/extra/190117_02_00004_UnderDefocus0.7um_frameImage_aligned_mic_ctf.mrc
+0.495000
+300.000000
+2.700000
+0.100000
+512
+30.000000
+5.000000
+5000.000000
+50000.000000
+100.000000
+no
+no
+yes
+100.000000
+no
+no
+eof
+
+[0m
+[35mFINISHED[0m: estimateCtfStep, step 2, time 2020-11-13 15:28:26.619930
+[35mFINISHED[0m: estimateCtfStep, step 3, time 2020-11-13 15:28:26.672867
+[35mSTARTED[0m: estimateCtfStep, step 5, time 2020-11-13 15:28:27.025915
+[35mSTARTED[0m: estimateCtfStep, step 6, time 2020-11-13 15:28:27.029756
+Estimating CTF of micrograph: 5 
+[32m/home/scipion/scipion3/software/em/cistem-1.0.0-beta/ctffind    << eof > Runs/006631_CistemProtCTFFind/extra/190117_02_00005_UnderDefocus0.7um_frameImage_aligned_mic_ctf.txt
+Runs/006631_CistemProtCTFFind/tmp/mic_000005/190117_02_00005_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Runs/006631_CistemProtCTFFind/extra/190117_02_00005_UnderDefocus0.7um_frameImage_aligned_mic_ctf.mrc
+0.495000
+300.000000
+2.700000
+0.100000
+512
+30.000000
+5.000000
+5000.000000
+50000.000000
+100.000000
+no
+no
+yes
+100.000000
+no
+no
+eof
+
+[0m
+Estimating CTF of micrograph: 6 
+[32m/home/scipion/scipion3/software/em/cistem-1.0.0-beta/ctffind    << eof > Runs/006631_CistemProtCTFFind/extra/190117_02_00006_UnderDefocus0.7um_frameImage_aligned_mic_ctf.txt
+Runs/006631_CistemProtCTFFind/tmp/mic_000006/190117_02_00006_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Runs/006631_CistemProtCTFFind/extra/190117_02_00006_UnderDefocus0.7um_frameImage_aligned_mic_ctf.mrc
+0.495000
+300.000000
+2.700000
+0.100000
+512
+30.000000
+5.000000
+5000.000000
+50000.000000
+100.000000
+no
+no
+yes
+100.000000
+no
+no
+eof
+
+[0m
+[35mFINISHED[0m: estimateCtfStep, step 4, time 2020-11-13 15:28:30.201662
+[35mSTARTED[0m: estimateCtfStep, step 7, time 2020-11-13 15:28:30.683884
+Estimating CTF of micrograph: 7 
+[32m/home/scipion/scipion3/software/em/cistem-1.0.0-beta/ctffind    << eof > Runs/006631_CistemProtCTFFind/extra/190117_02_00007_UnderDefocus0.7um_frameImage_aligned_mic_ctf.txt
+Runs/006631_CistemProtCTFFind/tmp/mic_000007/190117_02_00007_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Runs/006631_CistemProtCTFFind/extra/190117_02_00007_UnderDefocus0.7um_frameImage_aligned_mic_ctf.mrc
+0.495000
+300.000000
+2.700000
+0.100000
+512
+30.000000
+5.000000
+5000.000000
+50000.000000
+100.000000
+no
+no
+yes
+100.000000
+no
+no
+eof
+
+[0m
+[35mFINISHED[0m: estimateCtfStep, step 5, time 2020-11-13 15:28:30.867704
+[35mSTARTED[0m: estimateCtfStep, step 8, time 2020-11-13 15:28:31.207750
+Estimating CTF of micrograph: 8 
+[32m/home/scipion/scipion3/software/em/cistem-1.0.0-beta/ctffind    << eof > Runs/006631_CistemProtCTFFind/extra/190117_02_00008_UnderDefocus0.7um_frameImage_aligned_mic_ctf.txt
+Runs/006631_CistemProtCTFFind/tmp/mic_000008/190117_02_00008_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Runs/006631_CistemProtCTFFind/extra/190117_02_00008_UnderDefocus0.7um_frameImage_aligned_mic_ctf.mrc
+0.495000
+300.000000
+2.700000
+0.100000
+512
+30.000000
+5.000000
+5000.000000
+50000.000000
+100.000000
+no
+no
+yes
+100.000000
+no
+no
+eof
+
+[0m
+[35mFINISHED[0m: estimateCtfStep, step 6, time 2020-11-13 15:28:31.354335
+[35mSTARTED[0m: estimateCtfStep, step 9, time 2020-11-13 15:28:31.740952
+Estimating CTF of micrograph: 9 
+[32m/home/scipion/scipion3/software/em/cistem-1.0.0-beta/ctffind    << eof > Runs/006631_CistemProtCTFFind/extra/190117_02_00009_UnderDefocus0.7um_frameImage_aligned_mic_ctf.txt
+Runs/006631_CistemProtCTFFind/tmp/mic_000009/190117_02_00009_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Runs/006631_CistemProtCTFFind/extra/190117_02_00009_UnderDefocus0.7um_frameImage_aligned_mic_ctf.mrc
+0.495000
+300.000000
+2.700000
+0.100000
+512
+30.000000
+5.000000
+5000.000000
+50000.000000
+100.000000
+no
+no
+yes
+100.000000
+no
+no
+eof
+
+[0m
+[35mFINISHED[0m: estimateCtfStep, step 7, time 2020-11-13 15:28:34.522918
+[35mSTARTED[0m: estimateCtfStep, step 10, time 2020-11-13 15:28:34.780514
+Estimating CTF of micrograph: 10 
+[32m/home/scipion/scipion3/software/em/cistem-1.0.0-beta/ctffind    << eof > Runs/006631_CistemProtCTFFind/extra/190117_02_00010_UnderDefocus0.7um_frameImage_aligned_mic_ctf.txt
+Runs/006631_CistemProtCTFFind/tmp/mic_000010/190117_02_00010_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Runs/006631_CistemProtCTFFind/extra/190117_02_00010_UnderDefocus0.7um_frameImage_aligned_mic_ctf.mrc
+0.495000
+300.000000
+2.700000
+0.100000
+512
+30.000000
+5.000000
+5000.000000
+50000.000000
+100.000000
+no
+no
+yes
+100.000000
+no
+no
+eof
+
+[0m
+[35mFINISHED[0m: estimateCtfStep, step 8, time 2020-11-13 15:28:34.904956
+[35mFINISHED[0m: estimateCtfStep, step 9, time 2020-11-13 15:28:35.196996
+[35mSTARTED[0m: estimateCtfStep, step 11, time 2020-11-13 15:28:35.308283
+[35mSTARTED[0m: estimateCtfStep, step 12, time 2020-11-13 15:28:35.313299
+Estimating CTF of micrograph: 11 
+[32m/home/scipion/scipion3/software/em/cistem-1.0.0-beta/ctffind    << eof > Runs/006631_CistemProtCTFFind/extra/190117_02_00011_UnderDefocus0.7um_frameImage_aligned_mic_ctf.txt
+Runs/006631_CistemProtCTFFind/tmp/mic_000011/190117_02_00011_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Runs/006631_CistemProtCTFFind/extra/190117_02_00011_UnderDefocus0.7um_frameImage_aligned_mic_ctf.mrc
+0.495000
+300.000000
+2.700000
+0.100000
+512
+30.000000
+5.000000
+5000.000000
+50000.000000
+100.000000
+no
+no
+yes
+100.000000
+no
+no
+eof
+
+[0m
+Estimating CTF of micrograph: 12 
+[32m/home/scipion/scipion3/software/em/cistem-1.0.0-beta/ctffind    << eof > Runs/006631_CistemProtCTFFind/extra/190117_02_00012_UnderDefocus0.7um_frameImage_aligned_mic_ctf.txt
+Runs/006631_CistemProtCTFFind/tmp/mic_000012/190117_02_00012_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Runs/006631_CistemProtCTFFind/extra/190117_02_00012_UnderDefocus0.7um_frameImage_aligned_mic_ctf.mrc
+0.495000
+300.000000
+2.700000
+0.100000
+512
+30.000000
+5.000000
+5000.000000
+50000.000000
+100.000000
+no
+no
+yes
+100.000000
+no
+no
+eof
+
+[0m
+[35mFINISHED[0m: estimateCtfStep, step 10, time 2020-11-13 15:28:38.569422
+[35mSTARTED[0m: estimateCtfStep, step 13, time 2020-11-13 15:28:38.978981
+Estimating CTF of micrograph: 13 
+[32m/home/scipion/scipion3/software/em/cistem-1.0.0-beta/ctffind    << eof > Runs/006631_CistemProtCTFFind/extra/190117_02_00013_UnderDefocus0.7um_frameImage_aligned_mic_ctf.txt
+Runs/006631_CistemProtCTFFind/tmp/mic_000013/190117_02_00013_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Runs/006631_CistemProtCTFFind/extra/190117_02_00013_UnderDefocus0.7um_frameImage_aligned_mic_ctf.mrc
+0.495000
+300.000000
+2.700000
+0.100000
+512
+30.000000
+5.000000
+5000.000000
+50000.000000
+100.000000
+no
+no
+yes
+100.000000
+no
+no
+eof
+
+[0m
+[35mFINISHED[0m: estimateCtfStep, step 11, time 2020-11-13 15:28:39.314385
+[35mSTARTED[0m: estimateCtfStep, step 14, time 2020-11-13 15:28:39.505700
+Estimating CTF of micrograph: 14 
+[32m/home/scipion/scipion3/software/em/cistem-1.0.0-beta/ctffind    << eof > Runs/006631_CistemProtCTFFind/extra/190117_02_00014_UnderDefocus0.7um_frameImage_aligned_mic_ctf.txt
+Runs/006631_CistemProtCTFFind/tmp/mic_000014/190117_02_00014_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Runs/006631_CistemProtCTFFind/extra/190117_02_00014_UnderDefocus0.7um_frameImage_aligned_mic_ctf.mrc
+0.495000
+300.000000
+2.700000
+0.100000
+512
+30.000000
+5.000000
+5000.000000
+50000.000000
+100.000000
+no
+no
+yes
+100.000000
+no
+no
+eof
+
+[0m
+[35mFINISHED[0m: estimateCtfStep, step 12, time 2020-11-13 15:28:39.840403
+[35mSTARTED[0m: estimateCtfStep, step 15, time 2020-11-13 15:28:40.019745
+Estimating CTF of micrograph: 15 
+[32m/home/scipion/scipion3/software/em/cistem-1.0.0-beta/ctffind    << eof > Runs/006631_CistemProtCTFFind/extra/190117_02_00015_UnderDefocus0.7um_frameImage_aligned_mic_ctf.txt
+Runs/006631_CistemProtCTFFind/tmp/mic_000015/190117_02_00015_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Runs/006631_CistemProtCTFFind/extra/190117_02_00015_UnderDefocus0.7um_frameImage_aligned_mic_ctf.mrc
+0.495000
+300.000000
+2.700000
+0.100000
+512
+30.000000
+5.000000
+5000.000000
+50000.000000
+100.000000
+no
+no
+yes
+100.000000
+no
+no
+eof
+
+[0m
+[35mFINISHED[0m: estimateCtfStep, step 13, time 2020-11-13 15:28:42.767127
+[35mSTARTED[0m: estimateCtfStep, step 16, time 2020-11-13 15:28:43.057963
+Estimating CTF of micrograph: 16 
+[32m/home/scipion/scipion3/software/em/cistem-1.0.0-beta/ctffind    << eof > Runs/006631_CistemProtCTFFind/extra/190117_02_00016_UnderDefocus0.7um_frameImage_aligned_mic_ctf.txt
+Runs/006631_CistemProtCTFFind/tmp/mic_000016/190117_02_00016_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Runs/006631_CistemProtCTFFind/extra/190117_02_00016_UnderDefocus0.7um_frameImage_aligned_mic_ctf.mrc
+0.495000
+300.000000
+2.700000
+0.100000
+512
+30.000000
+5.000000
+5000.000000
+50000.000000
+100.000000
+no
+no
+yes
+100.000000
+no
+no
+eof
+
+[0m
+[35mFINISHED[0m: estimateCtfStep, step 14, time 2020-11-13 15:28:43.172592
+[35mSTARTED[0m: estimateCtfStep, step 17, time 2020-11-13 15:28:43.571778
+Estimating CTF of micrograph: 17 
+[32m/home/scipion/scipion3/software/em/cistem-1.0.0-beta/ctffind    << eof > Runs/006631_CistemProtCTFFind/extra/190117_02_00017_UnderDefocus0.7um_frameImage_aligned_mic_ctf.txt
+Runs/006631_CistemProtCTFFind/tmp/mic_000017/190117_02_00017_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Runs/006631_CistemProtCTFFind/extra/190117_02_00017_UnderDefocus0.7um_frameImage_aligned_mic_ctf.mrc
+0.495000
+300.000000
+2.700000
+0.100000
+512
+30.000000
+5.000000
+5000.000000
+50000.000000
+100.000000
+no
+no
+yes
+100.000000
+no
+no
+eof
+
+[0m
+[35mFINISHED[0m: estimateCtfStep, step 15, time 2020-11-13 15:28:43.865083
+[35mSTARTED[0m: estimateCtfStep, step 18, time 2020-11-13 15:28:44.103489
+Estimating CTF of micrograph: 18 
+[32m/home/scipion/scipion3/software/em/cistem-1.0.0-beta/ctffind    << eof > Runs/006631_CistemProtCTFFind/extra/190117_02_00018_UnderDefocus0.7um_frameImage_aligned_mic_ctf.txt
+Runs/006631_CistemProtCTFFind/tmp/mic_000018/190117_02_00018_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Runs/006631_CistemProtCTFFind/extra/190117_02_00018_UnderDefocus0.7um_frameImage_aligned_mic_ctf.mrc
+0.495000
+300.000000
+2.700000
+0.100000
+512
+30.000000
+5.000000
+5000.000000
+50000.000000
+100.000000
+no
+no
+yes
+100.000000
+no
+no
+eof
+
+[0m
+[35mFINISHED[0m: estimateCtfStep, step 16, time 2020-11-13 15:28:46.525164
+[35mSTARTED[0m: estimateCtfStep, step 19, time 2020-11-13 15:28:46.619716
+Estimating CTF of micrograph: 19 
+[32m/home/scipion/scipion3/software/em/cistem-1.0.0-beta/ctffind    << eof > Runs/006631_CistemProtCTFFind/extra/190117_02_00019_UnderDefocus0.7um_frameImage_aligned_mic_ctf.txt
+Runs/006631_CistemProtCTFFind/tmp/mic_000019/190117_02_00019_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Runs/006631_CistemProtCTFFind/extra/190117_02_00019_UnderDefocus0.7um_frameImage_aligned_mic_ctf.mrc
+0.495000
+300.000000
+2.700000
+0.100000
+512
+30.000000
+5.000000
+5000.000000
+50000.000000
+100.000000
+no
+no
+yes
+100.000000
+no
+no
+eof
+
+[0m
+[35mFINISHED[0m: estimateCtfStep, step 17, time 2020-11-13 15:28:47.182088
+[35mSTARTED[0m: estimateCtfStep, step 20, time 2020-11-13 15:28:47.213726
+Estimating CTF of micrograph: 20 
+[32m/home/scipion/scipion3/software/em/cistem-1.0.0-beta/ctffind    << eof > Runs/006631_CistemProtCTFFind/extra/190117_02_00020_UnderDefocus0.7um_frameImage_aligned_mic_ctf.txt
+Runs/006631_CistemProtCTFFind/tmp/mic_000020/190117_02_00020_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Runs/006631_CistemProtCTFFind/extra/190117_02_00020_UnderDefocus0.7um_frameImage_aligned_mic_ctf.mrc
+0.495000
+300.000000
+2.700000
+0.100000
+512
+30.000000
+5.000000
+5000.000000
+50000.000000
+100.000000
+no
+no
+yes
+100.000000
+no
+no
+eof
+
+[0m
+[35mFINISHED[0m: estimateCtfStep, step 18, time 2020-11-13 15:28:47.879858
+[35mSTARTED[0m: estimateCtfStep, step 22, time 2020-11-13 15:28:48.238484
+Estimating CTF of micrograph: 21 
+[32m/home/scipion/scipion3/software/em/cistem-1.0.0-beta/ctffind    << eof > Runs/006631_CistemProtCTFFind/extra/190117_02_00021_UnderDefocus0.7um_frameImage_aligned_mic_ctf.txt
+Runs/006631_CistemProtCTFFind/tmp/mic_000021/190117_02_00021_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Runs/006631_CistemProtCTFFind/extra/190117_02_00021_UnderDefocus0.7um_frameImage_aligned_mic_ctf.mrc
+0.495000
+300.000000
+2.700000
+0.100000
+512
+30.000000
+5.000000
+5000.000000
+50000.000000
+100.000000
+no
+no
+yes
+100.000000
+no
+no
+eof
+
+[0m
+[35mFINISHED[0m: estimateCtfStep, step 19, time 2020-11-13 15:28:50.753119
+[35mFINISHED[0m: estimateCtfStep, step 20, time 2020-11-13 15:28:51.187260
+[35mFINISHED[0m: estimateCtfStep, step 22, time 2020-11-13 15:28:51.681878
+[35mSTARTED[0m: estimateCtfStep, step 23, time 2020-11-13 15:30:20.604756
+Estimating CTF of micrograph: 23 
+[32m/home/scipion/scipion3/software/em/cistem-1.0.0-beta/ctffind    << eof > Runs/006631_CistemProtCTFFind/extra/190117_02_00023_UnderDefocus0.7um_frameImage_aligned_mic_ctf.txt
+Runs/006631_CistemProtCTFFind/tmp/mic_000023/190117_02_00023_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Runs/006631_CistemProtCTFFind/extra/190117_02_00023_UnderDefocus0.7um_frameImage_aligned_mic_ctf.mrc
+0.495000
+300.000000
+2.700000
+0.100000
+512
+30.000000
+5.000000
+5000.000000
+50000.000000
+100.000000
+no
+no
+yes
+100.000000
+no
+no
+eof
+
+[0m
+[35mFINISHED[0m: estimateCtfStep, step 23, time 2020-11-13 15:30:24.053848
+[35mSTARTED[0m: estimateCtfStep, step 24, time 2020-11-13 15:31:05.794848
+Estimating CTF of micrograph: 24 
+[32m/home/scipion/scipion3/software/em/cistem-1.0.0-beta/ctffind    << eof > Runs/006631_CistemProtCTFFind/extra/190117_02_00024_UnderDefocus0.9um_frameImage_aligned_mic_ctf.txt
+Runs/006631_CistemProtCTFFind/tmp/mic_000024/190117_02_00024_UnderDefocus0.9um_frameImage_aligned_mic.mrc
+Runs/006631_CistemProtCTFFind/extra/190117_02_00024_UnderDefocus0.9um_frameImage_aligned_mic_ctf.mrc
+0.495000
+300.000000
+2.700000
+0.100000
+512
+30.000000
+5.000000
+5000.000000
+50000.000000
+100.000000
+no
+no
+yes
+100.000000
+no
+no
+eof
+
+[0m
+[35mFINISHED[0m: estimateCtfStep, step 24, time 2020-11-13 15:31:08.463107
+[35mSTARTED[0m: estimateCtfStep, step 25, time 2020-11-13 15:31:47.961571
+Estimating CTF of micrograph: 25 
+[32m/home/scipion/scipion3/software/em/cistem-1.0.0-beta/ctffind    << eof > Runs/006631_CistemProtCTFFind/extra/190117_02_00025_UnderDefocus0.9um_frameImage_aligned_mic_ctf.txt
+Runs/006631_CistemProtCTFFind/tmp/mic_000025/190117_02_00025_UnderDefocus0.9um_frameImage_aligned_mic.mrc
+Runs/006631_CistemProtCTFFind/extra/190117_02_00025_UnderDefocus0.9um_frameImage_aligned_mic_ctf.mrc
+0.495000
+300.000000
+2.700000
+0.100000
+512
+30.000000
+5.000000
+5000.000000
+50000.000000
+100.000000
+no
+no
+yes
+100.000000
+no
+no
+eof
+
+[0m
+[35mFINISHED[0m: estimateCtfStep, step 25, time 2020-11-13 15:31:50.555041
+[35mSTARTED[0m: estimateCtfStep, step 26, time 2020-11-13 15:32:33.139779
+Estimating CTF of micrograph: 26 
+[32m/home/scipion/scipion3/software/em/cistem-1.0.0-beta/ctffind    << eof > Runs/006631_CistemProtCTFFind/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic_ctf.txt
+Runs/006631_CistemProtCTFFind/tmp/mic_000026/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrc
+Runs/006631_CistemProtCTFFind/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic_ctf.mrc
+0.495000
+300.000000
+2.700000
+0.100000
+512
+30.000000
+5.000000
+5000.000000
+50000.000000
+100.000000
+no
+no
+yes
+100.000000
+no
+no
+eof
+
+[0m
+[35mFINISHED[0m: estimateCtfStep, step 26, time 2020-11-13 15:32:36.113732
+[35mSTARTED[0m: estimateCtfStep, step 27, time 2020-11-13 15:33:18.334880
+Estimating CTF of micrograph: 27 
+[32m/home/scipion/scipion3/software/em/cistem-1.0.0-beta/ctffind    << eof > Runs/006631_CistemProtCTFFind/extra/190117_02_00027_UnderDefocus0.9um_frameImage_aligned_mic_ctf.txt
+Runs/006631_CistemProtCTFFind/tmp/mic_000027/190117_02_00027_UnderDefocus0.9um_frameImage_aligned_mic.mrc
+Runs/006631_CistemProtCTFFind/extra/190117_02_00027_UnderDefocus0.9um_frameImage_aligned_mic_ctf.mrc
+0.495000
+300.000000
+2.700000
+0.100000
+512
+30.000000
+5.000000
+5000.000000
+50000.000000
+100.000000
+no
+no
+yes
+100.000000
+no
+no
+eof
+
+[0m
+[35mFINISHED[0m: estimateCtfStep, step 27, time 2020-11-13 15:33:21.597952
+[35mSTARTED[0m: estimateCtfStep, step 28, time 2020-11-13 15:34:03.522487
+Estimating CTF of micrograph: 28 
+[32m/home/scipion/scipion3/software/em/cistem-1.0.0-beta/ctffind    << eof > Runs/006631_CistemProtCTFFind/extra/190117_02_00028_UnderDefocus0.9um_frameImage_aligned_mic_ctf.txt
+Runs/006631_CistemProtCTFFind/tmp/mic_000028/190117_02_00028_UnderDefocus0.9um_frameImage_aligned_mic.mrc
+Runs/006631_CistemProtCTFFind/extra/190117_02_00028_UnderDefocus0.9um_frameImage_aligned_mic_ctf.mrc
+0.495000
+300.000000
+2.700000
+0.100000
+512
+30.000000
+5.000000
+5000.000000
+50000.000000
+100.000000
+no
+no
+yes
+100.000000
+no
+no
+eof
+
+[0m
+[35mFINISHED[0m: estimateCtfStep, step 28, time 2020-11-13 15:34:05.981897
+[35mSTARTED[0m: estimateCtfStep, step 29, time 2020-11-13 15:34:48.711737
+Estimating CTF of micrograph: 29 
+[32m/home/scipion/scipion3/software/em/cistem-1.0.0-beta/ctffind    << eof > Runs/006631_CistemProtCTFFind/extra/190117_02_00029_UnderDefocus0.9um_frameImage_aligned_mic_ctf.txt
+Runs/006631_CistemProtCTFFind/tmp/mic_000029/190117_02_00029_UnderDefocus0.9um_frameImage_aligned_mic.mrc
+Runs/006631_CistemProtCTFFind/extra/190117_02_00029_UnderDefocus0.9um_frameImage_aligned_mic_ctf.mrc
+0.495000
+300.000000
+2.700000
+0.100000
+512
+30.000000
+5.000000
+5000.000000
+50000.000000
+100.000000
+no
+no
+yes
+100.000000
+no
+no
+eof
+
+[0m
+[35mFINISHED[0m: estimateCtfStep, step 29, time 2020-11-13 15:34:51.146078
+[35mSTARTED[0m: estimateCtfStep, step 30, time 2020-11-13 15:35:30.915301
+Estimating CTF of micrograph: 30 
+[32m/home/scipion/scipion3/software/em/cistem-1.0.0-beta/ctffind    << eof > Runs/006631_CistemProtCTFFind/extra/190117_02_00030_UnderDefocus0.9um_frameImage_aligned_mic_ctf.txt
+Runs/006631_CistemProtCTFFind/tmp/mic_000030/190117_02_00030_UnderDefocus0.9um_frameImage_aligned_mic.mrc
+Runs/006631_CistemProtCTFFind/extra/190117_02_00030_UnderDefocus0.9um_frameImage_aligned_mic_ctf.mrc
+0.495000
+300.000000
+2.700000
+0.100000
+512
+30.000000
+5.000000
+5000.000000
+50000.000000
+100.000000
+no
+no
+yes
+100.000000
+no
+no
+eof
+
+[0m
+[35mFINISHED[0m: estimateCtfStep, step 30, time 2020-11-13 15:35:33.404572
+[35mSTARTED[0m: createOutputStep, step 21, time 2020-11-13 15:35:33.952488
+[35mFINISHED[0m: createOutputStep, step 21, time 2020-11-13 15:35:33.957943
+*** Last status is finished 
+Cleaning temp folder....
+[32m------------------- PROTOCOL FINISHED[0m
