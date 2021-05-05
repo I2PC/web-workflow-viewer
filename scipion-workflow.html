@@ -30,13 +30,28 @@
         }
 
         .qtip {
-            max-width: 500px;
+            max-width: 80%;
+            position: relative;
+        }
+
+        .qtip-tip {
+            display: none !important;
         }
 
         .qtip-content{
             overflow-x: scroll;
             overflow-y: scroll;
             white-space: nowrap;
+            height: 70vh;
+        }
+
+        .qtip-bootstrap {
+            -webkit-box-shadow: none;
+            -moz-box-shadow: none;
+            box-shadow: none;
+            -moz-border-radius: 0;
+            -webkit-border-radius: 0;
+            border-radius: 0;
         }
 
     </style>
@@ -58,6 +73,7 @@
                             $.each(value, function(outputKey, outputValue){
                                 formattedStr += '<tr><td> -' + outputValue['outputName'] + ':</td><td>';
                                 var outputItems = outputValue['outputItems']
+                                var nimg = 0
                                 $.each(outputItems, function(itemKey, itemValue) {
                                     if ('item_representation' in itemValue) {
                                         var path = itemValue['item_representation']
@@ -65,6 +81,10 @@
 
                                         if (path.indexOf('jpg')!==-1){
                                             formattedStr += '<img src=' + "images_representation/" + path + ' width="200" height="200" style="margin: 0px 0px 10px 5px">'
+                                            nimg = nimg + 1;
+                                            if (nimg % 5 == 0) {
+                                                formattedStr += '<br>';
+                                            }
                                         }
                                         else { // is a folder containing images inside
                                             var folder = 'images_representation/' + path + '/';
@@ -73,9 +93,13 @@
                                                 url : folder,
                                                 async: false,
                                                 success: function (images) {
-                                                    $(images).find("a").attr("href", function (i, image) {
+                                                    $(images).find("a").attr("href", function (nimg, image) {
                                                         if(image.match(/\.(jpe?g)$/) ) {
                                                             formattedStr += '<img src="' + folder + image + '" width="200" height="200" style="margin: 0px 0px 10px 5px">'
+                                                        }
+                                                        nimg = nimg + 1;
+                                                        if (nimg % 5 == 0) {
+                                                            formattedStr += '<br>';
                                                         }
                                                     })
                                                 }
@@ -159,11 +183,23 @@
               }
             });
 
+            var currentId;
             // just use the regular qtip api but on cy elements
             cy.nodes().qtip({
                 content: {
-                    text: function(){ return this.data().content},
-                    title: function(){return this.data().name}
+                    text: function(){currentId = this.data().id;return this.data().content},
+                    title: {
+                        text: function(){
+                            var title;
+                            cy.nodes().forEach(function(node) {
+                                if (node.data().id === currentId) {
+                                    title = node.data().name
+                                }
+                            });
+                            return title
+                        },
+                        button: true
+                    }
                 },
                 position: {
                     my: 'bottom center',

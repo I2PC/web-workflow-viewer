@@ -15,7 +15,7 @@
 
 <body>
     <div class="containr">
-        <h1>Scipion workflow viewer</h1>
+        <h1>CryoEM workflow viewer</h1>
         <div class="view_mode_selector">
             <p>Select view mode:</p>
             <select name="view-mode" id="view-mode" onchange="options[selectedIndex].value&&self.location.reload()">
@@ -27,6 +27,9 @@
         <scipion-workflow src="workflow.json"></scipion-workflow>
         <!---->
     </div>
+    <footer>
+        <a>Powered by</a><img alt="scipion logo" src="img/scipion_logo.gif">
+    </footer>
 </body>
 
 </html>

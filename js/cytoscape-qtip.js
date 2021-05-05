@@ -198,7 +198,7 @@ SOFTWARE.
       opts.position = opts.position || {};
       opts.position.container = opts.position.container || $( document.body );
       opts.position.viewport = opts.position.viewport || $( document.body );
-      opts.position.target = [0, 0];
+      //opts.position.target = [0, 0];
       opts.position.my = opts.position.my || 'top center';
       opts.position.at = opts.position.at || 'bottom center';
 
@@ -280,7 +280,8 @@ SOFTWARE.
         'visibility': 'hidden'
       });
 
-      qtip.api.set('position.target', qtip.$domEle);
+      //qtip.api.set('position.target', qtip.$domEle);
+      qtip.api.set('position.target', [window.innerWidth/10, window.innerHeight/5])
     }
 
     $$('collection', 'qtip', function( passedOpts ){

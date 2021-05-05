@@ -9,5 +9,22 @@
 
 .view_mode_selector {
     position:relative;
-    text-align:right;
+}
+
+h1 {
+    text-align:center;
+}
+
+footer {
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+}
+
+footer a {
+    font-size: small;
+}
+
+footer img {
+    height: 25px;
 }
