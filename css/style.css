@@ -9,6 +9,7 @@
 
 .view_mode_selector {
     position:relative;
+    text-align: right;
 }
 
 h1 {
