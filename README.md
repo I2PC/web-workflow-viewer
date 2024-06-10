@@ -23,7 +23,7 @@ To use the web component we need to:
 To view the demo, get inside this repo's dir and serve index.html via http:
 ```
 $ cd web-workflow-viewer
-$ python -m SimpleHTTPServer 8009
+$ python -m http.server 8009
 ```
 Open file on http://localhost:8009 on your browser, you should see something like this:
 ![viewer-demo](viewer_demo.png)
