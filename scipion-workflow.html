@@ -54,6 +54,16 @@
             border-radius: 0;
         }
 
+        .images {
+            display: none;
+            margin-top: 10px;
+        }
+        .toggle-icon {
+            cursor: pointer;
+            font-size: 16px;
+            user-select: none;
+        }
+
     </style>
 
     <script>
@@ -71,7 +81,7 @@
                         if (key === 'output') { // images
                             formattedStr += '<tr><td><b>' + 'output' + ':</b></td><td></td></tr>'
                             $.each(value, function(outputKey, outputValue){
-                                formattedStr += '<tr><td> -' + outputValue['outputName'] + ':</td><td>';
+                                formattedStr += '<tr><td class="toggle-icon" onclick="toggleImages(' + "'" + outputValue['outputName'] + "'" + ', this)"> ▼ -' + outputValue['outputName'] + ':</td><td class="images" id="' + outputValue['outputName'] + '"> ';
                                 var outputItems = outputValue['outputItems']
                                 var nimg = 0
                                 $.each(outputItems, function(itemKey, itemValue) {
@@ -289,6 +299,20 @@
 
                 });
                 paintGraph(workflowDiv, nodeList, edgeList)
+        };
+
+        function toggleImages(id, element) {
+            var imgRow = document.getElementById(id);
+            var icon = element;
+            var currentHtml = icon.innerHTML;
+
+            if (imgRow.style.display === 'none' || imgRow.style.display === '') {
+                imgRow.style.display = 'table-row';
+                icon.innerHTML = currentHtml.replace("▼", "▲");
+            } else {
+                imgRow.style.display = 'none';
+                icon.innerHTML = currentHtml.replace("▲", "▼");
+            }
         };
 
         class ScipionWorkflow extends HTMLElement {
