@@ -270,7 +270,7 @@
                         var protID = protocol['object.id'];
                         if (Array.isArray(value)){
                             $.each(value, function(index, arrayValue){
-                                if (typeof(arrayValue) === 'string' && regex.test(arrayValue) && key !== 'pluginVersion'){
+                                if (typeof(arrayValue) === 'string' && regex.test(arrayValue) && key !== 'pluginVersion' && key !== 'pluginBinaryVersion'){
                                     edgeList.push({ data: {
                                                         source: arrayValue.split('.')[0],
                                                         target: protID
@@ -280,7 +280,7 @@
                                 }
 
                             })
-                        }else if (typeof(value) === 'string' && regex.test(value) && key !== 'pluginVersion'){
+                        }else if (typeof(value) === 'string' && regex.test(value) && key !== 'pluginVersion' && key !== 'pluginBinaryVersion'){
                             edgeList.push({ data: {
                                                 source: value.split('.')[0],
                                                 target: protID
