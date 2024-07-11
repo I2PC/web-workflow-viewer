@@ -90,7 +90,7 @@
                                         path = path.substring(path.lastIndexOf("/") + 1, path.length)
 
                                         if (path.indexOf('jpg')!==-1){
-                                            formattedStr += '<img src=' + "images_representation/" + path + ' width="200" height="200" style="margin: 0px 0px 10px 5px">'
+                                            formattedStr += '<img src=' + "images_representation/" + path + ' width="100" height="100" style="margin: 0px 0px 10px 5px">'
                                             nimg = nimg + 1;
                                             if (nimg % 5 == 0) {
                                                 formattedStr += '<br>';
@@ -105,7 +105,7 @@
                                                 success: function (images) {
                                                     $(images).find("a").attr("href", function (nimg, image) {
                                                         if(image.match(/\.(jpe?g)$/) ) {
-                                                            formattedStr += '<img src="' + folder + image + '" width="200" height="200" style="margin: 0px 0px 10px 5px">'
+                                                            formattedStr += '<img src="' + folder + image + '" width="100" height="100" style="margin: 0px 0px 10px 5px">'
                                                         }
                                                         nimg = nimg + 1;
                                                         if (nimg % 5 == 0) {
