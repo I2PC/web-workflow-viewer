@@ -258,6 +258,9 @@
                         color = protocol['labelColor'];
                     }
 
+                    // if there is no object.label for this protocol, use the object.className instead
+                    var name = protocol['object.label'] && protocol['object.label'].trim() !== '' ? protocol['object.label'] : protocol['object.className'];
+
                     nodeList.push({ data: {
                                             id: protocol['object.id'],
                                             name: protocol['object.label'],
