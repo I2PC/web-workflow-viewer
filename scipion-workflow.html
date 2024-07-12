@@ -104,6 +104,15 @@
                                                 async: false,
                                                 success: function (images) {
                                                     $(images).find("a").attr("href", function (nimg, image) {
+                                                        if (image.indexOf('slicesX_0000') !== -1) {
+                                                            formattedStr += '<b>Slices X axis:</b>' + '<br><br>';
+                                                        }
+                                                        if (image.indexOf('slicesY_0000') !== -1) {
+                                                            formattedStr += '<hr>' + '<b>Slices Y axis:</b>' + '<br><br>';
+                                                        }
+                                                        if (image.indexOf('slicesZ_0000') !== -1) {
+                                                            formattedStr += '<hr>' + '<b>Slices Z axis:</b>' + '<br><br>';
+                                                        }
                                                         if(image.match(/\.(jpe?g)$/) ) {
                                                             formattedStr += '<img src="' + folder + image + '" width="100" height="100" style="margin: 0px 0px 10px 5px">'
                                                         }
