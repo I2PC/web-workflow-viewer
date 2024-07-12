@@ -29,3 +29,9 @@ footer a {
 footer img {
     height: 25px;
 }
+
+.zoom:hover {
+  -ms-transform: scale(4); /* IE 9 */
+  -webkit-transform: scale(4); /* Safari 3-8 */
+  transform: scale(4);
+}
