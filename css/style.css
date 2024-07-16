@@ -35,3 +35,25 @@ footer img {
   -webkit-transform: scale(4); /* Safari 3-8 */
   transform: scale(4);
 }
+
+.legend {
+    list-style-type: none;
+    padding: 0;
+}
+
+.legend_square {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.legend_item_square {
+    margin: 10px 0;
+}
+
+.legend_label {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+}
