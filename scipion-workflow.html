@@ -259,12 +259,14 @@
                     ];
                 var edgeList = [];
                 var regex = /^(\d+)\./;
+                const labels = {no_label: '#EEEEEE'};
 
                 $.each(data, function(index, protocol){
                     var color = '#EEEEEE'
 
-                    if (protocol['labelColor'] != undefined) {
-                        color = protocol['labelColor'];
+                    if (protocol['labelColor'] != undefined && protocol['labelColor'].length > 0) {
+                        color = protocol['labelColor'][0];
+                        labels[protocol['label'][0]] = color;
                     }
 
                     // if there is no object.label for this protocol, use the object.className instead
@@ -272,7 +274,7 @@
 
                     nodeList.push({ data: {
                                             id: protocol['object.id'],
-                                            name: protocol['object.label'],
+                                            name: name,
                                             content: getFormattedProtocolStr(protocol, viewMode),
                                             color: color
                     }
@@ -310,7 +312,10 @@
                     }
 
                 });
-                paintGraph(workflowDiv, nodeList, edgeList)
+                paintGraph(workflowDiv, nodeList, edgeList);
+                if (Object.keys(labels).length > 1) {
+                    paintLabels(labels);
+                }
         };
 
         function toggleImages(id, element) {
@@ -325,6 +330,57 @@
                 imgRow.style.display = 'none';
                 icon.innerHTML = currentHtml.replace("▲", "▼");
             }
+        };
+
+        function paintLabels(labels) {
+
+            // Helper function to convert rgb to hex
+            function rgbToHex(rgb) {
+                const result = rgb.match(/^rgb\((\d+),\s*(\d+),\s*(\d+)\)$/);
+                if (!result) return null;
+                const r = parseInt(result[1], 10);
+                const g = parseInt(result[2], 10);
+                const b = parseInt(result[3], 10);
+                const hex = (r << 16) | (g << 8) | b;
+                return '#' + hex.toString(16).padStart(6, '0').toUpperCase();
+            }
+
+            // Helper function to check if a div with the same background color exists
+            function colorExists(color) {
+                const divs = legend.querySelectorAll('.legend_square');
+                for (const div of divs) {
+                    const divColor = getComputedStyle(div).backgroundColor;
+                    if (rgbToHex(divColor) === color) {
+                        return true;
+                    }
+                }
+                return false;
+            }
+
+            const legend = document.getElementById('legend');
+            const b = document.createElement('b');
+            b.textContent = 'Labels legend:'
+            legend.appendChild(b);
+
+            Object.entries(labels).forEach(([key, value]) => {
+
+                if (!colorExists(value)) {
+                    const li = document.createElement('li');
+                    li.className = 'legend_item_square';
+
+                    const div = document.createElement('div');
+                    div.className = 'legend_square';
+                    div.style.backgroundColor = value;
+
+                    const span = document.createElement('span');
+                    span.className = 'legend_label';
+                    span.textContent = key;
+
+                    li.appendChild(div);
+                    li.appendChild(span);
+                    legend.appendChild(li);
+                }
+            });
         };
 
         class ScipionWorkflow extends HTMLElement {
