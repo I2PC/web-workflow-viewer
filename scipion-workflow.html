@@ -335,7 +335,7 @@
 
             // React to attributes changes
             attributeChangedCallback(attr, oldValue, newValue) {
-                if (attr == 'src') {
+                if (attr == 'src' && newValue !== oldValue) {
                     this.refresh();
                 }
             }
@@ -350,10 +350,13 @@
                 this.workflowDiv = workflowDiv;
                 shadow.appendChild(workflowDiv);
                 // Paint the graph
+                this.refreshCalled = false;
                 this.refresh()
             }
 
             refresh() {
+                if (this.refreshCalled) return; // Skip if already called
+                this.refreshCalled = true;
                 // Performs all the steps to paint the graph
 
                 // 1. Get attrs from the html tag
