@@ -104,6 +104,7 @@
                                                 success: function (images) {
                                                     $(images).find("a").attr("href", function (nimg, image) {
                                                         if (image.indexOf('slicesX_0000') !== -1) {
+                                                            formattedStr += '<hr><b style="color: #29808A;">' + path + '</b>' + '<br><br>';
                                                             formattedStr += '<b>Slices X axis:</b>' + '<br><br>';
                                                         }
                                                         if (image.indexOf('slicesY_0000') !== -1) {
