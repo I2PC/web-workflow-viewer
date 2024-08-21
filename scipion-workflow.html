@@ -152,8 +152,10 @@
             var cy = cytoscape({
               container: workflowDiv,
               autounselectify: true,
-              maxZoom: 1.75,
-              minZoom: 0.25,
+              zoom: 1,
+              minZoom: 1e-50,
+              maxZoom: 1e50,
+              wheelSensitivity: 1,
 
               layout: {
                 name: 'dagre',
