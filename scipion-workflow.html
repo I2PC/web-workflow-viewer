@@ -13,6 +13,9 @@
     <link rel="stylesheet" type="text/css" href="//unpkg.com/qtip2/dist/jquery.qtip.min.css">
     <script src="//unpkg.com/qtip2/dist/jquery.qtip.min.js"></script>
     <script src="//unpkg.com/cytoscape-qtip/cytoscape-qtip.js"></script>
+    <!-- molstar -->
+    <link rel="stylesheet" type="text/css" href="css/molstar.css">
+    <script type="text/javascript" src="js/molstar.js"></script>
 
     <title>Scipion workflow</title>
 
@@ -67,6 +70,12 @@
 
     <script>
 
+        function getRandomHexColor() {
+        // Returns random hexadecimal color
+            const randomColor = Math.floor(Math.random() * 16777215).toString(16);
+            return `#${randomColor.padStart(6, '0')}`;
+        }
+
         function getFormattedProtocolStr(dict, viewMode){
             // Formats a protocol object to show its data in the qtip as a table
             // Returns the table as a html string.
@@ -83,6 +92,8 @@
                                 formattedStr += '<tr><td class="toggle-icon" onclick="toggleImages(' + "'" + outputValue['outputName'] + "'" + ', this)"> ▼ -' + outputValue['outputName'] + ':</td><td class="images" id="' + outputValue['outputName'] + '"> ';
                                 var outputItems = outputValue['outputItems']
                                 var nimg = 0
+                                var nvol = 0
+
                                 $.each(outputItems, function(itemKey, itemValue) {
                                     if ('item_representation' in itemValue) {
                                         var path = itemValue['item_representation']
@@ -95,6 +106,19 @@
                                                 formattedStr += '<br>';
                                             }
                                         }
+
+                                        else if (path.indexOf('mrc')!==-1 || path.indexOf('map')!==-1){ // open volume with Molstar
+                                            if (nvol == 0) {
+                                                formattedStr += '<div id="app_' + path + '"></div>';
+                                                color = parseInt(getRandomHexColor().replace('#', '0x'));
+                                                formattedStr += '<script type="text/javascript"> molstar.Viewer.create("app_' + path + '", {layoutShowControls: true, viewportShowExpand: false, collapseLeftPanel: true, collapseRightPanel: true,}).then(viewer => {viewer.loadVolumeFromUrl({url:' + '"images_representation/' + path + '",format: "ccp4",isBinary: true}, [{type: "relative",value: 1.5,color: ' + color + '}]);';
+                                                nvol = nvol + 1;
+                                            }
+                                            else {
+                                                formattedStr += 'viewer.loadVolumeFromUrl({url:' + '"images_representation/' + path + '",format: "ccp4",isBinary: true}, [{type: "relative",value: 1.5,color: 0x29808A}]);'
+                                            }
+                                        }
+
                                         else { // is a folder containing images inside
                                             var folder = 'images_representation/' + path + '/';
 
@@ -129,6 +153,12 @@
                                         formattedStr += '<br>';
                                     }
                                 });
+
+                                if (nvol > 0) {
+                                    formattedStr += '});'
+                                    formattedStr += '<\u002Fscript>';
+                                }
+
                                 formattedStr += '</td></tr>'
                                 if (outputValue['outputType'] === 'SetOfClasses2D' || outputValue['outputType'] === 'SetOfClasses3D') {
                                     formattedStr += '<tr><td></td><td>' + outputValue['outputSize'] + ' classes';
