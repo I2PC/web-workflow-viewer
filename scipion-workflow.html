@@ -32,8 +32,7 @@
         }
 
         .qtip {
-            max-width: 80%;
-            position: relative;
+            max-width: 50%;
         }
 
         .qtip-tip {
@@ -43,23 +42,25 @@
         .qtip-content{
             overflow-x: scroll;
             overflow-y: scroll;
-            white-space: nowrap;
-            height: 70vh;
+            height: 50vh;
         }
 
-        .qtip-bootstrap {
-            -webkit-box-shadow: none;
-            -moz-box-shadow: none;
-            box-shadow: none;
-            -moz-border-radius: 0;
-            -webkit-border-radius: 0;
-            border-radius: 0;
+        .msp-plugin {
+            background: none;
+        }
+
+        .msp-plugin-content {
+            margin-top: 20vh;
+            margin-bottom: 20vh;
+            margin-right: 20vh;
+            margin-left: 20vh;
         }
 
         .images {
             display: none;
             margin-top: 10px;
         }
+
         .toggle-icon {
             cursor: pointer;
             font-size: 16px;
@@ -111,7 +112,7 @@
                                             if (nvol == 0) {
                                                 formattedStr += '<div id="app_' + path + '"></div>';
                                                 color = parseInt(getRandomHexColor().replace('#', '0x'));
-                                                formattedStr += '<script type="text/javascript"> molstar.Viewer.create("app_' + path + '", {layoutShowControls: true, viewportShowExpand: false, collapseLeftPanel: true, collapseRightPanel: true,}).then(viewer => {viewer.loadVolumeFromUrl({url:' + '"images_representation/' + path + '",format: "ccp4",isBinary: true}, [{type: "relative",value: 1.5,color: ' + color + '}]);';
+                                                formattedStr += '<script type="text/javascript"> molstar.Viewer.create("app_' + path + '", {layoutShowControls: true, viewportShowExpand: false, collapseLeftPanel: true, collapseRightPanel: false,}).then(viewer => {viewer.loadVolumeFromUrl({url:' + '"images_representation/' + path + '",format: "ccp4",isBinary: true}, [{type: "relative",value: 1.5,color: ' + color + '}]);';
                                                 nvol = nvol + 1;
                                             }
                                             else {
