@@ -101,7 +101,7 @@
                                         path = path.substring(path.lastIndexOf("/") + 1, path.length)
 
                                         if (path.indexOf('jpg')!==-1){
-                                            formattedStr += '<img src=' + "images_representation/" + path + ' width="100" height="100" style="margin: 0px 0px 10px 5px" class="zoom">'
+                                            formattedStr += '<img src=' + "images_representation/" + path + ' style="margin: 0px 0px 10px 5px; max-width:100px;" class="zoom">'
                                             nimg = nimg + 1;
                                             if (nimg % 5 == 0) {
                                                 formattedStr += '<br>';
@@ -139,7 +139,7 @@
                                                             formattedStr += '<hr>' + '<b>Slices Z axis:</b>' + '<br><br>';
                                                         }
                                                         if(image.match(/\.(jpe?g)$/) ) {
-                                                            formattedStr += '<img src="' + folder + image + '" width="100" height="100" style="margin: 0px 0px 10px 5px" class="zoom">'
+                                                            formattedStr += '<img src="' + folder + image + '" style="margin: 0px 0px 10px 5px; max-width:100px;" class="zoom">'
                                                         }
                                                         nimg = nimg + 1;
                                                         if (nimg % 5 == 0) {
