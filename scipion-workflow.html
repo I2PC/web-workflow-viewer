@@ -97,57 +97,55 @@
 
                                 $.each(outputItems, function(itemKey, itemValue) {
                                     if ('item_representation' in itemValue) {
-                                        var path = itemValue['item_representation']
-                                        path = path.substring(path.lastIndexOf("/") + 1, path.length)
+                                        var paths = itemValue['item_representation']
 
-                                        if (path.indexOf('jpg')!==-1){
-                                            formattedStr += '<img src=' + "images_representation/" + path + ' style="margin: 0px 0px 10px 5px; max-width:100px;" class="zoom">'
-                                            nimg = nimg + 1;
-                                            if (nimg % 5 == 0) {
-                                                formattedStr += '<br>';
-                                            }
-                                        }
+                                        if (Array.isArray(paths)){ // is a folder containing images inside
+                                            $.each(paths, function(index, path) {
+                                                path = path.substring(path.lastIndexOf('/', path.lastIndexOf('/') - 1) + 1);
+                                                if (path.indexOf('jpg')!==-1){
+                                                    if (path.indexOf('slicesX_0000') !== -1) {
+                                                        volume_name = path.substring(1, path.lastIndexOf("/"))
+                                                        formattedStr += '<hr><b style="color: #29808A;">' + volume_name + '</b>' + '<br><br>';
+                                                        formattedStr += '<b>Slices X axis:</b>' + '<br><br>';
+                                                    }
+                                                    if (path.indexOf('slicesY_0000') !== -1) {
+                                                        formattedStr += '<hr>' + '<b>Slices Y axis:</b>' + '<br><br>';
+                                                    }
+                                                    if (path.indexOf('slicesZ_0000') !== -1) {
+                                                        formattedStr += '<hr>' + '<b>Slices Z axis:</b>' + '<br><br>';
+                                                    }
+                                                    formattedStr += '<img data-src=' + "images_representation/" + path + ' style="margin: 0px 0px 10px 5px; max-width:100px;" class="zoom ' + outputValue['outputName'] + '">'
 
-                                        else if (path.indexOf('mrc')!==-1 || path.indexOf('map')!==-1){ // open volume with Molstar
-                                            if (nvol == 0) {
-                                                formattedStr += '<div id="app_' + path + '"></div>';
-                                                color = parseInt(getRandomHexColor().replace('#', '0x'));
-                                                formattedStr += '<script type="text/javascript"> molstar.Viewer.create("app_' + path + '", {layoutShowControls: true, viewportShowExpand: false, collapseLeftPanel: true, collapseRightPanel: false,}).then(viewer => {viewer.loadVolumeFromUrl({url:' + '"images_representation/' + path + '",format: "ccp4",isBinary: true}, [{type: "relative",value: 1.5,color: ' + color + '}]);';
-                                                nvol = nvol + 1;
-                                            }
-                                            else {
-                                                formattedStr += 'viewer.loadVolumeFromUrl({url:' + '"images_representation/' + path + '",format: "ccp4",isBinary: true}, [{type: "relative",value: 1.5,color: 0x29808A}]);'
-                                            }
-                                        }
-
-                                        else { // is a folder containing images inside
-                                            var folder = 'images_representation/' + path + '/';
-
-                                            $.ajax({
-                                                url : folder,
-                                                async: false,
-                                                success: function (images) {
-                                                    $(images).find("a").attr("href", function (nimg, image) {
-                                                        if (image.indexOf('slicesX_0000') !== -1) {
-                                                            formattedStr += '<hr><b style="color: #29808A;">' + path + '</b>' + '<br><br>';
-                                                            formattedStr += '<b>Slices X axis:</b>' + '<br><br>';
-                                                        }
-                                                        if (image.indexOf('slicesY_0000') !== -1) {
-                                                            formattedStr += '<hr>' + '<b>Slices Y axis:</b>' + '<br><br>';
-                                                        }
-                                                        if (image.indexOf('slicesZ_0000') !== -1) {
-                                                            formattedStr += '<hr>' + '<b>Slices Z axis:</b>' + '<br><br>';
-                                                        }
-                                                        if(image.match(/\.(jpe?g)$/) ) {
-                                                            formattedStr += '<img src="' + folder + image + '" style="margin: 0px 0px 10px 5px; max-width:100px;" class="zoom">'
-                                                        }
-                                                        nimg = nimg + 1;
-                                                        if (nimg % 5 == 0) {
-                                                            formattedStr += '<br>';
-                                                        }
-                                                    })
+                                                    nimg = nimg + 1;
+                                                    if (nimg % 5 == 0) {
+                                                        formattedStr += '<br>';
+                                                    }
                                                 }
                                             });
+                                        }
+
+                                        else {
+                                            path = paths.substring(paths.lastIndexOf("/") + 1, paths.length)
+
+                                            if (path.indexOf('jpg')!==-1){ // is a single jpg image
+                                                formattedStr += '<img data-src=' + "images_representation/" + path + ' style="margin: 0px 0px 10px 5px; max-width:100px;" class="zoom ' + outputValue['outputName'] + '">'
+                                                nimg = nimg + 1;
+                                                if (nimg % 5 == 0) {
+                                                    formattedStr += '<br>';
+                                                }
+                                            }
+
+                                            else if (path.indexOf('mrc')!==-1 || path.indexOf('map')!==-1){ // open volume with Molstar
+                                                if (nvol == 0) {
+                                                    formattedStr += '<div id-src="app_' + path + '" class="' + outputValue['outputName'] + '"></div>';
+                                                    color = parseInt(getRandomHexColor().replace('#', '0x'));
+                                                    formattedStr += '<script type="text/javascript"> molstar.Viewer.create("app_' + path + '", {layoutShowControls: true, viewportShowExpand: false, collapseLeftPanel: true, collapseRightPanel: false,}).then(viewer => {viewer.loadVolumeFromUrl({url:' + '"images_representation/' + path + '",format: "ccp4",isBinary: true}, [{type: "relative",value: 1.5,color: ' + color + '}]);';
+                                                    nvol = nvol + 1;
+                                                }
+                                                else {
+                                                    formattedStr += 'viewer.loadVolumeFromUrl({url:' + '"images_representation/' + path + '",format: "ccp4",isBinary: true}, [{type: "relative",value: 1.5,color: 0x29808A}]);'
+                                                }
+                                            }
                                         }
                                     }
                                     if (outputValue['outputType'] === 'SetOfClasses3D' ) {
@@ -352,6 +350,7 @@
         };
 
         function toggleImages(id, element) {
+
             var imgRow = document.getElementById(id);
             var icon = element;
             var currentHtml = icon.innerHTML;
@@ -362,6 +361,33 @@
             } else {
                 imgRow.style.display = 'none';
                 icon.innerHTML = currentHtml.replace("▲", "▼");
+            }
+
+             // actually load jpg images or mrc volumes. Avoids loading all protocol thumbnails at once
+            if (id.indexOf('3D')!==-1){ // is a 3d volume
+
+                const volume = document.getElementsByClassName(id)[0];
+                volume.id = volume.getAttribute('id-src');
+
+                // get element and reload molstar javascript code
+                var td = document.getElementById(id);
+                var molstarScriptElement = td.querySelector('script');
+                var molstarScriptCode = molstarScriptElement.textContent || molstarScriptElement.innerText;
+
+                molstarScriptElement.remove();
+                var newMolstarScriptElement = document.createElement('script');
+                newMolstarScriptElement.textContent = molstarScriptCode;
+                td.appendChild(newMolstarScriptElement);
+
+            }
+            else { // is a jpg image
+
+                const images = document.getElementsByClassName(id);
+
+                for (let i = 0; i < images.length; i++) {
+                    const image = images[i];
+                    image.src = image.getAttribute('data-src');
+                }
             }
         };
 
