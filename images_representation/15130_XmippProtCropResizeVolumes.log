@@ -1,0 +1,42 @@
+Logging configured. STDOUT --> /home/irene/ScipionUserData/Example_10248_Scipion3/Runs/015130_XmippProtCropResizeVolumes/logs/run.stdout , STDERR --> /home/irene/ScipionUserData/Example_10248_Scipion3/Runs/015130_XmippProtCropResizeVolumes/logs/run.stderr
+[32mRESUMING PROTOCOL -----------------[0m
+Protocol starts
+Hostname: Svedberg
+PID: 246813
+pyworkflow: 3.8.0
+plugin: xmipp3 - https://github.com/i2pc/scipion-em-xmipp
+plugin v: 24.06.0.0 (devel)
+plugin binary v: 
+currentDir: /home/irene/ScipionUserData/Example_10248_Scipion3
+workingDir: Runs/015130_XmippProtCropResizeVolumes
+runMode: Continue
+          MPI: 1
+      threads: 2
+ Starting at step: 1
+ Running steps 
+[35mSTARTED[0m: convertInputStep, step 1, time 2024-08-22 16:34:46.364464
+[35mFINISHED[0m: convertInputStep, step 1, time 2024-08-22 16:34:46.369316
+[35mSTARTED[0m: filterStep, step 2, time 2024-08-22 16:34:46.385237
+** Running command: **
+[32m xmipp_transform_filter -i Runs/011072_XmippProtDeepRes/extra/deepRes_resolution.vol -o Runs/015130_XmippProtCropResizeVolumes/extra/output_volume.mrc --fourier low_pass 0.250000[0m
+Filter Band: Lowpass before 0.25
+Filter Shape: Raised cosine with 0.02 raised frequencies
+Input File: Runs/011072_XmippProtDeepRes/extra/deepRes_resolution.vol
+Output File: Runs/015130_XmippProtCropResizeVolumes/extra/output_volume.mrc
+[35mFINISHED[0m: filterStep, step 2, time 2024-08-22 16:34:47.106819
+[35mSTARTED[0m: resizeStep, step 3, time 2024-08-22 16:34:47.125893
+** Running command: **
+[32m xmipp_image_resize -i Runs/015130_XmippProtCropResizeVolumes/extra/output_volume.mrc --factor 0.500000[0m
+Input File: Runs/015130_XmippProtCropResizeVolumes/extra/output_volume.mrc
+Output File: Runs/015130_XmippProtCropResizeVolumes/extra/output_volume.mrc_tmp.mrc
+[35mFINISHED[0m: resizeStep, step 3, time 2024-08-22 16:34:47.514724
+[35mSTARTED[0m: createOutputStep, step 4, time 2024-08-22 16:34:47.530816
+** Running command: **
+[32m xmipp_image_header -i Runs/015130_XmippProtCropResizeVolumes/extra/output_volume.mrc --sampling_rate 1.000000[0m
+Input File: Runs/015130_XmippProtCropResizeVolumes/extra/output_volume.mrc
+New sampling rate (Angstrom) = 1
+[35mFINISHED[0m: createOutputStep, step 4, time 2024-08-22 16:34:47.550153
+*** Last status is finished 
+Cleaning temp folder....
+Nothing to clean up
+[32m------------------- PROTOCOL FINISHED[0m

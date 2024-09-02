@@ -1,0 +1,1247 @@
+Logging configured. STDOUT --> /home/irene/ScipionUserData/Example_10248_Scipion3/Runs/015338_EmpiarDepositor/logs/run.stdout , STDERR --> /home/irene/ScipionUserData/Example_10248_Scipion3/Runs/015338_EmpiarDepositor/logs/run.stderr
+[32mRUNNING PROTOCOL -----------------[0m
+Protocol starts
+Hostname: Svedberg
+PID: 124413
+pyworkflow: 3.8.0
+plugin: empiar - https://github.com/scipion-em/scipion-em-empiar
+plugin v: 3.1.1 (devel)
+plugin binary v: 
+currentDir: /home/irene/ScipionUserData/Example_10248_Scipion3
+workingDir: Runs/015338_EmpiarDepositor
+runMode: Restart
+          MPI: 1
+      threads: 1
+ Starting at step: 1
+ Running steps 
+[35mSTARTED[0m: createDepositionStep, step 1, time 2024-09-02 14:32:11.012008
+** Running command: **
+[32m xmipp_transform_filter  -i 1@Runs/006299_ProtImportMovies/extra/190117_02_00001_UnderDefocus0.7um_frameImage.tiff -o Runs/015338_EmpiarDepositor/extra/results/images_representation/6299.outputMovies_0_190117_02_00001_UnderDefocus0.7um_frameImage.jpg --fourier low_pass 0.05[0m
+** Running command: **
+[32m xmipp_transform_filter  -i 2@Runs/006299_ProtImportMovies/extra/190117_02_00002_UnderDefocus0.7um_frameImage.tiff -o Runs/015338_EmpiarDepositor/extra/results/images_representation/6299.outputMovies_0_190117_02_00002_UnderDefocus0.7um_frameImage.jpg --fourier low_pass 0.05[0m
+** Running command: **
+[32m xmipp_transform_filter  -i 3@Runs/006299_ProtImportMovies/extra/190117_02_00003_UnderDefocus0.7um_frameImage.tiff -o Runs/015338_EmpiarDepositor/extra/results/images_representation/6299.outputMovies_0_190117_02_00003_UnderDefocus0.7um_frameImage.jpg --fourier low_pass 0.05[0m
+** Running command: **
+[32m xmipp_transform_filter  -i 1@Runs/006299_ProtImportMovies/extra/190117_02_00001_UnderDefocus0.7um_frameImage.tiff -o Runs/015338_EmpiarDepositor/extra/results/images_representation/6383.outputMovies_0_190117_02_00001_UnderDefocus0.7um_frameImage.jpg --fourier low_pass 0.05[0m
+** Running command: **
+[32m xmipp_transform_filter  -i 2@Runs/006299_ProtImportMovies/extra/190117_02_00002_UnderDefocus0.7um_frameImage.tiff -o Runs/015338_EmpiarDepositor/extra/results/images_representation/6383.outputMovies_0_190117_02_00002_UnderDefocus0.7um_frameImage.jpg --fourier low_pass 0.05[0m
+** Running command: **
+[32m xmipp_transform_filter  -i 3@Runs/006299_ProtImportMovies/extra/190117_02_00003_UnderDefocus0.7um_frameImage.tiff -o Runs/015338_EmpiarDepositor/extra/results/images_representation/6383.outputMovies_0_190117_02_00003_UnderDefocus0.7um_frameImage.jpg --fourier low_pass 0.05[0m
+Reader not registered for xmp files. Falling back to XmippReader
+Reader not registered for psd files. Falling back to XmippReader
+** Running command: **
+[32m xmipp_transform_filter  -i 1@Runs/006299_ProtImportMovies/extra/190117_02_00001_UnderDefocus0.7um_frameImage.tiff -o Runs/015338_EmpiarDepositor/extra/results/images_representation/6458.outputMovies_0_190117_02_00001_UnderDefocus0.7um_frameImage.jpg --fourier low_pass 0.05[0m
+Reader not registered for psd files. Falling back to XmippReader
+** Running command: **
+[32m xmipp_transform_filter  -i 2@Runs/006299_ProtImportMovies/extra/190117_02_00002_UnderDefocus0.7um_frameImage.tiff -o Runs/015338_EmpiarDepositor/extra/results/images_representation/6458.outputMovies_0_190117_02_00002_UnderDefocus0.7um_frameImage.jpg --fourier low_pass 0.05[0m
+Reader not registered for psd files. Falling back to XmippReader
+** Running command: **
+[32m xmipp_transform_filter  -i 3@Runs/006299_ProtImportMovies/extra/190117_02_00003_UnderDefocus0.7um_frameImage.tiff -o Runs/015338_EmpiarDepositor/extra/results/images_representation/6458.outputMovies_0_190117_02_00003_UnderDefocus0.7um_frameImage.jpg --fourier low_pass 0.05[0m
+Reader not registered for psd files. Falling back to XmippReader
+** Running command: **
+[32m xmipp_transform_filter  -i Runs/006458_XmippProtMovieCorr/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrc -o Runs/015338_EmpiarDepositor/extra/results/images_representation/6458.outputMicrographs_0_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg --fourier low_pass 0.05[0m
+Filter Band: Lowpass before 0.05
+Filter Shape: Raised cosine with 0.02 raised frequencies
+Input File: Runs/006458_XmippProtMovieCorr/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/6458.outputMicrographs_0_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg
+Reader not registered for psd files. Falling back to XmippReader
+** Running command: **
+[32m xmipp_transform_filter  -i Runs/006458_XmippProtMovieCorr/extra/190117_02_00002_UnderDefocus0.7um_frameImage_aligned_mic.mrc -o Runs/015338_EmpiarDepositor/extra/results/images_representation/6458.outputMicrographs_0_190117_02_00002_UnderDefocus0.7um_frameImage_aligned_mic.jpg --fourier low_pass 0.05[0m
+Filter Band: Lowpass before 0.05
+Filter Shape: Raised cosine with 0.02 raised frequencies
+Input File: Runs/006458_XmippProtMovieCorr/extra/190117_02_00002_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/6458.outputMicrographs_0_190117_02_00002_UnderDefocus0.7um_frameImage_aligned_mic.jpg
+Reader not registered for psd files. Falling back to XmippReader
+** Running command: **
+[32m xmipp_transform_filter  -i Runs/006458_XmippProtMovieCorr/extra/190117_02_00003_UnderDefocus0.7um_frameImage_aligned_mic.mrc -o Runs/015338_EmpiarDepositor/extra/results/images_representation/6458.outputMicrographs_0_190117_02_00003_UnderDefocus0.7um_frameImage_aligned_mic.jpg --fourier low_pass 0.05[0m
+Filter Band: Lowpass before 0.05
+Filter Shape: Raised cosine with 0.02 raised frequencies
+Input File: Runs/006458_XmippProtMovieCorr/extra/190117_02_00003_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/6458.outputMicrographs_0_190117_02_00003_UnderDefocus0.7um_frameImage_aligned_mic.jpg
+Reader not registered for psd files. Falling back to XmippReader
+** Running command: **
+[32m xmipp_transform_filter  -i 1@Runs/006299_ProtImportMovies/extra/190117_02_00001_UnderDefocus0.7um_frameImage.tiff -o Runs/015338_EmpiarDepositor/extra/results/images_representation/6557.outputMovies_0_190117_02_00001_UnderDefocus0.7um_frameImage.jpg --fourier low_pass 0.05[0m
+Reader not registered for psd files. Falling back to XmippReader
+** Running command: **
+[32m xmipp_transform_filter  -i 2@Runs/006299_ProtImportMovies/extra/190117_02_00002_UnderDefocus0.7um_frameImage.tiff -o Runs/015338_EmpiarDepositor/extra/results/images_representation/6557.outputMovies_0_190117_02_00002_UnderDefocus0.7um_frameImage.jpg --fourier low_pass 0.05[0m
+Reader not registered for psd files. Falling back to XmippReader
+** Running command: **
+[32m xmipp_transform_filter  -i 3@Runs/006299_ProtImportMovies/extra/190117_02_00003_UnderDefocus0.7um_frameImage.tiff -o Runs/015338_EmpiarDepositor/extra/results/images_representation/6557.outputMovies_0_190117_02_00003_UnderDefocus0.7um_frameImage.jpg --fourier low_pass 0.05[0m
+Reader not registered for psd files. Falling back to XmippReader
+** Running command: **
+[32m xmipp_transform_filter  -i Runs/006458_XmippProtMovieCorr/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrc -o Runs/015338_EmpiarDepositor/extra/results/images_representation/6557.outputMicrographs_0_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg --fourier low_pass 0.05[0m
+Filter Band: Lowpass before 0.05
+Filter Shape: Raised cosine with 0.02 raised frequencies
+Input File: Runs/006458_XmippProtMovieCorr/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/6557.outputMicrographs_0_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg
+Reader not registered for psd files. Falling back to XmippReader
+** Running command: **
+[32m xmipp_transform_filter  -i Runs/006458_XmippProtMovieCorr/extra/190117_02_00002_UnderDefocus0.7um_frameImage_aligned_mic.mrc -o Runs/015338_EmpiarDepositor/extra/results/images_representation/6557.outputMicrographs_0_190117_02_00002_UnderDefocus0.7um_frameImage_aligned_mic.jpg --fourier low_pass 0.05[0m
+Filter Band: Lowpass before 0.05
+Filter Shape: Raised cosine with 0.02 raised frequencies
+Input File: Runs/006458_XmippProtMovieCorr/extra/190117_02_00002_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/6557.outputMicrographs_0_190117_02_00002_UnderDefocus0.7um_frameImage_aligned_mic.jpg
+Reader not registered for psd files. Falling back to XmippReader
+** Running command: **
+[32m xmipp_transform_filter  -i Runs/006458_XmippProtMovieCorr/extra/190117_02_00003_UnderDefocus0.7um_frameImage_aligned_mic.mrc -o Runs/015338_EmpiarDepositor/extra/results/images_representation/6557.outputMicrographs_0_190117_02_00003_UnderDefocus0.7um_frameImage_aligned_mic.jpg --fourier low_pass 0.05[0m
+Filter Band: Lowpass before 0.05
+Filter Shape: Raised cosine with 0.02 raised frequencies
+Input File: Runs/006458_XmippProtMovieCorr/extra/190117_02_00003_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/6557.outputMicrographs_0_190117_02_00003_UnderDefocus0.7um_frameImage_aligned_mic.jpg
+Reader not registered for psd files. Falling back to XmippReader
+** Running command: **
+[32m xmipp_transform_filter  -i 1@Runs/006299_ProtImportMovies/extra/190117_02_00022_UnderDefocus0.7um_frameImage.tiff -o Runs/015338_EmpiarDepositor/extra/results/images_representation/6557.outputMoviesDiscarded_0_190117_02_00022_UnderDefocus0.7um_frameImage.jpg --fourier low_pass 0.05[0m
+Reader not registered for psd files. Falling back to XmippReader
+** Running command: **
+[32m xmipp_transform_filter  -i Runs/006458_XmippProtMovieCorr/extra/190117_02_00022_UnderDefocus0.7um_frameImage_aligned_mic.mrc -o Runs/015338_EmpiarDepositor/extra/results/images_representation/6557.outputMicrographsDiscarded_0_190117_02_00022_UnderDefocus0.7um_frameImage_aligned_mic.jpg --fourier low_pass 0.05[0m
+Filter Band: Lowpass before 0.05
+Filter Shape: Raised cosine with 0.02 raised frequencies
+Input File: Runs/006458_XmippProtMovieCorr/extra/190117_02_00022_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/6557.outputMicrographsDiscarded_0_190117_02_00022_UnderDefocus0.7um_frameImage_aligned_mic.jpg
+Reader not registered for psd files. Falling back to XmippReader
+** Running command: **
+[32m xmipp_transform_filter  -i Runs/006458_XmippProtMovieCorr/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrc -o Runs/015338_EmpiarDepositor/extra/results/images_representation/6819.outputMicrographs_0_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg --fourier low_pass 0.05[0m
+Filter Band: Lowpass before 0.05
+Filter Shape: Raised cosine with 0.02 raised frequencies
+Input File: Runs/006458_XmippProtMovieCorr/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/6819.outputMicrographs_0_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg
+Reader not registered for psd files. Falling back to XmippReader
+** Running command: **
+[32m xmipp_transform_filter  -i Runs/006458_XmippProtMovieCorr/extra/190117_02_00002_UnderDefocus0.7um_frameImage_aligned_mic.mrc -o Runs/015338_EmpiarDepositor/extra/results/images_representation/6819.outputMicrographs_0_190117_02_00002_UnderDefocus0.7um_frameImage_aligned_mic.jpg --fourier low_pass 0.05[0m
+Filter Band: Lowpass before 0.05
+Filter Shape: Raised cosine with 0.02 raised frequencies
+Input File: Runs/006458_XmippProtMovieCorr/extra/190117_02_00002_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/6819.outputMicrographs_0_190117_02_00002_UnderDefocus0.7um_frameImage_aligned_mic.jpg
+Reader not registered for psd files. Falling back to XmippReader
+** Running command: **
+[32m xmipp_transform_filter  -i Runs/006458_XmippProtMovieCorr/extra/190117_02_00003_UnderDefocus0.7um_frameImage_aligned_mic.mrc -o Runs/015338_EmpiarDepositor/extra/results/images_representation/6819.outputMicrographs_0_190117_02_00003_UnderDefocus0.7um_frameImage_aligned_mic.jpg --fourier low_pass 0.05[0m
+Filter Band: Lowpass before 0.05
+Filter Shape: Raised cosine with 0.02 raised frequencies
+Input File: Runs/006458_XmippProtMovieCorr/extra/190117_02_00003_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/6819.outputMicrographs_0_190117_02_00003_UnderDefocus0.7um_frameImage_aligned_mic.jpg
+Reader not registered for psd files. Falling back to XmippReader
+** Running command: **
+[32m xmipp_transform_filter  -i Runs/006458_XmippProtMovieCorr/extra/190117_02_00027_UnderDefocus0.9um_frameImage_aligned_mic.mrc -o Runs/015338_EmpiarDepositor/extra/results/images_representation/6819.outputMicrographsDiscarded_0_190117_02_00027_UnderDefocus0.9um_frameImage_aligned_mic.jpg --fourier low_pass 0.05[0m
+Filter Band: Lowpass before 0.05
+Filter Shape: Raised cosine with 0.02 raised frequencies
+Input File: Runs/006458_XmippProtMovieCorr/extra/190117_02_00027_UnderDefocus0.9um_frameImage_aligned_mic.mrc
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/6819.outputMicrographsDiscarded_0_190117_02_00027_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+Reader not registered for psd files. Falling back to XmippReader
+** Running command: **
+[32m xmipp_transform_filter  -i Runs/006458_XmippProtMovieCorr/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrc -o Runs/015338_EmpiarDepositor/extra/results/images_representation/6988.outputMicrographs_0_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg --fourier low_pass 0.05[0m
+Filter Band: Lowpass before 0.05
+Filter Shape: Raised cosine with 0.02 raised frequencies
+Input File: Runs/006458_XmippProtMovieCorr/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/6988.outputMicrographs_0_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg
+Reader not registered for psd files. Falling back to XmippReader
+** Running command: **
+[32m xmipp_transform_filter  -i Runs/006458_XmippProtMovieCorr/extra/190117_02_00002_UnderDefocus0.7um_frameImage_aligned_mic.mrc -o Runs/015338_EmpiarDepositor/extra/results/images_representation/6988.outputMicrographs_0_190117_02_00002_UnderDefocus0.7um_frameImage_aligned_mic.jpg --fourier low_pass 0.05[0m
+Filter Band: Lowpass before 0.05
+Filter Shape: Raised cosine with 0.02 raised frequencies
+Input File: Runs/006458_XmippProtMovieCorr/extra/190117_02_00002_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/6988.outputMicrographs_0_190117_02_00002_UnderDefocus0.7um_frameImage_aligned_mic.jpg
+Reader not registered for psd files. Falling back to XmippReader
+** Running command: **
+[32m xmipp_transform_filter  -i Runs/006458_XmippProtMovieCorr/extra/190117_02_00003_UnderDefocus0.7um_frameImage_aligned_mic.mrc -o Runs/015338_EmpiarDepositor/extra/results/images_representation/6988.outputMicrographs_0_190117_02_00003_UnderDefocus0.7um_frameImage_aligned_mic.jpg --fourier low_pass 0.05[0m
+Filter Band: Lowpass before 0.05
+Filter Shape: Raised cosine with 0.02 raised frequencies
+Input File: Runs/006458_XmippProtMovieCorr/extra/190117_02_00003_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/6988.outputMicrographs_0_190117_02_00003_UnderDefocus0.7um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_transform_filter  -i Runs/006458_XmippProtMovieCorr/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrc -o Runs/015338_EmpiarDepositor/extra/results/images_representation/7076.outputCoordinates_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg --fourier low_pass 0.05[0m
+Filter Band: Lowpass before 0.05
+Filter Shape: Raised cosine with 0.02 raised frequencies
+Input File: Runs/006458_XmippProtMovieCorr/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/7076.outputCoordinates_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_transform_filter  -i Runs/006458_XmippProtMovieCorr/extra/190117_02_00002_UnderDefocus0.7um_frameImage_aligned_mic.mrc -o Runs/015338_EmpiarDepositor/extra/results/images_representation/7076.outputCoordinates_190117_02_00002_UnderDefocus0.7um_frameImage_aligned_mic.jpg --fourier low_pass 0.05[0m
+Filter Band: Lowpass before 0.05
+Filter Shape: Raised cosine with 0.02 raised frequencies
+Input File: Runs/006458_XmippProtMovieCorr/extra/190117_02_00002_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/7076.outputCoordinates_190117_02_00002_UnderDefocus0.7um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_transform_filter  -i Runs/006458_XmippProtMovieCorr/extra/190117_02_00003_UnderDefocus0.7um_frameImage_aligned_mic.mrc -o Runs/015338_EmpiarDepositor/extra/results/images_representation/7076.outputCoordinates_190117_02_00003_UnderDefocus0.7um_frameImage_aligned_mic.jpg --fourier low_pass 0.05[0m
+Filter Band: Lowpass before 0.05
+Filter Shape: Raised cosine with 0.02 raised frequencies
+Input File: Runs/006458_XmippProtMovieCorr/extra/190117_02_00003_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/7076.outputCoordinates_190117_02_00003_UnderDefocus0.7um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_transform_filter  -i Runs/006458_XmippProtMovieCorr/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrc -o Runs/015338_EmpiarDepositor/extra/results/images_representation/7124.outputCoordinates_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg --fourier low_pass 0.05[0m
+Filter Band: Lowpass before 0.05
+Filter Shape: Raised cosine with 0.02 raised frequencies
+Input File: Runs/006458_XmippProtMovieCorr/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/7124.outputCoordinates_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_transform_filter  -i Runs/006458_XmippProtMovieCorr/extra/190117_02_00002_UnderDefocus0.7um_frameImage_aligned_mic.mrc -o Runs/015338_EmpiarDepositor/extra/results/images_representation/7124.outputCoordinates_190117_02_00002_UnderDefocus0.7um_frameImage_aligned_mic.jpg --fourier low_pass 0.05[0m
+Filter Band: Lowpass before 0.05
+Filter Shape: Raised cosine with 0.02 raised frequencies
+Input File: Runs/006458_XmippProtMovieCorr/extra/190117_02_00002_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/7124.outputCoordinates_190117_02_00002_UnderDefocus0.7um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_transform_filter  -i Runs/006458_XmippProtMovieCorr/extra/190117_02_00003_UnderDefocus0.7um_frameImage_aligned_mic.mrc -o Runs/015338_EmpiarDepositor/extra/results/images_representation/7124.outputCoordinates_190117_02_00003_UnderDefocus0.7um_frameImage_aligned_mic.jpg --fourier low_pass 0.05[0m
+Filter Band: Lowpass before 0.05
+Filter Shape: Raised cosine with 0.02 raised frequencies
+Input File: Runs/006458_XmippProtMovieCorr/extra/190117_02_00003_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/7124.outputCoordinates_190117_02_00003_UnderDefocus0.7um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_transform_filter  -i Runs/006458_XmippProtMovieCorr/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrc -o Runs/015338_EmpiarDepositor/extra/results/images_representation/7160.outputCoordinates_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg --fourier low_pass 0.05[0m
+Filter Band: Lowpass before 0.05
+Filter Shape: Raised cosine with 0.02 raised frequencies
+Input File: Runs/006458_XmippProtMovieCorr/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/7160.outputCoordinates_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_transform_filter  -i Runs/006458_XmippProtMovieCorr/extra/190117_02_00002_UnderDefocus0.7um_frameImage_aligned_mic.mrc -o Runs/015338_EmpiarDepositor/extra/results/images_representation/7160.outputCoordinates_190117_02_00002_UnderDefocus0.7um_frameImage_aligned_mic.jpg --fourier low_pass 0.05[0m
+Filter Band: Lowpass before 0.05
+Filter Shape: Raised cosine with 0.02 raised frequencies
+Input File: Runs/006458_XmippProtMovieCorr/extra/190117_02_00002_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/7160.outputCoordinates_190117_02_00002_UnderDefocus0.7um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_transform_filter  -i Runs/006458_XmippProtMovieCorr/extra/190117_02_00003_UnderDefocus0.7um_frameImage_aligned_mic.mrc -o Runs/015338_EmpiarDepositor/extra/results/images_representation/7160.outputCoordinates_190117_02_00003_UnderDefocus0.7um_frameImage_aligned_mic.jpg --fourier low_pass 0.05[0m
+Filter Band: Lowpass before 0.05
+Filter Shape: Raised cosine with 0.02 raised frequencies
+Input File: Runs/006458_XmippProtMovieCorr/extra/190117_02_00003_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/7160.outputCoordinates_190117_02_00003_UnderDefocus0.7um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_transform_filter  -i Runs/006458_XmippProtMovieCorr/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrc -o Runs/015338_EmpiarDepositor/extra/results/images_representation/7212.outputCoordinates_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg --fourier low_pass 0.05[0m
+Filter Band: Lowpass before 0.05
+Filter Shape: Raised cosine with 0.02 raised frequencies
+Input File: Runs/006458_XmippProtMovieCorr/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/7212.outputCoordinates_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_transform_filter  -i Runs/006458_XmippProtMovieCorr/extra/190117_02_00002_UnderDefocus0.7um_frameImage_aligned_mic.mrc -o Runs/015338_EmpiarDepositor/extra/results/images_representation/7212.outputCoordinates_190117_02_00002_UnderDefocus0.7um_frameImage_aligned_mic.jpg --fourier low_pass 0.05[0m
+Filter Band: Lowpass before 0.05
+Filter Shape: Raised cosine with 0.02 raised frequencies
+Input File: Runs/006458_XmippProtMovieCorr/extra/190117_02_00002_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/7212.outputCoordinates_190117_02_00002_UnderDefocus0.7um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_transform_filter  -i Runs/006458_XmippProtMovieCorr/extra/190117_02_00003_UnderDefocus0.7um_frameImage_aligned_mic.mrc -o Runs/015338_EmpiarDepositor/extra/results/images_representation/7212.outputCoordinates_190117_02_00003_UnderDefocus0.7um_frameImage_aligned_mic.jpg --fourier low_pass 0.05[0m
+Filter Band: Lowpass before 0.05
+Filter Shape: Raised cosine with 0.02 raised frequencies
+Input File: Runs/006458_XmippProtMovieCorr/extra/190117_02_00003_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/7212.outputCoordinates_190117_02_00003_UnderDefocus0.7um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_transform_filter  -i Runs/006458_XmippProtMovieCorr/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrc -o Runs/015338_EmpiarDepositor/extra/results/images_representation/7262.outputCoordinates_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg --fourier low_pass 0.05[0m
+Filter Band: Lowpass before 0.05
+Filter Shape: Raised cosine with 0.02 raised frequencies
+Input File: Runs/006458_XmippProtMovieCorr/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/7262.outputCoordinates_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_transform_filter  -i Runs/006458_XmippProtMovieCorr/extra/190117_02_00002_UnderDefocus0.7um_frameImage_aligned_mic.mrc -o Runs/015338_EmpiarDepositor/extra/results/images_representation/7262.outputCoordinates_190117_02_00002_UnderDefocus0.7um_frameImage_aligned_mic.jpg --fourier low_pass 0.05[0m
+Filter Band: Lowpass before 0.05
+Filter Shape: Raised cosine with 0.02 raised frequencies
+Input File: Runs/006458_XmippProtMovieCorr/extra/190117_02_00002_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/7262.outputCoordinates_190117_02_00002_UnderDefocus0.7um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_transform_filter  -i Runs/006458_XmippProtMovieCorr/extra/190117_02_00003_UnderDefocus0.7um_frameImage_aligned_mic.mrc -o Runs/015338_EmpiarDepositor/extra/results/images_representation/7262.outputCoordinates_190117_02_00003_UnderDefocus0.7um_frameImage_aligned_mic.jpg --fourier low_pass 0.05[0m
+Filter Band: Lowpass before 0.05
+Filter Shape: Raised cosine with 0.02 raised frequencies
+Input File: Runs/006458_XmippProtMovieCorr/extra/190117_02_00003_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/7262.outputCoordinates_190117_02_00003_UnderDefocus0.7um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_transform_filter  -i Runs/006458_XmippProtMovieCorr/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrc -o Runs/015338_EmpiarDepositor/extra/results/images_representation/7306.outputCoordinates_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg --fourier low_pass 0.05[0m
+Filter Band: Lowpass before 0.05
+Filter Shape: Raised cosine with 0.02 raised frequencies
+Input File: Runs/006458_XmippProtMovieCorr/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/7306.outputCoordinates_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_transform_filter  -i Runs/006458_XmippProtMovieCorr/extra/190117_02_00002_UnderDefocus0.7um_frameImage_aligned_mic.mrc -o Runs/015338_EmpiarDepositor/extra/results/images_representation/7306.outputCoordinates_190117_02_00002_UnderDefocus0.7um_frameImage_aligned_mic.jpg --fourier low_pass 0.05[0m
+Filter Band: Lowpass before 0.05
+Filter Shape: Raised cosine with 0.02 raised frequencies
+Input File: Runs/006458_XmippProtMovieCorr/extra/190117_02_00002_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/7306.outputCoordinates_190117_02_00002_UnderDefocus0.7um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_transform_filter  -i Runs/006458_XmippProtMovieCorr/extra/190117_02_00003_UnderDefocus0.7um_frameImage_aligned_mic.mrc -o Runs/015338_EmpiarDepositor/extra/results/images_representation/7306.outputCoordinates_190117_02_00003_UnderDefocus0.7um_frameImage_aligned_mic.jpg --fourier low_pass 0.05[0m
+Filter Band: Lowpass before 0.05
+Filter Shape: Raised cosine with 0.02 raised frequencies
+Input File: Runs/006458_XmippProtMovieCorr/extra/190117_02_00003_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/7306.outputCoordinates_190117_02_00003_UnderDefocus0.7um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 1@Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_parts_OR/190117_02_00017_UnderDefocus0.7um_frameImage_aligned_mic.stk -o Runs/015338_EmpiarDepositor/extra/results/images_representation/7306.outputParticles_1_190117_02_00017_UnderDefocus0.7um_frameImage_aligned_mic.jpg[0m
+Input File: 1@Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_parts_OR/190117_02_00017_UnderDefocus0.7um_frameImage_aligned_mic.stk
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/7306.outputParticles_1_190117_02_00017_UnderDefocus0.7um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 2@Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_parts_OR/190117_02_00017_UnderDefocus0.7um_frameImage_aligned_mic.stk -o Runs/015338_EmpiarDepositor/extra/results/images_representation/7306.outputParticles_2_190117_02_00017_UnderDefocus0.7um_frameImage_aligned_mic.jpg[0m
+Input File: 2@Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_parts_OR/190117_02_00017_UnderDefocus0.7um_frameImage_aligned_mic.stk
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/7306.outputParticles_2_190117_02_00017_UnderDefocus0.7um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 3@Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_parts_OR/190117_02_00017_UnderDefocus0.7um_frameImage_aligned_mic.stk -o Runs/015338_EmpiarDepositor/extra/results/images_representation/7306.outputParticles_3_190117_02_00017_UnderDefocus0.7um_frameImage_aligned_mic.jpg[0m
+Input File: 3@Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_parts_OR/190117_02_00017_UnderDefocus0.7um_frameImage_aligned_mic.stk
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/7306.outputParticles_3_190117_02_00017_UnderDefocus0.7um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 4@Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_parts_OR/190117_02_00017_UnderDefocus0.7um_frameImage_aligned_mic.stk -o Runs/015338_EmpiarDepositor/extra/results/images_representation/7306.outputParticles_4_190117_02_00017_UnderDefocus0.7um_frameImage_aligned_mic.jpg[0m
+Input File: 4@Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_parts_OR/190117_02_00017_UnderDefocus0.7um_frameImage_aligned_mic.stk
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/7306.outputParticles_4_190117_02_00017_UnderDefocus0.7um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 5@Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_parts_OR/190117_02_00017_UnderDefocus0.7um_frameImage_aligned_mic.stk -o Runs/015338_EmpiarDepositor/extra/results/images_representation/7306.outputParticles_5_190117_02_00017_UnderDefocus0.7um_frameImage_aligned_mic.jpg[0m
+Input File: 5@Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_parts_OR/190117_02_00017_UnderDefocus0.7um_frameImage_aligned_mic.stk
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/7306.outputParticles_5_190117_02_00017_UnderDefocus0.7um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 6@Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_parts_OR/190117_02_00017_UnderDefocus0.7um_frameImage_aligned_mic.stk -o Runs/015338_EmpiarDepositor/extra/results/images_representation/7306.outputParticles_6_190117_02_00017_UnderDefocus0.7um_frameImage_aligned_mic.jpg[0m
+Input File: 6@Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_parts_OR/190117_02_00017_UnderDefocus0.7um_frameImage_aligned_mic.stk
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/7306.outputParticles_6_190117_02_00017_UnderDefocus0.7um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 7@Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_parts_OR/190117_02_00017_UnderDefocus0.7um_frameImage_aligned_mic.stk -o Runs/015338_EmpiarDepositor/extra/results/images_representation/7306.outputParticles_7_190117_02_00017_UnderDefocus0.7um_frameImage_aligned_mic.jpg[0m
+Input File: 7@Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_parts_OR/190117_02_00017_UnderDefocus0.7um_frameImage_aligned_mic.stk
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/7306.outputParticles_7_190117_02_00017_UnderDefocus0.7um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 8@Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_parts_OR/190117_02_00017_UnderDefocus0.7um_frameImage_aligned_mic.stk -o Runs/015338_EmpiarDepositor/extra/results/images_representation/7306.outputParticles_8_190117_02_00017_UnderDefocus0.7um_frameImage_aligned_mic.jpg[0m
+Input File: 8@Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_parts_OR/190117_02_00017_UnderDefocus0.7um_frameImage_aligned_mic.stk
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/7306.outputParticles_8_190117_02_00017_UnderDefocus0.7um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 9@Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_parts_OR/190117_02_00017_UnderDefocus0.7um_frameImage_aligned_mic.stk -o Runs/015338_EmpiarDepositor/extra/results/images_representation/7306.outputParticles_9_190117_02_00017_UnderDefocus0.7um_frameImage_aligned_mic.jpg[0m
+Input File: 9@Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_parts_OR/190117_02_00017_UnderDefocus0.7um_frameImage_aligned_mic.stk
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/7306.outputParticles_9_190117_02_00017_UnderDefocus0.7um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 10@Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_parts_OR/190117_02_00017_UnderDefocus0.7um_frameImage_aligned_mic.stk -o Runs/015338_EmpiarDepositor/extra/results/images_representation/7306.outputParticles_10_190117_02_00017_UnderDefocus0.7um_frameImage_aligned_mic.jpg[0m
+Input File: 10@Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_parts_OR/190117_02_00017_UnderDefocus0.7um_frameImage_aligned_mic.stk
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/7306.outputParticles_10_190117_02_00017_UnderDefocus0.7um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 11@Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_parts_OR/190117_02_00017_UnderDefocus0.7um_frameImage_aligned_mic.stk -o Runs/015338_EmpiarDepositor/extra/results/images_representation/7306.outputParticles_11_190117_02_00017_UnderDefocus0.7um_frameImage_aligned_mic.jpg[0m
+Input File: 11@Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_parts_OR/190117_02_00017_UnderDefocus0.7um_frameImage_aligned_mic.stk
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/7306.outputParticles_11_190117_02_00017_UnderDefocus0.7um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 12@Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_parts_OR/190117_02_00017_UnderDefocus0.7um_frameImage_aligned_mic.stk -o Runs/015338_EmpiarDepositor/extra/results/images_representation/7306.outputParticles_12_190117_02_00017_UnderDefocus0.7um_frameImage_aligned_mic.jpg[0m
+Input File: 12@Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_parts_OR/190117_02_00017_UnderDefocus0.7um_frameImage_aligned_mic.stk
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/7306.outputParticles_12_190117_02_00017_UnderDefocus0.7um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 13@Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_parts_OR/190117_02_00017_UnderDefocus0.7um_frameImage_aligned_mic.stk -o Runs/015338_EmpiarDepositor/extra/results/images_representation/7306.outputParticles_13_190117_02_00017_UnderDefocus0.7um_frameImage_aligned_mic.jpg[0m
+Input File: 13@Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_parts_OR/190117_02_00017_UnderDefocus0.7um_frameImage_aligned_mic.stk
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/7306.outputParticles_13_190117_02_00017_UnderDefocus0.7um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 14@Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_parts_OR/190117_02_00017_UnderDefocus0.7um_frameImage_aligned_mic.stk -o Runs/015338_EmpiarDepositor/extra/results/images_representation/7306.outputParticles_14_190117_02_00017_UnderDefocus0.7um_frameImage_aligned_mic.jpg[0m
+Input File: 14@Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_parts_OR/190117_02_00017_UnderDefocus0.7um_frameImage_aligned_mic.stk
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/7306.outputParticles_14_190117_02_00017_UnderDefocus0.7um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 15@Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_parts_OR/190117_02_00017_UnderDefocus0.7um_frameImage_aligned_mic.stk -o Runs/015338_EmpiarDepositor/extra/results/images_representation/7306.outputParticles_15_190117_02_00017_UnderDefocus0.7um_frameImage_aligned_mic.jpg[0m
+Input File: 15@Runs/007306_XmippProtScreenDeepConsensus/extra/consensus_parts_OR/190117_02_00017_UnderDefocus0.7um_frameImage_aligned_mic.stk
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/7306.outputParticles_15_190117_02_00017_UnderDefocus0.7um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_transform_filter  -i Runs/006458_XmippProtMovieCorr/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrc -o Runs/015338_EmpiarDepositor/extra/results/images_representation/7405.outputCoordinates_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg --fourier low_pass 0.05[0m
+Filter Band: Lowpass before 0.05
+Filter Shape: Raised cosine with 0.02 raised frequencies
+Input File: Runs/006458_XmippProtMovieCorr/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/7405.outputCoordinates_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_transform_filter  -i Runs/006458_XmippProtMovieCorr/extra/190117_02_00002_UnderDefocus0.7um_frameImage_aligned_mic.mrc -o Runs/015338_EmpiarDepositor/extra/results/images_representation/7405.outputCoordinates_190117_02_00002_UnderDefocus0.7um_frameImage_aligned_mic.jpg --fourier low_pass 0.05[0m
+Filter Band: Lowpass before 0.05
+Filter Shape: Raised cosine with 0.02 raised frequencies
+Input File: Runs/006458_XmippProtMovieCorr/extra/190117_02_00002_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/7405.outputCoordinates_190117_02_00002_UnderDefocus0.7um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_transform_filter  -i Runs/006458_XmippProtMovieCorr/extra/190117_02_00003_UnderDefocus0.7um_frameImage_aligned_mic.mrc -o Runs/015338_EmpiarDepositor/extra/results/images_representation/7405.outputCoordinates_190117_02_00003_UnderDefocus0.7um_frameImage_aligned_mic.jpg --fourier low_pass 0.05[0m
+Filter Band: Lowpass before 0.05
+Filter Shape: Raised cosine with 0.02 raised frequencies
+Input File: Runs/006458_XmippProtMovieCorr/extra/190117_02_00003_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/7405.outputCoordinates_190117_02_00003_UnderDefocus0.7um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_transform_filter  -i Runs/006458_XmippProtMovieCorr/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrc -o Runs/015338_EmpiarDepositor/extra/results/images_representation/7445.outputCoordinates_Full_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg --fourier low_pass 0.05[0m
+Filter Band: Lowpass before 0.05
+Filter Shape: Raised cosine with 0.02 raised frequencies
+Input File: Runs/006458_XmippProtMovieCorr/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/7445.outputCoordinates_Full_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_transform_filter  -i Runs/006458_XmippProtMovieCorr/extra/190117_02_00002_UnderDefocus0.7um_frameImage_aligned_mic.mrc -o Runs/015338_EmpiarDepositor/extra/results/images_representation/7445.outputCoordinates_Full_190117_02_00002_UnderDefocus0.7um_frameImage_aligned_mic.jpg --fourier low_pass 0.05[0m
+Filter Band: Lowpass before 0.05
+Filter Shape: Raised cosine with 0.02 raised frequencies
+Input File: Runs/006458_XmippProtMovieCorr/extra/190117_02_00002_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/7445.outputCoordinates_Full_190117_02_00002_UnderDefocus0.7um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_transform_filter  -i Runs/006458_XmippProtMovieCorr/extra/190117_02_00003_UnderDefocus0.7um_frameImage_aligned_mic.mrc -o Runs/015338_EmpiarDepositor/extra/results/images_representation/7445.outputCoordinates_Full_190117_02_00003_UnderDefocus0.7um_frameImage_aligned_mic.jpg --fourier low_pass 0.05[0m
+Filter Band: Lowpass before 0.05
+Filter Shape: Raised cosine with 0.02 raised frequencies
+Input File: Runs/006458_XmippProtMovieCorr/extra/190117_02_00003_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/7445.outputCoordinates_Full_190117_02_00003_UnderDefocus0.7um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_transform_filter  -i Runs/006458_XmippProtMovieCorr/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrc -o Runs/015338_EmpiarDepositor/extra/results/images_representation/7445.outputCoordinates_Manual_097_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg --fourier low_pass 0.05[0m
+Filter Band: Lowpass before 0.05
+Filter Shape: Raised cosine with 0.02 raised frequencies
+Input File: Runs/006458_XmippProtMovieCorr/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/7445.outputCoordinates_Manual_097_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_transform_filter  -i Runs/006458_XmippProtMovieCorr/extra/190117_02_00002_UnderDefocus0.7um_frameImage_aligned_mic.mrc -o Runs/015338_EmpiarDepositor/extra/results/images_representation/7445.outputCoordinates_Manual_097_190117_02_00002_UnderDefocus0.7um_frameImage_aligned_mic.jpg --fourier low_pass 0.05[0m
+Filter Band: Lowpass before 0.05
+Filter Shape: Raised cosine with 0.02 raised frequencies
+Input File: Runs/006458_XmippProtMovieCorr/extra/190117_02_00002_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/7445.outputCoordinates_Manual_097_190117_02_00002_UnderDefocus0.7um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_transform_filter  -i Runs/006458_XmippProtMovieCorr/extra/190117_02_00003_UnderDefocus0.7um_frameImage_aligned_mic.mrc -o Runs/015338_EmpiarDepositor/extra/results/images_representation/7445.outputCoordinates_Manual_097_190117_02_00003_UnderDefocus0.7um_frameImage_aligned_mic.jpg --fourier low_pass 0.05[0m
+Filter Band: Lowpass before 0.05
+Filter Shape: Raised cosine with 0.02 raised frequencies
+Input File: Runs/006458_XmippProtMovieCorr/extra/190117_02_00003_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/7445.outputCoordinates_Manual_097_190117_02_00003_UnderDefocus0.7um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 1@Runs/007502_XmippProtExtractParticles/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/7502.outputParticles_1_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg[0m
+Input File: 1@Runs/007502_XmippProtExtractParticles/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/7502.outputParticles_1_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 2@Runs/007502_XmippProtExtractParticles/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/7502.outputParticles_2_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg[0m
+Input File: 2@Runs/007502_XmippProtExtractParticles/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/7502.outputParticles_2_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 3@Runs/007502_XmippProtExtractParticles/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/7502.outputParticles_3_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg[0m
+Input File: 3@Runs/007502_XmippProtExtractParticles/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/7502.outputParticles_3_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 4@Runs/007502_XmippProtExtractParticles/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/7502.outputParticles_4_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg[0m
+Input File: 4@Runs/007502_XmippProtExtractParticles/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/7502.outputParticles_4_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 5@Runs/007502_XmippProtExtractParticles/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/7502.outputParticles_5_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg[0m
+Input File: 5@Runs/007502_XmippProtExtractParticles/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/7502.outputParticles_5_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 6@Runs/007502_XmippProtExtractParticles/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/7502.outputParticles_6_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg[0m
+Input File: 6@Runs/007502_XmippProtExtractParticles/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/7502.outputParticles_6_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 7@Runs/007502_XmippProtExtractParticles/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/7502.outputParticles_7_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg[0m
+Input File: 7@Runs/007502_XmippProtExtractParticles/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/7502.outputParticles_7_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 8@Runs/007502_XmippProtExtractParticles/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/7502.outputParticles_8_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg[0m
+Input File: 8@Runs/007502_XmippProtExtractParticles/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/7502.outputParticles_8_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 9@Runs/007502_XmippProtExtractParticles/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/7502.outputParticles_9_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg[0m
+Input File: 9@Runs/007502_XmippProtExtractParticles/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/7502.outputParticles_9_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 10@Runs/007502_XmippProtExtractParticles/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/7502.outputParticles_10_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg[0m
+Input File: 10@Runs/007502_XmippProtExtractParticles/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/7502.outputParticles_10_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 11@Runs/007502_XmippProtExtractParticles/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/7502.outputParticles_11_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg[0m
+Input File: 11@Runs/007502_XmippProtExtractParticles/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/7502.outputParticles_11_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 12@Runs/007502_XmippProtExtractParticles/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/7502.outputParticles_12_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg[0m
+Input File: 12@Runs/007502_XmippProtExtractParticles/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/7502.outputParticles_12_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 13@Runs/007502_XmippProtExtractParticles/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/7502.outputParticles_13_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg[0m
+Input File: 13@Runs/007502_XmippProtExtractParticles/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/7502.outputParticles_13_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 14@Runs/007502_XmippProtExtractParticles/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/7502.outputParticles_14_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg[0m
+Input File: 14@Runs/007502_XmippProtExtractParticles/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/7502.outputParticles_14_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 15@Runs/007502_XmippProtExtractParticles/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/7502.outputParticles_15_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg[0m
+Input File: 15@Runs/007502_XmippProtExtractParticles/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/7502.outputParticles_15_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 1@Runs/007502_XmippProtExtractParticles/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/7983.outputParticles_1_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg[0m
+Input File: 1@Runs/007502_XmippProtExtractParticles/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/7983.outputParticles_1_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 2@Runs/007502_XmippProtExtractParticles/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/7983.outputParticles_2_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg[0m
+Input File: 2@Runs/007502_XmippProtExtractParticles/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/7983.outputParticles_2_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 3@Runs/007502_XmippProtExtractParticles/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/7983.outputParticles_3_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg[0m
+Input File: 3@Runs/007502_XmippProtExtractParticles/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/7983.outputParticles_3_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 4@Runs/007502_XmippProtExtractParticles/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/7983.outputParticles_4_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg[0m
+Input File: 4@Runs/007502_XmippProtExtractParticles/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/7983.outputParticles_4_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 5@Runs/007502_XmippProtExtractParticles/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/7983.outputParticles_5_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg[0m
+Input File: 5@Runs/007502_XmippProtExtractParticles/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/7983.outputParticles_5_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 6@Runs/007502_XmippProtExtractParticles/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/7983.outputParticles_6_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg[0m
+Input File: 6@Runs/007502_XmippProtExtractParticles/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/7983.outputParticles_6_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 7@Runs/007502_XmippProtExtractParticles/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/7983.outputParticles_7_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg[0m
+Input File: 7@Runs/007502_XmippProtExtractParticles/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/7983.outputParticles_7_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 8@Runs/007502_XmippProtExtractParticles/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/7983.outputParticles_8_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg[0m
+Input File: 8@Runs/007502_XmippProtExtractParticles/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/7983.outputParticles_8_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 9@Runs/007502_XmippProtExtractParticles/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/7983.outputParticles_9_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg[0m
+Input File: 9@Runs/007502_XmippProtExtractParticles/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/7983.outputParticles_9_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 10@Runs/007502_XmippProtExtractParticles/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/7983.outputParticles_10_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg[0m
+Input File: 10@Runs/007502_XmippProtExtractParticles/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/7983.outputParticles_10_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 11@Runs/007502_XmippProtExtractParticles/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/7983.outputParticles_12_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg[0m
+Input File: 11@Runs/007502_XmippProtExtractParticles/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/7983.outputParticles_12_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 12@Runs/007502_XmippProtExtractParticles/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/7983.outputParticles_13_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg[0m
+Input File: 12@Runs/007502_XmippProtExtractParticles/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/7983.outputParticles_13_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 13@Runs/007502_XmippProtExtractParticles/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/7983.outputParticles_14_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg[0m
+Input File: 13@Runs/007502_XmippProtExtractParticles/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/7983.outputParticles_14_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 14@Runs/007502_XmippProtExtractParticles/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/7983.outputParticles_15_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg[0m
+Input File: 14@Runs/007502_XmippProtExtractParticles/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/7983.outputParticles_15_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 15@Runs/007502_XmippProtExtractParticles/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/7983.outputParticles_16_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg[0m
+Input File: 15@Runs/007502_XmippProtExtractParticles/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/7983.outputParticles_16_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 1@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/8046.outputParticles_1_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 1@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/8046.outputParticles_1_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 2@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/8046.outputParticles_2_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 2@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/8046.outputParticles_2_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 3@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/8046.outputParticles_3_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 3@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/8046.outputParticles_3_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 4@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/8046.outputParticles_4_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 4@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/8046.outputParticles_4_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 5@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/8046.outputParticles_5_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 5@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/8046.outputParticles_5_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 6@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/8046.outputParticles_6_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 6@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/8046.outputParticles_6_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 7@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/8046.outputParticles_7_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 7@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/8046.outputParticles_7_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 8@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/8046.outputParticles_8_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 8@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/8046.outputParticles_8_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 9@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/8046.outputParticles_9_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 9@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/8046.outputParticles_9_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 10@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/8046.outputParticles_10_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 10@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/8046.outputParticles_10_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 11@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/8046.outputParticles_11_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 11@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/8046.outputParticles_11_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 12@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/8046.outputParticles_12_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 12@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/8046.outputParticles_12_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 13@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/8046.outputParticles_13_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 13@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/8046.outputParticles_13_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 14@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/8046.outputParticles_14_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 14@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/8046.outputParticles_14_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 15@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/8046.outputParticles_15_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 15@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/8046.outputParticles_15_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 1@Runs/007502_XmippProtExtractParticles/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/8478.outputParticles_1_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg[0m
+Input File: 1@Runs/007502_XmippProtExtractParticles/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/8478.outputParticles_1_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 2@Runs/007502_XmippProtExtractParticles/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/8478.outputParticles_2_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg[0m
+Input File: 2@Runs/007502_XmippProtExtractParticles/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/8478.outputParticles_2_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 3@Runs/007502_XmippProtExtractParticles/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/8478.outputParticles_3_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg[0m
+Input File: 3@Runs/007502_XmippProtExtractParticles/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/8478.outputParticles_3_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 4@Runs/007502_XmippProtExtractParticles/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/8478.outputParticles_4_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg[0m
+Input File: 4@Runs/007502_XmippProtExtractParticles/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/8478.outputParticles_4_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 5@Runs/007502_XmippProtExtractParticles/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/8478.outputParticles_5_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg[0m
+Input File: 5@Runs/007502_XmippProtExtractParticles/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/8478.outputParticles_5_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 6@Runs/007502_XmippProtExtractParticles/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/8478.outputParticles_6_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg[0m
+Input File: 6@Runs/007502_XmippProtExtractParticles/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/8478.outputParticles_6_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 7@Runs/007502_XmippProtExtractParticles/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/8478.outputParticles_7_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg[0m
+Input File: 7@Runs/007502_XmippProtExtractParticles/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/8478.outputParticles_7_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 8@Runs/007502_XmippProtExtractParticles/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/8478.outputParticles_8_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg[0m
+Input File: 8@Runs/007502_XmippProtExtractParticles/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/8478.outputParticles_8_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 9@Runs/007502_XmippProtExtractParticles/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/8478.outputParticles_9_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg[0m
+Input File: 9@Runs/007502_XmippProtExtractParticles/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/8478.outputParticles_9_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 10@Runs/007502_XmippProtExtractParticles/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/8478.outputParticles_10_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg[0m
+Input File: 10@Runs/007502_XmippProtExtractParticles/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/8478.outputParticles_10_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 11@Runs/007502_XmippProtExtractParticles/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/8478.outputParticles_12_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg[0m
+Input File: 11@Runs/007502_XmippProtExtractParticles/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/8478.outputParticles_12_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 12@Runs/007502_XmippProtExtractParticles/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/8478.outputParticles_13_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg[0m
+Input File: 12@Runs/007502_XmippProtExtractParticles/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/8478.outputParticles_13_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 13@Runs/007502_XmippProtExtractParticles/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/8478.outputParticles_14_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg[0m
+Input File: 13@Runs/007502_XmippProtExtractParticles/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/8478.outputParticles_14_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 14@Runs/007502_XmippProtExtractParticles/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/8478.outputParticles_15_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg[0m
+Input File: 14@Runs/007502_XmippProtExtractParticles/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/8478.outputParticles_15_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 15@Runs/007502_XmippProtExtractParticles/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/8478.outputParticles_16_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg[0m
+Input File: 15@Runs/007502_XmippProtExtractParticles/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/8478.outputParticles_16_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_transform_filter  -i Runs/006458_XmippProtMovieCorr/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrc -o Runs/015338_EmpiarDepositor/extra/results/images_representation/8478.outputCoordinates_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg --fourier low_pass 0.05[0m
+Filter Band: Lowpass before 0.05
+Filter Shape: Raised cosine with 0.02 raised frequencies
+Input File: Runs/006458_XmippProtMovieCorr/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/8478.outputCoordinates_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_transform_filter  -i Runs/006458_XmippProtMovieCorr/extra/190117_02_00002_UnderDefocus0.7um_frameImage_aligned_mic.mrc -o Runs/015338_EmpiarDepositor/extra/results/images_representation/8478.outputCoordinates_190117_02_00002_UnderDefocus0.7um_frameImage_aligned_mic.jpg --fourier low_pass 0.05[0m
+Filter Band: Lowpass before 0.05
+Filter Shape: Raised cosine with 0.02 raised frequencies
+Input File: Runs/006458_XmippProtMovieCorr/extra/190117_02_00002_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/8478.outputCoordinates_190117_02_00002_UnderDefocus0.7um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_transform_filter  -i Runs/006458_XmippProtMovieCorr/extra/190117_02_00003_UnderDefocus0.7um_frameImage_aligned_mic.mrc -o Runs/015338_EmpiarDepositor/extra/results/images_representation/8478.outputCoordinates_190117_02_00003_UnderDefocus0.7um_frameImage_aligned_mic.jpg --fourier low_pass 0.05[0m
+Filter Band: Lowpass before 0.05
+Filter Shape: Raised cosine with 0.02 raised frequencies
+Input File: Runs/006458_XmippProtMovieCorr/extra/190117_02_00003_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/8478.outputCoordinates_190117_02_00003_UnderDefocus0.7um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_transform_filter  -i Runs/006458_XmippProtMovieCorr/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrc -o Runs/015338_EmpiarDepositor/extra/results/images_representation/8544.outputCoordinates_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg --fourier low_pass 0.05[0m
+Filter Band: Lowpass before 0.05
+Filter Shape: Raised cosine with 0.02 raised frequencies
+Input File: Runs/006458_XmippProtMovieCorr/extra/190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/8544.outputCoordinates_190117_02_00001_UnderDefocus0.7um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_transform_filter  -i Runs/006458_XmippProtMovieCorr/extra/190117_02_00002_UnderDefocus0.7um_frameImage_aligned_mic.mrc -o Runs/015338_EmpiarDepositor/extra/results/images_representation/8544.outputCoordinates_190117_02_00002_UnderDefocus0.7um_frameImage_aligned_mic.jpg --fourier low_pass 0.05[0m
+Filter Band: Lowpass before 0.05
+Filter Shape: Raised cosine with 0.02 raised frequencies
+Input File: Runs/006458_XmippProtMovieCorr/extra/190117_02_00002_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/8544.outputCoordinates_190117_02_00002_UnderDefocus0.7um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_transform_filter  -i Runs/006458_XmippProtMovieCorr/extra/190117_02_00003_UnderDefocus0.7um_frameImage_aligned_mic.mrc -o Runs/015338_EmpiarDepositor/extra/results/images_representation/8544.outputCoordinates_190117_02_00003_UnderDefocus0.7um_frameImage_aligned_mic.jpg --fourier low_pass 0.05[0m
+Filter Band: Lowpass before 0.05
+Filter Shape: Raised cosine with 0.02 raised frequencies
+Input File: Runs/006458_XmippProtMovieCorr/extra/190117_02_00003_UnderDefocus0.7um_frameImage_aligned_mic.mrc
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/8544.outputCoordinates_190117_02_00003_UnderDefocus0.7um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 1@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/8940.outputParticles_1_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 1@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/8940.outputParticles_1_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 2@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/8940.outputParticles_2_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 2@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/8940.outputParticles_2_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 3@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/8940.outputParticles_3_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 3@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/8940.outputParticles_3_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 4@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/8940.outputParticles_4_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 4@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/8940.outputParticles_4_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 5@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/8940.outputParticles_5_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 5@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/8940.outputParticles_5_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 6@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/8940.outputParticles_6_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 6@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/8940.outputParticles_6_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 7@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/8940.outputParticles_7_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 7@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/8940.outputParticles_7_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 8@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/8940.outputParticles_8_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 8@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/8940.outputParticles_8_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 9@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/8940.outputParticles_9_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 9@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/8940.outputParticles_9_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 10@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/8940.outputParticles_10_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 10@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/8940.outputParticles_10_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 11@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/8940.outputParticles_11_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 11@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/8940.outputParticles_11_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 12@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/8940.outputParticles_12_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 12@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/8940.outputParticles_12_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 13@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/8940.outputParticles_13_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 13@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/8940.outputParticles_13_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 14@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/8940.outputParticles_14_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 14@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/8940.outputParticles_14_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 15@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/8940.outputParticles_15_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 15@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/8940.outputParticles_15_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 1@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/9302.outputParticles_4_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 1@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/9302.outputParticles_4_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 2@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/9302.outputParticles_6_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 2@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/9302.outputParticles_6_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 3@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/9302.outputParticles_8_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 3@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/9302.outputParticles_8_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 4@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/9302.outputParticles_9_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 4@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/9302.outputParticles_9_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 5@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/9302.outputParticles_10_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 5@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/9302.outputParticles_10_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 6@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/9302.outputParticles_11_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 6@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/9302.outputParticles_11_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 7@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/9302.outputParticles_15_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 7@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/9302.outputParticles_15_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 8@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/9302.outputParticles_17_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 8@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/9302.outputParticles_17_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 9@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/9302.outputParticles_18_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 9@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/9302.outputParticles_18_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 10@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/9302.outputParticles_19_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 10@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/9302.outputParticles_19_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 11@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/9302.outputParticles_20_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 11@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/9302.outputParticles_20_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 12@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/9302.outputParticles_22_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 12@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/9302.outputParticles_22_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 13@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/9302.outputParticles_24_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 13@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/9302.outputParticles_24_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 14@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/9302.outputParticles_26_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 14@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/9302.outputParticles_26_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 15@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/9302.outputParticles_27_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 15@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/9302.outputParticles_27_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 1@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/9355.outputParticles_4_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 1@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/9355.outputParticles_4_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 2@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/9355.outputParticles_6_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 2@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/9355.outputParticles_6_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 3@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/9355.outputParticles_8_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 3@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/9355.outputParticles_8_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 4@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/9355.outputParticles_9_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 4@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/9355.outputParticles_9_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 5@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/9355.outputParticles_10_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 5@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/9355.outputParticles_10_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 6@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/9355.outputParticles_11_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 6@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/9355.outputParticles_11_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 7@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/9355.outputParticles_15_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 7@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/9355.outputParticles_15_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 8@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/9355.outputParticles_17_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 8@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/9355.outputParticles_17_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 9@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/9355.outputParticles_18_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 9@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/9355.outputParticles_18_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 10@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/9355.outputParticles_19_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 10@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/9355.outputParticles_19_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 11@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/9355.outputParticles_20_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 11@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/9355.outputParticles_20_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 12@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/9355.outputParticles_22_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 12@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/9355.outputParticles_22_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 13@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/9355.outputParticles_24_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 13@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/9355.outputParticles_24_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 14@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/9355.outputParticles_26_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 14@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/9355.outputParticles_26_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 15@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/9355.outputParticles_27_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 15@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/9355.outputParticles_27_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 1@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/9461.outputParticles_4_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 1@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/9461.outputParticles_4_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 2@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/9461.outputParticles_6_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 2@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/9461.outputParticles_6_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 3@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/9461.outputParticles_8_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 3@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/9461.outputParticles_8_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 4@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/9461.outputParticles_9_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 4@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/9461.outputParticles_9_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 5@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/9461.outputParticles_10_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 5@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/9461.outputParticles_10_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 6@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/9461.outputParticles_11_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 6@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/9461.outputParticles_11_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 7@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/9461.outputParticles_15_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 7@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/9461.outputParticles_15_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 8@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/9461.outputParticles_17_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 8@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/9461.outputParticles_17_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 9@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/9461.outputParticles_18_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 9@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/9461.outputParticles_18_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 10@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/9461.outputParticles_19_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 10@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/9461.outputParticles_19_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 11@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/9461.outputParticles_20_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 11@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/9461.outputParticles_20_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 12@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/9461.outputParticles_22_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 12@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/9461.outputParticles_22_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 13@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/9461.outputParticles_24_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 13@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/9461.outputParticles_24_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 14@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/9461.outputParticles_26_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 14@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/9461.outputParticles_26_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 15@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/9461.outputParticles_27_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 15@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/9461.outputParticles_27_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 1@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/9567.outputParticles_4_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 1@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/9567.outputParticles_4_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 2@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/9567.outputParticles_6_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 2@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/9567.outputParticles_6_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 3@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/9567.outputParticles_8_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 3@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/9567.outputParticles_8_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 4@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/9567.outputParticles_9_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 4@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/9567.outputParticles_9_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 5@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/9567.outputParticles_10_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 5@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/9567.outputParticles_10_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 6@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/9567.outputParticles_11_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 6@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/9567.outputParticles_11_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 7@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/9567.outputParticles_15_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 7@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/9567.outputParticles_15_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 8@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/9567.outputParticles_17_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 8@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/9567.outputParticles_17_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 9@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/9567.outputParticles_18_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 9@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/9567.outputParticles_18_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 10@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/9567.outputParticles_19_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 10@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/9567.outputParticles_19_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 11@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/9567.outputParticles_20_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 11@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/9567.outputParticles_20_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 12@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/9567.outputParticles_22_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 12@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/9567.outputParticles_22_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 13@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/9567.outputParticles_24_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 13@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/9567.outputParticles_24_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 14@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/9567.outputParticles_26_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 14@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/9567.outputParticles_26_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 15@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/9567.outputParticles_27_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 15@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/9567.outputParticles_27_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 1@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/9620.outputParticles_4_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 1@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/9620.outputParticles_4_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 2@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/9620.outputParticles_6_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 2@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/9620.outputParticles_6_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 3@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/9620.outputParticles_8_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 3@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/9620.outputParticles_8_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 4@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/9620.outputParticles_10_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 4@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/9620.outputParticles_10_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 5@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/9620.outputParticles_11_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 5@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/9620.outputParticles_11_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 6@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/9620.outputParticles_15_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 6@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/9620.outputParticles_15_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 7@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/9620.outputParticles_17_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 7@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/9620.outputParticles_17_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 8@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/9620.outputParticles_18_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 8@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/9620.outputParticles_18_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 9@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/9620.outputParticles_19_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 9@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/9620.outputParticles_19_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 10@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/9620.outputParticles_20_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 10@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/9620.outputParticles_20_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 11@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/9620.outputParticles_22_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 11@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/9620.outputParticles_22_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 12@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/9620.outputParticles_24_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 12@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/9620.outputParticles_24_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 13@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/9620.outputParticles_26_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 13@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/9620.outputParticles_26_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 14@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/9620.outputParticles_27_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 14@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/9620.outputParticles_27_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 15@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/9620.outputParticles_28_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 15@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/9620.outputParticles_28_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 1@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/9673.outputParticles_4_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 1@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/9673.outputParticles_4_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 2@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/9673.outputParticles_6_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 2@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/9673.outputParticles_6_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 3@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/9673.outputParticles_8_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 3@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/9673.outputParticles_8_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 4@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/9673.outputParticles_10_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 4@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/9673.outputParticles_10_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 5@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/9673.outputParticles_11_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 5@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/9673.outputParticles_11_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 6@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/9673.outputParticles_15_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 6@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/9673.outputParticles_15_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 7@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/9673.outputParticles_17_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 7@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/9673.outputParticles_17_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 8@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/9673.outputParticles_18_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 8@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/9673.outputParticles_18_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 9@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/9673.outputParticles_19_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 9@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/9673.outputParticles_19_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 10@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/9673.outputParticles_20_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 10@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/9673.outputParticles_20_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 11@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/9673.outputParticles_22_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 11@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/9673.outputParticles_22_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 12@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/9673.outputParticles_24_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 12@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/9673.outputParticles_24_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 13@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/9673.outputParticles_26_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 13@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/9673.outputParticles_26_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 14@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/9673.outputParticles_27_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 14@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/9673.outputParticles_27_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 15@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/9673.outputParticles_28_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 15@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/9673.outputParticles_28_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 1@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/10312.outputParticles_4_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 1@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/10312.outputParticles_4_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 2@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/10312.outputParticles_6_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 2@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/10312.outputParticles_6_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 3@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/10312.outputParticles_8_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 3@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/10312.outputParticles_8_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 4@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/10312.outputParticles_10_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 4@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/10312.outputParticles_10_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 5@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/10312.outputParticles_11_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 5@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/10312.outputParticles_11_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 6@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/10312.outputParticles_15_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 6@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/10312.outputParticles_15_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 7@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/10312.outputParticles_17_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 7@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/10312.outputParticles_17_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 8@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/10312.outputParticles_18_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 8@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/10312.outputParticles_18_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 9@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/10312.outputParticles_19_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 9@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/10312.outputParticles_19_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 10@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/10312.outputParticles_20_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 10@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/10312.outputParticles_20_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 11@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/10312.outputParticles_22_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 11@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/10312.outputParticles_22_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 12@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/10312.outputParticles_24_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 12@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/10312.outputParticles_24_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 13@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/10312.outputParticles_26_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 13@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/10312.outputParticles_26_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 14@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/10312.outputParticles_27_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 14@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/10312.outputParticles_27_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 15@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/10312.outputParticles_28_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 15@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/10312.outputParticles_28_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 1@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/10397.outputParticles_4_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 1@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/10397.outputParticles_4_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 2@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/10397.outputParticles_6_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 2@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/10397.outputParticles_6_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 3@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/10397.outputParticles_8_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 3@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/10397.outputParticles_8_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 4@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/10397.outputParticles_10_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 4@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/10397.outputParticles_10_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 5@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/10397.outputParticles_11_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 5@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/10397.outputParticles_11_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 6@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/10397.outputParticles_15_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 6@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/10397.outputParticles_15_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 7@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/10397.outputParticles_17_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 7@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/10397.outputParticles_17_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 8@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/10397.outputParticles_18_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 8@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/10397.outputParticles_18_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 9@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/10397.outputParticles_19_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 9@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/10397.outputParticles_19_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 10@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/10397.outputParticles_24_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 10@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/10397.outputParticles_24_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 11@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/10397.outputParticles_26_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 11@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/10397.outputParticles_26_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 12@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/10397.outputParticles_27_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 12@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/10397.outputParticles_27_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 13@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/10397.outputParticles_29_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 13@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/10397.outputParticles_29_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 14@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/10397.outputParticles_30_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 14@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/10397.outputParticles_30_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 15@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/10397.outputParticles_33_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 15@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/10397.outputParticles_33_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 1@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/10450.outputParticles_4_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 1@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/10450.outputParticles_4_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 2@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/10450.outputParticles_6_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 2@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/10450.outputParticles_6_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 3@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/10450.outputParticles_8_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 3@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/10450.outputParticles_8_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 4@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/10450.outputParticles_10_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 4@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/10450.outputParticles_10_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 5@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/10450.outputParticles_11_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 5@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/10450.outputParticles_11_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 6@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/10450.outputParticles_15_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 6@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/10450.outputParticles_15_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 7@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/10450.outputParticles_17_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 7@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/10450.outputParticles_17_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 8@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/10450.outputParticles_18_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 8@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/10450.outputParticles_18_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 9@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/10450.outputParticles_19_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 9@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/10450.outputParticles_19_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 10@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/10450.outputParticles_24_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 10@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/10450.outputParticles_24_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 11@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/10450.outputParticles_26_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 11@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/10450.outputParticles_26_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 12@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/10450.outputParticles_27_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 12@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/10450.outputParticles_27_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 13@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/10450.outputParticles_29_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 13@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/10450.outputParticles_29_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 14@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/10450.outputParticles_30_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 14@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/10450.outputParticles_30_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
+** Running command: **
+[32m xmipp_image_convert  -i 15@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs -o Runs/015338_EmpiarDepositor/extra/results/images_representation/10450.outputParticles_33_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg[0m
+Input File: 15@Runs/008046_XmippProtExtractParticles/extra/190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.mrcs
+Output File: Runs/015338_EmpiarDepositor/extra/results/images_representation/10450.outputParticles_33_190117_02_00026_UnderDefocus0.9um_frameImage_aligned_mic.jpg
